@@ -50,6 +50,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnMdelete = new System.Windows.Forms.Button();
             this.label28 = new System.Windows.Forms.Label();
             this.txtUrank = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
@@ -85,67 +86,53 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.txtSsc = new System.Windows.Forms.TextBox();
+            this.txtSsn = new System.Windows.Forms.TextBox();
+            this.cmbSoy = new System.Windows.Forms.ComboBox();
+            this.BtnSclear = new System.Windows.Forms.Button();
+            this.BtnSsave = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btnSUclear = new System.Windows.Forms.Button();
+            this.btnSUupdate = new System.Windows.Forms.Button();
+            this.btnSUdelete = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.radiobtnU2sem = new System.Windows.Forms.RadioButton();
+            this.radiobtnU1sem = new System.Windows.Forms.RadioButton();
+            this.txtUsubCode = new System.Windows.Forms.TextBox();
+            this.txtUsubname = new System.Windows.Forms.TextBox();
+            this.cmbUoffyear = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.btnMdelete = new System.Windows.Forms.Button();
+            this.txtSneh = new System.Windows.Forms.TextBox();
+            this.txtlh = new System.Windows.Forms.TextBox();
+            this.txtSnth = new System.Windows.Forms.TextBox();
+            this.txtSnlh = new System.Windows.Forms.TextBox();
+            this.radiobtn1stsem = new System.Windows.Forms.RadioButton();
+            this.radiobtn2stsem = new System.Windows.Forms.RadioButton();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.txtUSneh = new System.Windows.Forms.TextBox();
+            this.txtUSlh = new System.Windows.Forms.TextBox();
+            this.txtUSnth = new System.Windows.Forms.TextBox();
+            this.txtUSnlh = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtUSsubid = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -443,6 +430,17 @@
             this.tabPage2.Text = "MANAGE LECTURER";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
+            // btnMdelete
+            // 
+            this.btnMdelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnMdelete.Location = new System.Drawing.Point(237, 174);
+            this.btnMdelete.Name = "btnMdelete";
+            this.btnMdelete.Size = new System.Drawing.Size(101, 30);
+            this.btnMdelete.TabIndex = 56;
+            this.btnMdelete.Text = "Delete";
+            this.btnMdelete.UseVisualStyleBackColor = false;
+            this.btnMdelete.Click += new System.EventHandler(this.btnMdelete_Click);
+            // 
             // label28
             // 
             this.label28.AutoSize = true;
@@ -691,22 +689,23 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.tabPage3.Controls.Add(this.dataGridView3);
+            this.tabPage3.Controls.Add(this.txtSnlh);
+            this.tabPage3.Controls.Add(this.txtSnth);
+            this.tabPage3.Controls.Add(this.txtlh);
+            this.tabPage3.Controls.Add(this.txtSneh);
             this.tabPage3.Controls.Add(this.label31);
             this.tabPage3.Controls.Add(this.label30);
             this.tabPage3.Controls.Add(this.label22);
             this.tabPage3.Controls.Add(this.label20);
             this.tabPage3.Controls.Add(this.label29);
-            this.tabPage3.Controls.Add(this.radioButton2);
-            this.tabPage3.Controls.Add(this.radioButton1);
-            this.tabPage3.Controls.Add(this.numericUpDown2);
-            this.tabPage3.Controls.Add(this.numericUpDown1);
-            this.tabPage3.Controls.Add(this.textBox10);
-            this.tabPage3.Controls.Add(this.textBox11);
-            this.tabPage3.Controls.Add(this.numericUpDown7);
-            this.tabPage3.Controls.Add(this.numericUpDown8);
-            this.tabPage3.Controls.Add(this.comboBox4);
-            this.tabPage3.Controls.Add(this.button10);
-            this.tabPage3.Controls.Add(this.button11);
+            this.tabPage3.Controls.Add(this.radiobtn2stsem);
+            this.tabPage3.Controls.Add(this.radiobtn1stsem);
+            this.tabPage3.Controls.Add(this.txtSsc);
+            this.tabPage3.Controls.Add(this.txtSsn);
+            this.tabPage3.Controls.Add(this.cmbSoy);
+            this.tabPage3.Controls.Add(this.BtnSclear);
+            this.tabPage3.Controls.Add(this.BtnSsave);
             this.tabPage3.Controls.Add(this.label21);
             this.tabPage3.Controls.Add(this.label23);
             this.tabPage3.Controls.Add(this.label24);
@@ -717,6 +716,7 @@
             this.tabPage3.Size = new System.Drawing.Size(792, 424);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "ADD SUBJECT";
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // label31
             // 
@@ -773,104 +773,53 @@
             this.label29.TabIndex = 49;
             this.label29.Text = "SUBJECT NAME";
             // 
-            // radioButton2
+            // txtSsc
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Checked = true;
-            this.radioButton2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.radioButton2.Location = new System.Drawing.Point(198, 117);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(129, 19);
-            this.radioButton2.TabIndex = 48;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "2ND SEMESTER";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.txtSsc.Location = new System.Drawing.Point(198, 210);
+            this.txtSsc.Name = "txtSsc";
+            this.txtSsc.Size = new System.Drawing.Size(138, 26);
+            this.txtSsc.TabIndex = 44;
             // 
-            // radioButton1
+            // txtSsn
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.radioButton1.Location = new System.Drawing.Point(198, 75);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(126, 19);
-            this.radioButton1.TabIndex = 47;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "1ST SEMESTER";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.txtSsn.Location = new System.Drawing.Point(198, 156);
+            this.txtSsn.Name = "txtSsn";
+            this.txtSsn.Size = new System.Drawing.Size(138, 26);
+            this.txtSsn.TabIndex = 43;
             // 
-            // numericUpDown2
+            // cmbSoy
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(575, 134);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(155, 26);
-            this.numericUpDown2.TabIndex = 46;
+            this.cmbSoy.FormattingEnabled = true;
+            this.cmbSoy.Items.AddRange(new object[] {
+            "1st Year",
+            "2nd Year",
+            "3rd Year",
+            "4th Year"});
+            this.cmbSoy.Location = new System.Drawing.Point(198, 19);
+            this.cmbSoy.Name = "cmbSoy";
+            this.cmbSoy.Size = new System.Drawing.Size(138, 26);
+            this.cmbSoy.TabIndex = 39;
             // 
-            // numericUpDown1
+            // BtnSclear
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(575, 187);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(155, 26);
-            this.numericUpDown1.TabIndex = 45;
+            this.BtnSclear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.BtnSclear.Location = new System.Drawing.Point(398, 251);
+            this.BtnSclear.Name = "BtnSclear";
+            this.BtnSclear.Size = new System.Drawing.Size(127, 33);
+            this.BtnSclear.TabIndex = 38;
+            this.BtnSclear.Text = "CLEAR";
+            this.BtnSclear.UseVisualStyleBackColor = false;
             // 
-            // textBox10
+            // BtnSsave
             // 
-            this.textBox10.Location = new System.Drawing.Point(198, 210);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(138, 26);
-            this.textBox10.TabIndex = 44;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(198, 156);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(138, 26);
-            this.textBox11.TabIndex = 43;
-            // 
-            // numericUpDown7
-            // 
-            this.numericUpDown7.Location = new System.Drawing.Point(575, 72);
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(155, 26);
-            this.numericUpDown7.TabIndex = 41;
-            // 
-            // numericUpDown8
-            // 
-            this.numericUpDown8.Location = new System.Drawing.Point(575, 20);
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(155, 26);
-            this.numericUpDown8.TabIndex = 40;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(198, 19);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(138, 26);
-            this.comboBox4.TabIndex = 39;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button10.Location = new System.Drawing.Point(399, 289);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(127, 33);
-            this.button10.TabIndex = 38;
-            this.button10.Text = "CLEAR";
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button11.Location = new System.Drawing.Point(209, 289);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(127, 33);
-            this.button11.TabIndex = 37;
-            this.button11.Text = "SAVE";
-            this.button11.UseVisualStyleBackColor = false;
+            this.BtnSsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.BtnSsave.Location = new System.Drawing.Point(220, 251);
+            this.BtnSsave.Name = "BtnSsave";
+            this.BtnSsave.Size = new System.Drawing.Size(127, 33);
+            this.BtnSsave.TabIndex = 37;
+            this.BtnSsave.Text = "SAVE";
+            this.BtnSsave.UseVisualStyleBackColor = false;
+            this.BtnSsave.Click += new System.EventHandler(this.BtnSsave_Click);
             // 
             // label21
             // 
@@ -908,24 +857,26 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.tabPage4.Controls.Add(this.txtUSsubid);
+            this.tabPage4.Controls.Add(this.label17);
+            this.tabPage4.Controls.Add(this.label33);
+            this.tabPage4.Controls.Add(this.txtUSnlh);
+            this.tabPage4.Controls.Add(this.txtUSnth);
+            this.tabPage4.Controls.Add(this.txtUSlh);
+            this.tabPage4.Controls.Add(this.txtUSneh);
             this.tabPage4.Controls.Add(this.dataGridView2);
-            this.tabPage4.Controls.Add(this.button4);
-            this.tabPage4.Controls.Add(this.button5);
-            this.tabPage4.Controls.Add(this.button9);
+            this.tabPage4.Controls.Add(this.btnSUclear);
+            this.tabPage4.Controls.Add(this.btnSUupdate);
+            this.tabPage4.Controls.Add(this.btnSUdelete);
             this.tabPage4.Controls.Add(this.label13);
             this.tabPage4.Controls.Add(this.label14);
             this.tabPage4.Controls.Add(this.label15);
             this.tabPage4.Controls.Add(this.label16);
-            this.tabPage4.Controls.Add(this.label17);
-            this.tabPage4.Controls.Add(this.radioButton3);
-            this.tabPage4.Controls.Add(this.radioButton4);
-            this.tabPage4.Controls.Add(this.numericUpDown3);
-            this.tabPage4.Controls.Add(this.numericUpDown4);
-            this.tabPage4.Controls.Add(this.textBox7);
-            this.tabPage4.Controls.Add(this.textBox8);
-            this.tabPage4.Controls.Add(this.numericUpDown5);
-            this.tabPage4.Controls.Add(this.numericUpDown6);
-            this.tabPage4.Controls.Add(this.comboBox3);
+            this.tabPage4.Controls.Add(this.radiobtnU2sem);
+            this.tabPage4.Controls.Add(this.radiobtnU1sem);
+            this.tabPage4.Controls.Add(this.txtUsubCode);
+            this.tabPage4.Controls.Add(this.txtUsubname);
+            this.tabPage4.Controls.Add(this.cmbUoffyear);
             this.tabPage4.Controls.Add(this.label18);
             this.tabPage4.Controls.Add(this.label19);
             this.tabPage4.Controls.Add(this.label32);
@@ -936,106 +887,46 @@
             this.tabPage4.Size = new System.Drawing.Size(792, 424);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "MANAGE SUBJECT";
+            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
-            // dataGridView2
+            // btnSUclear
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9});
-            this.dataGridView2.Location = new System.Drawing.Point(10, 247);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(735, 169);
-            this.dataGridView2.TabIndex = 74;
+            this.btnSUclear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnSUclear.Location = new System.Drawing.Point(697, 18);
+            this.btnSUclear.Name = "btnSUclear";
+            this.btnSUclear.Size = new System.Drawing.Size(87, 30);
+            this.btnSUclear.TabIndex = 73;
+            this.btnSUclear.Text = "CLEAR";
+            this.btnSUclear.UseVisualStyleBackColor = false;
             // 
-            // dataGridViewTextBoxColumn1
+            // btnSUupdate
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.btnSUupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnSUupdate.Location = new System.Drawing.Point(697, 73);
+            this.btnSUupdate.Name = "btnSUupdate";
+            this.btnSUupdate.Size = new System.Drawing.Size(87, 30);
+            this.btnSUupdate.TabIndex = 72;
+            this.btnSUupdate.Text = "UPDATE";
+            this.btnSUupdate.UseVisualStyleBackColor = false;
+            this.btnSUupdate.Click += new System.EventHandler(this.btnSUupdate_Click);
             // 
-            // dataGridViewTextBoxColumn2
+            // btnSUdelete
             // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "LECTURER NAME";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "EMPLOYEE ID";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "FACULTY";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "DEPARTMENT";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "CENTER";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "BUILDING";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "LEVEL";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "RANK";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button4.Location = new System.Drawing.Point(658, 36);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(87, 30);
-            this.button4.TabIndex = 73;
-            this.button4.Text = "CLEAR";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button5.Location = new System.Drawing.Point(658, 95);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(87, 30);
-            this.button5.TabIndex = 72;
-            this.button5.Text = "UPDATE";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button9.Location = new System.Drawing.Point(658, 148);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(87, 30);
-            this.button9.TabIndex = 71;
-            this.button9.Text = "DELETE";
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnSUdelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnSUdelete.Location = new System.Drawing.Point(697, 132);
+            this.btnSUdelete.Name = "btnSUdelete";
+            this.btnSUdelete.Size = new System.Drawing.Size(87, 30);
+            this.btnSUdelete.TabIndex = 71;
+            this.btnSUdelete.Text = "DELETE";
+            this.btnSUdelete.UseVisualStyleBackColor = false;
+            this.btnSUdelete.Click += new System.EventHandler(this.btnSUdelete_Click);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label13.Location = new System.Drawing.Point(332, 192);
+            this.label13.Location = new System.Drawing.Point(350, 192);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(210, 13);
             this.label13.TabIndex = 70;
@@ -1046,7 +937,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label14.Location = new System.Drawing.Point(332, 132);
+            this.label14.Location = new System.Drawing.Point(371, 138);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(155, 13);
             this.label14.TabIndex = 69;
@@ -1057,7 +948,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label15.Location = new System.Drawing.Point(332, 73);
+            this.label15.Location = new System.Drawing.Point(366, 73);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(194, 13);
             this.label15.TabIndex = 68;
@@ -1069,101 +960,66 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label16.Location = new System.Drawing.Point(332, 18);
+            this.label16.Location = new System.Drawing.Point(371, 25);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(189, 13);
             this.label16.TabIndex = 67;
             this.label16.Text = "NUMBER OF LECTURE HOURS";
             // 
-            // label17
+            // radiobtnU2sem
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label17.Location = new System.Drawing.Point(7, 148);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(124, 16);
-            this.label17.TabIndex = 66;
-            this.label17.Text = "SUBJECT NAME";
+            this.radiobtnU2sem.AutoSize = true;
+            this.radiobtnU2sem.Checked = true;
+            this.radiobtnU2sem.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radiobtnU2sem.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.radiobtnU2sem.Location = new System.Drawing.Point(188, 109);
+            this.radiobtnU2sem.Name = "radiobtnU2sem";
+            this.radiobtnU2sem.Size = new System.Drawing.Size(129, 19);
+            this.radiobtnU2sem.TabIndex = 65;
+            this.radiobtnU2sem.TabStop = true;
+            this.radiobtnU2sem.Text = "2ND SEMESTER";
+            this.radiobtnU2sem.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // radiobtnU1sem
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Checked = true;
-            this.radioButton3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.radioButton3.Location = new System.Drawing.Point(188, 109);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(129, 19);
-            this.radioButton3.TabIndex = 65;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "2ND SEMESTER";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radiobtnU1sem.AutoSize = true;
+            this.radiobtnU1sem.Checked = true;
+            this.radiobtnU1sem.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radiobtnU1sem.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.radiobtnU1sem.Location = new System.Drawing.Point(188, 80);
+            this.radiobtnU1sem.Name = "radiobtnU1sem";
+            this.radiobtnU1sem.Size = new System.Drawing.Size(126, 19);
+            this.radiobtnU1sem.TabIndex = 64;
+            this.radiobtnU1sem.TabStop = true;
+            this.radiobtnU1sem.Text = "1ST SEMESTER";
+            this.radiobtnU1sem.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // txtUsubCode
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Checked = true;
-            this.radioButton4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.radioButton4.Location = new System.Drawing.Point(188, 67);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(126, 19);
-            this.radioButton4.TabIndex = 64;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "1ST SEMESTER";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.txtUsubCode.Location = new System.Drawing.Point(188, 202);
+            this.txtUsubCode.Name = "txtUsubCode";
+            this.txtUsubCode.Size = new System.Drawing.Size(138, 26);
+            this.txtUsubCode.TabIndex = 61;
             // 
-            // numericUpDown3
+            // txtUsubname
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(543, 126);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(97, 26);
-            this.numericUpDown3.TabIndex = 63;
+            this.txtUsubname.Location = new System.Drawing.Point(188, 152);
+            this.txtUsubname.Name = "txtUsubname";
+            this.txtUsubname.Size = new System.Drawing.Size(138, 26);
+            this.txtUsubname.TabIndex = 60;
             // 
-            // numericUpDown4
+            // cmbUoffyear
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(543, 179);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(97, 26);
-            this.numericUpDown4.TabIndex = 62;
-            this.numericUpDown4.ValueChanged += new System.EventHandler(this.numericUpDown4_ValueChanged);
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(188, 202);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(138, 26);
-            this.textBox7.TabIndex = 61;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(188, 148);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(138, 26);
-            this.textBox8.TabIndex = 60;
-            // 
-            // numericUpDown5
-            // 
-            this.numericUpDown5.Location = new System.Drawing.Point(543, 67);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(97, 26);
-            this.numericUpDown5.TabIndex = 59;
-            // 
-            // numericUpDown6
-            // 
-            this.numericUpDown6.Location = new System.Drawing.Point(543, 12);
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(97, 26);
-            this.numericUpDown6.TabIndex = 58;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(188, 11);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(138, 26);
-            this.comboBox3.TabIndex = 57;
+            this.cmbUoffyear.FormattingEnabled = true;
+            this.cmbUoffyear.Items.AddRange(new object[] {
+            "1st Year",
+            "2nd Year",
+            "3rd Year",
+            "4th Year"});
+            this.cmbUoffyear.Location = new System.Drawing.Point(188, 37);
+            this.cmbUoffyear.Name = "cmbUoffyear";
+            this.cmbUoffyear.Size = new System.Drawing.Size(138, 26);
+            this.cmbUoffyear.TabIndex = 57;
             // 
             // label18
             // 
@@ -1181,7 +1037,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label19.Location = new System.Drawing.Point(8, 67);
+            this.label19.Location = new System.Drawing.Point(9, 87);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(166, 16);
             this.label19.TabIndex = 55;
@@ -1192,22 +1048,145 @@
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label32.Location = new System.Drawing.Point(8, 12);
+            this.label32.Location = new System.Drawing.Point(9, 47);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(124, 16);
             this.label32.TabIndex = 54;
             this.label32.Text = "OFFERED YEAR";
             // 
-            // btnMdelete
+            // txtSneh
             // 
-            this.btnMdelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnMdelete.Location = new System.Drawing.Point(237, 174);
-            this.btnMdelete.Name = "btnMdelete";
-            this.btnMdelete.Size = new System.Drawing.Size(101, 30);
-            this.btnMdelete.TabIndex = 56;
-            this.btnMdelete.Text = "Delete";
-            this.btnMdelete.UseVisualStyleBackColor = false;
-            this.btnMdelete.Click += new System.EventHandler(this.btnMdelete_Click);
+            this.txtSneh.Location = new System.Drawing.Point(587, 193);
+            this.txtSneh.Name = "txtSneh";
+            this.txtSneh.Size = new System.Drawing.Size(138, 26);
+            this.txtSneh.TabIndex = 54;
+            // 
+            // txtlh
+            // 
+            this.txtlh.Location = new System.Drawing.Point(587, 127);
+            this.txtlh.Name = "txtlh";
+            this.txtlh.Size = new System.Drawing.Size(138, 26);
+            this.txtlh.TabIndex = 55;
+            // 
+            // txtSnth
+            // 
+            this.txtSnth.Location = new System.Drawing.Point(587, 65);
+            this.txtSnth.Name = "txtSnth";
+            this.txtSnth.Size = new System.Drawing.Size(138, 26);
+            this.txtSnth.TabIndex = 56;
+            // 
+            // txtSnlh
+            // 
+            this.txtSnlh.Location = new System.Drawing.Point(587, 19);
+            this.txtSnlh.Name = "txtSnlh";
+            this.txtSnlh.Size = new System.Drawing.Size(138, 26);
+            this.txtSnlh.TabIndex = 57;
+            // 
+            // radiobtn1stsem
+            // 
+            this.radiobtn1stsem.AutoSize = true;
+            this.radiobtn1stsem.Checked = true;
+            this.radiobtn1stsem.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radiobtn1stsem.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.radiobtn1stsem.Location = new System.Drawing.Point(198, 75);
+            this.radiobtn1stsem.Name = "radiobtn1stsem";
+            this.radiobtn1stsem.Size = new System.Drawing.Size(126, 19);
+            this.radiobtn1stsem.TabIndex = 47;
+            this.radiobtn1stsem.TabStop = true;
+            this.radiobtn1stsem.Text = "1ST SEMESTER";
+            this.radiobtn1stsem.UseVisualStyleBackColor = true;
+            this.radiobtn1stsem.CheckedChanged += new System.EventHandler(this.radiobtn1stsem_CheckedChanged);
+            // 
+            // radiobtn2stsem
+            // 
+            this.radiobtn2stsem.AutoSize = true;
+            this.radiobtn2stsem.Checked = true;
+            this.radiobtn2stsem.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radiobtn2stsem.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.radiobtn2stsem.Location = new System.Drawing.Point(198, 117);
+            this.radiobtn2stsem.Name = "radiobtn2stsem";
+            this.radiobtn2stsem.Size = new System.Drawing.Size(129, 19);
+            this.radiobtn2stsem.TabIndex = 48;
+            this.radiobtn2stsem.TabStop = true;
+            this.radiobtn2stsem.Text = "2ND SEMESTER";
+            this.radiobtn2stsem.UseVisualStyleBackColor = true;
+            this.radiobtn2stsem.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(12, 236);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(772, 180);
+            this.dataGridView2.TabIndex = 74;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(6, 290);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(772, 124);
+            this.dataGridView3.TabIndex = 75;
+            this.dataGridView3.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellClick);
+            // 
+            // txtUSneh
+            // 
+            this.txtUSneh.Location = new System.Drawing.Point(572, 185);
+            this.txtUSneh.Name = "txtUSneh";
+            this.txtUSneh.Size = new System.Drawing.Size(94, 26);
+            this.txtUSneh.TabIndex = 75;
+            // 
+            // txtUSlh
+            // 
+            this.txtUSlh.Location = new System.Drawing.Point(566, 125);
+            this.txtUSlh.Name = "txtUSlh";
+            this.txtUSlh.Size = new System.Drawing.Size(100, 26);
+            this.txtUSlh.TabIndex = 76;
+            // 
+            // txtUSnth
+            // 
+            this.txtUSnth.Location = new System.Drawing.Point(566, 66);
+            this.txtUSnth.Name = "txtUSnth";
+            this.txtUSnth.Size = new System.Drawing.Size(100, 26);
+            this.txtUSnth.TabIndex = 77;
+            // 
+            // txtUSnlh
+            // 
+            this.txtUSnlh.Location = new System.Drawing.Point(566, 18);
+            this.txtUSnlh.Name = "txtUSnlh";
+            this.txtUSnlh.Size = new System.Drawing.Size(100, 26);
+            this.txtUSnlh.TabIndex = 78;
+            this.txtUSnlh.TextChanged += new System.EventHandler(this.txtUSnlh_TextChanged);
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label33.Location = new System.Drawing.Point(8, 162);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(124, 16);
+            this.label33.TabIndex = 79;
+            this.label33.Text = "SUBJECT NAME";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label17.Location = new System.Drawing.Point(9, 18);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(79, 16);
+            this.label17.TabIndex = 80;
+            this.label17.Text = "Subject ID";
+            // 
+            // txtUSsubid
+            // 
+            this.txtUSsubid.Location = new System.Drawing.Point(188, 5);
+            this.txtUSsubid.Name = "txtUSsubid";
+            this.txtUSsubid.Size = new System.Drawing.Size(138, 26);
+            this.txtUSsubid.TabIndex = 81;
             // 
             // Lecturer
             // 
@@ -1225,17 +1204,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1275,13 +1247,11 @@
         private System.Windows.Forms.ComboBox cmbFac;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.NumericUpDown numericUpDown7;
-        private System.Windows.Forms.NumericUpDown numericUpDown8;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.TextBox txtSsc;
+        private System.Windows.Forms.TextBox txtSsn;
+        private System.Windows.Forms.ComboBox cmbSoy;
+        private System.Windows.Forms.Button BtnSclear;
+        private System.Windows.Forms.Button BtnSsave;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
@@ -1304,10 +1274,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn LEVEL;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label22;
@@ -1317,33 +1283,33 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.RadioButton radiobtnU2sem;
+        private System.Windows.Forms.RadioButton radiobtnU1sem;
+        private System.Windows.Forms.TextBox txtUsubCode;
+        private System.Windows.Forms.TextBox txtUsubname;
+        private System.Windows.Forms.ComboBox cmbUoffyear;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.Button btnSUclear;
+        private System.Windows.Forms.Button btnSUupdate;
+        private System.Windows.Forms.Button btnSUdelete;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button btnMdelete;
+        private System.Windows.Forms.TextBox txtSnlh;
+        private System.Windows.Forms.TextBox txtSnth;
+        private System.Windows.Forms.TextBox txtlh;
+        private System.Windows.Forms.TextBox txtSneh;
+        private System.Windows.Forms.RadioButton radiobtn2stsem;
+        private System.Windows.Forms.RadioButton radiobtn1stsem;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.TextBox txtUSnlh;
+        private System.Windows.Forms.TextBox txtUSnth;
+        private System.Windows.Forms.TextBox txtUSlh;
+        private System.Windows.Forms.TextBox txtUSneh;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TextBox txtUSsubid;
+        private System.Windows.Forms.Label label17;
     }
 }

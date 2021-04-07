@@ -20,35 +20,35 @@ namespace TimeTable
             connectionString = ConfigurationManager.AppSettings["connectionString"];
             factory = DbProviderFactories.GetFactory(provider);
         }
-        public List<Lecs> GetAll()
-        {
-            var lect = new List<Lecs>();
-            using (var connection = factory.CreateConnection())
-            {
-                connection.ConnectionString = connectionString;
-                connection.Open();
-                var command = factory.CreateCommand();
-                command.Connection = connection;
-                command.CommandText = "Select * From Lecs;";
-                using (DbDataReader reader = command.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        lect.Add(new Lecs
-                        {
-                            Lecturer_ID = (int)reader["Lecturer_ID"],
-                            Lecturer_name = (string)reader["Lecturer_name"],
-                            Faculty = (string)reader["Faculty"],
-                            Department = (string)reader["Department"],
-                            Building = (string)reader["Building"],
-                            Level = (string)reader["Level"]
-                        });
-                    }
-                }
-            }
+        //public List<Lecs> GetAll()
+       // {
+            //var lect = new List<Lecs>();
+            //using (var connection = factory.CreateConnection())
+            //{
+               // connection.ConnectionString = connectionString;
+                //connection.Open();
+               // var command = factory.CreateCommand();
+                //command.Connection = connection;
+                //command.CommandText = "Select * From Lecs;";
+                //using (DbDataReader reader = command.ExecuteReader())
+                //{
+                    //while (reader.Read())
+                    //{
+                        //lect.Add(new Lecs
+                       // {
+                            //Lecturer_ID = (int)reader["Lecturer_ID"],
+                           // Lecturer_name = (string)reader["Lecturer_name"],
+                           // Faculty = (string)reader["Faculty"],
+                           // Department = (string)reader["Department"],
+                           // Building = (string)reader["Building"],
+                           // Level = (string)reader["Level"]
+                        //});
+                    //}
+                //}
+            //}
 
-            return lect;
-        }
+            //return lect;
+        //}
 
         public void Add(Lecs lecturers)
         {
