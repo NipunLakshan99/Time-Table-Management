@@ -8,53 +8,48 @@ using System.Threading.Tasks;
 
 namespace TimeTable
 {
-    class SubjectRepo
+    class PlaceRepo
     {
         DbProviderFactory factory;
         string provider;
         string connectionString;
 
-        public SubjectRepo()
+        public PlaceRepo()
         {
             provider = ConfigurationManager.AppSettings["provider"];
             connectionString = ConfigurationManager.AppSettings["connectionString"];
             factory = DbProviderFactories.GetFactory(provider);
         }
 
-        public List<Subject> GetAll()
+        public List<Place> GetAll()
         {
-            var subjects = new List<Subject>();
+            var places = new List<Place>();
             using (var connection = factory.CreateConnection())
             {
                 connection.ConnectionString = connectionString;
                 connection.Open();
                 var command = factory.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = "Select * From Subject;";
+                command.CommandText = "Select * From Location;";
                 using (DbDataReader reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        subjects.Add(new Subject
+                        places.Add(new Place
                         {
-                            Subject_ID = (int)reader["Subject_ID"],
-                            Offerd_year = (string)reader["Offerd_year"],
-                            Offerd_sem = (string)reader["Offerd_sem"],
-                            Subject_name = (string)reader["Subject_name"],
-                            Subject_Code = (string)reader["Subject_Code"],
-                            No_Lec_hrs = (string)reader["No_Lec_hrs"],
-                            No_Tute_hrs = (string)reader["No_Tute_hrs"],
-                            No_Lab_hrs = (string)reader["No_Lab_hrs"],
-                            No_Evaluation_hrs = (string)reader["No_Evaluation_hrs"]
+                            Location_ID = (int)reader["Location_ID"],
+                            Building_name = (string)reader["Building_name"],
+                            Room_name = (string)reader["Room_name"],
+                            Room_type = (string)reader["Room_type"],
+                            Capacity = (string)reader["Capacity"]
                         });
                     }
                 }
             }
-
-            return subjects;
+            return places;
         }
 
-        public void Add(Subject subject)
+        public void Add(Place place)
         {
             using (var connection = factory.CreateConnection())
             {
@@ -62,12 +57,13 @@ namespace TimeTable
                 connection.Open();
                 var command = factory.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = $"Insert into Subject(Offerd_year,Offerd_sem,Subject_name,Subject_Code,No_Lec_hrs,No_Tute_hrs,No_Lab_hrs,No_Evaluation_hrs) Values('{subject.Offerd_year}','{subject.Offerd_sem}','{subject.Subject_name}','{subject.Subject_Code}','{subject.No_Lec_hrs}','{subject.No_Tute_hrs}','{subject.No_Lab_hrs}','{subject.No_Evaluation_hrs}');";
+                command.CommandText = $"Insert into Location(Building_name,Room_name,Room_type,Capacity) Values('{place.Building_name}','{place.Room_name}','{place.Room_type}','{place.Capacity}');";
                 command.ExecuteNonQuery();
+
             }
         }
 
-        public void Update(Subject subject)
+        public void Update(Place place)
         {
             using (var connection = factory.CreateConnection())
             {
@@ -75,14 +71,13 @@ namespace TimeTable
                 connection.Open();
                 var command = factory.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = $"Update Subject set Offerd_year ='{subject.Offerd_year}',Offerd_sem ='{subject.Offerd_sem}',Subject_name ='{subject.Subject_name}',Subject_Code ='{subject.Subject_Code}',No_Lec_hrs ='{subject.No_Lec_hrs}',No_Tute_hrs ='{subject.No_Tute_hrs}',No_Lab_hrs ='{subject.No_Lab_hrs}',No_Evaluation_hrs ='{subject.No_Evaluation_hrs}' where Subject_ID = {subject.Subject_ID};";
+                command.CommandText = $"Update Location set Building_name ='{place.Building_name}',Room_name ='{place.Room_name}',Room_type ='{place.Room_type}',Capacity ='{place.Capacity}'where Location_ID = {place.Location_ID};";
                 command.ExecuteNonQuery();
 
             }
-
         }
 
-        public void Delete(int Subject_ID)
+        public void Delete(int Location_ID)
         {
             using (var connection = factory.CreateConnection())
             {
@@ -90,12 +85,10 @@ namespace TimeTable
                 connection.Open();
                 var command = factory.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = $"Delete From Subject where Subject_ID  = {Subject_ID};";
+                command.CommandText = $"Delete From Location where Location_ID = {Location_ID};";
                 command.ExecuteNonQuery();
-
             }
-        
-        }
 
+        }
     }
 }
