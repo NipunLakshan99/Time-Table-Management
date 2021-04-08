@@ -167,6 +167,7 @@
             this.tabPage1.Size = new System.Drawing.Size(792, 424);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "ADD LECTURER";
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // dataGridView4
             // 
@@ -175,11 +176,12 @@
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.Size = new System.Drawing.Size(751, 168);
             this.dataGridView4.TabIndex = 37;
+            this.dataGridView4.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellClick);
             // 
             // btnsave
             // 
             this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnsave.Location = new System.Drawing.Point(407, 187);
+            this.btnsave.Location = new System.Drawing.Point(393, 187);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(75, 33);
             this.btnsave.TabIndex = 36;
@@ -311,6 +313,7 @@
             this.btnclear.TabIndex = 23;
             this.btnclear.Text = "CLEAR";
             this.btnclear.UseVisualStyleBackColor = false;
+            this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
             // 
             // btngen
             // 

@@ -155,12 +155,14 @@ namespace TimeTable
                     Lecturer_name = txtlecname.Text,
                     Faculty = cmbFac.Text,
                     Department = cmbDep.Text,
+                    Center = cmbCenter.Text,
                     Building = cmbBuild.Text,
                     Level = cmblvl.Text
                 });
                 txtlecname.Text = string.Empty;
                 cmbFac.Text = string.Empty;
                 cmbDep.Text = string.Empty;
+                cmbCenter.Text = string.Empty;
                 cmbBuild.Text = string.Empty;
                 cmblvl.Text = string.Empty;
                 dataGridView1.DataSource = TeacherRepo.GetAll();
@@ -177,6 +179,7 @@ namespace TimeTable
                 txtUlec.Text = teacher.Lecturer_name;
                 cmbUfac.Text = teacher.Faculty;
                 cmbUdep.Text = teacher.Department;
+                cmbCenter.Text = teacher.Center;
                 cmbUbuild.Text = teacher.Building;
                 cmbUlvl.Text = teacher.Level;
                 txtUrank.Text = teacher.Rank;
@@ -186,7 +189,7 @@ namespace TimeTable
 
         private void btnMUpdate_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtUid.Text) && !string.IsNullOrEmpty(txtUlec.Text) && !string.IsNullOrEmpty(cmbUfac.Text) && !string.IsNullOrEmpty(cmbUdep.Text) && !string.IsNullOrEmpty(cmbUbuild.Text) && !string.IsNullOrEmpty(cmbUlvl.Text) && !string.IsNullOrEmpty(txtUrank.Text))
+            if (!string.IsNullOrEmpty(txtUid.Text) && !string.IsNullOrEmpty(txtUlec.Text) && !string.IsNullOrEmpty(cmbUfac.Text) && !string.IsNullOrEmpty(cmbUdep.Text) && !string.IsNullOrEmpty(cmbUbuild.Text) && !string.IsNullOrEmpty(cmbUcen.Text) && !string.IsNullOrEmpty(cmbUlvl.Text) && !string.IsNullOrEmpty(txtUrank.Text))
             {
                 TeacherRepo.Update(new Teacher
                 {
@@ -194,6 +197,7 @@ namespace TimeTable
                     Lecturer_name = txtUlec.Text,
                     Faculty = cmbUfac.Text,
                     Department = cmbUdep.Text,
+                    Center = cmbUcen.Text,
                     Building = cmbUbuild.Text,
                     //Lvl = cmbUlvl.Text,
                    //Rank = txtUrank.Text,
@@ -205,12 +209,13 @@ namespace TimeTable
 
         private void btnMdelete_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtUid.Text) && !string.IsNullOrEmpty(txtUlec.Text) && !string.IsNullOrEmpty(cmbUfac.Text) && !string.IsNullOrEmpty(cmbUdep.Text) && !string.IsNullOrEmpty(cmbUbuild.Text) && !string.IsNullOrEmpty(cmbUlvl.Text) && !string.IsNullOrEmpty(txtUrank.Text))
+            if (!string.IsNullOrEmpty(txtUid.Text) && !string.IsNullOrEmpty(txtUlec.Text) && !string.IsNullOrEmpty(cmbUfac.Text) && !string.IsNullOrEmpty(cmbUdep.Text) && !string.IsNullOrEmpty(cmbUcen.Text) && !string.IsNullOrEmpty(cmbUbuild.Text) && !string.IsNullOrEmpty(cmbUlvl.Text) && !string.IsNullOrEmpty(txtUrank.Text))
             {
                 TeacherRepo.Delete(int.Parse(txtUid.Text));
                 txtUlec.Text = string.Empty;
                 cmbUfac.Text = string.Empty;
                 cmbUdep.Text = string.Empty;
+                cmbUcen.Text = string.Empty;
                 cmbUbuild.Text = string.Empty;
                 cmbUlvl.Text = string.Empty;
                 txtUrank.Text = string.Empty;
@@ -354,6 +359,39 @@ namespace TimeTable
         private void cmblvl_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnclear_Click(object sender, EventArgs e)
+        {
+            txtlecname.Text = string.Empty;
+            cmbFac.Text = string.Empty;
+            cmbDep.Text = string.Empty;
+            cmbCenter.Text = string.Empty;
+            cmbBuild.Text = string.Empty;
+            cmblvl.Text = string.Empty;
+        }
+
+        private void dataGridView4_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                var row = dataGridView1.SelectedRows[0];
+                var teacher = (Teacher)row.DataBoundItem;
+                txtUid.Text = teacher.Lecturer_ID.ToString();
+                txtUlec.Text = teacher.Lecturer_name;
+                cmbUfac.Text = teacher.Faculty;
+                cmbUdep.Text = teacher.Department;
+                cmbCenter.Text = teacher.Center;
+                cmbUbuild.Text = teacher.Building;
+                cmbUlvl.Text = teacher.Level;
+                txtUrank.Text = teacher.Rank;
+
+            }
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+            dataGridView4.DataSource = TeacherRepo.GetAll();
         }
     }
 }

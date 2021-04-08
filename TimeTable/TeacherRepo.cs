@@ -42,8 +42,9 @@ namespace TimeTable
                             Lecturer_name = (string)reader["Lecturer_name"],
                             Faculty = (string)reader["Faculty"],
                             Department = (string)reader["Department"],
+                            Center = (string)reader["Center"],
                             Building = (string)reader["Building"]
-                            //Level = (string)reader["Level"]
+                            Level = (string)reader["Level"]
                         });
                     }
                 }
@@ -61,7 +62,7 @@ namespace TimeTable
                 connection.Open();
                 var command = factory.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = $"Insert into Teacher(Lecturer_name,Faculty,Department,Building,Lvl,Rank) Values('{teacher.Lecturer_name}','{teacher.Faculty}','{teacher.Department}','{teacher.Building}','{teacher.Level}','{teacher.Rank}');";
+                command.CommandText = $"Insert into Teacher(Lecturer_name,Faculty,Department,Center,Building,Lvl,Rank) Values('{teacher.Lecturer_name}','{teacher.Faculty}','{teacher.Department}','{teacher.Center}','{teacher.Building}','{teacher.Level}','{teacher.Rank}');";
                 command.ExecuteNonQuery();
             }
         }
@@ -73,7 +74,7 @@ namespace TimeTable
                 connection.Open();
                 var command = factory.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = $"Update Teacher set Lecturer_name ='{teacher.Lecturer_name}',Faculty ='{teacher.Faculty}',Department ='{teacher.Department}',Building ='{teacher.Building}',Lvl ='{teacher.Level}',Rank='{teacher.Rank}' where Lecturer_ID = {teacher.Lecturer_ID};";
+                command.CommandText = $"Update Teacher set Lecturer_name ='{teacher.Lecturer_name}',Faculty ='{teacher.Faculty}',Department ='{teacher.Department}',Center ='{teacher.Center}',Building ='{teacher.Building}',Lvl ='{teacher.Level}',Rank='{teacher.Rank}' where Lecturer_ID = {teacher.Lecturer_ID};";
                 command.ExecuteNonQuery();
 
             }
