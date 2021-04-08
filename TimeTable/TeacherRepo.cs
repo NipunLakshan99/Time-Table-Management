@@ -8,49 +8,52 @@ using System.Threading.Tasks;
 
 namespace TimeTable
 {
-    class LecRepo
+    class TeacherRepo
     {
         DbProviderFactory factory;
         string provider;
         string connectionString;
 
-        public LecRepo()
+        public TeacherRepo()
         {
             provider = ConfigurationManager.AppSettings["provider"];
             connectionString = ConfigurationManager.AppSettings["connectionString"];
             factory = DbProviderFactories.GetFactory(provider);
         }
-        public List<> GetAll()
-       {
-            var lect = new List<Lecs>();
-            using (var connection = factory.CreateConnection())
+
+        public List<Teacher>GetAll()
+        {
+            var teachers = new List<Teacher>();
+            using(var connection = factory.CreateConnection())
             {
+
                 connection.ConnectionString = connectionString;
                 connection.Open();
                 var command = factory.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = "Select * From Lecs;";
+                command.CommandText = "Select * From Teacher;";
                 using (DbDataReader reader = command.ExecuteReader())
                 {
-                    while (reader.Read())
+                    while(reader.Read())
                     {
-                        lect.Add(new Lecs
-                       {
+                        teachers.Add(new Teacher
+                        {
                             Lecturer_ID = (int)reader["Lecturer_ID"],
                             Lecturer_name = (string)reader["Lecturer_name"],
                             Faculty = (string)reader["Faculty"],
                             Department = (string)reader["Department"],
                             Building = (string)reader["Building"],
                             Level = (string)reader["Level"]
-                        });
+                        };
                     }
                 }
+
             }
 
-            return lect;
+            return teachers;
         }
 
-        public void Add()
+        public void Add(Teacher teacher)
         {
             using (var connection = factory.CreateConnection())
             {
@@ -58,12 +61,11 @@ namespace TimeTable
                 connection.Open();
                 var command = factory.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = $"Insert into Lecs(Lecturer_name,Faculty,Department,Building,Lvl,Rank) Values('{lecturers.Lecturer_name}','{lecturers.Faculty}','{lecturers.Department}','{lecturers.Building}','{lecturers.Level}','{lecturers.Rank}');";
+                command.CommandText = $"Insert into Teacher(Lecturer_name,Faculty,Department,Building,Lvl,Rank) Values('{teacher.Lecturer_name}','{teacher.Faculty}','{teacher.Department}','{teacher.Building}','{teacher.Level}','{teacher.Rank}');";
                 command.ExecuteNonQuery();
             }
         }
-
-        public void Update()
+        public void Update(Teacher teacher)
         {
             using (var connection = factory.CreateConnection())
             {
@@ -71,12 +73,11 @@ namespace TimeTable
                 connection.Open();
                 var command = factory.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = $"Update Lecs set Lecturer_name ='{lecturers.Lecturer_name}',Faculty ='{lecturers.Faculty}',Department ='{lecturers.Department}',Building ='{lecturers.Building}',Lvl ='{lecturers.Level}',Rank='{lecturers.Rank}' where Lecturer_ID = {lecturers.Lecturer_ID};";
+                command.CommandText = $"Update Teacher set Lecturer_name ='{teacher.Lecturer_name}',Faculty ='{teacher.Faculty}',Department ='{teacher.Department}',Building ='{teacher.Building}',Lvl ='{teacher.Level}',Rank='{teacher.Rank}' where Lecturer_ID = {teacher.Lecturer_ID};";
                 command.ExecuteNonQuery();
 
             }
         }
-
         public void Delete(int Lecturer_ID)
         {
             using (var connection = factory.CreateConnection())
@@ -85,10 +86,12 @@ namespace TimeTable
                 connection.Open();
                 var command = factory.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = $"Delete From Lecs where Lecturer_ID  = {Lecturer_ID};";
+                command.CommandText = $"Delete From Teacher where Lecturer_ID  = {Lecturer_ID};";
                 command.ExecuteNonQuery();
 
             }
         }
+
+
     }
 }

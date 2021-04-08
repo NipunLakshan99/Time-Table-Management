@@ -37,7 +37,6 @@
             this.cmbFac = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.txtlecid = new System.Windows.Forms.TextBox();
             this.txtrank = new System.Windows.Forms.TextBox();
             this.txtlecname = new System.Windows.Forms.TextBox();
             this.cmbCenter = new System.Windows.Forms.ComboBox();
@@ -47,7 +46,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnMdelete = new System.Windows.Forms.Button();
@@ -116,6 +114,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -124,6 +123,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -142,6 +142,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.tabPage1.Controls.Add(this.dataGridView4);
             this.tabPage1.Controls.Add(this.btnsave);
             this.tabPage1.Controls.Add(this.cmblvl);
             this.tabPage1.Controls.Add(this.cmbBuild);
@@ -149,7 +150,6 @@
             this.tabPage1.Controls.Add(this.cmbFac);
             this.tabPage1.Controls.Add(this.label26);
             this.tabPage1.Controls.Add(this.label25);
-            this.tabPage1.Controls.Add(this.txtlecid);
             this.tabPage1.Controls.Add(this.txtrank);
             this.tabPage1.Controls.Add(this.txtlecname);
             this.tabPage1.Controls.Add(this.cmbCenter);
@@ -159,7 +159,6 @@
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -172,7 +171,7 @@
             // btnsave
             // 
             this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnsave.Location = new System.Drawing.Point(516, 332);
+            this.btnsave.Location = new System.Drawing.Point(407, 187);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(75, 33);
             this.btnsave.TabIndex = 36;
@@ -189,10 +188,11 @@
             "3",
             "4",
             "5"});
-            this.cmblvl.Location = new System.Drawing.Point(516, 155);
+            this.cmblvl.Location = new System.Drawing.Point(516, 80);
             this.cmblvl.Name = "cmblvl";
             this.cmblvl.Size = new System.Drawing.Size(193, 26);
             this.cmblvl.TabIndex = 35;
+            this.cmblvl.SelectedIndexChanged += new System.EventHandler(this.cmblvl_SelectedIndexChanged);
             // 
             // cmbBuild
             // 
@@ -208,7 +208,7 @@
             "SLIIT KANDY Main",
             "SLIIT KURUNAGALA Main",
             "SLIIT JAFFNA Main"});
-            this.cmbBuild.Location = new System.Drawing.Point(516, 82);
+            this.cmbBuild.Location = new System.Drawing.Point(516, 23);
             this.cmbBuild.Name = "cmbBuild";
             this.cmbBuild.Size = new System.Drawing.Size(193, 26);
             this.cmbBuild.TabIndex = 34;
@@ -222,7 +222,7 @@
             "Business Department",
             "Humanity and science Department",
             ""});
-            this.cmbDep.Location = new System.Drawing.Point(173, 234);
+            this.cmbDep.Location = new System.Drawing.Point(173, 138);
             this.cmbDep.Name = "cmbDep";
             this.cmbDep.Size = new System.Drawing.Size(193, 26);
             this.cmbDep.TabIndex = 33;
@@ -237,7 +237,7 @@
             "Humanity and science",
             "",
             ""});
-            this.cmbFac.Location = new System.Drawing.Point(173, 159);
+            this.cmbFac.Location = new System.Drawing.Point(173, 76);
             this.cmbFac.Name = "cmbFac";
             this.cmbFac.Size = new System.Drawing.Size(193, 26);
             this.cmbFac.TabIndex = 32;
@@ -247,7 +247,7 @@
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label26.Location = new System.Drawing.Point(403, 236);
+            this.label26.Location = new System.Drawing.Point(411, 144);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(57, 20);
             this.label26.TabIndex = 31;
@@ -258,29 +258,22 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label25.Location = new System.Drawing.Point(403, 84);
+            this.label25.Location = new System.Drawing.Point(403, 29);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(95, 20);
             this.label25.TabIndex = 30;
             this.label25.Text = "BUILDING";
             // 
-            // txtlecid
-            // 
-            this.txtlecid.Location = new System.Drawing.Point(173, 19);
-            this.txtlecid.Name = "txtlecid";
-            this.txtlecid.Size = new System.Drawing.Size(193, 26);
-            this.txtlecid.TabIndex = 29;
-            // 
             // txtrank
             // 
-            this.txtrank.Location = new System.Drawing.Point(516, 230);
+            this.txtrank.Location = new System.Drawing.Point(516, 134);
             this.txtrank.Name = "txtrank";
             this.txtrank.Size = new System.Drawing.Size(193, 26);
             this.txtrank.TabIndex = 28;
             // 
             // txtlecname
             // 
-            this.txtlecname.Location = new System.Drawing.Point(173, 86);
+            this.txtlecname.Location = new System.Drawing.Point(173, 21);
             this.txtlecname.Name = "txtlecname";
             this.txtlecname.Size = new System.Drawing.Size(193, 26);
             this.txtlecname.TabIndex = 27;
@@ -296,7 +289,7 @@
             "SLIIT KANDY",
             "SLIIT KURUNAGALA",
             "SLIIT JAFFNA"});
-            this.cmbCenter.Location = new System.Drawing.Point(516, 19);
+            this.cmbCenter.Location = new System.Drawing.Point(173, 191);
             this.cmbCenter.Name = "cmbCenter";
             this.cmbCenter.Size = new System.Drawing.Size(193, 26);
             this.cmbCenter.TabIndex = 24;
@@ -304,7 +297,7 @@
             // btnclear
             // 
             this.btnclear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnclear.Location = new System.Drawing.Point(354, 332);
+            this.btnclear.Location = new System.Drawing.Point(506, 187);
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(75, 33);
             this.btnclear.TabIndex = 23;
@@ -314,7 +307,7 @@
             // btngen
             // 
             this.btngen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btngen.Location = new System.Drawing.Point(121, 332);
+            this.btngen.Location = new System.Drawing.Point(604, 187);
             this.btngen.Name = "btngen";
             this.btngen.Size = new System.Drawing.Size(168, 33);
             this.btngen.TabIndex = 21;
@@ -327,7 +320,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(403, 161);
+            this.label6.Location = new System.Drawing.Point(403, 86);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 20);
             this.label6.TabIndex = 20;
@@ -338,7 +331,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(403, 21);
+            this.label5.Location = new System.Drawing.Point(17, 197);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 20);
             this.label5.TabIndex = 19;
@@ -349,7 +342,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(8, 240);
+            this.label4.Location = new System.Drawing.Point(8, 140);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(128, 20);
             this.label4.TabIndex = 18;
@@ -360,29 +353,18 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(8, 159);
+            this.label3.Location = new System.Drawing.Point(8, 82);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 20);
             this.label3.TabIndex = 17;
             this.label3.Text = "FACULTY";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(8, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 20);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "EMPLOYEE ID";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(8, 88);
+            this.label1.Location = new System.Drawing.Point(8, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(159, 20);
             this.label1.TabIndex = 15;
@@ -525,14 +507,14 @@
             // 
             // txtUid
             // 
-            this.txtUid.Location = new System.Drawing.Point(196, 52);
+            this.txtUid.Location = new System.Drawing.Point(196, 12);
             this.txtUid.Name = "txtUid";
             this.txtUid.Size = new System.Drawing.Size(178, 26);
             this.txtUid.TabIndex = 45;
             // 
             // txtUlec
             // 
-            this.txtUlec.Location = new System.Drawing.Point(196, 12);
+            this.txtUlec.Location = new System.Drawing.Point(196, 52);
             this.txtUlec.Name = "txtUlec";
             this.txtUlec.Size = new System.Drawing.Size(178, 26);
             this.txtUlec.TabIndex = 43;
@@ -605,18 +587,18 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label11.Location = new System.Drawing.Point(20, 57);
+            this.label11.Location = new System.Drawing.Point(20, 17);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(108, 16);
             this.label11.TabIndex = 34;
-            this.label11.Text = "EMPLOYEE ID";
+            this.label11.Text = "LECTURER ID";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label12.Location = new System.Drawing.Point(20, 17);
+            this.label12.Location = new System.Drawing.Point(20, 62);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(136, 16);
             this.label12.TabIndex = 33;
@@ -1124,6 +1106,14 @@
             this.label32.TabIndex = 54;
             this.label32.Text = "OFFERED YEAR";
             // 
+            // dataGridView4
+            // 
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(21, 234);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(751, 168);
+            this.dataGridView4.TabIndex = 37;
+            // 
             // Lecturer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1144,6 +1134,7 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1155,7 +1146,6 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TextBox txtlecid;
         private System.Windows.Forms.TextBox txtrank;
         private System.Windows.Forms.TextBox txtlecname;
         private System.Windows.Forms.ComboBox cmbCenter;
@@ -1165,7 +1155,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button8;
@@ -1238,5 +1227,6 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.TextBox txtUSsubid;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.DataGridView dataGridView4;
     }
 }

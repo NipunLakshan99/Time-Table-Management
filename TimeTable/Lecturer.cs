@@ -12,7 +12,8 @@ namespace TimeTable
 {
     public partial class Lecturer : Form
     {
-        LecRepo LecRepo = new LecRepo();
+
+        TeacherRepo TeacherRepo = new TeacherRepo();
         SubjectRepo SubjectRepo = new SubjectRepo();
         public Lecturer()
         {
@@ -126,7 +127,7 @@ namespace TimeTable
 
         private void tabPage2_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = LecRepo.GetAll();
+            dataGridView1.DataSource = TeacherRepo.GetAll();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -149,7 +150,7 @@ namespace TimeTable
         {
             if (!string.IsNullOrEmpty(txtlecname.Text) && !string.IsNullOrEmpty(cmbFac.Text) && !string.IsNullOrEmpty(cmbDep.Text) && !string.IsNullOrEmpty(cmbCenter.Text) && !string.IsNullOrEmpty(cmbBuild.Text) && !string.IsNullOrEmpty(cmblvl.Text) && !string.IsNullOrEmpty(txtrank.Text))
             {
-                LecRepo.Add(new Lecs
+               TeacherRepo.Add(new Teacher
                 {
                     Lecturer_name = txtlecname.Text,
                     Faculty = cmbFac.Text,
@@ -162,7 +163,7 @@ namespace TimeTable
                 cmbDep.Text = string.Empty;
                 cmbBuild.Text = string.Empty;
                 cmblvl.Text = string.Empty;
-                dataGridView1.DataSource = LecRepo.GetAll();
+                dataGridView1.DataSource = TeacherRepo.GetAll();
             }
         }
 
@@ -171,7 +172,7 @@ namespace TimeTable
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 var row = dataGridView1.SelectedRows[0];
-                var lect = (Lecs)row.DataBoundItem;
+                var lect = (Teacher)row.DataBoundItem;
                 txtUid.Text = lect.Lecturer_ID.ToString();
                 txtUlec.Text = lect.Lecturer_name;
                 cmbUfac.Text = lect.Faculty;
@@ -187,7 +188,7 @@ namespace TimeTable
         {
             if (!string.IsNullOrEmpty(txtUid.Text) && !string.IsNullOrEmpty(txtUlec.Text) && !string.IsNullOrEmpty(cmbUfac.Text) && !string.IsNullOrEmpty(cmbUdep.Text) && !string.IsNullOrEmpty(cmbUbuild.Text) && !string.IsNullOrEmpty(cmbUlvl.Text) && !string.IsNullOrEmpty(txtUrank.Text))
             {
-                LecRepo.Update(new Lecs
+                TeacherRepo.Update(new Teacher
                 {
                     Lecturer_ID = int.Parse(txtUid.Text),
                     Lecturer_name = txtUlec.Text,
@@ -198,7 +199,7 @@ namespace TimeTable
                    //Rank = txtUrank.Text,
 
                 });
-                dataGridView1.DataSource = LecRepo.GetAll();
+                dataGridView1.DataSource = TeacherRepo.GetAll();
             }
         }
 
@@ -206,7 +207,7 @@ namespace TimeTable
         {
             if (!string.IsNullOrEmpty(txtUid.Text) && !string.IsNullOrEmpty(txtUlec.Text) && !string.IsNullOrEmpty(cmbUfac.Text) && !string.IsNullOrEmpty(cmbUdep.Text) && !string.IsNullOrEmpty(cmbUbuild.Text) && !string.IsNullOrEmpty(cmbUlvl.Text) && !string.IsNullOrEmpty(txtUrank.Text))
             {
-                LecRepo.Delete(int.Parse(txtlecid.Text));
+                TeacherRepo.Delete(int.Parse(txtlecid.Text));
                 txtUlec.Text = string.Empty;
                 cmbUfac.Text = string.Empty;
                 cmbUdep.Text = string.Empty;
@@ -349,6 +350,10 @@ namespace TimeTable
         {
 
         }
-    
+
+        private void cmblvl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

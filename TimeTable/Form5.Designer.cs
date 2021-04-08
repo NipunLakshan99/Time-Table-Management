@@ -146,72 +146,65 @@ namespace TimeTable
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.WorkingTime = new System.Windows.Forms.NumericUpDown();
             this.BtnWReset = new System.Windows.Forms.Button();
             this.BtnWSave = new System.Windows.Forms.Button();
-            this.RadioB2 = new System.Windows.Forms.RadioButton();
-            this.RadioB3 = new System.Windows.Forms.RadioButton();
-            this.RadioB1 = new System.Windows.Forms.RadioButton();
+            this.RadioBOneH = new System.Windows.Forms.RadioButton();
+            this.RadioBTwoH = new System.Windows.Forms.RadioButton();
+            this.RadioBThirtyM = new System.Windows.Forms.RadioButton();
             this.label36 = new System.Windows.Forms.Label();
-            this.ETime2 = new System.Windows.Forms.NumericUpDown();
-            this.STime2 = new System.Windows.Forms.NumericUpDown();
-            this.ETime1 = new System.Windows.Forms.NumericUpDown();
-            this.STime1 = new System.Windows.Forms.NumericUpDown();
             this.label35 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.CheckBW7 = new System.Windows.Forms.CheckBox();
-            this.CheckBW6 = new System.Windows.Forms.CheckBox();
-            this.CheckBW5 = new System.Windows.Forms.CheckBox();
-            this.CheckBW4 = new System.Windows.Forms.CheckBox();
-            this.CheckBW3 = new System.Windows.Forms.CheckBox();
-            this.CheckBW2 = new System.Windows.Forms.CheckBox();
-            this.CheckBW1 = new System.Windows.Forms.CheckBox();
-            this.NoWorkDays = new System.Windows.Forms.NumericUpDown();
+            this.chkSunday = new System.Windows.Forms.CheckBox();
+            this.chkSaturday = new System.Windows.Forms.CheckBox();
+            this.chkFriday = new System.Windows.Forms.CheckBox();
+            this.chkThursday = new System.Windows.Forms.CheckBox();
+            this.chkWednesday = new System.Windows.Forms.CheckBox();
+            this.chkTuesday = new System.Windows.Forms.CheckBox();
+            this.chkMonday = new System.Windows.Forms.CheckBox();
             this.label28 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.UWorkTime = new System.Windows.Forms.NumericUpDown();
             this.BtnWSearch = new System.Windows.Forms.Button();
-            this.BtnWRefresh = new System.Windows.Forms.Button();
+            this.BtnWURefresh = new System.Windows.Forms.Button();
             this.BtnWUpdate = new System.Windows.Forms.Button();
-            this.BtnWDelete = new System.Windows.Forms.Button();
-            this.WorkID = new System.Windows.Forms.TextBox();
+            this.BtnWUDelete = new System.Windows.Forms.Button();
+            this.txtWorkID = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Working_Time_Per_Day = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label45 = new System.Windows.Forms.Label();
-            this.URBtn2 = new System.Windows.Forms.RadioButton();
-            this.URBtn3 = new System.Windows.Forms.RadioButton();
-            this.URBtn1 = new System.Windows.Forms.RadioButton();
+            this.radioWUhours = new System.Windows.Forms.RadioButton();
+            this.radioWUtwohours = new System.Windows.Forms.RadioButton();
+            this.radioWUthirty = new System.Windows.Forms.RadioButton();
             this.label37 = new System.Windows.Forms.Label();
-            this.UETime2 = new System.Windows.Forms.NumericUpDown();
-            this.USTime2 = new System.Windows.Forms.NumericUpDown();
-            this.UETime1 = new System.Windows.Forms.NumericUpDown();
-            this.USTime1 = new System.Windows.Forms.NumericUpDown();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
-            this.UCheckB7 = new System.Windows.Forms.CheckBox();
-            this.UCheckB6 = new System.Windows.Forms.CheckBox();
-            this.UCheckB5 = new System.Windows.Forms.CheckBox();
-            this.UCheckB4 = new System.Windows.Forms.CheckBox();
-            this.UCheckB3 = new System.Windows.Forms.CheckBox();
-            this.UCheckB2 = new System.Windows.Forms.CheckBox();
-            this.UCheckB1 = new System.Windows.Forms.CheckBox();
-            this.UNoWorkDay = new System.Windows.Forms.NumericUpDown();
+            this.CheckWUsun = new System.Windows.Forms.CheckBox();
+            this.CheckWUsatu = new System.Windows.Forms.CheckBox();
+            this.CheckWUfri = new System.Windows.Forms.CheckBox();
+            this.CheckWUthur = new System.Windows.Forms.CheckBox();
+            this.CheckWUwed = new System.Windows.Forms.CheckBox();
+            this.CheckWUtues = new System.Windows.Forms.CheckBox();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
+            this.txtAddNWD = new System.Windows.Forms.ComboBox();
+            this.txtAddWTD = new System.Windows.Forms.ComboBox();
+            this.txtAddSTH = new System.Windows.Forms.ComboBox();
+            this.txtAddETH = new System.Windows.Forms.ComboBox();
+            this.txtETM = new System.Windows.Forms.ComboBox();
+            this.txtAddSTM = new System.Windows.Forms.ComboBox();
+            this.CheckWUmon = new System.Windows.Forms.CheckBox();
+            this.cmbWUsth = new System.Windows.Forms.ComboBox();
+            this.cmbWUstm = new System.Windows.Forms.ComboBox();
+            this.cmbWUendh = new System.Windows.Forms.ComboBox();
+            this.cmbWUendm = new System.Windows.Forms.ComboBox();
+            this.cmbWUnwd = new System.Windows.Forms.ComboBox();
+            this.cmbWUwtpd = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -225,20 +218,8 @@ namespace TimeTable
             this.tabPage7.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.WorkingTime)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ETime2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.STime2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ETime1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.STime1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NoWorkDays)).BeginInit();
             this.tabPage9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UWorkTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UETime2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.USTime2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UETime1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.USTime1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UNoWorkDay)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -1339,30 +1320,30 @@ namespace TimeTable
             // tabPage8
             // 
             this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.tabPage8.Controls.Add(this.WorkingTime);
+            this.tabPage8.Controls.Add(this.txtAddSTM);
+            this.tabPage8.Controls.Add(this.txtETM);
+            this.tabPage8.Controls.Add(this.txtAddETH);
+            this.tabPage8.Controls.Add(this.txtAddSTH);
+            this.tabPage8.Controls.Add(this.txtAddWTD);
+            this.tabPage8.Controls.Add(this.txtAddNWD);
             this.tabPage8.Controls.Add(this.BtnWReset);
             this.tabPage8.Controls.Add(this.BtnWSave);
-            this.tabPage8.Controls.Add(this.RadioB2);
-            this.tabPage8.Controls.Add(this.RadioB3);
-            this.tabPage8.Controls.Add(this.RadioB1);
+            this.tabPage8.Controls.Add(this.RadioBOneH);
+            this.tabPage8.Controls.Add(this.RadioBTwoH);
+            this.tabPage8.Controls.Add(this.RadioBThirtyM);
             this.tabPage8.Controls.Add(this.label36);
-            this.tabPage8.Controls.Add(this.ETime2);
-            this.tabPage8.Controls.Add(this.STime2);
-            this.tabPage8.Controls.Add(this.ETime1);
-            this.tabPage8.Controls.Add(this.STime1);
             this.tabPage8.Controls.Add(this.label35);
             this.tabPage8.Controls.Add(this.label34);
             this.tabPage8.Controls.Add(this.label33);
             this.tabPage8.Controls.Add(this.label32);
             this.tabPage8.Controls.Add(this.label31);
-            this.tabPage8.Controls.Add(this.CheckBW7);
-            this.tabPage8.Controls.Add(this.CheckBW6);
-            this.tabPage8.Controls.Add(this.CheckBW5);
-            this.tabPage8.Controls.Add(this.CheckBW4);
-            this.tabPage8.Controls.Add(this.CheckBW3);
-            this.tabPage8.Controls.Add(this.CheckBW2);
-            this.tabPage8.Controls.Add(this.CheckBW1);
-            this.tabPage8.Controls.Add(this.NoWorkDays);
+            this.tabPage8.Controls.Add(this.chkSunday);
+            this.tabPage8.Controls.Add(this.chkSaturday);
+            this.tabPage8.Controls.Add(this.chkFriday);
+            this.tabPage8.Controls.Add(this.chkThursday);
+            this.tabPage8.Controls.Add(this.chkWednesday);
+            this.tabPage8.Controls.Add(this.chkTuesday);
+            this.tabPage8.Controls.Add(this.chkMonday);
             this.tabPage8.Controls.Add(this.label28);
             this.tabPage8.Controls.Add(this.label26);
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
@@ -1372,13 +1353,6 @@ namespace TimeTable
             this.tabPage8.TabIndex = 0;
             this.tabPage8.Text = "ADD WORKING DAYS";
             this.tabPage8.Click += new System.EventHandler(this.tabPage8_Click);
-            // 
-            // WorkingTime
-            // 
-            this.WorkingTime.Location = new System.Drawing.Point(313, 136);
-            this.WorkingTime.Name = "WorkingTime";
-            this.WorkingTime.Size = new System.Drawing.Size(195, 20);
-            this.WorkingTime.TabIndex = 77;
             // 
             // BtnWReset
             // 
@@ -1399,46 +1373,49 @@ namespace TimeTable
             this.BtnWSave.TabIndex = 75;
             this.BtnWSave.Text = "SAVE";
             this.BtnWSave.UseVisualStyleBackColor = false;
+            this.BtnWSave.Click += new System.EventHandler(this.BtnWSave_Click);
             // 
-            // RadioB2
+            // RadioBOneH
             // 
-            this.RadioB2.AutoSize = true;
-            this.RadioB2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RadioB2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.RadioB2.Location = new System.Drawing.Point(493, 297);
-            this.RadioB2.Name = "RadioB2";
-            this.RadioB2.Size = new System.Drawing.Size(116, 20);
-            this.RadioB2.TabIndex = 74;
-            this.RadioB2.TabStop = true;
-            this.RadioB2.Text = "ONE HOURS";
-            this.RadioB2.UseVisualStyleBackColor = true;
-            this.RadioB2.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            this.RadioBOneH.AutoSize = true;
+            this.RadioBOneH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RadioBOneH.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.RadioBOneH.Location = new System.Drawing.Point(493, 297);
+            this.RadioBOneH.Name = "RadioBOneH";
+            this.RadioBOneH.Size = new System.Drawing.Size(116, 20);
+            this.RadioBOneH.TabIndex = 74;
+            this.RadioBOneH.TabStop = true;
+            this.RadioBOneH.Text = "ONE HOURS";
+            this.RadioBOneH.UseVisualStyleBackColor = true;
+            this.RadioBOneH.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
-            // RadioB3
+            // RadioBTwoH
             // 
-            this.RadioB3.AutoSize = true;
-            this.RadioB3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RadioB3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.RadioB3.Location = new System.Drawing.Point(617, 297);
-            this.RadioB3.Name = "RadioB3";
-            this.RadioB3.Size = new System.Drawing.Size(119, 20);
-            this.RadioB3.TabIndex = 73;
-            this.RadioB3.TabStop = true;
-            this.RadioB3.Text = "TWO HOURS";
-            this.RadioB3.UseVisualStyleBackColor = true;
+            this.RadioBTwoH.AutoSize = true;
+            this.RadioBTwoH.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RadioBTwoH.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.RadioBTwoH.Location = new System.Drawing.Point(617, 297);
+            this.RadioBTwoH.Name = "RadioBTwoH";
+            this.RadioBTwoH.Size = new System.Drawing.Size(119, 20);
+            this.RadioBTwoH.TabIndex = 73;
+            this.RadioBTwoH.TabStop = true;
+            this.RadioBTwoH.Text = "TWO HOURS";
+            this.RadioBTwoH.UseVisualStyleBackColor = true;
+            this.RadioBTwoH.CheckedChanged += new System.EventHandler(this.RadioBTwoH_CheckedChanged);
             // 
-            // RadioB1
+            // RadioBThirtyM
             // 
-            this.RadioB1.AutoSize = true;
-            this.RadioB1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RadioB1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.RadioB1.Location = new System.Drawing.Point(333, 297);
-            this.RadioB1.Name = "RadioB1";
-            this.RadioB1.Size = new System.Drawing.Size(154, 20);
-            this.RadioB1.TabIndex = 72;
-            this.RadioB1.TabStop = true;
-            this.RadioB1.Text = "THIRTY MINUTES";
-            this.RadioB1.UseVisualStyleBackColor = true;
+            this.RadioBThirtyM.AutoSize = true;
+            this.RadioBThirtyM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RadioBThirtyM.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.RadioBThirtyM.Location = new System.Drawing.Point(333, 297);
+            this.RadioBThirtyM.Name = "RadioBThirtyM";
+            this.RadioBThirtyM.Size = new System.Drawing.Size(154, 20);
+            this.RadioBThirtyM.TabIndex = 72;
+            this.RadioBThirtyM.TabStop = true;
+            this.RadioBThirtyM.Text = "THIRTY MINUTES";
+            this.RadioBThirtyM.UseVisualStyleBackColor = true;
+            this.RadioBThirtyM.CheckedChanged += new System.EventHandler(this.RadioBThirtyM_CheckedChanged);
             // 
             // label36
             // 
@@ -1451,40 +1428,12 @@ namespace TimeTable
             this.label36.TabIndex = 71;
             this.label36.Text = "Select Prefered Time Slot";
             // 
-            // ETime2
-            // 
-            this.ETime2.Location = new System.Drawing.Point(556, 233);
-            this.ETime2.Name = "ETime2";
-            this.ETime2.Size = new System.Drawing.Size(154, 20);
-            this.ETime2.TabIndex = 70;
-            // 
-            // STime2
-            // 
-            this.STime2.Location = new System.Drawing.Point(556, 197);
-            this.STime2.Name = "STime2";
-            this.STime2.Size = new System.Drawing.Size(154, 20);
-            this.STime2.TabIndex = 69;
-            // 
-            // ETime1
-            // 
-            this.ETime1.Location = new System.Drawing.Point(333, 233);
-            this.ETime1.Name = "ETime1";
-            this.ETime1.Size = new System.Drawing.Size(154, 20);
-            this.ETime1.TabIndex = 68;
-            // 
-            // STime1
-            // 
-            this.STime1.Location = new System.Drawing.Point(333, 197);
-            this.STime1.Name = "STime1";
-            this.STime1.Size = new System.Drawing.Size(154, 20);
-            this.STime1.TabIndex = 67;
-            // 
             // label35
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label35.Location = new System.Drawing.Point(586, 173);
+            this.label35.Location = new System.Drawing.Point(599, 172);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(61, 16);
             this.label35.TabIndex = 66;
@@ -1534,118 +1483,117 @@ namespace TimeTable
             this.label31.TabIndex = 62;
             this.label31.Text = "Working Time per Day";
             // 
-            // CheckBW7
+            // chkSunday
             // 
-            this.CheckBW7.AutoSize = true;
-            this.CheckBW7.Checked = true;
-            this.CheckBW7.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckBW7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckBW7.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CheckBW7.Location = new System.Drawing.Point(589, 97);
-            this.CheckBW7.Margin = new System.Windows.Forms.Padding(2);
-            this.CheckBW7.Name = "CheckBW7";
-            this.CheckBW7.Size = new System.Drawing.Size(90, 20);
-            this.CheckBW7.TabIndex = 61;
-            this.CheckBW7.Text = "SUNDAY";
-            this.CheckBW7.UseVisualStyleBackColor = true;
+            this.chkSunday.AutoSize = true;
+            this.chkSunday.Checked = true;
+            this.chkSunday.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkSunday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkSunday.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.chkSunday.Location = new System.Drawing.Point(589, 97);
+            this.chkSunday.Margin = new System.Windows.Forms.Padding(2);
+            this.chkSunday.Name = "chkSunday";
+            this.chkSunday.Size = new System.Drawing.Size(90, 20);
+            this.chkSunday.TabIndex = 61;
+            this.chkSunday.Text = "SUNDAY";
+            this.chkSunday.UseVisualStyleBackColor = true;
+            this.chkSunday.CheckedChanged += new System.EventHandler(this.chkSunday_CheckedChanged);
             // 
-            // CheckBW6
+            // chkSaturday
             // 
-            this.CheckBW6.AutoSize = true;
-            this.CheckBW6.Checked = true;
-            this.CheckBW6.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckBW6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckBW6.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CheckBW6.Location = new System.Drawing.Point(466, 97);
-            this.CheckBW6.Margin = new System.Windows.Forms.Padding(2);
-            this.CheckBW6.Name = "CheckBW6";
-            this.CheckBW6.Size = new System.Drawing.Size(110, 20);
-            this.CheckBW6.TabIndex = 60;
-            this.CheckBW6.Text = "SATURDAY";
-            this.CheckBW6.UseVisualStyleBackColor = true;
+            this.chkSaturday.AutoSize = true;
+            this.chkSaturday.Checked = true;
+            this.chkSaturday.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkSaturday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkSaturday.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.chkSaturday.Location = new System.Drawing.Point(466, 97);
+            this.chkSaturday.Margin = new System.Windows.Forms.Padding(2);
+            this.chkSaturday.Name = "chkSaturday";
+            this.chkSaturday.Size = new System.Drawing.Size(110, 20);
+            this.chkSaturday.TabIndex = 60;
+            this.chkSaturday.Text = "SATURDAY";
+            this.chkSaturday.UseVisualStyleBackColor = true;
+            this.chkSaturday.CheckedChanged += new System.EventHandler(this.chkSaturday_CheckedChanged);
             // 
-            // CheckBW5
+            // chkFriday
             // 
-            this.CheckBW5.AutoSize = true;
-            this.CheckBW5.Checked = true;
-            this.CheckBW5.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckBW5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckBW5.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CheckBW5.Location = new System.Drawing.Point(367, 97);
-            this.CheckBW5.Margin = new System.Windows.Forms.Padding(2);
-            this.CheckBW5.Name = "CheckBW5";
-            this.CheckBW5.Size = new System.Drawing.Size(82, 20);
-            this.CheckBW5.TabIndex = 57;
-            this.CheckBW5.Text = "FRIDAY";
-            this.CheckBW5.UseVisualStyleBackColor = true;
+            this.chkFriday.AutoSize = true;
+            this.chkFriday.Checked = true;
+            this.chkFriday.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkFriday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkFriday.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.chkFriday.Location = new System.Drawing.Point(367, 97);
+            this.chkFriday.Margin = new System.Windows.Forms.Padding(2);
+            this.chkFriday.Name = "chkFriday";
+            this.chkFriday.Size = new System.Drawing.Size(82, 20);
+            this.chkFriday.TabIndex = 57;
+            this.chkFriday.Text = "FRIDAY";
+            this.chkFriday.UseVisualStyleBackColor = true;
+            this.chkFriday.CheckedChanged += new System.EventHandler(this.chkFriday_CheckedChanged);
             // 
-            // CheckBW4
+            // chkThursday
             // 
-            this.CheckBW4.AutoSize = true;
-            this.CheckBW4.Checked = true;
-            this.CheckBW4.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckBW4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckBW4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CheckBW4.Location = new System.Drawing.Point(640, 58);
-            this.CheckBW4.Margin = new System.Windows.Forms.Padding(2);
-            this.CheckBW4.Name = "CheckBW4";
-            this.CheckBW4.Size = new System.Drawing.Size(111, 20);
-            this.CheckBW4.TabIndex = 56;
-            this.CheckBW4.Text = "THURSDAY";
-            this.CheckBW4.UseVisualStyleBackColor = true;
-            this.CheckBW4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            this.chkThursday.AutoSize = true;
+            this.chkThursday.Checked = true;
+            this.chkThursday.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkThursday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkThursday.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.chkThursday.Location = new System.Drawing.Point(640, 58);
+            this.chkThursday.Margin = new System.Windows.Forms.Padding(2);
+            this.chkThursday.Name = "chkThursday";
+            this.chkThursday.Size = new System.Drawing.Size(111, 20);
+            this.chkThursday.TabIndex = 56;
+            this.chkThursday.Text = "THURSDAY";
+            this.chkThursday.UseVisualStyleBackColor = true;
+            this.chkThursday.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
-            // CheckBW3
+            // chkWednesday
             // 
-            this.CheckBW3.AutoSize = true;
-            this.CheckBW3.Checked = true;
-            this.CheckBW3.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckBW3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckBW3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CheckBW3.Location = new System.Drawing.Point(512, 58);
-            this.CheckBW3.Margin = new System.Windows.Forms.Padding(2);
-            this.CheckBW3.Name = "CheckBW3";
-            this.CheckBW3.Size = new System.Drawing.Size(124, 20);
-            this.CheckBW3.TabIndex = 55;
-            this.CheckBW3.Text = "WEDNESDAY";
-            this.CheckBW3.UseVisualStyleBackColor = true;
+            this.chkWednesday.AutoSize = true;
+            this.chkWednesday.Checked = true;
+            this.chkWednesday.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkWednesday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkWednesday.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.chkWednesday.Location = new System.Drawing.Point(512, 58);
+            this.chkWednesday.Margin = new System.Windows.Forms.Padding(2);
+            this.chkWednesday.Name = "chkWednesday";
+            this.chkWednesday.Size = new System.Drawing.Size(124, 20);
+            this.chkWednesday.TabIndex = 55;
+            this.chkWednesday.Text = "WEDNESDAY";
+            this.chkWednesday.UseVisualStyleBackColor = true;
+            this.chkWednesday.CheckedChanged += new System.EventHandler(this.chkWednesday_CheckedChanged);
             // 
-            // CheckBW2
+            // chkTuesday
             // 
-            this.CheckBW2.AutoSize = true;
-            this.CheckBW2.Checked = true;
-            this.CheckBW2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckBW2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckBW2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CheckBW2.Location = new System.Drawing.Point(409, 58);
-            this.CheckBW2.Margin = new System.Windows.Forms.Padding(2);
-            this.CheckBW2.Name = "CheckBW2";
-            this.CheckBW2.Size = new System.Drawing.Size(99, 20);
-            this.CheckBW2.TabIndex = 54;
-            this.CheckBW2.Text = "TUESDAY";
-            this.CheckBW2.UseVisualStyleBackColor = true;
+            this.chkTuesday.AutoSize = true;
+            this.chkTuesday.Checked = true;
+            this.chkTuesday.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkTuesday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkTuesday.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.chkTuesday.Location = new System.Drawing.Point(409, 58);
+            this.chkTuesday.Margin = new System.Windows.Forms.Padding(2);
+            this.chkTuesday.Name = "chkTuesday";
+            this.chkTuesday.Size = new System.Drawing.Size(99, 20);
+            this.chkTuesday.TabIndex = 54;
+            this.chkTuesday.Text = "TUESDAY";
+            this.chkTuesday.UseVisualStyleBackColor = true;
+            this.chkTuesday.CheckedChanged += new System.EventHandler(this.chkTuesday_CheckedChanged);
             // 
-            // CheckBW1
+            // chkMonday
             // 
-            this.CheckBW1.AutoSize = true;
-            this.CheckBW1.Checked = true;
-            this.CheckBW1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckBW1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckBW1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CheckBW1.Location = new System.Drawing.Point(313, 59);
-            this.CheckBW1.Margin = new System.Windows.Forms.Padding(2);
-            this.CheckBW1.Name = "CheckBW1";
-            this.CheckBW1.Size = new System.Drawing.Size(92, 20);
-            this.CheckBW1.TabIndex = 53;
-            this.CheckBW1.Text = "MONDAY";
-            this.CheckBW1.UseVisualStyleBackColor = true;
-            // 
-            // NoWorkDays
-            // 
-            this.NoWorkDays.Location = new System.Drawing.Point(313, 14);
-            this.NoWorkDays.Name = "NoWorkDays";
-            this.NoWorkDays.Size = new System.Drawing.Size(195, 20);
-            this.NoWorkDays.TabIndex = 52;
+            this.chkMonday.AutoSize = true;
+            this.chkMonday.Checked = true;
+            this.chkMonday.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkMonday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkMonday.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.chkMonday.Location = new System.Drawing.Point(313, 59);
+            this.chkMonday.Margin = new System.Windows.Forms.Padding(2);
+            this.chkMonday.Name = "chkMonday";
+            this.chkMonday.Size = new System.Drawing.Size(92, 20);
+            this.chkMonday.TabIndex = 53;
+            this.chkMonday.Text = "MONDAY";
+            this.chkMonday.UseVisualStyleBackColor = true;
+            this.chkMonday.CheckedChanged += new System.EventHandler(this.chkMonday_CheckedChanged);
             // 
             // label28
             // 
@@ -1672,36 +1620,36 @@ namespace TimeTable
             // tabPage9
             // 
             this.tabPage9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.tabPage9.Controls.Add(this.UWorkTime);
+            this.tabPage9.Controls.Add(this.cmbWUwtpd);
+            this.tabPage9.Controls.Add(this.cmbWUnwd);
+            this.tabPage9.Controls.Add(this.cmbWUendm);
+            this.tabPage9.Controls.Add(this.cmbWUendh);
+            this.tabPage9.Controls.Add(this.cmbWUstm);
+            this.tabPage9.Controls.Add(this.cmbWUsth);
             this.tabPage9.Controls.Add(this.BtnWSearch);
-            this.tabPage9.Controls.Add(this.BtnWRefresh);
+            this.tabPage9.Controls.Add(this.BtnWURefresh);
             this.tabPage9.Controls.Add(this.BtnWUpdate);
-            this.tabPage9.Controls.Add(this.BtnWDelete);
-            this.tabPage9.Controls.Add(this.WorkID);
+            this.tabPage9.Controls.Add(this.BtnWUDelete);
+            this.tabPage9.Controls.Add(this.txtWorkID);
             this.tabPage9.Controls.Add(this.label46);
             this.tabPage9.Controls.Add(this.dataGridView5);
             this.tabPage9.Controls.Add(this.label45);
-            this.tabPage9.Controls.Add(this.URBtn2);
-            this.tabPage9.Controls.Add(this.URBtn3);
-            this.tabPage9.Controls.Add(this.URBtn1);
+            this.tabPage9.Controls.Add(this.radioWUhours);
+            this.tabPage9.Controls.Add(this.radioWUtwohours);
+            this.tabPage9.Controls.Add(this.radioWUthirty);
             this.tabPage9.Controls.Add(this.label37);
-            this.tabPage9.Controls.Add(this.UETime2);
-            this.tabPage9.Controls.Add(this.USTime2);
-            this.tabPage9.Controls.Add(this.UETime1);
-            this.tabPage9.Controls.Add(this.USTime1);
             this.tabPage9.Controls.Add(this.label38);
             this.tabPage9.Controls.Add(this.label39);
             this.tabPage9.Controls.Add(this.label40);
             this.tabPage9.Controls.Add(this.label41);
             this.tabPage9.Controls.Add(this.label42);
-            this.tabPage9.Controls.Add(this.UCheckB7);
-            this.tabPage9.Controls.Add(this.UCheckB6);
-            this.tabPage9.Controls.Add(this.UCheckB5);
-            this.tabPage9.Controls.Add(this.UCheckB4);
-            this.tabPage9.Controls.Add(this.UCheckB3);
-            this.tabPage9.Controls.Add(this.UCheckB2);
-            this.tabPage9.Controls.Add(this.UCheckB1);
-            this.tabPage9.Controls.Add(this.UNoWorkDay);
+            this.tabPage9.Controls.Add(this.CheckWUsun);
+            this.tabPage9.Controls.Add(this.CheckWUsatu);
+            this.tabPage9.Controls.Add(this.CheckWUfri);
+            this.tabPage9.Controls.Add(this.CheckWUthur);
+            this.tabPage9.Controls.Add(this.CheckWUwed);
+            this.tabPage9.Controls.Add(this.CheckWUtues);
+            this.tabPage9.Controls.Add(this.CheckWUmon);
             this.tabPage9.Controls.Add(this.label43);
             this.tabPage9.Controls.Add(this.label44);
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
@@ -1710,13 +1658,7 @@ namespace TimeTable
             this.tabPage9.Size = new System.Drawing.Size(835, 395);
             this.tabPage9.TabIndex = 1;
             this.tabPage9.Text = "MANAGE WORKING DAYS & HOURS";
-            // 
-            // UWorkTime
-            // 
-            this.UWorkTime.Location = new System.Drawing.Point(210, 73);
-            this.UWorkTime.Name = "UWorkTime";
-            this.UWorkTime.Size = new System.Drawing.Size(160, 20);
-            this.UWorkTime.TabIndex = 106;
+            this.tabPage9.Click += new System.EventHandler(this.tabPage9_Click);
             // 
             // BtnWSearch
             // 
@@ -1728,15 +1670,16 @@ namespace TimeTable
             this.BtnWSearch.Text = "SEARCH";
             this.BtnWSearch.UseVisualStyleBackColor = false;
             // 
-            // BtnWRefresh
+            // BtnWURefresh
             // 
-            this.BtnWRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.BtnWRefresh.Location = new System.Drawing.Point(204, 359);
-            this.BtnWRefresh.Name = "BtnWRefresh";
-            this.BtnWRefresh.Size = new System.Drawing.Size(101, 30);
-            this.BtnWRefresh.TabIndex = 104;
-            this.BtnWRefresh.Text = "REFRESH";
-            this.BtnWRefresh.UseVisualStyleBackColor = false;
+            this.BtnWURefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.BtnWURefresh.Location = new System.Drawing.Point(204, 359);
+            this.BtnWURefresh.Name = "BtnWURefresh";
+            this.BtnWURefresh.Size = new System.Drawing.Size(101, 30);
+            this.BtnWURefresh.TabIndex = 104;
+            this.BtnWURefresh.Text = "REFRESH";
+            this.BtnWURefresh.UseVisualStyleBackColor = false;
+            this.BtnWURefresh.Click += new System.EventHandler(this.BtnWURefresh_Click);
             // 
             // BtnWUpdate
             // 
@@ -1747,23 +1690,25 @@ namespace TimeTable
             this.BtnWUpdate.TabIndex = 103;
             this.BtnWUpdate.Text = "UPDATE";
             this.BtnWUpdate.UseVisualStyleBackColor = false;
+            this.BtnWUpdate.Click += new System.EventHandler(this.BtnWUpdate_Click);
             // 
-            // BtnWDelete
+            // BtnWUDelete
             // 
-            this.BtnWDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.BtnWDelete.Location = new System.Drawing.Point(356, 359);
-            this.BtnWDelete.Name = "BtnWDelete";
-            this.BtnWDelete.Size = new System.Drawing.Size(101, 30);
-            this.BtnWDelete.TabIndex = 102;
-            this.BtnWDelete.Text = "DELETE";
-            this.BtnWDelete.UseVisualStyleBackColor = false;
+            this.BtnWUDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.BtnWUDelete.Location = new System.Drawing.Point(356, 359);
+            this.BtnWUDelete.Name = "BtnWUDelete";
+            this.BtnWUDelete.Size = new System.Drawing.Size(101, 30);
+            this.BtnWUDelete.TabIndex = 102;
+            this.BtnWUDelete.Text = "DELETE";
+            this.BtnWUDelete.UseVisualStyleBackColor = false;
+            this.BtnWUDelete.Click += new System.EventHandler(this.BtnWUDelete_Click);
             // 
-            // WorkID
+            // txtWorkID
             // 
-            this.WorkID.Location = new System.Drawing.Point(67, 8);
-            this.WorkID.Name = "WorkID";
-            this.WorkID.Size = new System.Drawing.Size(157, 20);
-            this.WorkID.TabIndex = 101;
+            this.txtWorkID.Location = new System.Drawing.Point(67, 8);
+            this.txtWorkID.Name = "txtWorkID";
+            this.txtWorkID.Size = new System.Drawing.Size(157, 20);
+            this.txtWorkID.TabIndex = 101;
             // 
             // label46
             // 
@@ -1779,53 +1724,11 @@ namespace TimeTable
             // dataGridView5
             // 
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn22,
-            this.Working_Time_Per_Day,
-            this.dataGridViewTextBoxColumn23,
-            this.dataGridViewTextBoxColumn24,
-            this.dataGridViewTextBoxColumn25,
-            this.dataGridViewTextBoxColumn26,
-            this.dataGridViewTextBoxColumn27});
             this.dataGridView5.Location = new System.Drawing.Point(67, 211);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.Size = new System.Drawing.Size(637, 135);
             this.dataGridView5.TabIndex = 99;
-            // 
-            // dataGridViewTextBoxColumn22
-            // 
-            this.dataGridViewTextBoxColumn22.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            // 
-            // Working_Time_Per_Day
-            // 
-            this.Working_Time_Per_Day.HeaderText = "Working Time PerDay";
-            this.Working_Time_Per_Day.Name = "Working_Time_Per_Day";
-            // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.HeaderText = "No Of Working Days";
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.HeaderText = "Working Days";
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.HeaderText = "Day Start Time";
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.HeaderText = "Day End Time";
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.HeaderText = "Select Prefered Time Slot";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            this.dataGridView5.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView5_CellClick);
             // 
             // label45
             // 
@@ -1839,44 +1742,47 @@ namespace TimeTable
             this.label45.Text = "Minutes";
             this.label45.Click += new System.EventHandler(this.label45_Click);
             // 
-            // URBtn2
+            // radioWUhours
             // 
-            this.URBtn2.AutoSize = true;
-            this.URBtn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.URBtn2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.URBtn2.Location = new System.Drawing.Point(369, 175);
-            this.URBtn2.Name = "URBtn2";
-            this.URBtn2.Size = new System.Drawing.Size(116, 20);
-            this.URBtn2.TabIndex = 97;
-            this.URBtn2.TabStop = true;
-            this.URBtn2.Text = "ONE HOURS";
-            this.URBtn2.UseVisualStyleBackColor = true;
+            this.radioWUhours.AutoSize = true;
+            this.radioWUhours.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioWUhours.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.radioWUhours.Location = new System.Drawing.Point(369, 175);
+            this.radioWUhours.Name = "radioWUhours";
+            this.radioWUhours.Size = new System.Drawing.Size(116, 20);
+            this.radioWUhours.TabIndex = 97;
+            this.radioWUhours.TabStop = true;
+            this.radioWUhours.Text = "ONE HOURS";
+            this.radioWUhours.UseVisualStyleBackColor = true;
+            this.radioWUhours.CheckedChanged += new System.EventHandler(this.radioWUhours_CheckedChanged);
             // 
-            // URBtn3
+            // radioWUtwohours
             // 
-            this.URBtn3.AutoSize = true;
-            this.URBtn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.URBtn3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.URBtn3.Location = new System.Drawing.Point(507, 172);
-            this.URBtn3.Name = "URBtn3";
-            this.URBtn3.Size = new System.Drawing.Size(119, 20);
-            this.URBtn3.TabIndex = 96;
-            this.URBtn3.TabStop = true;
-            this.URBtn3.Text = "TWO HOURS";
-            this.URBtn3.UseVisualStyleBackColor = true;
+            this.radioWUtwohours.AutoSize = true;
+            this.radioWUtwohours.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioWUtwohours.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.radioWUtwohours.Location = new System.Drawing.Point(507, 172);
+            this.radioWUtwohours.Name = "radioWUtwohours";
+            this.radioWUtwohours.Size = new System.Drawing.Size(119, 20);
+            this.radioWUtwohours.TabIndex = 96;
+            this.radioWUtwohours.TabStop = true;
+            this.radioWUtwohours.Text = "TWO HOURS";
+            this.radioWUtwohours.UseVisualStyleBackColor = true;
+            this.radioWUtwohours.CheckedChanged += new System.EventHandler(this.radioWUtwohours_CheckedChanged);
             // 
-            // URBtn1
+            // radioWUthirty
             // 
-            this.URBtn1.AutoSize = true;
-            this.URBtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.URBtn1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.URBtn1.Location = new System.Drawing.Point(193, 175);
-            this.URBtn1.Name = "URBtn1";
-            this.URBtn1.Size = new System.Drawing.Size(154, 20);
-            this.URBtn1.TabIndex = 95;
-            this.URBtn1.TabStop = true;
-            this.URBtn1.Text = "THIRTY MINUTES";
-            this.URBtn1.UseVisualStyleBackColor = true;
+            this.radioWUthirty.AutoSize = true;
+            this.radioWUthirty.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioWUthirty.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.radioWUthirty.Location = new System.Drawing.Point(193, 175);
+            this.radioWUthirty.Name = "radioWUthirty";
+            this.radioWUthirty.Size = new System.Drawing.Size(154, 20);
+            this.radioWUthirty.TabIndex = 95;
+            this.radioWUthirty.TabStop = true;
+            this.radioWUthirty.Text = "THIRTY MINUTES";
+            this.radioWUthirty.UseVisualStyleBackColor = true;
+            this.radioWUthirty.CheckedChanged += new System.EventHandler(this.radioWUthirty_CheckedChanged);
             // 
             // label37
             // 
@@ -1888,34 +1794,6 @@ namespace TimeTable
             this.label37.Size = new System.Drawing.Size(171, 15);
             this.label37.TabIndex = 94;
             this.label37.Text = "Select Prefered Time Slot";
-            // 
-            // UETime2
-            // 
-            this.UETime2.Location = new System.Drawing.Point(381, 144);
-            this.UETime2.Name = "UETime2";
-            this.UETime2.Size = new System.Drawing.Size(154, 20);
-            this.UETime2.TabIndex = 93;
-            // 
-            // USTime2
-            // 
-            this.USTime2.Location = new System.Drawing.Point(381, 118);
-            this.USTime2.Name = "USTime2";
-            this.USTime2.Size = new System.Drawing.Size(154, 20);
-            this.USTime2.TabIndex = 92;
-            // 
-            // UETime1
-            // 
-            this.UETime1.Location = new System.Drawing.Point(193, 144);
-            this.UETime1.Name = "UETime1";
-            this.UETime1.Size = new System.Drawing.Size(154, 20);
-            this.UETime1.TabIndex = 91;
-            // 
-            // USTime1
-            // 
-            this.USTime1.Location = new System.Drawing.Point(193, 119);
-            this.USTime1.Name = "USTime1";
-            this.USTime1.Size = new System.Drawing.Size(154, 20);
-            this.USTime1.TabIndex = 90;
             // 
             // label38
             // 
@@ -1971,118 +1849,101 @@ namespace TimeTable
             this.label42.TabIndex = 85;
             this.label42.Text = "Working Time per Day";
             // 
-            // UCheckB7
+            // CheckWUsun
             // 
-            this.UCheckB7.AutoSize = true;
-            this.UCheckB7.Checked = true;
-            this.UCheckB7.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.UCheckB7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UCheckB7.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.UCheckB7.Location = new System.Drawing.Point(645, 44);
-            this.UCheckB7.Margin = new System.Windows.Forms.Padding(2);
-            this.UCheckB7.Name = "UCheckB7";
-            this.UCheckB7.Size = new System.Drawing.Size(77, 17);
-            this.UCheckB7.TabIndex = 84;
-            this.UCheckB7.Text = "SUNDAY";
-            this.UCheckB7.UseVisualStyleBackColor = true;
-            this.UCheckB7.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
+            this.CheckWUsun.AutoSize = true;
+            this.CheckWUsun.Checked = true;
+            this.CheckWUsun.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CheckWUsun.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckWUsun.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CheckWUsun.Location = new System.Drawing.Point(645, 44);
+            this.CheckWUsun.Margin = new System.Windows.Forms.Padding(2);
+            this.CheckWUsun.Name = "CheckWUsun";
+            this.CheckWUsun.Size = new System.Drawing.Size(77, 17);
+            this.CheckWUsun.TabIndex = 84;
+            this.CheckWUsun.Text = "SUNDAY";
+            this.CheckWUsun.UseVisualStyleBackColor = true;
+            this.CheckWUsun.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
-            // UCheckB6
+            // CheckWUsatu
             // 
-            this.UCheckB6.AutoSize = true;
-            this.UCheckB6.Checked = true;
-            this.UCheckB6.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.UCheckB6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UCheckB6.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.UCheckB6.Location = new System.Drawing.Point(558, 44);
-            this.UCheckB6.Margin = new System.Windows.Forms.Padding(2);
-            this.UCheckB6.Name = "UCheckB6";
-            this.UCheckB6.Size = new System.Drawing.Size(93, 17);
-            this.UCheckB6.TabIndex = 83;
-            this.UCheckB6.Text = "SATURDAY";
-            this.UCheckB6.UseVisualStyleBackColor = true;
+            this.CheckWUsatu.AutoSize = true;
+            this.CheckWUsatu.Checked = true;
+            this.CheckWUsatu.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CheckWUsatu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckWUsatu.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CheckWUsatu.Location = new System.Drawing.Point(558, 44);
+            this.CheckWUsatu.Margin = new System.Windows.Forms.Padding(2);
+            this.CheckWUsatu.Name = "CheckWUsatu";
+            this.CheckWUsatu.Size = new System.Drawing.Size(93, 17);
+            this.CheckWUsatu.TabIndex = 83;
+            this.CheckWUsatu.Text = "SATURDAY";
+            this.CheckWUsatu.UseVisualStyleBackColor = true;
+            this.CheckWUsatu.CheckedChanged += new System.EventHandler(this.CheckWUsatu_CheckedChanged);
             // 
-            // UCheckB5
+            // CheckWUfri
             // 
-            this.UCheckB5.AutoSize = true;
-            this.UCheckB5.Checked = true;
-            this.UCheckB5.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.UCheckB5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UCheckB5.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.UCheckB5.Location = new System.Drawing.Point(492, 44);
-            this.UCheckB5.Margin = new System.Windows.Forms.Padding(2);
-            this.UCheckB5.Name = "UCheckB5";
-            this.UCheckB5.Size = new System.Drawing.Size(71, 17);
-            this.UCheckB5.TabIndex = 82;
-            this.UCheckB5.Text = "FRIDAY";
-            this.UCheckB5.UseVisualStyleBackColor = true;
+            this.CheckWUfri.AutoSize = true;
+            this.CheckWUfri.Checked = true;
+            this.CheckWUfri.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CheckWUfri.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckWUfri.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CheckWUfri.Location = new System.Drawing.Point(492, 44);
+            this.CheckWUfri.Margin = new System.Windows.Forms.Padding(2);
+            this.CheckWUfri.Name = "CheckWUfri";
+            this.CheckWUfri.Size = new System.Drawing.Size(71, 17);
+            this.CheckWUfri.TabIndex = 82;
+            this.CheckWUfri.Text = "FRIDAY";
+            this.CheckWUfri.UseVisualStyleBackColor = true;
+            this.CheckWUfri.CheckedChanged += new System.EventHandler(this.CheckWUfri_CheckedChanged);
             // 
-            // UCheckB4
+            // CheckWUthur
             // 
-            this.UCheckB4.AutoSize = true;
-            this.UCheckB4.Checked = true;
-            this.UCheckB4.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.UCheckB4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UCheckB4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.UCheckB4.Location = new System.Drawing.Point(403, 44);
-            this.UCheckB4.Margin = new System.Windows.Forms.Padding(2);
-            this.UCheckB4.Name = "UCheckB4";
-            this.UCheckB4.Size = new System.Drawing.Size(94, 17);
-            this.UCheckB4.TabIndex = 81;
-            this.UCheckB4.Text = "THURSDAY";
-            this.UCheckB4.UseVisualStyleBackColor = true;
+            this.CheckWUthur.AutoSize = true;
+            this.CheckWUthur.Checked = true;
+            this.CheckWUthur.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CheckWUthur.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckWUthur.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CheckWUthur.Location = new System.Drawing.Point(403, 44);
+            this.CheckWUthur.Margin = new System.Windows.Forms.Padding(2);
+            this.CheckWUthur.Name = "CheckWUthur";
+            this.CheckWUthur.Size = new System.Drawing.Size(94, 17);
+            this.CheckWUthur.TabIndex = 81;
+            this.CheckWUthur.Text = "THURSDAY";
+            this.CheckWUthur.UseVisualStyleBackColor = true;
+            this.CheckWUthur.CheckedChanged += new System.EventHandler(this.CheckWUthur_CheckedChanged);
             // 
-            // UCheckB3
+            // CheckWUwed
             // 
-            this.UCheckB3.AutoSize = true;
-            this.UCheckB3.Checked = true;
-            this.UCheckB3.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.UCheckB3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UCheckB3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.UCheckB3.Location = new System.Drawing.Point(300, 44);
-            this.UCheckB3.Margin = new System.Windows.Forms.Padding(2);
-            this.UCheckB3.Name = "UCheckB3";
-            this.UCheckB3.Size = new System.Drawing.Size(105, 17);
-            this.UCheckB3.TabIndex = 80;
-            this.UCheckB3.Text = "WEDNESDAY";
-            this.UCheckB3.UseVisualStyleBackColor = true;
+            this.CheckWUwed.AutoSize = true;
+            this.CheckWUwed.Checked = true;
+            this.CheckWUwed.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CheckWUwed.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckWUwed.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CheckWUwed.Location = new System.Drawing.Point(300, 44);
+            this.CheckWUwed.Margin = new System.Windows.Forms.Padding(2);
+            this.CheckWUwed.Name = "CheckWUwed";
+            this.CheckWUwed.Size = new System.Drawing.Size(105, 17);
+            this.CheckWUwed.TabIndex = 80;
+            this.CheckWUwed.Text = "WEDNESDAY";
+            this.CheckWUwed.UseVisualStyleBackColor = true;
+            this.CheckWUwed.CheckedChanged += new System.EventHandler(this.CheckWUwed_CheckedChanged);
             // 
-            // UCheckB2
+            // CheckWUtues
             // 
-            this.UCheckB2.AutoSize = true;
-            this.UCheckB2.Checked = true;
-            this.UCheckB2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.UCheckB2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UCheckB2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.UCheckB2.Location = new System.Drawing.Point(221, 44);
-            this.UCheckB2.Margin = new System.Windows.Forms.Padding(2);
-            this.UCheckB2.Name = "UCheckB2";
-            this.UCheckB2.Size = new System.Drawing.Size(84, 17);
-            this.UCheckB2.TabIndex = 79;
-            this.UCheckB2.Text = "TUESDAY";
-            this.UCheckB2.UseVisualStyleBackColor = true;
-            // 
-            // UCheckB1
-            // 
-            this.UCheckB1.AutoSize = true;
-            this.UCheckB1.Checked = true;
-            this.UCheckB1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.UCheckB1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UCheckB1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.UCheckB1.Location = new System.Drawing.Point(145, 44);
-            this.UCheckB1.Margin = new System.Windows.Forms.Padding(2);
-            this.UCheckB1.Name = "UCheckB1";
-            this.UCheckB1.Size = new System.Drawing.Size(79, 17);
-            this.UCheckB1.TabIndex = 78;
-            this.UCheckB1.Text = "MONDAY";
-            this.UCheckB1.UseVisualStyleBackColor = true;
-            // 
-            // UNoWorkDay
-            // 
-            this.UNoWorkDay.Location = new System.Drawing.Point(527, 5);
-            this.UNoWorkDay.Name = "UNoWorkDay";
-            this.UNoWorkDay.Size = new System.Drawing.Size(195, 20);
-            this.UNoWorkDay.TabIndex = 77;
+            this.CheckWUtues.AutoSize = true;
+            this.CheckWUtues.Checked = true;
+            this.CheckWUtues.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CheckWUtues.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckWUtues.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CheckWUtues.Location = new System.Drawing.Point(221, 44);
+            this.CheckWUtues.Margin = new System.Windows.Forms.Padding(2);
+            this.CheckWUtues.Name = "CheckWUtues";
+            this.CheckWUtues.Size = new System.Drawing.Size(84, 17);
+            this.CheckWUtues.TabIndex = 79;
+            this.CheckWUtues.Text = "TUESDAY";
+            this.CheckWUtues.UseVisualStyleBackColor = true;
+            this.CheckWUtues.CheckedChanged += new System.EventHandler(this.CheckWUtues_CheckedChanged);
             // 
             // label43
             // 
@@ -2105,6 +1966,214 @@ namespace TimeTable
             this.label44.Size = new System.Drawing.Size(123, 13);
             this.label44.TabIndex = 75;
             this.label44.Text = "No Of Working Days";
+            // 
+            // txtAddNWD
+            // 
+            this.txtAddNWD.FormattingEnabled = true;
+            this.txtAddNWD.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.txtAddNWD.Location = new System.Drawing.Point(313, 14);
+            this.txtAddNWD.Name = "txtAddNWD";
+            this.txtAddNWD.Size = new System.Drawing.Size(125, 21);
+            this.txtAddNWD.TabIndex = 78;
+            // 
+            // txtAddWTD
+            // 
+            this.txtAddWTD.FormattingEnabled = true;
+            this.txtAddWTD.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.txtAddWTD.Location = new System.Drawing.Point(313, 133);
+            this.txtAddWTD.Name = "txtAddWTD";
+            this.txtAddWTD.Size = new System.Drawing.Size(125, 21);
+            this.txtAddWTD.TabIndex = 79;
+            // 
+            // txtAddSTH
+            // 
+            this.txtAddSTH.FormattingEnabled = true;
+            this.txtAddSTH.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.txtAddSTH.Location = new System.Drawing.Point(333, 200);
+            this.txtAddSTH.Name = "txtAddSTH";
+            this.txtAddSTH.Size = new System.Drawing.Size(154, 21);
+            this.txtAddSTH.TabIndex = 80;
+            // 
+            // txtAddETH
+            // 
+            this.txtAddETH.FormattingEnabled = true;
+            this.txtAddETH.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.txtAddETH.Location = new System.Drawing.Point(333, 232);
+            this.txtAddETH.Name = "txtAddETH";
+            this.txtAddETH.Size = new System.Drawing.Size(154, 21);
+            this.txtAddETH.TabIndex = 81;
+            // 
+            // txtETM
+            // 
+            this.txtETM.FormattingEnabled = true;
+            this.txtETM.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.txtETM.Location = new System.Drawing.Point(556, 233);
+            this.txtETM.Name = "txtETM";
+            this.txtETM.Size = new System.Drawing.Size(154, 21);
+            this.txtETM.TabIndex = 82;
+            // 
+            // txtAddSTM
+            // 
+            this.txtAddSTM.FormattingEnabled = true;
+            this.txtAddSTM.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.txtAddSTM.Location = new System.Drawing.Point(556, 201);
+            this.txtAddSTM.Name = "txtAddSTM";
+            this.txtAddSTM.Size = new System.Drawing.Size(154, 21);
+            this.txtAddSTM.TabIndex = 83;
+            // 
+            // CheckWUmon
+            // 
+            this.CheckWUmon.AutoSize = true;
+            this.CheckWUmon.Checked = true;
+            this.CheckWUmon.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CheckWUmon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckWUmon.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CheckWUmon.Location = new System.Drawing.Point(145, 44);
+            this.CheckWUmon.Margin = new System.Windows.Forms.Padding(2);
+            this.CheckWUmon.Name = "CheckWUmon";
+            this.CheckWUmon.Size = new System.Drawing.Size(79, 17);
+            this.CheckWUmon.TabIndex = 78;
+            this.CheckWUmon.Text = "MONDAY";
+            this.CheckWUmon.UseVisualStyleBackColor = true;
+            this.CheckWUmon.CheckedChanged += new System.EventHandler(this.CheckWUmon_CheckedChanged);
+            // 
+            // cmbWUsth
+            // 
+            this.cmbWUsth.FormattingEnabled = true;
+            this.cmbWUsth.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.cmbWUsth.Location = new System.Drawing.Point(193, 117);
+            this.cmbWUsth.Name = "cmbWUsth";
+            this.cmbWUsth.Size = new System.Drawing.Size(154, 21);
+            this.cmbWUsth.TabIndex = 108;
+            // 
+            // cmbWUstm
+            // 
+            this.cmbWUstm.FormattingEnabled = true;
+            this.cmbWUstm.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.cmbWUstm.Location = new System.Drawing.Point(381, 117);
+            this.cmbWUstm.Name = "cmbWUstm";
+            this.cmbWUstm.Size = new System.Drawing.Size(154, 21);
+            this.cmbWUstm.TabIndex = 109;
+            // 
+            // cmbWUendh
+            // 
+            this.cmbWUendh.FormattingEnabled = true;
+            this.cmbWUendh.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.cmbWUendh.Location = new System.Drawing.Point(193, 147);
+            this.cmbWUendh.Name = "cmbWUendh";
+            this.cmbWUendh.Size = new System.Drawing.Size(154, 21);
+            this.cmbWUendh.TabIndex = 110;
+            // 
+            // cmbWUendm
+            // 
+            this.cmbWUendm.FormattingEnabled = true;
+            this.cmbWUendm.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.cmbWUendm.Location = new System.Drawing.Point(381, 148);
+            this.cmbWUendm.Name = "cmbWUendm";
+            this.cmbWUendm.Size = new System.Drawing.Size(154, 21);
+            this.cmbWUendm.TabIndex = 111;
+            // 
+            // cmbWUnwd
+            // 
+            this.cmbWUnwd.FormattingEnabled = true;
+            this.cmbWUnwd.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.cmbWUnwd.Location = new System.Drawing.Point(503, 4);
+            this.cmbWUnwd.Name = "cmbWUnwd";
+            this.cmbWUnwd.Size = new System.Drawing.Size(154, 21);
+            this.cmbWUnwd.TabIndex = 112;
+            // 
+            // cmbWUwtpd
+            // 
+            this.cmbWUwtpd.FormattingEnabled = true;
+            this.cmbWUwtpd.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.cmbWUwtpd.Location = new System.Drawing.Point(185, 70);
+            this.cmbWUwtpd.Name = "cmbWUwtpd";
+            this.cmbWUwtpd.Size = new System.Drawing.Size(154, 21);
+            this.cmbWUwtpd.TabIndex = 113;
             // 
             // Form5
             // 
@@ -2133,21 +2202,9 @@ namespace TimeTable
             this.tabControl2.ResumeLayout(false);
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.WorkingTime)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ETime2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.STime2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ETime1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.STime1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NoWorkDays)).EndInit();
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UWorkTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UETime2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.USTime2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UETime1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.USTime1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UNoWorkDay)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2274,22 +2331,17 @@ namespace TimeTable
         private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.CheckBox CheckBW5;
-        private System.Windows.Forms.CheckBox CheckBW4;
-        private System.Windows.Forms.CheckBox CheckBW3;
-        private System.Windows.Forms.CheckBox CheckBW2;
-        private System.Windows.Forms.CheckBox CheckBW1;
-        private System.Windows.Forms.NumericUpDown NoWorkDays;
-        private System.Windows.Forms.CheckBox CheckBW7;
-        private System.Windows.Forms.CheckBox CheckBW6;
-        private System.Windows.Forms.RadioButton RadioB2;
-        private System.Windows.Forms.RadioButton RadioB3;
-        private System.Windows.Forms.RadioButton RadioB1;
+        private System.Windows.Forms.CheckBox chkFriday;
+        private System.Windows.Forms.CheckBox chkThursday;
+        private System.Windows.Forms.CheckBox chkWednesday;
+        private System.Windows.Forms.CheckBox chkTuesday;
+        private System.Windows.Forms.CheckBox chkMonday;
+        private System.Windows.Forms.CheckBox chkSunday;
+        private System.Windows.Forms.CheckBox chkSaturday;
+        private System.Windows.Forms.RadioButton RadioBOneH;
+        private System.Windows.Forms.RadioButton RadioBTwoH;
+        private System.Windows.Forms.RadioButton RadioBThirtyM;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.NumericUpDown ETime2;
-        private System.Windows.Forms.NumericUpDown STime2;
-        private System.Windows.Forms.NumericUpDown ETime1;
-        private System.Windows.Forms.NumericUpDown STime1;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label33;
@@ -2297,45 +2349,43 @@ namespace TimeTable
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Button BtnWReset;
         private System.Windows.Forms.Button BtnWSave;
-        private System.Windows.Forms.RadioButton URBtn2;
-        private System.Windows.Forms.RadioButton URBtn3;
-        private System.Windows.Forms.RadioButton URBtn1;
+        private System.Windows.Forms.RadioButton radioWUhours;
+        private System.Windows.Forms.RadioButton radioWUtwohours;
+        private System.Windows.Forms.RadioButton radioWUthirty;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.NumericUpDown UETime2;
-        private System.Windows.Forms.NumericUpDown USTime2;
-        private System.Windows.Forms.NumericUpDown UETime1;
-        private System.Windows.Forms.NumericUpDown USTime1;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.CheckBox UCheckB7;
-        private System.Windows.Forms.CheckBox UCheckB6;
-        private System.Windows.Forms.CheckBox UCheckB5;
-        private System.Windows.Forms.CheckBox UCheckB4;
-        private System.Windows.Forms.CheckBox UCheckB3;
-        private System.Windows.Forms.CheckBox UCheckB2;
-        private System.Windows.Forms.CheckBox UCheckB1;
-        private System.Windows.Forms.NumericUpDown UNoWorkDay;
+        private System.Windows.Forms.CheckBox CheckWUsun;
+        private System.Windows.Forms.CheckBox CheckWUsatu;
+        private System.Windows.Forms.CheckBox CheckWUfri;
+        private System.Windows.Forms.CheckBox CheckWUthur;
+        private System.Windows.Forms.CheckBox CheckWUwed;
+        private System.Windows.Forms.CheckBox CheckWUtues;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.TextBox WorkID;
+        private System.Windows.Forms.TextBox txtWorkID;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.Button BtnWSearch;
-        private System.Windows.Forms.Button BtnWRefresh;
+        private System.Windows.Forms.Button BtnWURefresh;
         private System.Windows.Forms.Button BtnWUpdate;
-        private System.Windows.Forms.Button BtnWDelete;
-        private System.Windows.Forms.NumericUpDown WorkingTime;
-        private System.Windows.Forms.NumericUpDown UWorkTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Working_Time_Per_Day;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
+        private System.Windows.Forms.Button BtnWUDelete;
+        private System.Windows.Forms.ComboBox txtAddSTM;
+        private System.Windows.Forms.ComboBox txtETM;
+        private System.Windows.Forms.ComboBox txtAddETH;
+        private System.Windows.Forms.ComboBox txtAddSTH;
+        private System.Windows.Forms.ComboBox txtAddWTD;
+        private System.Windows.Forms.ComboBox txtAddNWD;
+        private System.Windows.Forms.CheckBox CheckWUmon;
+        private System.Windows.Forms.ComboBox cmbWUendm;
+        private System.Windows.Forms.ComboBox cmbWUendh;
+        private System.Windows.Forms.ComboBox cmbWUstm;
+        private System.Windows.Forms.ComboBox cmbWUsth;
+        private System.Windows.Forms.ComboBox cmbWUnwd;
+        private System.Windows.Forms.ComboBox cmbWUwtpd;
     }
 }
