@@ -31,18 +31,18 @@ namespace TimeTable
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnStatistic = new System.Windows.Forms.Button();
-            this.btnLocation = new System.Windows.Forms.Button();
-            this.btnTag = new System.Windows.Forms.Button();
             this.btnStudent = new System.Windows.Forms.Button();
             this.btnLecturer = new System.Windows.Forms.Button();
-            this.btnSubject = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlFormLoader = new System.Windows.Forms.Panel();
             this.lblStudent = new System.Windows.Forms.Label();
+            this.btnSubject = new System.Windows.Forms.Button();
+            this.btnTag = new System.Windows.Forms.Button();
+            this.btnLocation = new System.Windows.Forms.Button();
+            this.btnStatistic = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,9 +55,9 @@ namespace TimeTable
             this.panel1.Controls.Add(this.btnStatistic);
             this.panel1.Controls.Add(this.btnLocation);
             this.panel1.Controls.Add(this.btnTag);
+            this.panel1.Controls.Add(this.btnSubject);
             this.panel1.Controls.Add(this.btnStudent);
             this.panel1.Controls.Add(this.btnLecturer);
-            this.panel1.Controls.Add(this.btnSubject);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -65,74 +65,6 @@ namespace TimeTable
             this.panel1.Size = new System.Drawing.Size(178, 577);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(0, 415);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 42);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "EXIT";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnStatistic
-            // 
-            this.btnStatistic.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnStatistic.FlatAppearance.BorderSize = 0;
-            this.btnStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatistic.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStatistic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnStatistic.Image = global::TimeTable.Properties.Resources.statistics;
-            this.btnStatistic.Location = new System.Drawing.Point(0, 373);
-            this.btnStatistic.Name = "btnStatistic";
-            this.btnStatistic.Size = new System.Drawing.Size(178, 42);
-            this.btnStatistic.TabIndex = 7;
-            this.btnStatistic.Text = "STATISTICS";
-            this.btnStatistic.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnStatistic.UseVisualStyleBackColor = true;
-            this.btnStatistic.Click += new System.EventHandler(this.btnStatistic_Click);
-            // 
-            // btnLocation
-            // 
-            this.btnLocation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLocation.FlatAppearance.BorderSize = 0;
-            this.btnLocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLocation.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLocation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnLocation.Image = global::TimeTable.Properties.Resources.locat;
-            this.btnLocation.Location = new System.Drawing.Point(0, 331);
-            this.btnLocation.Name = "btnLocation";
-            this.btnLocation.Size = new System.Drawing.Size(178, 42);
-            this.btnLocation.TabIndex = 6;
-            this.btnLocation.Text = "LOCATION";
-            this.btnLocation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLocation.UseVisualStyleBackColor = true;
-            this.btnLocation.Click += new System.EventHandler(this.btnLocation_Click);
-            // 
-            // btnTag
-            // 
-            this.btnTag.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTag.FlatAppearance.BorderSize = 0;
-            this.btnTag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTag.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTag.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnTag.Image = global::TimeTable.Properties.Resources.tag;
-            this.btnTag.Location = new System.Drawing.Point(0, 289);
-            this.btnTag.Name = "btnTag";
-            this.btnTag.Size = new System.Drawing.Size(178, 42);
-            this.btnTag.TabIndex = 4;
-            this.btnTag.Text = "TAG";
-            this.btnTag.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTag.UseVisualStyleBackColor = true;
-            this.btnTag.Click += new System.EventHandler(this.btnTag_Click);
             // 
             // btnStudent
             // 
@@ -142,7 +74,7 @@ namespace TimeTable
             this.btnStudent.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStudent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnStudent.Image = global::TimeTable.Properties.Resources.std;
-            this.btnStudent.Location = new System.Drawing.Point(0, 247);
+            this.btnStudent.Location = new System.Drawing.Point(0, 198);
             this.btnStudent.Name = "btnStudent";
             this.btnStudent.Size = new System.Drawing.Size(178, 42);
             this.btnStudent.TabIndex = 3;
@@ -159,7 +91,7 @@ namespace TimeTable
             this.btnLecturer.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLecturer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnLecturer.Image = global::TimeTable.Properties.Resources.lec;
-            this.btnLecturer.Location = new System.Drawing.Point(0, 205);
+            this.btnLecturer.Location = new System.Drawing.Point(0, 156);
             this.btnLecturer.Name = "btnLecturer";
             this.btnLecturer.Size = new System.Drawing.Size(178, 42);
             this.btnLecturer.TabIndex = 2;
@@ -167,23 +99,6 @@ namespace TimeTable
             this.btnLecturer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLecturer.UseVisualStyleBackColor = true;
             this.btnLecturer.Click += new System.EventHandler(this.btnLecturer_Click);
-            // 
-            // btnSubject
-            // 
-            this.btnSubject.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSubject.FlatAppearance.BorderSize = 0;
-            this.btnSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubject.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnSubject.Image = global::TimeTable.Properties.Resources.subject;
-            this.btnSubject.Location = new System.Drawing.Point(0, 156);
-            this.btnSubject.Name = "btnSubject";
-            this.btnSubject.Size = new System.Drawing.Size(178, 49);
-            this.btnSubject.TabIndex = 1;
-            this.btnSubject.Text = "SESSIONS AND WORKING PERIOD";
-            this.btnSubject.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSubject.UseVisualStyleBackColor = true;
-            this.btnSubject.Click += new System.EventHandler(this.btnSubject_Click);
             // 
             // panel2
             // 
@@ -240,6 +155,91 @@ namespace TimeTable
             this.lblStudent.Text = "STUDENT";
             this.lblStudent.Click += new System.EventHandler(this.lblStudent_Click);
             // 
+            // btnSubject
+            // 
+            this.btnSubject.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSubject.FlatAppearance.BorderSize = 0;
+            this.btnSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubject.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnSubject.Image = global::TimeTable.Properties.Resources.subject;
+            this.btnSubject.Location = new System.Drawing.Point(0, 240);
+            this.btnSubject.Name = "btnSubject";
+            this.btnSubject.Size = new System.Drawing.Size(178, 49);
+            this.btnSubject.TabIndex = 9;
+            this.btnSubject.Text = "SESSIONS AND WORKING PERIOD";
+            this.btnSubject.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSubject.UseVisualStyleBackColor = true;
+            this.btnSubject.Click += new System.EventHandler(this.btnSubject_Click_1);
+            // 
+            // btnTag
+            // 
+            this.btnTag.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTag.FlatAppearance.BorderSize = 0;
+            this.btnTag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTag.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTag.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnTag.Image = global::TimeTable.Properties.Resources.tag;
+            this.btnTag.Location = new System.Drawing.Point(0, 289);
+            this.btnTag.Name = "btnTag";
+            this.btnTag.Size = new System.Drawing.Size(178, 42);
+            this.btnTag.TabIndex = 10;
+            this.btnTag.Text = "TAG";
+            this.btnTag.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTag.UseVisualStyleBackColor = true;
+            this.btnTag.Click += new System.EventHandler(this.btnTag_Click_1);
+            // 
+            // btnLocation
+            // 
+            this.btnLocation.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLocation.FlatAppearance.BorderSize = 0;
+            this.btnLocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLocation.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLocation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnLocation.Image = global::TimeTable.Properties.Resources.locat;
+            this.btnLocation.Location = new System.Drawing.Point(0, 331);
+            this.btnLocation.Name = "btnLocation";
+            this.btnLocation.Size = new System.Drawing.Size(178, 42);
+            this.btnLocation.TabIndex = 11;
+            this.btnLocation.Text = "LOCATION";
+            this.btnLocation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLocation.UseVisualStyleBackColor = true;
+            this.btnLocation.Click += new System.EventHandler(this.btnLocation_Click_1);
+            // 
+            // btnStatistic
+            // 
+            this.btnStatistic.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnStatistic.FlatAppearance.BorderSize = 0;
+            this.btnStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStatistic.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatistic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnStatistic.Image = global::TimeTable.Properties.Resources.statistics;
+            this.btnStatistic.Location = new System.Drawing.Point(0, 373);
+            this.btnStatistic.Name = "btnStatistic";
+            this.btnStatistic.Size = new System.Drawing.Size(178, 42);
+            this.btnStatistic.TabIndex = 12;
+            this.btnStatistic.Text = "STATISTICS";
+            this.btnStatistic.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnStatistic.UseVisualStyleBackColor = true;
+            this.btnStatistic.Click += new System.EventHandler(this.btnStatistic_Click_1);
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(0, 415);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(178, 42);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "EXIT";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -268,15 +268,15 @@ namespace TimeTable
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnSubject;
-        private System.Windows.Forms.Button btnStatistic;
-        private System.Windows.Forms.Button btnLocation;
-        private System.Windows.Forms.Button btnTag;
         private System.Windows.Forms.Button btnStudent;
         private System.Windows.Forms.Button btnLecturer;
         private System.Windows.Forms.Label lblStudent;
         private System.Windows.Forms.Panel pnlFormLoader;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnStatistic;
+        private System.Windows.Forms.Button btnLocation;
+        private System.Windows.Forms.Button btnTag;
+        private System.Windows.Forms.Button btnSubject;
     }
 }
 

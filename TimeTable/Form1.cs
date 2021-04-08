@@ -54,26 +54,12 @@ namespace TimeTable
 
         private void btnTag_Click(object sender, EventArgs e)
         {
-            /* var newForm = new Form4();
-             newForm.Show();*/
-            lblStudent.Text = "TAGS";
-            this.pnlFormLoader.Controls.Clear();
-            Form4 form4 = new Form4() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            form4.FormBorderStyle = FormBorderStyle.None;
-            this.pnlFormLoader.Controls.Add(form4);
-            form4.Show();
+            
         }
 
         private void btnSubject_Click(object sender, EventArgs e)
         {
-            /*var newForm = new Form5();
-            newForm.Show();*/
-            lblStudent.Text = "SESSIONS";
-            this.pnlFormLoader.Controls.Clear();
-            Form5 form5 = new Form5() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            form5.FormBorderStyle = FormBorderStyle.None;
-            this.pnlFormLoader.Controls.Add(form5);
-            form5.Show();
+            
 
         }
 
@@ -99,22 +85,12 @@ namespace TimeTable
 
         private void btnStatistic_Click(object sender, EventArgs e)
         {
-            lblStudent.Text = "STATISTICS";
-            this.pnlFormLoader.Controls.Clear();
-            Statistics statistics = new Statistics() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            statistics.FormBorderStyle = FormBorderStyle.None;
-            this.pnlFormLoader.Controls.Add(statistics);
-            statistics.Show();
+            
         }
 
         private void btnLocation_Click(object sender, EventArgs e)
         {
-            lblStudent.Text = "LOCATION";
-            this.pnlFormLoader.Controls.Clear();
-            Location location = new Location() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            location.FormBorderStyle = FormBorderStyle.None;
-            this.pnlFormLoader.Controls.Add(location);
-            location.Show();
+            
         }
 
         private void btnWorkingdays_Click(object sender, EventArgs e)
@@ -140,12 +116,61 @@ namespace TimeTable
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
             DialogResult result = MessageBox.Show(null, "Do You Want to Exit", "Select", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {
                 Application.Exit();
             }
+        }
+
+        private void btnStatistic_Click_1(object sender, EventArgs e)
+        {
+            lblStudent.Text = "STATISTICS";
+            this.pnlFormLoader.Controls.Clear();
+            Statistics statistics = new Statistics() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            statistics.FormBorderStyle = FormBorderStyle.None;
+            this.pnlFormLoader.Controls.Add(statistics);
+            statistics.Show();
+        }
+
+        private void btnLocation_Click_1(object sender, EventArgs e)
+        {
+            lblStudent.Text = "LOCATION";
+            this.pnlFormLoader.Controls.Clear();
+            Location location = new Location() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            location.FormBorderStyle = FormBorderStyle.None;
+            this.pnlFormLoader.Controls.Add(location);
+            location.Show();
+        }
+
+        private void btnTag_Click_1(object sender, EventArgs e)
+        {
+            /* var newForm = new Form4();
+             newForm.Show();*/
+            lblStudent.Text = "TAGS";
+            this.pnlFormLoader.Controls.Clear();
+            Form4 form4 = new Form4() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            form4.FormBorderStyle = FormBorderStyle.None;
+            this.pnlFormLoader.Controls.Add(form4);
+            form4.Show();
+        }
+
+        private void btnSubject_Click_1(object sender, EventArgs e)
+        {
+            /*var newForm = new Form5();
+            newForm.Show();*/
+            lblStudent.Text = "SESSIONS";
+            this.pnlFormLoader.Controls.Clear();
+            Form5 form5 = new Form5() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            form5.FormBorderStyle = FormBorderStyle.None;
+            this.pnlFormLoader.Controls.Add(form5);
+            form5.Show();
         }
     }
 }
