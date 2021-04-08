@@ -146,6 +146,7 @@ namespace TimeTable
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.WorkingTime = new System.Windows.Forms.NumericUpDown();
             this.BtnWReset = new System.Windows.Forms.Button();
             this.BtnWSave = new System.Windows.Forms.Button();
             this.RadioB2 = new System.Windows.Forms.RadioButton();
@@ -172,6 +173,7 @@ namespace TimeTable
             this.label28 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.UWorkTime = new System.Windows.Forms.NumericUpDown();
             this.BtnWSearch = new System.Windows.Forms.Button();
             this.BtnWRefresh = new System.Windows.Forms.Button();
             this.BtnWUpdate = new System.Windows.Forms.Button();
@@ -179,6 +181,13 @@ namespace TimeTable
             this.WorkID = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Working_Time_Per_Day = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label45 = new System.Windows.Forms.Label();
             this.URBtn2 = new System.Windows.Forms.RadioButton();
             this.URBtn3 = new System.Windows.Forms.RadioButton();
@@ -203,15 +212,6 @@ namespace TimeTable
             this.UNoWorkDay = new System.Windows.Forms.NumericUpDown();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.WorkingTime = new System.Windows.Forms.NumericUpDown();
-            this.UWorkTime = new System.Windows.Forms.NumericUpDown();
-            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Working_Time_Per_Day = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -225,20 +225,20 @@ namespace TimeTable
             this.tabPage7.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WorkingTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ETime2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.STime2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ETime1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.STime1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NoWorkDays)).BeginInit();
             this.tabPage9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UWorkTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UETime2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.USTime2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UETime1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.USTime1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UNoWorkDay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WorkingTime)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UWorkTime)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -1373,6 +1373,13 @@ namespace TimeTable
             this.tabPage8.Text = "ADD WORKING DAYS";
             this.tabPage8.Click += new System.EventHandler(this.tabPage8_Click);
             // 
+            // WorkingTime
+            // 
+            this.WorkingTime.Location = new System.Drawing.Point(313, 136);
+            this.WorkingTime.Name = "WorkingTime";
+            this.WorkingTime.Size = new System.Drawing.Size(195, 20);
+            this.WorkingTime.TabIndex = 77;
+            // 
             // BtnWReset
             // 
             this.BtnWReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
@@ -1704,6 +1711,13 @@ namespace TimeTable
             this.tabPage9.TabIndex = 1;
             this.tabPage9.Text = "MANAGE WORKING DAYS & HOURS";
             // 
+            // UWorkTime
+            // 
+            this.UWorkTime.Location = new System.Drawing.Point(210, 73);
+            this.UWorkTime.Name = "UWorkTime";
+            this.UWorkTime.Size = new System.Drawing.Size(160, 20);
+            this.UWorkTime.TabIndex = 106;
+            // 
             // BtnWSearch
             // 
             this.BtnWSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
@@ -1777,6 +1791,41 @@ namespace TimeTable
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.Size = new System.Drawing.Size(637, 135);
             this.dataGridView5.TabIndex = 99;
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            // 
+            // Working_Time_Per_Day
+            // 
+            this.Working_Time_Per_Day.HeaderText = "Working Time PerDay";
+            this.Working_Time_Per_Day.Name = "Working_Time_Per_Day";
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.HeaderText = "No Of Working Days";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.HeaderText = "Working Days";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.HeaderText = "Day Start Time";
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.HeaderText = "Day End Time";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.HeaderText = "Select Prefered Time Slot";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
             // 
             // label45
             // 
@@ -2057,55 +2106,6 @@ namespace TimeTable
             this.label44.TabIndex = 75;
             this.label44.Text = "No Of Working Days";
             // 
-            // WorkingTime
-            // 
-            this.WorkingTime.Location = new System.Drawing.Point(313, 136);
-            this.WorkingTime.Name = "WorkingTime";
-            this.WorkingTime.Size = new System.Drawing.Size(195, 20);
-            this.WorkingTime.TabIndex = 77;
-            // 
-            // UWorkTime
-            // 
-            this.UWorkTime.Location = new System.Drawing.Point(210, 73);
-            this.UWorkTime.Name = "UWorkTime";
-            this.UWorkTime.Size = new System.Drawing.Size(160, 20);
-            this.UWorkTime.TabIndex = 106;
-            // 
-            // dataGridViewTextBoxColumn22
-            // 
-            this.dataGridViewTextBoxColumn22.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            // 
-            // Working_Time_Per_Day
-            // 
-            this.Working_Time_Per_Day.HeaderText = "Working Time PerDay";
-            this.Working_Time_Per_Day.Name = "Working_Time_Per_Day";
-            // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.HeaderText = "No Of Working Days";
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.HeaderText = "Working Days";
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.HeaderText = "Day Start Time";
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.HeaderText = "Day End Time";
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.HeaderText = "Select Prefered Time Slot";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2133,6 +2133,7 @@ namespace TimeTable
             this.tabControl2.ResumeLayout(false);
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WorkingTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ETime2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.STime2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ETime1)).EndInit();
@@ -2140,14 +2141,13 @@ namespace TimeTable
             ((System.ComponentModel.ISupportInitialize)(this.NoWorkDays)).EndInit();
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UWorkTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UETime2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.USTime2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UETime1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.USTime1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UNoWorkDay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WorkingTime)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UWorkTime)).EndInit();
             this.ResumeLayout(false);
 
         }

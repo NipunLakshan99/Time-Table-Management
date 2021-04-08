@@ -8,49 +8,64 @@ using System.Threading.Tasks;
 
 namespace TimeTable
 {
-    class LecRepo
+    class WorkingRepo
     {
         DbProviderFactory factory;
         string provider;
         string connectionString;
 
-        public LecRepo()
+        public WorkingRepo()
         {
             provider = ConfigurationManager.AppSettings["provider"];
             connectionString = ConfigurationManager.AppSettings["connectionString"];
             factory = DbProviderFactories.GetFactory(provider);
         }
-        public List<Lecs> GetAll()
-       {
-            var lect = new List<Lecs>();
+
+        public List<Working> GetAll()
+        {
+            var works = new List<Working>();
             using (var connection = factory.CreateConnection())
             {
                 connection.ConnectionString = connectionString;
                 connection.Open();
                 var command = factory.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = "Select * From Lecs;";
+                command.CommandText = "Select * From Working;";
                 using (DbDataReader reader = command.ExecuteReader())
                 {
-                    while (reader.Read())
+                    while(reader.Read())
                     {
-                        lect.Add(new Lecs
-                       {
-                            Lecturer_ID = (int)reader["Lecturer_ID"],
-                            Lecturer_name = (string)reader["Lecturer_name"],
-                            Faculty = (string)reader["Faculty"],
-                            Department = (string)reader["Department"],
-                            Building = (string)reader["Building"],
-                            Level = (string)reader["Level"]
+                        works.Add(new Working
+                        {
+                            Working_ID = (int)reader["Working_ID"],
+                            No_worikng_days = (string)reader["No_worikng_days"],
+                            Working_days = (string)reader[" Working_days"],
+                            Working_Time = (string)reader["Working_Time"],
+                            Start_Time = (string)reader["Start_Time"],
+                            End_Time = (string)reader["End_Time"],
+                            Time_Slot = (string)reader["Time_Slot"]
                         });
                     }
                 }
             }
-
-            return lect;
+            return works;
         }
 
-        public void Add(Lecs lecturers)
+        public void Add(Working working)
+        {
+            using (var connection = factory.CreateConnection())
+            {
+                connection.Open();
+                var command = factory.CreateCommand();
+                command.Connection = connection;
+                command.CommandText = $"Insert into Working(No_worikng_days,Working_days,Working_Time,Start_Time,End_Time,Time_Slot) Values('{working.No_worikng_days}','{working.Working_days}','{working.Working_Time}','{working.Start_Time}','{working.End_Time}','{working.Time_Slot}');";
+                command.ExecuteNonQuery();
+
+            }
+            
+        }
+
+        public void Update(Working working)
         {
             using (var connection = factory.CreateConnection())
             {
@@ -58,12 +73,12 @@ namespace TimeTable
                 connection.Open();
                 var command = factory.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = $"Insert into Lecs(Lecturer_name,Faculty,Department,Building,Lvl,Rank) Values('{lecturers.Lecturer_name}','{lecturers.Faculty}','{lecturers.Department}','{lecturers.Building}','{lecturers.Level}','{lecturers.Rank}');";
+                command.CommandText = $"Update Working set No_worikng_days ='{working.No_worikng_days}',Working_days ='{working.Working_days}',Working_Time='{working.Working_Time}',Start_Time='{working.Start_Time}',End_Time='{working.End_Time}',Time_Slot='{working.Time_Slot};";                
                 command.ExecuteNonQuery();
             }
         }
 
-        public void Update(Lecs lecturers)
+        public void Delete(int Working_ID)
         {
             using (var connection = factory.CreateConnection())
             {
@@ -71,24 +86,10 @@ namespace TimeTable
                 connection.Open();
                 var command = factory.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = $"Update Lecs set Lecturer_name ='{lecturers.Lecturer_name}',Faculty ='{lecturers.Faculty}',Department ='{lecturers.Department}',Building ='{lecturers.Building}',Lvl ='{lecturers.Level}',Rank='{lecturers.Rank}' where Lecturer_ID = {lecturers.Lecturer_ID};";
+                command.CommandText = $"Delete From Working where Working_ID  = {Working_ID};";
                 command.ExecuteNonQuery();
-
             }
-        }
-
-        public void Delete(int Lecturer_ID)
-        {
-            using (var connection = factory.CreateConnection())
-            {
-                connection.ConnectionString = connectionString;
-                connection.Open();
-                var command = factory.CreateCommand();
-                command.Connection = connection;
-                command.CommandText = $"Delete From Lecs where Lecturer_ID  = {Lecturer_ID};";
-                command.ExecuteNonQuery();
-
-            }
+                
         }
     }
 }

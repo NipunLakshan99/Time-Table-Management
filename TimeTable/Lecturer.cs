@@ -126,7 +126,7 @@ namespace TimeTable
 
         private void tabPage2_Click(object sender, EventArgs e)
         {
-            //dataGridView1.DataSource = LecRepo.GetAll();
+            dataGridView1.DataSource = LecRepo.GetAll();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -162,7 +162,7 @@ namespace TimeTable
                 cmbDep.Text = string.Empty;
                 cmbBuild.Text = string.Empty;
                 cmblvl.Text = string.Empty;
-                //dataGridView1.DataSource = LecRepo.GetAll();
+                dataGridView1.DataSource = LecRepo.GetAll();
             }
         }
 
@@ -195,10 +195,10 @@ namespace TimeTable
                     Department = cmbUdep.Text,
                     Building = cmbUbuild.Text,
                     //Lvl = cmbUlvl.Text,
-                    //Rank = txtUrank.Text,
+                   //Rank = txtUrank.Text,
 
                 });
-                //dataGridView1.DataSource = LecRepo.GetAll();
+                dataGridView1.DataSource = LecRepo.GetAll();
             }
         }
 
@@ -214,7 +214,7 @@ namespace TimeTable
                 cmbUlvl.Text = string.Empty;
                 txtUrank.Text = string.Empty;
 
-                //dataGridView1.DataSource = LecRepo.GetAll();
+                dataGridView1.DataSource = LecRepo.GetAll();
             }
         }
 

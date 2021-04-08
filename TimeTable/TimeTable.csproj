@@ -107,6 +107,8 @@
     <Compile Include="StudentRepo.cs" />
     <Compile Include="Subject.cs" />
     <Compile Include="SubjectRepo.cs" />
+    <Compile Include="Working.cs" />
+    <Compile Include="WorkingRepo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
