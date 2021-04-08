@@ -42,9 +42,9 @@ namespace TimeTable
                             Lecturer_name = (string)reader["Lecturer_name"],
                             Faculty = (string)reader["Faculty"],
                             Department = (string)reader["Department"],
-                            Building = (string)reader["Building"],
-                            Level = (string)reader["Level"]
-                        };
+                            Building = (string)reader["Building"]
+                            //Level = (string)reader["Level"]
+                        });
                     }
                 }
 
@@ -80,6 +80,7 @@ namespace TimeTable
         }
         public void Delete(int Lecturer_ID)
         {
+
             using (var connection = factory.CreateConnection())
             {
                 connection.ConnectionString = connectionString;

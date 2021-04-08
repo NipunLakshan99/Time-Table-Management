@@ -79,8 +79,6 @@
     <Compile Include="Form6.Designer.cs">
       <DependentUpon>Form6.cs</DependentUpon>
     </Compile>
-    <Compile Include="Lecs.cs" />
-    <Compile Include="LecRepo.cs" />
     <Compile Include="Lecturer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +105,8 @@
     <Compile Include="StudentRepo.cs" />
     <Compile Include="Subject.cs" />
     <Compile Include="SubjectRepo.cs" />
+    <Compile Include="Teacher.cs" />
+    <Compile Include="TeacherRepo.cs" />
     <Compile Include="Working.cs" />
     <Compile Include="WorkingRepo.cs" />
     <EmbeddedResource Include="Form1.resx">

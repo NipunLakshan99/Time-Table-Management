@@ -30,6 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.btnsave = new System.Windows.Forms.Button();
             this.cmblvl = new System.Windows.Forms.ComboBox();
             this.cmbBuild = new System.Windows.Forms.ComboBox();
@@ -114,16 +115,15 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -167,6 +167,14 @@
             this.tabPage1.Size = new System.Drawing.Size(792, 424);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "ADD LECTURER";
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(21, 234);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(751, 168);
+            this.dataGridView4.TabIndex = 37;
             // 
             // btnsave
             // 
@@ -446,6 +454,11 @@
             // cmbUdep
             // 
             this.cmbUdep.FormattingEnabled = true;
+            this.cmbUdep.Items.AddRange(new object[] {
+            "IT Deparment",
+            "Engineering Department",
+            "Business Department",
+            "Humanity and science Department"});
             this.cmbUdep.Location = new System.Drawing.Point(196, 133);
             this.cmbUdep.Name = "cmbUdep";
             this.cmbUdep.Size = new System.Drawing.Size(178, 26);
@@ -454,6 +467,17 @@
             // cmbUbuild
             // 
             this.cmbUbuild.FormattingEnabled = true;
+            this.cmbUbuild.Items.AddRange(new object[] {
+            "SLIIT Malabe Main",
+            "SLIIT Malabe New Building",
+            "SLIIT Malabe Engineering Building",
+            "SLIIT Malabe BM Building",
+            "SLIIT METRO Main",
+            "SLIIT ACADEMY Main",
+            "SLIIT MATARA Main",
+            "SLIIT KANDY Main",
+            "SLIIT KURUNAGALA Main",
+            "SLIIT JAFFNA Main"});
             this.cmbUbuild.Location = new System.Drawing.Point(567, 52);
             this.cmbUbuild.Name = "cmbUbuild";
             this.cmbUbuild.Size = new System.Drawing.Size(178, 26);
@@ -462,6 +486,14 @@
             // cmbUcen
             // 
             this.cmbUcen.FormattingEnabled = true;
+            this.cmbUcen.Items.AddRange(new object[] {
+            "SLIIT Malabe",
+            "SLIIT METRO",
+            "SLIIT ACADEMY",
+            "SLIIT MATARA",
+            "SLIIT KANDY",
+            "SLIIT KURUNAGALA",
+            "SLIIT JAFFNA"});
             this.cmbUcen.Location = new System.Drawing.Point(567, 12);
             this.cmbUcen.Name = "cmbUcen";
             this.cmbUcen.Size = new System.Drawing.Size(178, 26);
@@ -470,6 +502,12 @@
             // cmbUfac
             // 
             this.cmbUfac.FormattingEnabled = true;
+            this.cmbUfac.Items.AddRange(new object[] {
+            "Computing",
+            "Engineering",
+            "Business",
+            "Humanity and science",
+            ""});
             this.cmbUfac.Location = new System.Drawing.Point(196, 91);
             this.cmbUfac.Name = "cmbUfac";
             this.cmbUfac.Size = new System.Drawing.Size(178, 26);
@@ -522,6 +560,12 @@
             // cmbUlvl
             // 
             this.cmbUlvl.FormattingEnabled = true;
+            this.cmbUlvl.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
             this.cmbUlvl.Location = new System.Drawing.Point(567, 91);
             this.cmbUlvl.Name = "cmbUlvl";
             this.cmbUlvl.Size = new System.Drawing.Size(178, 26);
@@ -1106,14 +1150,6 @@
             this.label32.TabIndex = 54;
             this.label32.Text = "OFFERED YEAR";
             // 
-            // dataGridView4
-            // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(21, 234);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(751, 168);
-            this.dataGridView4.TabIndex = 37;
-            // 
             // Lecturer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1125,6 +1161,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -1134,7 +1171,6 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.ResumeLayout(false);
 
         }

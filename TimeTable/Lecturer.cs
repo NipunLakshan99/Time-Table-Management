@@ -172,14 +172,14 @@ namespace TimeTable
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 var row = dataGridView1.SelectedRows[0];
-                var lect = (Teacher)row.DataBoundItem;
-                txtUid.Text = lect.Lecturer_ID.ToString();
-                txtUlec.Text = lect.Lecturer_name;
-                cmbUfac.Text = lect.Faculty;
-                cmbUdep.Text = lect.Department;
-                cmbUbuild.Text = lect.Building;
-                cmbUlvl.Text = lect.Level;
-                txtUrank.Text = lect.Rank;
+                var  teacher = (Teacher)row.DataBoundItem;
+                txtUid.Text = teacher.Lecturer_ID.ToString();
+                txtUlec.Text = teacher.Lecturer_name;
+                cmbUfac.Text = teacher.Faculty;
+                cmbUdep.Text = teacher.Department;
+                cmbUbuild.Text = teacher.Building;
+                cmbUlvl.Text = teacher.Level;
+                txtUrank.Text = teacher.Rank;
 
             }
         }
@@ -207,7 +207,7 @@ namespace TimeTable
         {
             if (!string.IsNullOrEmpty(txtUid.Text) && !string.IsNullOrEmpty(txtUlec.Text) && !string.IsNullOrEmpty(cmbUfac.Text) && !string.IsNullOrEmpty(cmbUdep.Text) && !string.IsNullOrEmpty(cmbUbuild.Text) && !string.IsNullOrEmpty(cmbUlvl.Text) && !string.IsNullOrEmpty(txtUrank.Text))
             {
-                TeacherRepo.Delete(int.Parse(txtlecid.Text));
+                TeacherRepo.Delete(int.Parse(txtUid.Text));
                 txtUlec.Text = string.Empty;
                 cmbUfac.Text = string.Empty;
                 cmbUdep.Text = string.Empty;
@@ -215,7 +215,7 @@ namespace TimeTable
                 cmbUlvl.Text = string.Empty;
                 txtUrank.Text = string.Empty;
 
-                dataGridView1.DataSource = LecRepo.GetAll();
+                dataGridView1.DataSource = TeacherRepo.GetAll();
             }
         }
 

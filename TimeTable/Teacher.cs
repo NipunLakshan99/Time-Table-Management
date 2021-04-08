@@ -12,6 +12,7 @@ namespace TimeTable
         public string Lecturer_name { get; set; }
         public string Faculty { get; set; }
         public string Department { get; set; }
+        public string Center { get; set; }
         public string Building { get; set; }
         public string Level { get; set; }
 
