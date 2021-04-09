@@ -49,6 +49,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnLMupdate = new System.Windows.Forms.Button();
             this.btnMdelete = new System.Windows.Forms.Button();
             this.label28 = new System.Windows.Forms.Label();
             this.txtUrank = new System.Windows.Forms.TextBox();
@@ -59,11 +60,9 @@
             this.cmbUfac = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.txtUid = new System.Windows.Forms.TextBox();
             this.txtUlec = new System.Windows.Forms.TextBox();
             this.cmbUlvl = new System.Windows.Forms.ComboBox();
-            this.btnMUpdate = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -384,6 +383,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.tabPage2.Controls.Add(this.btnLMupdate);
             this.tabPage2.Controls.Add(this.btnMdelete);
             this.tabPage2.Controls.Add(this.label28);
             this.tabPage2.Controls.Add(this.txtUrank);
@@ -394,11 +394,9 @@
             this.tabPage2.Controls.Add(this.cmbUfac);
             this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.Controls.Add(this.button8);
-            this.tabPage2.Controls.Add(this.button7);
             this.tabPage2.Controls.Add(this.txtUid);
             this.tabPage2.Controls.Add(this.txtUlec);
             this.tabPage2.Controls.Add(this.cmbUlvl);
-            this.tabPage2.Controls.Add(this.btnMUpdate);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.label9);
@@ -414,10 +412,21 @@
             this.tabPage2.Text = "MANAGE LECTURER";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
+            // btnLMupdate
+            // 
+            this.btnLMupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnLMupdate.Location = new System.Drawing.Point(196, 174);
+            this.btnLMupdate.Name = "btnLMupdate";
+            this.btnLMupdate.Size = new System.Drawing.Size(86, 30);
+            this.btnLMupdate.TabIndex = 57;
+            this.btnLMupdate.Text = "Update";
+            this.btnLMupdate.UseVisualStyleBackColor = false;
+            this.btnLMupdate.Click += new System.EventHandler(this.btnLMupdate_Click);
+            // 
             // btnMdelete
             // 
             this.btnMdelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnMdelete.Location = new System.Drawing.Point(237, 174);
+            this.btnMdelete.Location = new System.Drawing.Point(377, 174);
             this.btnMdelete.Name = "btnMdelete";
             this.btnMdelete.Size = new System.Drawing.Size(101, 30);
             this.btnMdelete.TabIndex = 56;
@@ -529,22 +538,12 @@
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button8.Location = new System.Drawing.Point(372, 174);
+            this.button8.Location = new System.Drawing.Point(558, 174);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(101, 30);
             this.button8.TabIndex = 47;
             this.button8.Text = "CLEAR";
             this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button7.Location = new System.Drawing.Point(529, 174);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(110, 30);
-            this.button7.TabIndex = 46;
-            this.button7.Text = "GENERATE";
-            this.button7.UseVisualStyleBackColor = false;
             // 
             // txtUid
             // 
@@ -573,17 +572,6 @@
             this.cmbUlvl.Name = "cmbUlvl";
             this.cmbUlvl.Size = new System.Drawing.Size(178, 26);
             this.cmbUlvl.TabIndex = 40;
-            // 
-            // btnMUpdate
-            // 
-            this.btnMUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnMUpdate.Location = new System.Drawing.Point(87, 174);
-            this.btnMUpdate.Name = "btnMUpdate";
-            this.btnMUpdate.Size = new System.Drawing.Size(101, 30);
-            this.btnMUpdate.TabIndex = 39;
-            this.btnMUpdate.Text = "Update";
-            this.btnMUpdate.UseVisualStyleBackColor = false;
-            this.btnMUpdate.Click += new System.EventHandler(this.btnMUpdate_Click);
             // 
             // label7
             // 
@@ -1197,11 +1185,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.TextBox txtUid;
         private System.Windows.Forms.TextBox txtUlec;
         private System.Windows.Forms.ComboBox cmbUlvl;
-        private System.Windows.Forms.Button btnMUpdate;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -1267,5 +1253,6 @@
         private System.Windows.Forms.TextBox txtUSsubid;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.Button btnLMupdate;
     }
 }

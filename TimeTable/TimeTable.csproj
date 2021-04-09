@@ -106,7 +106,7 @@
     <Compile Include="Subject.cs" />
     <Compile Include="SubjectRepo.cs" />
     <Compile Include="Teacher.cs" />
-    <Compile Include="TeacherRepo.cs" />
+    <Compile Include="TeachRepo.cs" />
     <Compile Include="Working.cs" />
     <Compile Include="WorkingRepo.cs" />
     <EmbeddedResource Include="Form1.resx">

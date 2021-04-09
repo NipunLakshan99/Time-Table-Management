@@ -14,13 +14,13 @@ namespace TimeTable
         public string Department { get; set; }
         public string Center { get; set; }
         public string Building { get; set; }
-        public string Level { get; set; }
+        public string Lvl { get; set; }
 
         public string Rank
         {
             get
             {
-                return $"{Lecturer_name}{"."}{Level}";
+                return $"{Lecturer_name}{"."}{Lvl}";
             }
         }
     }

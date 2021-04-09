@@ -12,8 +12,7 @@ namespace TimeTable
 {
     public partial class Lecturer : Form
     {
-
-        TeacherRepo TeacherRepo = new TeacherRepo();
+        TeachRepo TeachRepo = new TeachRepo();
         SubjectRepo SubjectRepo = new SubjectRepo();
         public Lecturer()
         {
@@ -122,17 +121,17 @@ namespace TimeTable
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            txtrank.Text = txtlecname.Text + '.' + cmblvl.Text;
         }
 
         private void tabPage2_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = TeacherRepo.GetAll();
+            dataGridView1.DataSource = TeachRepo.GetAll();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+           
         }
 
 
@@ -150,14 +149,14 @@ namespace TimeTable
         {
             if (!string.IsNullOrEmpty(txtlecname.Text) && !string.IsNullOrEmpty(cmbFac.Text) && !string.IsNullOrEmpty(cmbDep.Text) && !string.IsNullOrEmpty(cmbCenter.Text) && !string.IsNullOrEmpty(cmbBuild.Text) && !string.IsNullOrEmpty(cmblvl.Text) && !string.IsNullOrEmpty(txtrank.Text))
             {
-               TeacherRepo.Add(new Teacher
+               TeachRepo.Add(new Teacher
                 {
                     Lecturer_name = txtlecname.Text,
                     Faculty = cmbFac.Text,
                     Department = cmbDep.Text,
                     Center = cmbCenter.Text,
                     Building = cmbBuild.Text,
-                    Level = cmblvl.Text
+                    Lvl = cmblvl.Text
                 });
                 txtlecname.Text = string.Empty;
                 cmbFac.Text = string.Empty;
@@ -165,7 +164,8 @@ namespace TimeTable
                 cmbCenter.Text = string.Empty;
                 cmbBuild.Text = string.Empty;
                 cmblvl.Text = string.Empty;
-                dataGridView1.DataSource = TeacherRepo.GetAll();
+                txtrank.Text = string.Empty;
+                dataGridView4.DataSource = TeachRepo.GetAll();
             }
         }
 
@@ -174,24 +174,27 @@ namespace TimeTable
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 var row = dataGridView1.SelectedRows[0];
-                var  teacher = (Teacher)row.DataBoundItem;
+                var teacher = (Teacher)row.DataBoundItem;
                 txtUid.Text = teacher.Lecturer_ID.ToString();
                 txtUlec.Text = teacher.Lecturer_name;
                 cmbUfac.Text = teacher.Faculty;
                 cmbUdep.Text = teacher.Department;
-                cmbCenter.Text = teacher.Center;
+                cmbUcen.Text = teacher.Center;
                 cmbUbuild.Text = teacher.Building;
-                cmbUlvl.Text = teacher.Level;
+                cmbUlvl.Text = teacher.Lvl;
                 txtUrank.Text = teacher.Rank;
-
             }
         }
 
         private void btnMUpdate_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtUid.Text) && !string.IsNullOrEmpty(txtUlec.Text) && !string.IsNullOrEmpty(cmbUfac.Text) && !string.IsNullOrEmpty(cmbUdep.Text) && !string.IsNullOrEmpty(cmbUbuild.Text) && !string.IsNullOrEmpty(cmbUcen.Text) && !string.IsNullOrEmpty(cmbUlvl.Text) && !string.IsNullOrEmpty(txtUrank.Text))
+        }
+
+        private void btnLMupdate_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtUid.Text) && !string.IsNullOrEmpty(txtUlec.Text) && !string.IsNullOrEmpty(cmbUfac.Text) && !string.IsNullOrEmpty(cmbUdep.Text) && !string.IsNullOrEmpty(cmbUcen.Text) && !string.IsNullOrEmpty(cmbUbuild.Text) && !string.IsNullOrEmpty(cmbUlvl.Text))
             {
-                TeacherRepo.Update(new Teacher
+                TeachRepo.Update(new Teacher
                 {
                     Lecturer_ID = int.Parse(txtUid.Text),
                     Lecturer_name = txtUlec.Text,
@@ -199,19 +202,19 @@ namespace TimeTable
                     Department = cmbUdep.Text,
                     Center = cmbUcen.Text,
                     Building = cmbUbuild.Text,
-                    //Lvl = cmbUlvl.Text,
-                   //Rank = txtUrank.Text,
-
+                    Lvl = cmbUlvl.Text,
+                    //Rank = txtUrank.Text,
                 });
-                dataGridView1.DataSource = TeacherRepo.GetAll();
+                dataGridView1.DataSource = TeachRepo.GetAll();
+
             }
         }
-
         private void btnMdelete_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtUid.Text) && !string.IsNullOrEmpty(txtUlec.Text) && !string.IsNullOrEmpty(cmbUfac.Text) && !string.IsNullOrEmpty(cmbUdep.Text) && !string.IsNullOrEmpty(cmbUcen.Text) && !string.IsNullOrEmpty(cmbUbuild.Text) && !string.IsNullOrEmpty(cmbUlvl.Text) && !string.IsNullOrEmpty(txtUrank.Text))
+            if (!string.IsNullOrEmpty(txtUid.Text) && !string.IsNullOrEmpty(txtUlec.Text) && !string.IsNullOrEmpty(cmbUfac.Text) && !string.IsNullOrEmpty(cmbUdep.Text) && !string.IsNullOrEmpty(cmbUcen.Text) && !string.IsNullOrEmpty(cmbUbuild.Text) && !string.IsNullOrEmpty(cmbUlvl.Text))
             {
-                TeacherRepo.Delete(int.Parse(txtUid.Text));
+                TeachRepo.Delete(int.Parse(txtUid.Text));
+                txtUid.Text = string.Empty;
                 txtUlec.Text = string.Empty;
                 cmbUfac.Text = string.Empty;
                 cmbUdep.Text = string.Empty;
@@ -220,7 +223,8 @@ namespace TimeTable
                 cmbUlvl.Text = string.Empty;
                 txtUrank.Text = string.Empty;
 
-                dataGridView1.DataSource = TeacherRepo.GetAll();
+                dataGridView1.DataSource = TeachRepo.GetAll();
+
             }
         }
 
@@ -383,7 +387,7 @@ namespace TimeTable
                 cmbUdep.Text = teacher.Department;
                 cmbCenter.Text = teacher.Center;
                 cmbUbuild.Text = teacher.Building;
-                cmbUlvl.Text = teacher.Level;
+                cmbUlvl.Text = teacher.Lvl;
                 txtUrank.Text = teacher.Rank;
 
             }
@@ -391,7 +395,12 @@ namespace TimeTable
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
-            dataGridView4.DataSource = TeacherRepo.GetAll();
+            dataGridView4.DataSource = TeachRepo.GetAll();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
