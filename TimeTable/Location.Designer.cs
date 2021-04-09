@@ -31,6 +31,10 @@ namespace TimeTable
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txtLRoomname = new System.Windows.Forms.TextBox();
+            this.txtLcapacity = new System.Windows.Forms.TextBox();
+            this.txtbuildname = new System.Windows.Forms.TextBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.Capacity = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
@@ -40,6 +44,8 @@ namespace TimeTable
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtlocID = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.btnLUpdate = new System.Windows.Forms.Button();
             this.btnLDelete = new System.Windows.Forms.Button();
@@ -53,17 +59,11 @@ namespace TimeTable
             this.label7 = new System.Windows.Forms.Label();
             this.txtLUbuildingname = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.txtbuildname = new System.Windows.Forms.TextBox();
-            this.txtLcapacity = new System.Windows.Forms.TextBox();
-            this.txtLRoomname = new System.Windows.Forms.TextBox();
-            this.txtlocID = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -100,6 +100,36 @@ namespace TimeTable
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "ADD LOCATION";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // txtLRoomname
+            // 
+            this.txtLRoomname.Location = new System.Drawing.Point(539, 34);
+            this.txtLRoomname.Name = "txtLRoomname";
+            this.txtLRoomname.Size = new System.Drawing.Size(190, 20);
+            this.txtLRoomname.TabIndex = 31;
+            // 
+            // txtLcapacity
+            // 
+            this.txtLcapacity.Location = new System.Drawing.Point(539, 102);
+            this.txtLcapacity.Name = "txtLcapacity";
+            this.txtLcapacity.Size = new System.Drawing.Size(190, 20);
+            this.txtLcapacity.TabIndex = 30;
+            // 
+            // txtbuildname
+            // 
+            this.txtbuildname.Location = new System.Drawing.Point(163, 34);
+            this.txtbuildname.Name = "txtbuildname";
+            this.txtbuildname.Size = new System.Drawing.Size(198, 20);
+            this.txtbuildname.TabIndex = 29;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(8, 203);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(776, 213);
+            this.dataGridView2.TabIndex = 28;
+            this.dataGridView2.Click += new System.EventHandler(this.dataGridView2_Click);
             // 
             // Capacity
             // 
@@ -230,6 +260,28 @@ namespace TimeTable
             this.tabPage2.Text = "MANAGE LOCATION";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label4.Location = new System.Drawing.Point(45, 37);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(102, 20);
+            this.label4.TabIndex = 78;
+            this.label4.Text = "Location ID";
+            // 
+            // txtlocID
+            // 
+            this.txtlocID.Cursor = System.Windows.Forms.Cursors.PanWest;
+            this.txtlocID.Location = new System.Drawing.Point(244, 28);
+            this.txtlocID.Margin = new System.Windows.Forms.Padding(2);
+            this.txtlocID.Multiline = true;
+            this.txtlocID.Name = "txtlocID";
+            this.txtlocID.Size = new System.Drawing.Size(224, 29);
+            this.txtlocID.TabIndex = 77;
+            // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
@@ -270,6 +322,7 @@ namespace TimeTable
             this.dataGridView1.Size = new System.Drawing.Size(679, 191);
             this.dataGridView1.TabIndex = 49;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label5
             // 
@@ -381,58 +434,6 @@ namespace TimeTable
             this.label8.TabIndex = 28;
             this.label8.Text = "Building Name";
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(8, 203);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(776, 213);
-            this.dataGridView2.TabIndex = 28;
-            this.dataGridView2.Click += new System.EventHandler(this.dataGridView2_Click);
-            // 
-            // txtbuildname
-            // 
-            this.txtbuildname.Location = new System.Drawing.Point(163, 34);
-            this.txtbuildname.Name = "txtbuildname";
-            this.txtbuildname.Size = new System.Drawing.Size(198, 20);
-            this.txtbuildname.TabIndex = 29;
-            // 
-            // txtLcapacity
-            // 
-            this.txtLcapacity.Location = new System.Drawing.Point(539, 102);
-            this.txtLcapacity.Name = "txtLcapacity";
-            this.txtLcapacity.Size = new System.Drawing.Size(190, 20);
-            this.txtLcapacity.TabIndex = 30;
-            // 
-            // txtLRoomname
-            // 
-            this.txtLRoomname.Location = new System.Drawing.Point(539, 34);
-            this.txtLRoomname.Name = "txtLRoomname";
-            this.txtLRoomname.Size = new System.Drawing.Size(190, 20);
-            this.txtLRoomname.TabIndex = 31;
-            // 
-            // txtlocID
-            // 
-            this.txtlocID.Cursor = System.Windows.Forms.Cursors.PanWest;
-            this.txtlocID.Location = new System.Drawing.Point(244, 28);
-            this.txtlocID.Margin = new System.Windows.Forms.Padding(2);
-            this.txtlocID.Multiline = true;
-            this.txtlocID.Name = "txtlocID";
-            this.txtlocID.Size = new System.Drawing.Size(224, 29);
-            this.txtlocID.TabIndex = 77;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label4.Location = new System.Drawing.Point(45, 37);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 20);
-            this.label4.TabIndex = 78;
-            this.label4.Text = "Location ID";
-            // 
             // Location
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -444,10 +445,10 @@ namespace TimeTable
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }

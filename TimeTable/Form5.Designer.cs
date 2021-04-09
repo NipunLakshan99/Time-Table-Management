@@ -146,65 +146,52 @@ namespace TimeTable
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.label34 = new System.Windows.Forms.Label();
+            this.txtDays = new System.Windows.Forms.TextBox();
+            this.radioWdaysend = new System.Windows.Forms.RadioButton();
+            this.radioWweekend = new System.Windows.Forms.RadioButton();
+            this.radioWweekday = new System.Windows.Forms.RadioButton();
+            this.txtAddETH = new System.Windows.Forms.TextBox();
+            this.txtAddSTH = new System.Windows.Forms.TextBox();
+            this.txtAddWTD = new System.Windows.Forms.ComboBox();
+            this.txtAddNWD = new System.Windows.Forms.ComboBox();
             this.BtnWReset = new System.Windows.Forms.Button();
             this.BtnWSave = new System.Windows.Forms.Button();
             this.RadioBOneH = new System.Windows.Forms.RadioButton();
             this.RadioBTwoH = new System.Windows.Forms.RadioButton();
             this.RadioBThirtyM = new System.Windows.Forms.RadioButton();
             this.label36 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.chkSunday = new System.Windows.Forms.CheckBox();
-            this.chkSaturday = new System.Windows.Forms.CheckBox();
-            this.chkFriday = new System.Windows.Forms.CheckBox();
-            this.chkThursday = new System.Windows.Forms.CheckBox();
-            this.chkWednesday = new System.Windows.Forms.CheckBox();
-            this.chkTuesday = new System.Windows.Forms.CheckBox();
-            this.chkMonday = new System.Windows.Forms.CheckBox();
             this.label28 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.BtnWSearch = new System.Windows.Forms.Button();
+            this.label35 = new System.Windows.Forms.Label();
+            this.txtWUdays = new System.Windows.Forms.TextBox();
+            this.radioWUAll = new System.Windows.Forms.RadioButton();
+            this.radioWUweekend = new System.Windows.Forms.RadioButton();
+            this.radioWUweekday = new System.Windows.Forms.RadioButton();
+            this.cmbWUendh = new System.Windows.Forms.TextBox();
+            this.cmbWUsth = new System.Windows.Forms.TextBox();
+            this.cmbWUwtpd = new System.Windows.Forms.ComboBox();
+            this.cmbWUnwd = new System.Windows.Forms.ComboBox();
             this.BtnWURefresh = new System.Windows.Forms.Button();
             this.BtnWUpdate = new System.Windows.Forms.Button();
             this.BtnWUDelete = new System.Windows.Forms.Button();
             this.txtWorkID = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.label45 = new System.Windows.Forms.Label();
             this.radioWUhours = new System.Windows.Forms.RadioButton();
             this.radioWUtwohours = new System.Windows.Forms.RadioButton();
             this.radioWUthirty = new System.Windows.Forms.RadioButton();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
-            this.CheckWUsun = new System.Windows.Forms.CheckBox();
-            this.CheckWUsatu = new System.Windows.Forms.CheckBox();
-            this.CheckWUfri = new System.Windows.Forms.CheckBox();
-            this.CheckWUthur = new System.Windows.Forms.CheckBox();
-            this.CheckWUwed = new System.Windows.Forms.CheckBox();
-            this.CheckWUtues = new System.Windows.Forms.CheckBox();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.txtAddNWD = new System.Windows.Forms.ComboBox();
-            this.txtAddWTD = new System.Windows.Forms.ComboBox();
-            this.txtAddSTH = new System.Windows.Forms.ComboBox();
-            this.txtAddETH = new System.Windows.Forms.ComboBox();
-            this.txtETM = new System.Windows.Forms.ComboBox();
-            this.txtAddSTM = new System.Windows.Forms.ComboBox();
-            this.CheckWUmon = new System.Windows.Forms.CheckBox();
-            this.cmbWUsth = new System.Windows.Forms.ComboBox();
-            this.cmbWUstm = new System.Windows.Forms.ComboBox();
-            this.cmbWUendh = new System.Windows.Forms.ComboBox();
-            this.cmbWUendm = new System.Windows.Forms.ComboBox();
-            this.cmbWUnwd = new System.Windows.Forms.ComboBox();
-            this.cmbWUwtpd = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -261,7 +248,7 @@ namespace TimeTable
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage5.Size = new System.Drawing.Size(849, 427);
             this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "ADD LECTURER";
+            this.tabPage5.Text = "ADD SESSION";
             // 
             // label30
             // 
@@ -1320,8 +1307,11 @@ namespace TimeTable
             // tabPage8
             // 
             this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.tabPage8.Controls.Add(this.txtAddSTM);
-            this.tabPage8.Controls.Add(this.txtETM);
+            this.tabPage8.Controls.Add(this.label34);
+            this.tabPage8.Controls.Add(this.txtDays);
+            this.tabPage8.Controls.Add(this.radioWdaysend);
+            this.tabPage8.Controls.Add(this.radioWweekend);
+            this.tabPage8.Controls.Add(this.radioWweekday);
             this.tabPage8.Controls.Add(this.txtAddETH);
             this.tabPage8.Controls.Add(this.txtAddSTH);
             this.tabPage8.Controls.Add(this.txtAddWTD);
@@ -1332,18 +1322,9 @@ namespace TimeTable
             this.tabPage8.Controls.Add(this.RadioBTwoH);
             this.tabPage8.Controls.Add(this.RadioBThirtyM);
             this.tabPage8.Controls.Add(this.label36);
-            this.tabPage8.Controls.Add(this.label35);
-            this.tabPage8.Controls.Add(this.label34);
             this.tabPage8.Controls.Add(this.label33);
             this.tabPage8.Controls.Add(this.label32);
             this.tabPage8.Controls.Add(this.label31);
-            this.tabPage8.Controls.Add(this.chkSunday);
-            this.tabPage8.Controls.Add(this.chkSaturday);
-            this.tabPage8.Controls.Add(this.chkFriday);
-            this.tabPage8.Controls.Add(this.chkThursday);
-            this.tabPage8.Controls.Add(this.chkWednesday);
-            this.tabPage8.Controls.Add(this.chkTuesday);
-            this.tabPage8.Controls.Add(this.chkMonday);
             this.tabPage8.Controls.Add(this.label28);
             this.tabPage8.Controls.Add(this.label26);
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
@@ -1353,6 +1334,112 @@ namespace TimeTable
             this.tabPage8.TabIndex = 0;
             this.tabPage8.Text = "ADD WORKING DAYS";
             this.tabPage8.Click += new System.EventHandler(this.tabPage8_Click);
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label34.Location = new System.Drawing.Point(128, 97);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(44, 16);
+            this.label34.TabIndex = 88;
+            this.label34.Text = "Days";
+            // 
+            // txtDays
+            // 
+            this.txtDays.Location = new System.Drawing.Point(313, 93);
+            this.txtDays.Name = "txtDays";
+            this.txtDays.Size = new System.Drawing.Size(125, 20);
+            this.txtDays.TabIndex = 87;
+            // 
+            // radioWdaysend
+            // 
+            this.radioWdaysend.AutoSize = true;
+            this.radioWdaysend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioWdaysend.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.radioWdaysend.Location = new System.Drawing.Point(546, 59);
+            this.radioWdaysend.Name = "radioWdaysend";
+            this.radioWdaysend.Size = new System.Drawing.Size(174, 20);
+            this.radioWdaysend.TabIndex = 86;
+            this.radioWdaysend.TabStop = true;
+            this.radioWdaysend.Text = "WeekDays/WeekEnd";
+            this.radioWdaysend.UseVisualStyleBackColor = true;
+            this.radioWdaysend.CheckedChanged += new System.EventHandler(this.radioWdaysend_CheckedChanged);
+            // 
+            // radioWweekend
+            // 
+            this.radioWweekend.AutoSize = true;
+            this.radioWweekend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioWweekend.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.radioWweekend.Location = new System.Drawing.Point(421, 59);
+            this.radioWweekend.Name = "radioWweekend";
+            this.radioWweekend.Size = new System.Drawing.Size(93, 20);
+            this.radioWweekend.TabIndex = 85;
+            this.radioWweekend.TabStop = true;
+            this.radioWweekend.Text = "WeekEnd";
+            this.radioWweekend.UseVisualStyleBackColor = true;
+            this.radioWweekend.CheckedChanged += new System.EventHandler(this.radioWweekend_CheckedChanged);
+            // 
+            // radioWweekday
+            // 
+            this.radioWweekday.AutoSize = true;
+            this.radioWweekday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioWweekday.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.radioWweekday.Location = new System.Drawing.Point(313, 59);
+            this.radioWweekday.Name = "radioWweekday";
+            this.radioWweekday.Size = new System.Drawing.Size(102, 20);
+            this.radioWweekday.TabIndex = 84;
+            this.radioWweekday.TabStop = true;
+            this.radioWweekday.Text = "WeekDays";
+            this.radioWweekday.UseVisualStyleBackColor = true;
+            this.radioWweekday.CheckedChanged += new System.EventHandler(this.radioWweekday_CheckedChanged);
+            // 
+            // txtAddETH
+            // 
+            this.txtAddETH.Location = new System.Drawing.Point(313, 233);
+            this.txtAddETH.Name = "txtAddETH";
+            this.txtAddETH.Size = new System.Drawing.Size(125, 20);
+            this.txtAddETH.TabIndex = 83;
+            // 
+            // txtAddSTH
+            // 
+            this.txtAddSTH.Location = new System.Drawing.Point(313, 200);
+            this.txtAddSTH.Name = "txtAddSTH";
+            this.txtAddSTH.Size = new System.Drawing.Size(125, 20);
+            this.txtAddSTH.TabIndex = 82;
+            // 
+            // txtAddWTD
+            // 
+            this.txtAddWTD.FormattingEnabled = true;
+            this.txtAddWTD.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.txtAddWTD.Location = new System.Drawing.Point(313, 133);
+            this.txtAddWTD.Name = "txtAddWTD";
+            this.txtAddWTD.Size = new System.Drawing.Size(125, 21);
+            this.txtAddWTD.TabIndex = 79;
+            // 
+            // txtAddNWD
+            // 
+            this.txtAddNWD.FormattingEnabled = true;
+            this.txtAddNWD.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.txtAddNWD.Location = new System.Drawing.Point(313, 14);
+            this.txtAddNWD.Name = "txtAddNWD";
+            this.txtAddNWD.Size = new System.Drawing.Size(125, 21);
+            this.txtAddNWD.TabIndex = 78;
             // 
             // BtnWReset
             // 
@@ -1428,28 +1515,6 @@ namespace TimeTable
             this.label36.TabIndex = 71;
             this.label36.Text = "Select Prefered Time Slot";
             // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label35.Location = new System.Drawing.Point(599, 172);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(61, 16);
-            this.label35.TabIndex = 66;
-            this.label35.Text = "Minutes";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label34.Location = new System.Drawing.Point(364, 172);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(49, 16);
-            this.label34.TabIndex = 65;
-            this.label34.Text = "Hours";
-            // 
             // label33
             // 
             this.label33.AutoSize = true;
@@ -1483,118 +1548,6 @@ namespace TimeTable
             this.label31.TabIndex = 62;
             this.label31.Text = "Working Time per Day";
             // 
-            // chkSunday
-            // 
-            this.chkSunday.AutoSize = true;
-            this.chkSunday.Checked = true;
-            this.chkSunday.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkSunday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkSunday.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.chkSunday.Location = new System.Drawing.Point(589, 97);
-            this.chkSunday.Margin = new System.Windows.Forms.Padding(2);
-            this.chkSunday.Name = "chkSunday";
-            this.chkSunday.Size = new System.Drawing.Size(90, 20);
-            this.chkSunday.TabIndex = 61;
-            this.chkSunday.Text = "SUNDAY";
-            this.chkSunday.UseVisualStyleBackColor = true;
-            this.chkSunday.CheckedChanged += new System.EventHandler(this.chkSunday_CheckedChanged);
-            // 
-            // chkSaturday
-            // 
-            this.chkSaturday.AutoSize = true;
-            this.chkSaturday.Checked = true;
-            this.chkSaturday.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkSaturday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkSaturday.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.chkSaturday.Location = new System.Drawing.Point(466, 97);
-            this.chkSaturday.Margin = new System.Windows.Forms.Padding(2);
-            this.chkSaturday.Name = "chkSaturday";
-            this.chkSaturday.Size = new System.Drawing.Size(110, 20);
-            this.chkSaturday.TabIndex = 60;
-            this.chkSaturday.Text = "SATURDAY";
-            this.chkSaturday.UseVisualStyleBackColor = true;
-            this.chkSaturday.CheckedChanged += new System.EventHandler(this.chkSaturday_CheckedChanged);
-            // 
-            // chkFriday
-            // 
-            this.chkFriday.AutoSize = true;
-            this.chkFriday.Checked = true;
-            this.chkFriday.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkFriday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkFriday.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.chkFriday.Location = new System.Drawing.Point(367, 97);
-            this.chkFriday.Margin = new System.Windows.Forms.Padding(2);
-            this.chkFriday.Name = "chkFriday";
-            this.chkFriday.Size = new System.Drawing.Size(82, 20);
-            this.chkFriday.TabIndex = 57;
-            this.chkFriday.Text = "FRIDAY";
-            this.chkFriday.UseVisualStyleBackColor = true;
-            this.chkFriday.CheckedChanged += new System.EventHandler(this.chkFriday_CheckedChanged);
-            // 
-            // chkThursday
-            // 
-            this.chkThursday.AutoSize = true;
-            this.chkThursday.Checked = true;
-            this.chkThursday.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkThursday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkThursday.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.chkThursday.Location = new System.Drawing.Point(640, 58);
-            this.chkThursday.Margin = new System.Windows.Forms.Padding(2);
-            this.chkThursday.Name = "chkThursday";
-            this.chkThursday.Size = new System.Drawing.Size(111, 20);
-            this.chkThursday.TabIndex = 56;
-            this.chkThursday.Text = "THURSDAY";
-            this.chkThursday.UseVisualStyleBackColor = true;
-            this.chkThursday.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
-            // 
-            // chkWednesday
-            // 
-            this.chkWednesday.AutoSize = true;
-            this.chkWednesday.Checked = true;
-            this.chkWednesday.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkWednesday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkWednesday.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.chkWednesday.Location = new System.Drawing.Point(512, 58);
-            this.chkWednesday.Margin = new System.Windows.Forms.Padding(2);
-            this.chkWednesday.Name = "chkWednesday";
-            this.chkWednesday.Size = new System.Drawing.Size(124, 20);
-            this.chkWednesday.TabIndex = 55;
-            this.chkWednesday.Text = "WEDNESDAY";
-            this.chkWednesday.UseVisualStyleBackColor = true;
-            this.chkWednesday.CheckedChanged += new System.EventHandler(this.chkWednesday_CheckedChanged);
-            // 
-            // chkTuesday
-            // 
-            this.chkTuesday.AutoSize = true;
-            this.chkTuesday.Checked = true;
-            this.chkTuesday.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkTuesday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkTuesday.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.chkTuesday.Location = new System.Drawing.Point(409, 58);
-            this.chkTuesday.Margin = new System.Windows.Forms.Padding(2);
-            this.chkTuesday.Name = "chkTuesday";
-            this.chkTuesday.Size = new System.Drawing.Size(99, 20);
-            this.chkTuesday.TabIndex = 54;
-            this.chkTuesday.Text = "TUESDAY";
-            this.chkTuesday.UseVisualStyleBackColor = true;
-            this.chkTuesday.CheckedChanged += new System.EventHandler(this.chkTuesday_CheckedChanged);
-            // 
-            // chkMonday
-            // 
-            this.chkMonday.AutoSize = true;
-            this.chkMonday.Checked = true;
-            this.chkMonday.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkMonday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkMonday.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.chkMonday.Location = new System.Drawing.Point(313, 59);
-            this.chkMonday.Margin = new System.Windows.Forms.Padding(2);
-            this.chkMonday.Name = "chkMonday";
-            this.chkMonday.Size = new System.Drawing.Size(92, 20);
-            this.chkMonday.TabIndex = 53;
-            this.chkMonday.Text = "MONDAY";
-            this.chkMonday.UseVisualStyleBackColor = true;
-            this.chkMonday.CheckedChanged += new System.EventHandler(this.chkMonday_CheckedChanged);
-            // 
             // label28
             // 
             this.label28.AutoSize = true;
@@ -1620,36 +1573,29 @@ namespace TimeTable
             // tabPage9
             // 
             this.tabPage9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.tabPage9.Controls.Add(this.label35);
+            this.tabPage9.Controls.Add(this.txtWUdays);
+            this.tabPage9.Controls.Add(this.radioWUAll);
+            this.tabPage9.Controls.Add(this.radioWUweekend);
+            this.tabPage9.Controls.Add(this.radioWUweekday);
+            this.tabPage9.Controls.Add(this.cmbWUendh);
+            this.tabPage9.Controls.Add(this.cmbWUsth);
             this.tabPage9.Controls.Add(this.cmbWUwtpd);
             this.tabPage9.Controls.Add(this.cmbWUnwd);
-            this.tabPage9.Controls.Add(this.cmbWUendm);
-            this.tabPage9.Controls.Add(this.cmbWUendh);
-            this.tabPage9.Controls.Add(this.cmbWUstm);
-            this.tabPage9.Controls.Add(this.cmbWUsth);
-            this.tabPage9.Controls.Add(this.BtnWSearch);
             this.tabPage9.Controls.Add(this.BtnWURefresh);
             this.tabPage9.Controls.Add(this.BtnWUpdate);
             this.tabPage9.Controls.Add(this.BtnWUDelete);
             this.tabPage9.Controls.Add(this.txtWorkID);
             this.tabPage9.Controls.Add(this.label46);
             this.tabPage9.Controls.Add(this.dataGridView5);
-            this.tabPage9.Controls.Add(this.label45);
             this.tabPage9.Controls.Add(this.radioWUhours);
             this.tabPage9.Controls.Add(this.radioWUtwohours);
             this.tabPage9.Controls.Add(this.radioWUthirty);
             this.tabPage9.Controls.Add(this.label37);
             this.tabPage9.Controls.Add(this.label38);
-            this.tabPage9.Controls.Add(this.label39);
             this.tabPage9.Controls.Add(this.label40);
             this.tabPage9.Controls.Add(this.label41);
             this.tabPage9.Controls.Add(this.label42);
-            this.tabPage9.Controls.Add(this.CheckWUsun);
-            this.tabPage9.Controls.Add(this.CheckWUsatu);
-            this.tabPage9.Controls.Add(this.CheckWUfri);
-            this.tabPage9.Controls.Add(this.CheckWUthur);
-            this.tabPage9.Controls.Add(this.CheckWUwed);
-            this.tabPage9.Controls.Add(this.CheckWUtues);
-            this.tabPage9.Controls.Add(this.CheckWUmon);
             this.tabPage9.Controls.Add(this.label43);
             this.tabPage9.Controls.Add(this.label44);
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
@@ -1660,15 +1606,108 @@ namespace TimeTable
             this.tabPage9.Text = "MANAGE WORKING DAYS & HOURS";
             this.tabPage9.Click += new System.EventHandler(this.tabPage9_Click);
             // 
-            // BtnWSearch
+            // label35
             // 
-            this.BtnWSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.BtnWSearch.Location = new System.Drawing.Point(241, 6);
-            this.BtnWSearch.Name = "BtnWSearch";
-            this.BtnWSearch.Size = new System.Drawing.Size(90, 25);
-            this.BtnWSearch.TabIndex = 105;
-            this.BtnWSearch.Text = "SEARCH";
-            this.BtnWSearch.UseVisualStyleBackColor = false;
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label35.Location = new System.Drawing.Point(598, 45);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(44, 16);
+            this.label35.TabIndex = 123;
+            this.label35.Text = "Days";
+            // 
+            // txtWUdays
+            // 
+            this.txtWUdays.Location = new System.Drawing.Point(668, 43);
+            this.txtWUdays.Name = "txtWUdays";
+            this.txtWUdays.Size = new System.Drawing.Size(120, 20);
+            this.txtWUdays.TabIndex = 122;
+            // 
+            // radioWUAll
+            // 
+            this.radioWUAll.AutoSize = true;
+            this.radioWUAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioWUAll.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.radioWUAll.Location = new System.Drawing.Point(403, 43);
+            this.radioWUAll.Name = "radioWUAll";
+            this.radioWUAll.Size = new System.Drawing.Size(174, 20);
+            this.radioWUAll.TabIndex = 121;
+            this.radioWUAll.Text = "WeekDays/WeekEnd";
+            this.radioWUAll.UseVisualStyleBackColor = true;
+            this.radioWUAll.CheckedChanged += new System.EventHandler(this.radioWUAll_CheckedChanged);
+            // 
+            // radioWUweekend
+            // 
+            this.radioWUweekend.AutoSize = true;
+            this.radioWUweekend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioWUweekend.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.radioWUweekend.Location = new System.Drawing.Point(293, 43);
+            this.radioWUweekend.Name = "radioWUweekend";
+            this.radioWUweekend.Size = new System.Drawing.Size(93, 20);
+            this.radioWUweekend.TabIndex = 120;
+            this.radioWUweekend.Text = "WeekEnd";
+            this.radioWUweekend.UseVisualStyleBackColor = true;
+            this.radioWUweekend.CheckedChanged += new System.EventHandler(this.radioWUweekend_CheckedChanged);
+            // 
+            // radioWUweekday
+            // 
+            this.radioWUweekday.AutoSize = true;
+            this.radioWUweekday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioWUweekday.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.radioWUweekday.Location = new System.Drawing.Point(185, 41);
+            this.radioWUweekday.Name = "radioWUweekday";
+            this.radioWUweekday.Size = new System.Drawing.Size(102, 20);
+            this.radioWUweekday.TabIndex = 119;
+            this.radioWUweekday.Text = "WeekDays";
+            this.radioWUweekday.UseVisualStyleBackColor = true;
+            this.radioWUweekday.CheckedChanged += new System.EventHandler(this.radioWUweekday_CheckedChanged);
+            // 
+            // cmbWUendh
+            // 
+            this.cmbWUendh.Location = new System.Drawing.Point(185, 141);
+            this.cmbWUendh.Name = "cmbWUendh";
+            this.cmbWUendh.Size = new System.Drawing.Size(154, 20);
+            this.cmbWUendh.TabIndex = 115;
+            // 
+            // cmbWUsth
+            // 
+            this.cmbWUsth.Location = new System.Drawing.Point(185, 115);
+            this.cmbWUsth.Name = "cmbWUsth";
+            this.cmbWUsth.Size = new System.Drawing.Size(154, 20);
+            this.cmbWUsth.TabIndex = 114;
+            // 
+            // cmbWUwtpd
+            // 
+            this.cmbWUwtpd.FormattingEnabled = true;
+            this.cmbWUwtpd.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.cmbWUwtpd.Location = new System.Drawing.Point(185, 70);
+            this.cmbWUwtpd.Name = "cmbWUwtpd";
+            this.cmbWUwtpd.Size = new System.Drawing.Size(154, 21);
+            this.cmbWUwtpd.TabIndex = 113;
+            // 
+            // cmbWUnwd
+            // 
+            this.cmbWUnwd.FormattingEnabled = true;
+            this.cmbWUnwd.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.cmbWUnwd.Location = new System.Drawing.Point(503, 4);
+            this.cmbWUnwd.Name = "cmbWUnwd";
+            this.cmbWUnwd.Size = new System.Drawing.Size(154, 21);
+            this.cmbWUnwd.TabIndex = 112;
             // 
             // BtnWURefresh
             // 
@@ -1729,18 +1768,7 @@ namespace TimeTable
             this.dataGridView5.Size = new System.Drawing.Size(637, 135);
             this.dataGridView5.TabIndex = 99;
             this.dataGridView5.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView5_CellClick);
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label45.Location = new System.Drawing.Point(378, 102);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(61, 16);
-            this.label45.TabIndex = 98;
-            this.label45.Text = "Minutes";
-            this.label45.Click += new System.EventHandler(this.label45_Click);
+            this.dataGridView5.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView5_CellContentClick);
             // 
             // radioWUhours
             // 
@@ -1751,7 +1779,6 @@ namespace TimeTable
             this.radioWUhours.Name = "radioWUhours";
             this.radioWUhours.Size = new System.Drawing.Size(116, 20);
             this.radioWUhours.TabIndex = 97;
-            this.radioWUhours.TabStop = true;
             this.radioWUhours.Text = "ONE HOURS";
             this.radioWUhours.UseVisualStyleBackColor = true;
             this.radioWUhours.CheckedChanged += new System.EventHandler(this.radioWUhours_CheckedChanged);
@@ -1765,7 +1792,6 @@ namespace TimeTable
             this.radioWUtwohours.Name = "radioWUtwohours";
             this.radioWUtwohours.Size = new System.Drawing.Size(119, 20);
             this.radioWUtwohours.TabIndex = 96;
-            this.radioWUtwohours.TabStop = true;
             this.radioWUtwohours.Text = "TWO HOURS";
             this.radioWUtwohours.UseVisualStyleBackColor = true;
             this.radioWUtwohours.CheckedChanged += new System.EventHandler(this.radioWUtwohours_CheckedChanged);
@@ -1773,6 +1799,7 @@ namespace TimeTable
             // radioWUthirty
             // 
             this.radioWUthirty.AutoSize = true;
+            this.radioWUthirty.Checked = true;
             this.radioWUthirty.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioWUthirty.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.radioWUthirty.Location = new System.Drawing.Point(193, 175);
@@ -1804,17 +1831,6 @@ namespace TimeTable
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(0, 16);
             this.label38.TabIndex = 89;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label39.Location = new System.Drawing.Point(190, 102);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(49, 16);
-            this.label39.TabIndex = 88;
-            this.label39.Text = "Hours";
             // 
             // label40
             // 
@@ -1849,102 +1865,6 @@ namespace TimeTable
             this.label42.TabIndex = 85;
             this.label42.Text = "Working Time per Day";
             // 
-            // CheckWUsun
-            // 
-            this.CheckWUsun.AutoSize = true;
-            this.CheckWUsun.Checked = true;
-            this.CheckWUsun.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckWUsun.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckWUsun.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CheckWUsun.Location = new System.Drawing.Point(645, 44);
-            this.CheckWUsun.Margin = new System.Windows.Forms.Padding(2);
-            this.CheckWUsun.Name = "CheckWUsun";
-            this.CheckWUsun.Size = new System.Drawing.Size(77, 17);
-            this.CheckWUsun.TabIndex = 84;
-            this.CheckWUsun.Text = "SUNDAY";
-            this.CheckWUsun.UseVisualStyleBackColor = true;
-            this.CheckWUsun.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
-            // 
-            // CheckWUsatu
-            // 
-            this.CheckWUsatu.AutoSize = true;
-            this.CheckWUsatu.Checked = true;
-            this.CheckWUsatu.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckWUsatu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckWUsatu.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CheckWUsatu.Location = new System.Drawing.Point(558, 44);
-            this.CheckWUsatu.Margin = new System.Windows.Forms.Padding(2);
-            this.CheckWUsatu.Name = "CheckWUsatu";
-            this.CheckWUsatu.Size = new System.Drawing.Size(93, 17);
-            this.CheckWUsatu.TabIndex = 83;
-            this.CheckWUsatu.Text = "SATURDAY";
-            this.CheckWUsatu.UseVisualStyleBackColor = true;
-            this.CheckWUsatu.CheckedChanged += new System.EventHandler(this.CheckWUsatu_CheckedChanged);
-            // 
-            // CheckWUfri
-            // 
-            this.CheckWUfri.AutoSize = true;
-            this.CheckWUfri.Checked = true;
-            this.CheckWUfri.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckWUfri.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckWUfri.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CheckWUfri.Location = new System.Drawing.Point(492, 44);
-            this.CheckWUfri.Margin = new System.Windows.Forms.Padding(2);
-            this.CheckWUfri.Name = "CheckWUfri";
-            this.CheckWUfri.Size = new System.Drawing.Size(71, 17);
-            this.CheckWUfri.TabIndex = 82;
-            this.CheckWUfri.Text = "FRIDAY";
-            this.CheckWUfri.UseVisualStyleBackColor = true;
-            this.CheckWUfri.CheckedChanged += new System.EventHandler(this.CheckWUfri_CheckedChanged);
-            // 
-            // CheckWUthur
-            // 
-            this.CheckWUthur.AutoSize = true;
-            this.CheckWUthur.Checked = true;
-            this.CheckWUthur.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckWUthur.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckWUthur.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CheckWUthur.Location = new System.Drawing.Point(403, 44);
-            this.CheckWUthur.Margin = new System.Windows.Forms.Padding(2);
-            this.CheckWUthur.Name = "CheckWUthur";
-            this.CheckWUthur.Size = new System.Drawing.Size(94, 17);
-            this.CheckWUthur.TabIndex = 81;
-            this.CheckWUthur.Text = "THURSDAY";
-            this.CheckWUthur.UseVisualStyleBackColor = true;
-            this.CheckWUthur.CheckedChanged += new System.EventHandler(this.CheckWUthur_CheckedChanged);
-            // 
-            // CheckWUwed
-            // 
-            this.CheckWUwed.AutoSize = true;
-            this.CheckWUwed.Checked = true;
-            this.CheckWUwed.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckWUwed.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckWUwed.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CheckWUwed.Location = new System.Drawing.Point(300, 44);
-            this.CheckWUwed.Margin = new System.Windows.Forms.Padding(2);
-            this.CheckWUwed.Name = "CheckWUwed";
-            this.CheckWUwed.Size = new System.Drawing.Size(105, 17);
-            this.CheckWUwed.TabIndex = 80;
-            this.CheckWUwed.Text = "WEDNESDAY";
-            this.CheckWUwed.UseVisualStyleBackColor = true;
-            this.CheckWUwed.CheckedChanged += new System.EventHandler(this.CheckWUwed_CheckedChanged);
-            // 
-            // CheckWUtues
-            // 
-            this.CheckWUtues.AutoSize = true;
-            this.CheckWUtues.Checked = true;
-            this.CheckWUtues.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckWUtues.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckWUtues.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CheckWUtues.Location = new System.Drawing.Point(221, 44);
-            this.CheckWUtues.Margin = new System.Windows.Forms.Padding(2);
-            this.CheckWUtues.Name = "CheckWUtues";
-            this.CheckWUtues.Size = new System.Drawing.Size(84, 17);
-            this.CheckWUtues.TabIndex = 79;
-            this.CheckWUtues.Text = "TUESDAY";
-            this.CheckWUtues.UseVisualStyleBackColor = true;
-            this.CheckWUtues.CheckedChanged += new System.EventHandler(this.CheckWUtues_CheckedChanged);
-            // 
             // label43
             // 
             this.label43.AutoSize = true;
@@ -1966,214 +1886,6 @@ namespace TimeTable
             this.label44.Size = new System.Drawing.Size(123, 13);
             this.label44.TabIndex = 75;
             this.label44.Text = "No Of Working Days";
-            // 
-            // txtAddNWD
-            // 
-            this.txtAddNWD.FormattingEnabled = true;
-            this.txtAddNWD.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.txtAddNWD.Location = new System.Drawing.Point(313, 14);
-            this.txtAddNWD.Name = "txtAddNWD";
-            this.txtAddNWD.Size = new System.Drawing.Size(125, 21);
-            this.txtAddNWD.TabIndex = 78;
-            // 
-            // txtAddWTD
-            // 
-            this.txtAddWTD.FormattingEnabled = true;
-            this.txtAddWTD.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.txtAddWTD.Location = new System.Drawing.Point(313, 133);
-            this.txtAddWTD.Name = "txtAddWTD";
-            this.txtAddWTD.Size = new System.Drawing.Size(125, 21);
-            this.txtAddWTD.TabIndex = 79;
-            // 
-            // txtAddSTH
-            // 
-            this.txtAddSTH.FormattingEnabled = true;
-            this.txtAddSTH.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.txtAddSTH.Location = new System.Drawing.Point(333, 200);
-            this.txtAddSTH.Name = "txtAddSTH";
-            this.txtAddSTH.Size = new System.Drawing.Size(154, 21);
-            this.txtAddSTH.TabIndex = 80;
-            // 
-            // txtAddETH
-            // 
-            this.txtAddETH.FormattingEnabled = true;
-            this.txtAddETH.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.txtAddETH.Location = new System.Drawing.Point(333, 232);
-            this.txtAddETH.Name = "txtAddETH";
-            this.txtAddETH.Size = new System.Drawing.Size(154, 21);
-            this.txtAddETH.TabIndex = 81;
-            // 
-            // txtETM
-            // 
-            this.txtETM.FormattingEnabled = true;
-            this.txtETM.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.txtETM.Location = new System.Drawing.Point(556, 233);
-            this.txtETM.Name = "txtETM";
-            this.txtETM.Size = new System.Drawing.Size(154, 21);
-            this.txtETM.TabIndex = 82;
-            // 
-            // txtAddSTM
-            // 
-            this.txtAddSTM.FormattingEnabled = true;
-            this.txtAddSTM.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.txtAddSTM.Location = new System.Drawing.Point(556, 201);
-            this.txtAddSTM.Name = "txtAddSTM";
-            this.txtAddSTM.Size = new System.Drawing.Size(154, 21);
-            this.txtAddSTM.TabIndex = 83;
-            // 
-            // CheckWUmon
-            // 
-            this.CheckWUmon.AutoSize = true;
-            this.CheckWUmon.Checked = true;
-            this.CheckWUmon.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckWUmon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CheckWUmon.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CheckWUmon.Location = new System.Drawing.Point(145, 44);
-            this.CheckWUmon.Margin = new System.Windows.Forms.Padding(2);
-            this.CheckWUmon.Name = "CheckWUmon";
-            this.CheckWUmon.Size = new System.Drawing.Size(79, 17);
-            this.CheckWUmon.TabIndex = 78;
-            this.CheckWUmon.Text = "MONDAY";
-            this.CheckWUmon.UseVisualStyleBackColor = true;
-            this.CheckWUmon.CheckedChanged += new System.EventHandler(this.CheckWUmon_CheckedChanged);
-            // 
-            // cmbWUsth
-            // 
-            this.cmbWUsth.FormattingEnabled = true;
-            this.cmbWUsth.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.cmbWUsth.Location = new System.Drawing.Point(193, 117);
-            this.cmbWUsth.Name = "cmbWUsth";
-            this.cmbWUsth.Size = new System.Drawing.Size(154, 21);
-            this.cmbWUsth.TabIndex = 108;
-            // 
-            // cmbWUstm
-            // 
-            this.cmbWUstm.FormattingEnabled = true;
-            this.cmbWUstm.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.cmbWUstm.Location = new System.Drawing.Point(381, 117);
-            this.cmbWUstm.Name = "cmbWUstm";
-            this.cmbWUstm.Size = new System.Drawing.Size(154, 21);
-            this.cmbWUstm.TabIndex = 109;
-            // 
-            // cmbWUendh
-            // 
-            this.cmbWUendh.FormattingEnabled = true;
-            this.cmbWUendh.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.cmbWUendh.Location = new System.Drawing.Point(193, 147);
-            this.cmbWUendh.Name = "cmbWUendh";
-            this.cmbWUendh.Size = new System.Drawing.Size(154, 21);
-            this.cmbWUendh.TabIndex = 110;
-            // 
-            // cmbWUendm
-            // 
-            this.cmbWUendm.FormattingEnabled = true;
-            this.cmbWUendm.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.cmbWUendm.Location = new System.Drawing.Point(381, 148);
-            this.cmbWUendm.Name = "cmbWUendm";
-            this.cmbWUendm.Size = new System.Drawing.Size(154, 21);
-            this.cmbWUendm.TabIndex = 111;
-            // 
-            // cmbWUnwd
-            // 
-            this.cmbWUnwd.FormattingEnabled = true;
-            this.cmbWUnwd.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.cmbWUnwd.Location = new System.Drawing.Point(503, 4);
-            this.cmbWUnwd.Name = "cmbWUnwd";
-            this.cmbWUnwd.Size = new System.Drawing.Size(154, 21);
-            this.cmbWUnwd.TabIndex = 112;
-            // 
-            // cmbWUwtpd
-            // 
-            this.cmbWUwtpd.FormattingEnabled = true;
-            this.cmbWUwtpd.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.cmbWUwtpd.Location = new System.Drawing.Point(185, 70);
-            this.cmbWUwtpd.Name = "cmbWUwtpd";
-            this.cmbWUwtpd.Size = new System.Drawing.Size(154, 21);
-            this.cmbWUwtpd.TabIndex = 113;
             // 
             // Form5
             // 
@@ -2331,19 +2043,10 @@ namespace TimeTable
         private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.CheckBox chkFriday;
-        private System.Windows.Forms.CheckBox chkThursday;
-        private System.Windows.Forms.CheckBox chkWednesday;
-        private System.Windows.Forms.CheckBox chkTuesday;
-        private System.Windows.Forms.CheckBox chkMonday;
-        private System.Windows.Forms.CheckBox chkSunday;
-        private System.Windows.Forms.CheckBox chkSaturday;
         private System.Windows.Forms.RadioButton RadioBOneH;
         private System.Windows.Forms.RadioButton RadioBTwoH;
         private System.Windows.Forms.RadioButton RadioBThirtyM;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label31;
@@ -2354,38 +2057,34 @@ namespace TimeTable
         private System.Windows.Forms.RadioButton radioWUthirty;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.CheckBox CheckWUsun;
-        private System.Windows.Forms.CheckBox CheckWUsatu;
-        private System.Windows.Forms.CheckBox CheckWUfri;
-        private System.Windows.Forms.CheckBox CheckWUthur;
-        private System.Windows.Forms.CheckBox CheckWUwed;
-        private System.Windows.Forms.CheckBox CheckWUtues;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
         private System.Windows.Forms.TextBox txtWorkID;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.DataGridView dataGridView5;
-        private System.Windows.Forms.Button BtnWSearch;
         private System.Windows.Forms.Button BtnWURefresh;
         private System.Windows.Forms.Button BtnWUpdate;
         private System.Windows.Forms.Button BtnWUDelete;
-        private System.Windows.Forms.ComboBox txtAddSTM;
-        private System.Windows.Forms.ComboBox txtETM;
-        private System.Windows.Forms.ComboBox txtAddETH;
-        private System.Windows.Forms.ComboBox txtAddSTH;
         private System.Windows.Forms.ComboBox txtAddWTD;
         private System.Windows.Forms.ComboBox txtAddNWD;
-        private System.Windows.Forms.CheckBox CheckWUmon;
-        private System.Windows.Forms.ComboBox cmbWUendm;
-        private System.Windows.Forms.ComboBox cmbWUendh;
-        private System.Windows.Forms.ComboBox cmbWUstm;
-        private System.Windows.Forms.ComboBox cmbWUsth;
         private System.Windows.Forms.ComboBox cmbWUnwd;
         private System.Windows.Forms.ComboBox cmbWUwtpd;
+        private System.Windows.Forms.TextBox txtAddETH;
+        private System.Windows.Forms.TextBox txtAddSTH;
+        private System.Windows.Forms.TextBox cmbWUendh;
+        private System.Windows.Forms.TextBox cmbWUsth;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TextBox txtDays;
+        private System.Windows.Forms.RadioButton radioWdaysend;
+        private System.Windows.Forms.RadioButton radioWweekend;
+        private System.Windows.Forms.RadioButton radioWweekday;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.TextBox txtWUdays;
+        private System.Windows.Forms.RadioButton radioWUAll;
+        private System.Windows.Forms.RadioButton radioWUweekend;
+        private System.Windows.Forms.RadioButton radioWUweekday;
     }
 }

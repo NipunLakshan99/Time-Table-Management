@@ -39,12 +39,13 @@ namespace TimeTable
                         {
                             Working_ID = (int)reader["Working_ID"],
                             No_worikng_days = (string)reader["No_worikng_days"],
-                            Working_days = (string)reader[" Working_days"],
+                            Working_days = (string)reader["Working_days"],
+                            Days = (string)reader["Days"],
                             Working_Time = (string)reader["Working_Time"],
-                            Start_Time = (string)reader["Start_Time"],
-                            End_Time = (string)reader["End_Time"],
-                            Time_Slot = (string)reader["Time_Slot"]
-                        });
+                            Start_Time =(string)reader["Start_Time"],
+                            End_Time =(string)reader["End_Time"],
+                            Time_Slot =(string)reader["Time_Slot"]
+                        }); 
                     }
                 }
             }
@@ -53,17 +54,18 @@ namespace TimeTable
 
         public void Add(Working working)
         {
-            using (var connection = factory.CreateConnection())
-            {
-                connection.Open();
-                var command = factory.CreateCommand();
-                command.Connection = connection;
-                command.CommandText = $"Insert into Working(No_worikng_days,Working_days,Working_Time,Start_Time,End_Time,Time_Slot) Values('{working.No_worikng_days}','{working.Working_days}','{working.Working_Time}','{working.Start_Time}','{working.End_Time}','{working.Time_Slot}');";
-                command.ExecuteNonQuery();
+                using (var connection = factory.CreateConnection())
+                {
+                    connection.ConnectionString = connectionString;
+                    connection.Open();
+                    var command = factory.CreateCommand();
+                    command.Connection = connection;
+                    command.CommandText = $"Insert into Working(No_worikng_days,Working_days,Days,Working_Time,Start_Time,End_Time,Time_Slot) Values('{working.No_worikng_days}','{working.Working_days}','{working.Days}','{working.Working_Time}','{working.Start_Time}','{working.End_Time}','{working.Time_Slot}');";
+                    command.ExecuteNonQuery();
+                }
 
             }
-            
-        }
+
 
         public void Update(Working working)
         {
@@ -73,7 +75,7 @@ namespace TimeTable
                 connection.Open();
                 var command = factory.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = $"Update Working set No_worikng_days ='{working.No_worikng_days}',Working_days ='{working.Working_days}',Working_Time='{working.Working_Time}',Start_Time='{working.Start_Time}',End_Time='{working.End_Time}',Time_Slot='{working.Time_Slot};";                
+                command.CommandText = $"Update Working set No_worikng_days ='{working.No_worikng_days}',Working_days='{working.Working_days}',Days='{working.Days}',Working_Time='{working.Working_Time}',Start_Time='{working.Start_Time}',End_Time='{working.End_Time}',Time_Slot='{working.Time_Slot}' where Working_ID = {working.Working_ID};";
                 command.ExecuteNonQuery();
             }
         }
@@ -86,10 +88,11 @@ namespace TimeTable
                 connection.Open();
                 var command = factory.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = $"Delete From Working where Working_ID  = {Working_ID};";
+                command.CommandText = $"Delete From Working where Working_ID = {Working_ID};";
                 command.ExecuteNonQuery();
             }
+
+        }
                 
         }
     }
-}

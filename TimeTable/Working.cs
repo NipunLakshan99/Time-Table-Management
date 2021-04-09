@@ -10,7 +10,8 @@ namespace TimeTable
     {
         public int Working_ID { get; set; }
         public string No_worikng_days { get; set; }
-        public string Working_days { get; set; }
+       public string Working_days { get; set; }
+        public string Days { get; set; }
         public string Working_Time { get; set; }
         public string Start_Time { get; set; }
         public string End_Time { get; set; }
