@@ -147,7 +147,6 @@ namespace TimeTable
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.label34 = new System.Windows.Forms.Label();
-            this.txtDays = new System.Windows.Forms.TextBox();
             this.radioWdaysend = new System.Windows.Forms.RadioButton();
             this.radioWweekend = new System.Windows.Forms.RadioButton();
             this.radioWweekday = new System.Windows.Forms.RadioButton();
@@ -168,7 +167,6 @@ namespace TimeTable
             this.label26 = new System.Windows.Forms.Label();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.label35 = new System.Windows.Forms.Label();
-            this.txtWUdays = new System.Windows.Forms.TextBox();
             this.radioWUAll = new System.Windows.Forms.RadioButton();
             this.radioWUweekend = new System.Windows.Forms.RadioButton();
             this.radioWUweekday = new System.Windows.Forms.RadioButton();
@@ -192,6 +190,8 @@ namespace TimeTable
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
+            this.txtDays = new System.Windows.Forms.ComboBox();
+            this.txtWUdays = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -1307,8 +1307,8 @@ namespace TimeTable
             // tabPage8
             // 
             this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.tabPage8.Controls.Add(this.label34);
             this.tabPage8.Controls.Add(this.txtDays);
+            this.tabPage8.Controls.Add(this.label34);
             this.tabPage8.Controls.Add(this.radioWdaysend);
             this.tabPage8.Controls.Add(this.radioWweekend);
             this.tabPage8.Controls.Add(this.radioWweekday);
@@ -1345,13 +1345,6 @@ namespace TimeTable
             this.label34.Size = new System.Drawing.Size(44, 16);
             this.label34.TabIndex = 88;
             this.label34.Text = "Days";
-            // 
-            // txtDays
-            // 
-            this.txtDays.Location = new System.Drawing.Point(313, 93);
-            this.txtDays.Name = "txtDays";
-            this.txtDays.Size = new System.Drawing.Size(125, 20);
-            this.txtDays.TabIndex = 87;
             // 
             // radioWdaysend
             // 
@@ -1573,8 +1566,8 @@ namespace TimeTable
             // tabPage9
             // 
             this.tabPage9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.tabPage9.Controls.Add(this.label35);
             this.tabPage9.Controls.Add(this.txtWUdays);
+            this.tabPage9.Controls.Add(this.label35);
             this.tabPage9.Controls.Add(this.radioWUAll);
             this.tabPage9.Controls.Add(this.radioWUweekend);
             this.tabPage9.Controls.Add(this.radioWUweekday);
@@ -1611,18 +1604,11 @@ namespace TimeTable
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label35.Location = new System.Drawing.Point(598, 45);
+            this.label35.Location = new System.Drawing.Point(413, 75);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(44, 16);
             this.label35.TabIndex = 123;
             this.label35.Text = "Days";
-            // 
-            // txtWUdays
-            // 
-            this.txtWUdays.Location = new System.Drawing.Point(668, 43);
-            this.txtWUdays.Name = "txtWUdays";
-            this.txtWUdays.Size = new System.Drawing.Size(120, 20);
-            this.txtWUdays.TabIndex = 122;
             // 
             // radioWUAll
             // 
@@ -1887,6 +1873,30 @@ namespace TimeTable
             this.label44.TabIndex = 75;
             this.label44.Text = "No Of Working Days";
             // 
+            // txtDays
+            // 
+            this.txtDays.FormattingEnabled = true;
+            this.txtDays.Items.AddRange(new object[] {
+            "Mon,Tue,Wed,Thu,Fri",
+            "Sat,Sun",
+            "Mon,Tue,Wed,Thu,Fri,Sat,Sun"});
+            this.txtDays.Location = new System.Drawing.Point(313, 92);
+            this.txtDays.Name = "txtDays";
+            this.txtDays.Size = new System.Drawing.Size(121, 21);
+            this.txtDays.TabIndex = 89;
+            // 
+            // txtWUdays
+            // 
+            this.txtWUdays.FormattingEnabled = true;
+            this.txtWUdays.Items.AddRange(new object[] {
+            "Mon,Tue,Wed,Thu,Fri",
+            "Sat,Sun",
+            "Mon,Tue,Wed,Thu,Fri,Sat,Sun"});
+            this.txtWUdays.Location = new System.Drawing.Point(503, 75);
+            this.txtWUdays.Name = "txtWUdays";
+            this.txtWUdays.Size = new System.Drawing.Size(121, 21);
+            this.txtWUdays.TabIndex = 124;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2077,14 +2087,14 @@ namespace TimeTable
         private System.Windows.Forms.TextBox cmbWUendh;
         private System.Windows.Forms.TextBox cmbWUsth;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox txtDays;
         private System.Windows.Forms.RadioButton radioWdaysend;
         private System.Windows.Forms.RadioButton radioWweekend;
         private System.Windows.Forms.RadioButton radioWweekday;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.TextBox txtWUdays;
         private System.Windows.Forms.RadioButton radioWUAll;
         private System.Windows.Forms.RadioButton radioWUweekend;
         private System.Windows.Forms.RadioButton radioWUweekday;
+        private System.Windows.Forms.ComboBox txtDays;
+        private System.Windows.Forms.ComboBox txtWUdays;
     }
 }

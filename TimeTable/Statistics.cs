@@ -16,5 +16,18 @@ namespace TimeTable
         {
             InitializeComponent();
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.chart2.Series["Total"].Points.AddXY("Laboratories", 3);
+            this.chart2.Series["Total"].Points.AddXY("Lecture Halls", 2);
+            this.chart2.Series["Total"].Points.AddXY("Lecturers", 9);
+            this.chart2.Series["Total"].Points.AddXY("Modules", 7);
+        }
     }
 }
