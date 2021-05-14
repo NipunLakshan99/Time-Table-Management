@@ -12,24 +12,119 @@ namespace TimeTable
 {
     public partial class Form4 : Form
     {
+        TagRepo tagRepo = new TagRepo();
         public Form4()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtTagName.Text) && !string.IsNullOrEmpty(txtTagCode.Text) && !string.IsNullOrEmpty(txtRelatedTag.Text))
+            {
+                tagRepo.Add(new Tag
+                {
+                    Tag_Name = txtTagName.Text,
+                    Tag_Code = txtTagCode.Text,
+                    Related_Tag = txtRelatedTag.Text,
+
+                });
+                txtTagName.Text = string.Empty;
+                txtTagCode.Text = string.Empty;
+                txtRelatedTag.Text = string.Empty;
+
+                dataGridView1.DataSource = tagRepo.GetAll();
+            }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtTagName.Text = string.Empty;
+            txtTagCode.Text = string.Empty;
+            txtRelatedTag.Text = string.Empty;
+        }
+
+        private void btnMUpdate_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtMTagID.Text) && !string.IsNullOrEmpty(txtMTagName.Text) && !string.IsNullOrEmpty(txtMTagCode.Text) && !string.IsNullOrEmpty(txtMRelatedTag.Text))
+            {
+                tagRepo.Update(new Tag
+                {
+                    Tag_ID = int.Parse(txtMTagID.Text),
+                    Tag_Name = txtMTagName.Text,
+                    Tag_Code = txtMTagCode.Text,
+                    Related_Tag = txtMRelatedTag.Text,
+
+
+                });
+                dataGridView2.DataSource = tagRepo.GetAll();
+            }
+        }
+
+        private void btnMDelete_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtMTagID.Text) && !string.IsNullOrEmpty(txtMTagName.Text) && !string.IsNullOrEmpty(txtMTagCode.Text) && !string.IsNullOrEmpty(txtMRelatedTag.Text))
+            {
+                tagRepo.Delete(int.Parse(txtMTagID.Text));
+                txtMTagID.Text = string.Empty;
+                txtMTagName.Text = string.Empty;
+                txtMTagCode.Text = string.Empty;
+                txtMRelatedTag.Text = string.Empty;
+
+                dataGridView2.DataSource = tagRepo.GetAll();
+            }
+        }
+
+        private void btnMClear_Click(object sender, EventArgs e)
+        {
+            txtMTagID.Text = string.Empty;
+            txtMTagName.Text = string.Empty;
+            txtMTagCode.Text = string.Empty;
+            txtMRelatedTag.Text = string.Empty;
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView2.SelectedRows.Count > 0)
+            {
+                var row = dataGridView2.SelectedRows[0];
+                var tag = (Tag)row.DataBoundItem;
+                txtMTagID.Text = tag.Tag_ID.ToString();
+                txtMTagName.Text = tag.Tag_Name;
+                txtMTagCode.Text = tag.Tag_Code;
+                txtMRelatedTag.Text = tag.Related_Tag;
+
+            }
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = tagRepo.GetAll();
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+            dataGridView2.DataSource = tagRepo.GetAll();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
         }
     }
+    
 }

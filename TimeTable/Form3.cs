@@ -35,7 +35,8 @@ namespace TimeTable
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            txtAddGroupId.Text = txtAddAYS.Text + '.' + txtAddGroupNo.Text + '.' + '(' + txtAddProg.Text + ')';
+            txtAddSubGroupId.Text = txtAddAYS.Text + '.' + txtAddGroupNo.Text + '.' + txtAddSubGroupNo.Text + '(' + txtAddProg.Text + ')';
         }
 
         private void label12_Click(object sender, EventArgs e)
@@ -58,7 +59,7 @@ namespace TimeTable
             /*dataGridView1_CellContentClick.DataSource = studentRepo.GetAll();*/
             dataGridView1.DataSource = studentRepo.GetAll();
         }
-    
+
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(txtAddAYS.Text) && !string.IsNullOrEmpty(txtAddProg.Text) && !string.IsNullOrEmpty(txtAddGroupNo.Text) && !string.IsNullOrEmpty(txtAddSubGroupNo.Text) && !string.IsNullOrEmpty(txtAddGroupId.Text) && !string.IsNullOrEmpty(txtAddSubGroupId.Text))
@@ -76,7 +77,9 @@ namespace TimeTable
                 txtAddProg.Text = string.Empty;
                 txtAddGroupNo.Text = string.Empty;
                 txtAddSubGroupNo.Text = string.Empty;
-                dataGridView1.DataSource = studentRepo.GetAll();
+                txtAddGroupId.Text = string.Empty;
+                txtAddSubGroupId.Text = string.Empty;
+                dataGridView2.DataSource = studentRepo.GetAll();
             }
         }
 
@@ -128,8 +131,29 @@ namespace TimeTable
                 txtSGI.Text = string.Empty;
 
                 dataGridView1.DataSource = studentRepo.GetAll();
-            }
 
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            txtAddAYS.Text = string.Empty;
+            txtAddProg.Text = string.Empty;
+            txtAddGroupNo.Text = string.Empty;
+            txtAddSubGroupNo.Text = string.Empty;
+            txtAddGroupId.Text = string.Empty;
+            txtAddSubGroupId.Text = string.Empty;
+        }
+
+        private void btnMClear_Click(object sender, EventArgs e)
+        {
+            txtMSID.Text = string.Empty;
+            txtMAYS.Text = string.Empty;
+            txtMProg.Text = string.Empty;
+            txtMGN.Text = string.Empty;
+            txtMSGN.Text = string.Empty;
+            txtMGI.Text = string.Empty;
+            txtSGI.Text = string.Empty;
         }
     }
 }

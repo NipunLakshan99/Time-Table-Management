@@ -31,6 +31,8 @@ namespace TimeTable
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txtAddGroupNo = new System.Windows.Forms.ComboBox();
+            this.txtAddSubGroupNo = new System.Windows.Forms.ComboBox();
             this.txtAddAYS = new System.Windows.Forms.ComboBox();
             this.txtAddSubGroupId = new System.Windows.Forms.TextBox();
             this.txtAddGroupId = new System.Windows.Forms.TextBox();
@@ -45,7 +47,19 @@ namespace TimeTable
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtMSID = new System.Windows.Forms.TextBox();
+            this.txtMAYS = new System.Windows.Forms.ComboBox();
+            this.txtMGI = new System.Windows.Forms.ComboBox();
+            this.txtSGI = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Student_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Academic_Year_Semester = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Programme = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Group_Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sub_Group_Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Group_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sub_Group_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnMClear = new System.Windows.Forms.Button();
             this.btnMUpdate = new System.Windows.Forms.Button();
             this.txtMGN = new System.Windows.Forms.TextBox();
@@ -58,24 +72,19 @@ namespace TimeTable
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.Student_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Academic_Year_Semester = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Programme = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Group_Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sub_Group_Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Group_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sub_Group_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtAddSubGroupNo = new System.Windows.Forms.ComboBox();
-            this.txtAddGroupNo = new System.Windows.Forms.ComboBox();
-            this.txtSGI = new System.Windows.Forms.ComboBox();
-            this.txtMGI = new System.Windows.Forms.ComboBox();
-            this.txtMAYS = new System.Windows.Forms.ComboBox();
-            this.txtMSID = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -91,6 +100,7 @@ namespace TimeTable
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.tabPage1.Controls.Add(this.dataGridView2);
             this.tabPage1.Controls.Add(this.txtAddGroupNo);
             this.tabPage1.Controls.Add(this.txtAddSubGroupNo);
             this.tabPage1.Controls.Add(this.txtAddAYS);
@@ -115,6 +125,54 @@ namespace TimeTable
             this.tabPage1.Text = "ADD STUDENT GROUPS";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // txtAddGroupNo
+            // 
+            this.txtAddGroupNo.FormattingEnabled = true;
+            this.txtAddGroupNo.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.txtAddGroupNo.Location = new System.Drawing.Point(650, 23);
+            this.txtAddGroupNo.Name = "txtAddGroupNo";
+            this.txtAddGroupNo.Size = new System.Drawing.Size(108, 26);
+            this.txtAddGroupNo.TabIndex = 16;
+            // 
+            // txtAddSubGroupNo
+            // 
+            this.txtAddSubGroupNo.FormattingEnabled = true;
+            this.txtAddSubGroupNo.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.txtAddSubGroupNo.Location = new System.Drawing.Point(650, 77);
+            this.txtAddSubGroupNo.Name = "txtAddSubGroupNo";
+            this.txtAddSubGroupNo.Size = new System.Drawing.Size(108, 26);
+            this.txtAddSubGroupNo.TabIndex = 16;
+            // 
             // txtAddAYS
             // 
             this.txtAddAYS.FormattingEnabled = true;
@@ -127,21 +185,21 @@ namespace TimeTable
             "Y3S2",
             "Y4S1",
             "Y4S2"});
-            this.txtAddAYS.Location = new System.Drawing.Point(381, 35);
+            this.txtAddAYS.Location = new System.Drawing.Point(284, 29);
             this.txtAddAYS.Name = "txtAddAYS";
-            this.txtAddAYS.Size = new System.Drawing.Size(232, 26);
+            this.txtAddAYS.Size = new System.Drawing.Size(149, 26);
             this.txtAddAYS.TabIndex = 15;
             // 
             // txtAddSubGroupId
             // 
-            this.txtAddSubGroupId.Location = new System.Drawing.Point(381, 289);
+            this.txtAddSubGroupId.Location = new System.Drawing.Point(326, 180);
             this.txtAddSubGroupId.Name = "txtAddSubGroupId";
             this.txtAddSubGroupId.Size = new System.Drawing.Size(232, 26);
             this.txtAddSubGroupId.TabIndex = 14;
             // 
             // txtAddGroupId
             // 
-            this.txtAddGroupId.Location = new System.Drawing.Point(381, 241);
+            this.txtAddGroupId.Location = new System.Drawing.Point(326, 138);
             this.txtAddGroupId.Name = "txtAddGroupId";
             this.txtAddGroupId.Size = new System.Drawing.Size(232, 26);
             this.txtAddGroupId.TabIndex = 13;
@@ -149,25 +207,36 @@ namespace TimeTable
             // txtAddProg
             // 
             this.txtAddProg.FormattingEnabled = true;
-            this.txtAddProg.Location = new System.Drawing.Point(381, 83);
+            this.txtAddProg.Items.AddRange(new object[] {
+            "IT",
+            "",
+            "BM",
+            "",
+            "EN",
+            "",
+            "HS",
+            "",
+            "CAM"});
+            this.txtAddProg.Location = new System.Drawing.Point(284, 81);
             this.txtAddProg.Name = "txtAddProg";
-            this.txtAddProg.Size = new System.Drawing.Size(232, 26);
+            this.txtAddProg.Size = new System.Drawing.Size(149, 26);
             this.txtAddProg.TabIndex = 9;
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button3.Location = new System.Drawing.Point(483, 346);
+            this.button3.Location = new System.Drawing.Point(483, 232);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 33);
             this.button3.TabIndex = 8;
             this.button3.Text = "CLEAR";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnSave.Location = new System.Drawing.Point(248, 346);
+            this.btnSave.Location = new System.Drawing.Point(273, 232);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 33);
             this.btnSave.TabIndex = 7;
@@ -178,7 +247,7 @@ namespace TimeTable
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button1.Location = new System.Drawing.Point(650, 237);
+            this.button1.Location = new System.Drawing.Point(596, 154);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(101, 30);
             this.button1.TabIndex = 6;
@@ -191,7 +260,7 @@ namespace TimeTable
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(97, 289);
+            this.label6.Location = new System.Drawing.Point(161, 186);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(139, 20);
             this.label6.TabIndex = 5;
@@ -202,7 +271,7 @@ namespace TimeTable
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(97, 238);
+            this.label5.Location = new System.Drawing.Point(181, 144);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(97, 20);
             this.label5.TabIndex = 4;
@@ -214,7 +283,7 @@ namespace TimeTable
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(97, 187);
+            this.label4.Location = new System.Drawing.Point(450, 87);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(196, 20);
             this.label4.TabIndex = 3;
@@ -225,7 +294,7 @@ namespace TimeTable
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(97, 139);
+            this.label3.Location = new System.Drawing.Point(450, 29);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(154, 20);
             this.label3.TabIndex = 2;
@@ -237,7 +306,7 @@ namespace TimeTable
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(97, 85);
+            this.label2.Location = new System.Drawing.Point(20, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 20);
             this.label2.TabIndex = 1;
@@ -248,7 +317,7 @@ namespace TimeTable
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(97, 41);
+            this.label1.Location = new System.Drawing.Point(20, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(258, 20);
             this.label1.TabIndex = 0;
@@ -284,6 +353,48 @@ namespace TimeTable
             this.tabPage2.Text = "MANAGE STUDENT GROUPS";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label13.Location = new System.Drawing.Point(11, 10);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(79, 16);
+            this.label13.TabIndex = 37;
+            this.label13.Text = "Student ID";
+            // 
+            // txtMSID
+            // 
+            this.txtMSID.Location = new System.Drawing.Point(244, 6);
+            this.txtMSID.Name = "txtMSID";
+            this.txtMSID.Size = new System.Drawing.Size(178, 26);
+            this.txtMSID.TabIndex = 36;
+            // 
+            // txtMAYS
+            // 
+            this.txtMAYS.FormattingEnabled = true;
+            this.txtMAYS.Location = new System.Drawing.Point(244, 52);
+            this.txtMAYS.Name = "txtMAYS";
+            this.txtMAYS.Size = new System.Drawing.Size(178, 26);
+            this.txtMAYS.TabIndex = 35;
+            // 
+            // txtMGI
+            // 
+            this.txtMGI.FormattingEnabled = true;
+            this.txtMGI.Location = new System.Drawing.Point(619, 42);
+            this.txtMGI.Name = "txtMGI";
+            this.txtMGI.Size = new System.Drawing.Size(145, 26);
+            this.txtMGI.TabIndex = 34;
+            // 
+            // txtSGI
+            // 
+            this.txtSGI.FormattingEnabled = true;
+            this.txtSGI.Location = new System.Drawing.Point(619, 75);
+            this.txtSGI.Name = "txtSGI";
+            this.txtSGI.Size = new System.Drawing.Size(145, 26);
+            this.txtSGI.TabIndex = 33;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -302,6 +413,48 @@ namespace TimeTable
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // Student_ID
+            // 
+            this.Student_ID.DataPropertyName = "Student_ID";
+            this.Student_ID.HeaderText = "Student_ID";
+            this.Student_ID.Name = "Student_ID";
+            // 
+            // Academic_Year_Semester
+            // 
+            this.Academic_Year_Semester.DataPropertyName = "Academic_Year_Semester";
+            this.Academic_Year_Semester.HeaderText = "Academic_Year_Semester";
+            this.Academic_Year_Semester.Name = "Academic_Year_Semester";
+            // 
+            // Programme
+            // 
+            this.Programme.DataPropertyName = "Programme";
+            this.Programme.HeaderText = "Programme";
+            this.Programme.Name = "Programme";
+            // 
+            // Group_Number
+            // 
+            this.Group_Number.DataPropertyName = "Group_Number";
+            this.Group_Number.HeaderText = "Group_Number";
+            this.Group_Number.Name = "Group_Number";
+            // 
+            // Sub_Group_Number
+            // 
+            this.Sub_Group_Number.DataPropertyName = "Sub_Group_Number";
+            this.Sub_Group_Number.HeaderText = "Sub_Group_Number";
+            this.Sub_Group_Number.Name = "Sub_Group_Number";
+            // 
+            // Group_ID
+            // 
+            this.Group_ID.DataPropertyName = "Group_ID";
+            this.Group_ID.HeaderText = "Group_ID";
+            this.Group_ID.Name = "Group_ID";
+            // 
+            // Sub_Group_ID
+            // 
+            this.Sub_Group_ID.DataPropertyName = "Sub_Group_ID";
+            this.Sub_Group_ID.HeaderText = "Sub_Group_ID";
+            this.Sub_Group_ID.Name = "Sub_Group_ID";
+            // 
             // btnMClear
             // 
             this.btnMClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
@@ -311,6 +464,7 @@ namespace TimeTable
             this.btnMClear.TabIndex = 31;
             this.btnMClear.Text = "CLEAR";
             this.btnMClear.UseVisualStyleBackColor = false;
+            this.btnMClear.Click += new System.EventHandler(this.btnMClear_Click);
             // 
             // btnMUpdate
             // 
@@ -423,105 +577,63 @@ namespace TimeTable
             this.label12.Text = "ACADEMIC YEAR SEMESTER";
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
-            // Student_ID
+            // dataGridView2
             // 
-            this.Student_ID.DataPropertyName = "Student_ID";
-            this.Student_ID.HeaderText = "Student_ID";
-            this.Student_ID.Name = "Student_ID";
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7});
+            this.dataGridView2.Location = new System.Drawing.Point(24, 271);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(742, 172);
+            this.dataGridView2.TabIndex = 33;
             // 
-            // Academic_Year_Semester
+            // dataGridViewTextBoxColumn1
             // 
-            this.Academic_Year_Semester.DataPropertyName = "Academic_Year_Semester";
-            this.Academic_Year_Semester.HeaderText = "Academic_Year_Semester";
-            this.Academic_Year_Semester.Name = "Academic_Year_Semester";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Student_ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Student_ID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
-            // Programme
+            // dataGridViewTextBoxColumn2
             // 
-            this.Programme.DataPropertyName = "Programme";
-            this.Programme.HeaderText = "Programme";
-            this.Programme.Name = "Programme";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Academic_Year_Semester";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Academic_Year_Semester";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // Group_Number
+            // dataGridViewTextBoxColumn3
             // 
-            this.Group_Number.DataPropertyName = "Group_Number";
-            this.Group_Number.HeaderText = "Group_Number";
-            this.Group_Number.Name = "Group_Number";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Programme";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Programme";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
-            // Sub_Group_Number
+            // dataGridViewTextBoxColumn4
             // 
-            this.Sub_Group_Number.DataPropertyName = "Sub_Group_Number";
-            this.Sub_Group_Number.HeaderText = "Sub_Group_Number";
-            this.Sub_Group_Number.Name = "Sub_Group_Number";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Group_Number";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Group_Number";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
-            // Group_ID
+            // dataGridViewTextBoxColumn5
             // 
-            this.Group_ID.DataPropertyName = "Group_ID";
-            this.Group_ID.HeaderText = "Group_ID";
-            this.Group_ID.Name = "Group_ID";
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Sub_Group_Number";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Sub_Group_Number";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
-            // Sub_Group_ID
+            // dataGridViewTextBoxColumn6
             // 
-            this.Sub_Group_ID.DataPropertyName = "Sub_Group_ID";
-            this.Sub_Group_ID.HeaderText = "Sub_Group_ID";
-            this.Sub_Group_ID.Name = "Sub_Group_ID";
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Group_ID";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Group_ID";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
-            // txtAddSubGroupNo
+            // dataGridViewTextBoxColumn7
             // 
-            this.txtAddSubGroupNo.FormattingEnabled = true;
-            this.txtAddSubGroupNo.Location = new System.Drawing.Point(381, 196);
-            this.txtAddSubGroupNo.Name = "txtAddSubGroupNo";
-            this.txtAddSubGroupNo.Size = new System.Drawing.Size(232, 26);
-            this.txtAddSubGroupNo.TabIndex = 16;
-            // 
-            // txtAddGroupNo
-            // 
-            this.txtAddGroupNo.FormattingEnabled = true;
-            this.txtAddGroupNo.Location = new System.Drawing.Point(381, 137);
-            this.txtAddGroupNo.Name = "txtAddGroupNo";
-            this.txtAddGroupNo.Size = new System.Drawing.Size(232, 26);
-            this.txtAddGroupNo.TabIndex = 16;
-            // 
-            // txtSGI
-            // 
-            this.txtSGI.FormattingEnabled = true;
-            this.txtSGI.Location = new System.Drawing.Point(619, 75);
-            this.txtSGI.Name = "txtSGI";
-            this.txtSGI.Size = new System.Drawing.Size(145, 26);
-            this.txtSGI.TabIndex = 33;
-            // 
-            // txtMGI
-            // 
-            this.txtMGI.FormattingEnabled = true;
-            this.txtMGI.Location = new System.Drawing.Point(619, 42);
-            this.txtMGI.Name = "txtMGI";
-            this.txtMGI.Size = new System.Drawing.Size(145, 26);
-            this.txtMGI.TabIndex = 34;
-            // 
-            // txtMAYS
-            // 
-            this.txtMAYS.FormattingEnabled = true;
-            this.txtMAYS.Location = new System.Drawing.Point(244, 52);
-            this.txtMAYS.Name = "txtMAYS";
-            this.txtMAYS.Size = new System.Drawing.Size(178, 26);
-            this.txtMAYS.TabIndex = 35;
-            // 
-            // txtMSID
-            // 
-            this.txtMSID.Location = new System.Drawing.Point(244, 6);
-            this.txtMSID.Name = "txtMSID";
-            this.txtMSID.Size = new System.Drawing.Size(178, 26);
-            this.txtMSID.TabIndex = 36;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label13.Location = new System.Drawing.Point(11, 10);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(79, 16);
-            this.label13.TabIndex = 37;
-            this.label13.Text = "Student ID";
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Sub_Group_ID";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Sub_Group_ID";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
             // Form3
             // 
@@ -538,6 +650,7 @@ namespace TimeTable
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -587,5 +700,13 @@ namespace TimeTable
         private System.Windows.Forms.ComboBox txtSGI;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtMSID;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
     }
 }
