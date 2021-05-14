@@ -146,6 +146,7 @@ namespace TimeTable
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.txtDays = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.radioWdaysend = new System.Windows.Forms.RadioButton();
             this.radioWweekend = new System.Windows.Forms.RadioButton();
@@ -166,6 +167,7 @@ namespace TimeTable
             this.label28 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.txtWUdays = new System.Windows.Forms.ComboBox();
             this.label35 = new System.Windows.Forms.Label();
             this.radioWUAll = new System.Windows.Forms.RadioButton();
             this.radioWUweekend = new System.Windows.Forms.RadioButton();
@@ -190,8 +192,6 @@ namespace TimeTable
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.txtDays = new System.Windows.Forms.ComboBox();
-            this.txtWUdays = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -268,6 +268,7 @@ namespace TimeTable
             this.comboBox24.Name = "comboBox24";
             this.comboBox24.Size = new System.Drawing.Size(146, 21);
             this.comboBox24.TabIndex = 55;
+            this.comboBox24.SelectedIndexChanged += new System.EventHandler(this.comboBox24_SelectedIndexChanged);
             // 
             // comboBox19
             // 
@@ -1335,6 +1336,18 @@ namespace TimeTable
             this.tabPage8.Text = "ADD WORKING DAYS";
             this.tabPage8.Click += new System.EventHandler(this.tabPage8_Click);
             // 
+            // txtDays
+            // 
+            this.txtDays.FormattingEnabled = true;
+            this.txtDays.Items.AddRange(new object[] {
+            "Mon,Tue,Wed,Thu,Fri",
+            "Sat,Sun",
+            "Mon,Tue,Wed,Thu,Fri,Sat,Sun"});
+            this.txtDays.Location = new System.Drawing.Point(313, 92);
+            this.txtDays.Name = "txtDays";
+            this.txtDays.Size = new System.Drawing.Size(121, 21);
+            this.txtDays.TabIndex = 89;
+            // 
             // label34
             // 
             this.label34.AutoSize = true;
@@ -1598,6 +1611,18 @@ namespace TimeTable
             this.tabPage9.TabIndex = 1;
             this.tabPage9.Text = "MANAGE WORKING DAYS & HOURS";
             this.tabPage9.Click += new System.EventHandler(this.tabPage9_Click);
+            // 
+            // txtWUdays
+            // 
+            this.txtWUdays.FormattingEnabled = true;
+            this.txtWUdays.Items.AddRange(new object[] {
+            "Mon,Tue,Wed,Thu,Fri",
+            "Sat,Sun",
+            "Mon,Tue,Wed,Thu,Fri,Sat,Sun"});
+            this.txtWUdays.Location = new System.Drawing.Point(503, 75);
+            this.txtWUdays.Name = "txtWUdays";
+            this.txtWUdays.Size = new System.Drawing.Size(121, 21);
+            this.txtWUdays.TabIndex = 124;
             // 
             // label35
             // 
@@ -1873,30 +1898,6 @@ namespace TimeTable
             this.label44.TabIndex = 75;
             this.label44.Text = "No Of Working Days";
             // 
-            // txtDays
-            // 
-            this.txtDays.FormattingEnabled = true;
-            this.txtDays.Items.AddRange(new object[] {
-            "Mon,Tue,Wed,Thu,Fri",
-            "Sat,Sun",
-            "Mon,Tue,Wed,Thu,Fri,Sat,Sun"});
-            this.txtDays.Location = new System.Drawing.Point(313, 92);
-            this.txtDays.Name = "txtDays";
-            this.txtDays.Size = new System.Drawing.Size(121, 21);
-            this.txtDays.TabIndex = 89;
-            // 
-            // txtWUdays
-            // 
-            this.txtWUdays.FormattingEnabled = true;
-            this.txtWUdays.Items.AddRange(new object[] {
-            "Mon,Tue,Wed,Thu,Fri",
-            "Sat,Sun",
-            "Mon,Tue,Wed,Thu,Fri,Sat,Sun"});
-            this.txtWUdays.Location = new System.Drawing.Point(503, 75);
-            this.txtWUdays.Name = "txtWUdays";
-            this.txtWUdays.Size = new System.Drawing.Size(121, 21);
-            this.txtWUdays.TabIndex = 124;
-            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1905,6 +1906,7 @@ namespace TimeTable
             this.Controls.Add(this.tabControl1);
             this.Name = "Form5";
             this.Text = "Form5";
+            this.Load += new System.EventHandler(this.Form5_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();

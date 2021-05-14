@@ -7,17 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace TimeTable
 {
     public partial class Form5 : Form
     {
+        SqlConnection con = new SqlConnection("Data Source=(localdb)\\NipunDB;Initial Catalog=Time;Integrated Security=True");
         WorkingRepo WorkingRepo = new WorkingRepo();
         public Form5()
         {
             InitializeComponent();
         }
 
+        
         private void label9_Click(object sender, EventArgs e)
         {
 
@@ -232,6 +235,32 @@ namespace TimeTable
         private void radioWUAll_CheckedChanged(object sender, EventArgs e)
         {
             WUdays = "Weekday and WeekEnd";
+        }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                SqlCommand sc = new SqlCommand("select(Lecturer_name) from Teacher",con);
+                SqlDataReader reader;
+                reader = sc.ExecuteReader();
+                DataTable dt = new DataTable();
+                dt.Columns.Add("Lecturer_name", typeof(string));
+                dt.Load(reader);
+                comboBox24.ValueMember = "Lecturer_name";
+                comboBox24.DataSource = dt;
+                con.Close();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void comboBox24_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
