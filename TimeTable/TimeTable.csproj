@@ -85,6 +85,8 @@
     <Compile Include="Lecturer.Designer.cs">
       <DependentUpon>Lecturer.cs</DependentUpon>
     </Compile>
+    <Compile Include="LNotAvailableTime.cs" />
+    <Compile Include="LNotAvailableTimeRepo.cs" />
     <Compile Include="Location.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +97,8 @@
     <Compile Include="PlaceRepo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SNotAvailableTime.cs" />
+    <Compile Include="SNotAvailableTimeRepo.cs" />
     <Compile Include="Statistics.cs">
       <SubType>Form</SubType>
     </Compile>

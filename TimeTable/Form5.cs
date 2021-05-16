@@ -233,5 +233,35 @@ namespace TimeTable
         {
             WUdays = "Weekday and WeekEnd";
         }
+
+        private void txtAddSTH_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAddNWD_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbWUnwd_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label49_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

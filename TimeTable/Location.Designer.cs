@@ -60,24 +60,25 @@ namespace TimeTable
             this.txtLUbuildingname = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtAddNWD = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.LNATDelete = new System.Windows.Forms.Button();
+            this.LocationNotAvailable_Clear = new System.Windows.Forms.Button();
+            this.LNATEnd_Time = new System.Windows.Forms.TextBox();
+            this.LNATStart_Time = new System.Windows.Forms.TextBox();
+            this.LNATDay = new System.Windows.Forms.ComboBox();
+            this.LNATRoom = new System.Windows.Forms.TextBox();
+            this.LocationNotAvailable_Add = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -87,7 +88,7 @@ namespace TimeTable
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1067, 554);
@@ -110,9 +111,9 @@ namespace TimeTable
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(1059, 525);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "ADD LOCATION";
@@ -121,7 +122,7 @@ namespace TimeTable
             // txtLRoomname
             // 
             this.txtLRoomname.Location = new System.Drawing.Point(719, 42);
-            this.txtLRoomname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLRoomname.Margin = new System.Windows.Forms.Padding(4);
             this.txtLRoomname.Name = "txtLRoomname";
             this.txtLRoomname.Size = new System.Drawing.Size(252, 22);
             this.txtLRoomname.TabIndex = 31;
@@ -129,7 +130,7 @@ namespace TimeTable
             // txtLcapacity
             // 
             this.txtLcapacity.Location = new System.Drawing.Point(719, 126);
-            this.txtLcapacity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLcapacity.Margin = new System.Windows.Forms.Padding(4);
             this.txtLcapacity.Name = "txtLcapacity";
             this.txtLcapacity.Size = new System.Drawing.Size(252, 22);
             this.txtLcapacity.TabIndex = 30;
@@ -137,7 +138,7 @@ namespace TimeTable
             // txtbuildname
             // 
             this.txtbuildname.Location = new System.Drawing.Point(217, 42);
-            this.txtbuildname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbuildname.Margin = new System.Windows.Forms.Padding(4);
             this.txtbuildname.Name = "txtbuildname";
             this.txtbuildname.Size = new System.Drawing.Size(263, 22);
             this.txtbuildname.TabIndex = 29;
@@ -146,7 +147,7 @@ namespace TimeTable
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(11, 250);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.Size = new System.Drawing.Size(1035, 262);
@@ -180,18 +181,19 @@ namespace TimeTable
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.button3.Location = new System.Drawing.Point(491, 194);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 41);
             this.button3.TabIndex = 25;
             this.button3.Text = "CLEAR";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btnLocsave
             // 
             this.btnLocsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnLocsave.Location = new System.Drawing.Point(345, 194);
-            this.btnLocsave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLocsave.Margin = new System.Windows.Forms.Padding(4);
             this.btnLocsave.Name = "btnLocsave";
             this.btnLocsave.Size = new System.Drawing.Size(100, 41);
             this.btnLocsave.TabIndex = 24;
@@ -273,9 +275,9 @@ namespace TimeTable
             this.tabPage2.Controls.Add(this.txtLUbuildingname);
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage2.Size = new System.Drawing.Size(1059, 525);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "MANAGE LOCATION";
@@ -306,7 +308,7 @@ namespace TimeTable
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.button4.Location = new System.Drawing.Point(636, 214);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(116, 37);
             this.button4.TabIndex = 76;
@@ -317,7 +319,7 @@ namespace TimeTable
             // 
             this.btnLUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnLUpdate.Location = new System.Drawing.Point(188, 214);
-            this.btnLUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnLUpdate.Name = "btnLUpdate";
             this.btnLUpdate.Size = new System.Drawing.Size(116, 37);
             this.btnLUpdate.TabIndex = 75;
@@ -329,7 +331,7 @@ namespace TimeTable
             // 
             this.btnLDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnLDelete.Location = new System.Drawing.Point(427, 214);
-            this.btnLDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnLDelete.Name = "btnLDelete";
             this.btnLDelete.Size = new System.Drawing.Size(116, 37);
             this.btnLDelete.TabIndex = 74;
@@ -341,7 +343,7 @@ namespace TimeTable
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(65, 258);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(905, 235);
@@ -458,16 +460,16 @@ namespace TimeTable
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.tabPage3.Controls.Add(this.button2);
-            this.tabPage3.Controls.Add(this.button1);
-            this.tabPage3.Controls.Add(this.comboBox2);
-            this.tabPage3.Controls.Add(this.comboBox1);
-            this.tabPage3.Controls.Add(this.textBox3);
-            this.tabPage3.Controls.Add(this.textBox2);
+            this.tabPage3.Controls.Add(this.LNATDelete);
+            this.tabPage3.Controls.Add(this.LocationNotAvailable_Clear);
+            this.tabPage3.Controls.Add(this.LNATEnd_Time);
+            this.tabPage3.Controls.Add(this.LNATStart_Time);
+            this.tabPage3.Controls.Add(this.LNATDay);
+            this.tabPage3.Controls.Add(this.LNATRoom);
+            this.tabPage3.Controls.Add(this.LocationNotAvailable_Add);
+            this.tabPage3.Controls.Add(this.dataGridView3);
             this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Controls.Add(this.label11);
-            this.tabPage3.Controls.Add(this.txtAddNWD);
-            this.tabPage3.Controls.Add(this.textBox1);
             this.tabPage3.Controls.Add(this.label10);
             this.tabPage3.Controls.Add(this.label9);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
@@ -476,58 +478,104 @@ namespace TimeTable
             this.tabPage3.Size = new System.Drawing.Size(1059, 525);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "NOT AVAILABLE TIMES";
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
-            // label9
+            // LNATDelete
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label9.Location = new System.Drawing.Point(40, 42);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(134, 25);
-            this.label9.TabIndex = 79;
-            this.label9.Text = "Select Room";
+            this.LNATDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.LNATDelete.Location = new System.Drawing.Point(886, 464);
+            this.LNATDelete.Name = "LNATDelete";
+            this.LNATDelete.Size = new System.Drawing.Size(116, 37);
+            this.LNATDelete.TabIndex = 100;
+            this.LNATDelete.Text = "Delete";
+            this.LNATDelete.UseVisualStyleBackColor = false;
+            this.LNATDelete.Click += new System.EventHandler(this.LNATDelete_Click);
             // 
-            // label10
+            // LocationNotAvailable_Clear
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label10.Location = new System.Drawing.Point(569, 42);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(117, 25);
-            this.label10.TabIndex = 81;
-            this.label10.Text = "Select Day";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
+            this.LocationNotAvailable_Clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.LocationNotAvailable_Clear.Location = new System.Drawing.Point(574, 207);
+            this.LocationNotAvailable_Clear.Name = "LocationNotAvailable_Clear";
+            this.LocationNotAvailable_Clear.Size = new System.Drawing.Size(116, 37);
+            this.LocationNotAvailable_Clear.TabIndex = 99;
+            this.LocationNotAvailable_Clear.Text = "Clear";
+            this.LocationNotAvailable_Clear.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // LNATEnd_Time
             // 
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.PanWest;
-            this.textBox1.Location = new System.Drawing.Point(210, 34);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(297, 33);
-            this.textBox1.TabIndex = 82;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            this.LNATEnd_Time.Location = new System.Drawing.Point(702, 123);
+            this.LNATEnd_Time.Multiline = true;
+            this.LNATEnd_Time.Name = "LNATEnd_Time";
+            this.LNATEnd_Time.Size = new System.Drawing.Size(210, 36);
+            this.LNATEnd_Time.TabIndex = 98;
+            this.LNATEnd_Time.TextChanged += new System.EventHandler(this.LNATEnd_Time_TextChanged);
             // 
-            // txtAddNWD
+            // LNATStart_Time
             // 
-            this.txtAddNWD.FormattingEnabled = true;
-            this.txtAddNWD.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.txtAddNWD.Location = new System.Drawing.Point(788, 43);
-            this.txtAddNWD.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAddNWD.Name = "txtAddNWD";
-            this.txtAddNWD.Size = new System.Drawing.Size(210, 24);
-            this.txtAddNWD.TabIndex = 83;
-            this.txtAddNWD.SelectedIndexChanged += new System.EventHandler(this.txtAddNWD_SelectedIndexChanged);
+            this.LNATStart_Time.Location = new System.Drawing.Point(220, 123);
+            this.LNATStart_Time.Multiline = true;
+            this.LNATStart_Time.Name = "LNATStart_Time";
+            this.LNATStart_Time.Size = new System.Drawing.Size(215, 38);
+            this.LNATStart_Time.TabIndex = 96;
+            // 
+            // LNATDay
+            // 
+            this.LNATDay.FormattingEnabled = true;
+            this.LNATDay.Items.AddRange(new object[] {
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"});
+            this.LNATDay.Location = new System.Drawing.Point(774, 43);
+            this.LNATDay.Name = "LNATDay";
+            this.LNATDay.Size = new System.Drawing.Size(210, 24);
+            this.LNATDay.TabIndex = 95;
+            this.LNATDay.SelectedIndexChanged += new System.EventHandler(this.LNATDay_SelectedIndexChanged);
+            // 
+            // LNATRoom
+            // 
+            this.LNATRoom.Location = new System.Drawing.Point(210, 42);
+            this.LNATRoom.Multiline = true;
+            this.LNATRoom.Name = "LNATRoom";
+            this.LNATRoom.Size = new System.Drawing.Size(297, 32);
+            this.LNATRoom.TabIndex = 94;
+            // 
+            // LocationNotAvailable_Add
+            // 
+            this.LocationNotAvailable_Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.LocationNotAvailable_Add.Location = new System.Drawing.Point(405, 207);
+            this.LocationNotAvailable_Add.Name = "LocationNotAvailable_Add";
+            this.LocationNotAvailable_Add.Size = new System.Drawing.Size(116, 37);
+            this.LocationNotAvailable_Add.TabIndex = 93;
+            this.LocationNotAvailable_Add.Text = "Add Session";
+            this.LocationNotAvailable_Add.UseVisualStyleBackColor = false;
+            this.LocationNotAvailable_Add.Click += new System.EventHandler(this.LocationNotAvailable_Add_Click);
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(241, 279);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowHeadersWidth = 51;
+            this.dataGridView3.Size = new System.Drawing.Size(596, 237);
+            this.dataGridView3.TabIndex = 92;
+            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label12.Location = new System.Drawing.Point(538, 127);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(104, 25);
+            this.label12.TabIndex = 85;
+            this.label12.Text = "End Time";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label11
             // 
@@ -541,95 +589,28 @@ namespace TimeTable
             this.label11.Text = "Start Time";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
-            // label12
+            // label10
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label12.Location = new System.Drawing.Point(569, 115);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(104, 25);
-            this.label12.TabIndex = 85;
-            this.label12.Text = "End Time";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label10.Location = new System.Drawing.Point(569, 42);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(117, 25);
+            this.label10.TabIndex = 81;
+            this.label10.Text = "Select Day";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // textBox2
+            // label9
             // 
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.PanWest;
-            this.textBox2.Location = new System.Drawing.Point(210, 119);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(183, 33);
-            this.textBox2.TabIndex = 86;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Cursor = System.Windows.Forms.Cursors.PanWest;
-            this.textBox3.Location = new System.Drawing.Point(742, 107);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(167, 33);
-            this.textBox3.TabIndex = 87;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged_1);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.comboBox1.Location = new System.Drawing.Point(427, 127);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(80, 24);
-            this.comboBox1.TabIndex = 88;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.comboBox2.Location = new System.Drawing.Point(945, 115);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(80, 24);
-            this.comboBox2.TabIndex = 89;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button1.Location = new System.Drawing.Point(382, 207);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 37);
-            this.button1.TabIndex = 90;
-            this.button1.Text = "Add Session";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button2.Location = new System.Drawing.Point(557, 207);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 37);
-            this.button2.TabIndex = 91;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = false;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label9.Location = new System.Drawing.Point(40, 42);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(134, 25);
+            this.label9.TabIndex = 79;
+            this.label9.Text = "Select Room";
             // 
             // Location
             // 
@@ -637,7 +618,7 @@ namespace TimeTable
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Location";
             this.Text = "Location";
             this.tabControl1.ResumeLayout(false);
@@ -649,6 +630,7 @@ namespace TimeTable
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -686,17 +668,17 @@ namespace TimeTable
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtlocID;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox txtAddNWD;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Button LocationNotAvailable_Add;
+        private System.Windows.Forms.ComboBox LNATDay;
+        private System.Windows.Forms.TextBox LNATRoom;
+        private System.Windows.Forms.TextBox LNATStart_Time;
+        private System.Windows.Forms.Button LocationNotAvailable_Clear;
+        private System.Windows.Forms.TextBox LNATEnd_Time;
+        private System.Windows.Forms.Button LNATDelete;
     }
 }

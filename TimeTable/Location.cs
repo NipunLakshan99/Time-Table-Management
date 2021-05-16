@@ -13,6 +13,7 @@ namespace TimeTable
     public partial class Location : Form
     {
         PlaceRepo PlaceRepo = new PlaceRepo();
+        LNotAvailableTimeRepo LNotAvailableTimeRepo = new LNotAvailableTimeRepo();
         public Location()
         {
             InitializeComponent();
@@ -252,6 +253,65 @@ namespace TimeTable
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LocationNotAvailable_Add_Click(object sender, EventArgs e)
+        {
+            if(!string.IsNullOrEmpty(LNATRoom.Text) && !string.IsNullOrEmpty(LNATDay.Text) && !string.IsNullOrEmpty(LNATStart_Time.Text) && !string.IsNullOrEmpty(LNATEnd_Time.Text))
+            {
+                LNotAvailableTimeRepo.Add(new LNotAvailableTime
+                {
+                    Room = LNATRoom.Text,
+                    Day = LNATDay.Text,
+                    Start_Time = LNATStart_Time.Text,
+                    End_Time = LNATEnd_Time.Text,
+
+                });
+                LNATRoom.Text = string.Empty;
+                LNATDay.Text = string.Empty;
+                LNATStart_Time.Text = string.Empty;
+                LNATEnd_Time.Text = string.Empty;
+            }
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LNATEnd_Time_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LNATDay_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var row = dataGridView3.SelectedRows[0];
+            var LNotAvailableTime = (LNotAvailableTime)row.DataBoundItem;
+            //LNot_Available_Time_ID.Text = LNotAvailableTime.LNot_Available_Time_ID.ToString();
+            LNATRoom.Text = LNotAvailableTime.Room;
+            LNATDay.Text = LNotAvailableTime.Day;
+            LNATStart_Time.Text = LNotAvailableTime.Start_Time;
+            LNATEnd_Time.Text = LNotAvailableTime.End_Time;
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+            dataGridView3.DataSource = LNotAvailableTimeRepo.GetAll();
+        }
+
+        private void LNATDelete_Click(object sender, EventArgs e)
+        {
         }
     }
 }

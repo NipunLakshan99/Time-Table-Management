@@ -192,6 +192,20 @@ namespace TimeTable
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.comboBox26 = new System.Windows.Forms.ComboBox();
+            this.comboBox27 = new System.Windows.Forms.ComboBox();
+            this.comboBox28 = new System.Windows.Forms.ComboBox();
+            this.comboBox29 = new System.Windows.Forms.ComboBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -202,6 +216,7 @@ namespace TimeTable
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.tabPage4.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage8.SuspendLayout();
@@ -1422,6 +1437,20 @@ namespace TimeTable
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.tabPage4.Controls.Add(this.button18);
+            this.tabPage4.Controls.Add(this.button17);
+            this.tabPage4.Controls.Add(this.textBox7);
+            this.tabPage4.Controls.Add(this.label50);
+            this.tabPage4.Controls.Add(this.label49);
+            this.tabPage4.Controls.Add(this.comboBox29);
+            this.tabPage4.Controls.Add(this.comboBox28);
+            this.tabPage4.Controls.Add(this.comboBox27);
+            this.tabPage4.Controls.Add(this.comboBox26);
+            this.tabPage4.Controls.Add(this.label48);
+            this.tabPage4.Controls.Add(this.label47);
+            this.tabPage4.Controls.Add(this.label45);
+            this.tabPage4.Controls.Add(this.label39);
+            this.tabPage4.Controls.Add(this.textBox5);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
@@ -1570,6 +1599,7 @@ namespace TimeTable
             this.txtAddSTH.Name = "txtAddSTH";
             this.txtAddSTH.Size = new System.Drawing.Size(165, 22);
             this.txtAddSTH.TabIndex = 82;
+            this.txtAddSTH.TextChanged += new System.EventHandler(this.txtAddSTH_TextChanged);
             // 
             // txtAddWTD
             // 
@@ -1604,6 +1634,7 @@ namespace TimeTable
             this.txtAddNWD.Name = "txtAddNWD";
             this.txtAddNWD.Size = new System.Drawing.Size(165, 24);
             this.txtAddNWD.TabIndex = 78;
+            this.txtAddNWD.SelectedIndexChanged += new System.EventHandler(this.txtAddNWD_SelectedIndexChanged);
             // 
             // BtnWReset
             // 
@@ -1898,6 +1929,7 @@ namespace TimeTable
             this.cmbWUnwd.Name = "cmbWUnwd";
             this.cmbWUnwd.Size = new System.Drawing.Size(204, 24);
             this.cmbWUnwd.TabIndex = 112;
+            this.cmbWUnwd.SelectedIndexChanged += new System.EventHandler(this.cmbWUnwd_SelectedIndexChanged);
             // 
             // BtnWURefresh
             // 
@@ -2094,6 +2126,143 @@ namespace TimeTable
             this.label44.TabIndex = 75;
             this.label44.Text = "No Of Working Days";
             // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(711, 181);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(127, 29);
+            this.textBox5.TabIndex = 0;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label39.Location = new System.Drawing.Point(57, 45);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(158, 25);
+            this.label39.TabIndex = 18;
+            this.label39.Text = "Select Lecturer";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label45.Location = new System.Drawing.Point(545, 117);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(184, 25);
+            this.label45.TabIndex = 19;
+            this.label45.Text = "Select Session ID";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label47.Location = new System.Drawing.Point(57, 117);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(138, 25);
+            this.label47.TabIndex = 20;
+            this.label47.Text = "Select Group";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label48.Location = new System.Drawing.Point(545, 45);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(183, 25);
+            this.label48.TabIndex = 21;
+            this.label48.Text = "Select Sub Group";
+            // 
+            // comboBox26
+            // 
+            this.comboBox26.FormattingEnabled = true;
+            this.comboBox26.Location = new System.Drawing.Point(260, 46);
+            this.comboBox26.Name = "comboBox26";
+            this.comboBox26.Size = new System.Drawing.Size(221, 24);
+            this.comboBox26.TabIndex = 22;
+            // 
+            // comboBox27
+            // 
+            this.comboBox27.FormattingEnabled = true;
+            this.comboBox27.Location = new System.Drawing.Point(260, 117);
+            this.comboBox27.Name = "comboBox27";
+            this.comboBox27.Size = new System.Drawing.Size(221, 24);
+            this.comboBox27.TabIndex = 23;
+            // 
+            // comboBox28
+            // 
+            this.comboBox28.FormattingEnabled = true;
+            this.comboBox28.Location = new System.Drawing.Point(792, 45);
+            this.comboBox28.Name = "comboBox28";
+            this.comboBox28.Size = new System.Drawing.Size(173, 24);
+            this.comboBox28.TabIndex = 24;
+            // 
+            // comboBox29
+            // 
+            this.comboBox29.FormattingEnabled = true;
+            this.comboBox29.Location = new System.Drawing.Point(792, 118);
+            this.comboBox29.Name = "comboBox29";
+            this.comboBox29.Size = new System.Drawing.Size(173, 24);
+            this.comboBox29.TabIndex = 25;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label49.Location = new System.Drawing.Point(57, 185);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(112, 25);
+            this.label49.TabIndex = 26;
+            this.label49.Text = "Start Time";
+            this.label49.Click += new System.EventHandler(this.label49_Click);
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label50.Location = new System.Drawing.Point(519, 185);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(104, 25);
+            this.label50.TabIndex = 27;
+            this.label50.Text = "End Time";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(260, 181);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(127, 29);
+            this.textBox7.TabIndex = 28;
+            // 
+            // button17
+            // 
+            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.button17.Location = new System.Drawing.Point(429, 296);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(116, 37);
+            this.button17.TabIndex = 29;
+            this.button17.Text = "Submit";
+            this.button17.UseVisualStyleBackColor = false;
+            // 
+            // button18
+            // 
+            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.button18.Location = new System.Drawing.Point(613, 296);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(116, 37);
+            this.button18.TabIndex = 30;
+            this.button18.Text = "Clear";
+            this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2118,6 +2287,8 @@ namespace TimeTable
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage8.ResumeLayout(false);
@@ -2294,5 +2465,19 @@ namespace TimeTable
         private System.Windows.Forms.RadioButton radioWUweekday;
         private System.Windows.Forms.ComboBox txtDays;
         private System.Windows.Forms.ComboBox txtWUdays;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.ComboBox comboBox29;
+        private System.Windows.Forms.ComboBox comboBox28;
+        private System.Windows.Forms.ComboBox comboBox27;
+        private System.Windows.Forms.ComboBox comboBox26;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.TextBox textBox7;
     }
 }
