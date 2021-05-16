@@ -61,12 +61,6 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,14 +103,41 @@
     <Compile Include="StudentRepo.cs" />
     <Compile Include="Tag.cs" />
     <Compile Include="TagRepo.cs" />
+    <Compile Include="TimeTableManagementDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeTableManagementDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTableManagementDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeTableManagementDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTableManagementDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeTableManagementDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTableManagementDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeTableManagementDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTableManagementDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeTableManagementDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTableManagementDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeTableManagementDataSet5.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
@@ -155,6 +176,72 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TimeTableManagementDataSet.xsc">
+      <DependentUpon>TimeTableManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableManagementDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeTableManagementDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeTableManagementDataSet.xss">
+      <DependentUpon>TimeTableManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableManagementDataSet1.xsc">
+      <DependentUpon>TimeTableManagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableManagementDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeTableManagementDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeTableManagementDataSet1.xss">
+      <DependentUpon>TimeTableManagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableManagementDataSet2.xsc">
+      <DependentUpon>TimeTableManagementDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableManagementDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeTableManagementDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeTableManagementDataSet2.xss">
+      <DependentUpon>TimeTableManagementDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableManagementDataSet3.xsc">
+      <DependentUpon>TimeTableManagementDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableManagementDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeTableManagementDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeTableManagementDataSet3.xss">
+      <DependentUpon>TimeTableManagementDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableManagementDataSet4.xsc">
+      <DependentUpon>TimeTableManagementDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableManagementDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeTableManagementDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeTableManagementDataSet4.xss">
+      <DependentUpon>TimeTableManagementDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableManagementDataSet5.xsc">
+      <DependentUpon>TimeTableManagementDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableManagementDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeTableManagementDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeTableManagementDataSet5.xss">
+      <DependentUpon>TimeTableManagementDataSet5.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

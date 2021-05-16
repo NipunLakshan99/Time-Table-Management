@@ -167,7 +167,7 @@ namespace TimeTable
             {
                 var row = dataGridView2.SelectedRows[0];
                 var student = (Student)row.DataBoundItem;
-               // txtMSID.Text = student.Student_ID.ToString();
+                //txtMSID.Text = student.Student_ID.ToString();
                 txtAddAYS.Text = student.Academic_Year_Semester;
                 txtAddProg.Text = student.Programme;
                 txtAddGroupNo.Text = student.Group_Number;
@@ -176,6 +176,15 @@ namespace TimeTable
                 txtAddSubGroupId.Text = student.Sub_Group_ID;
 
             }
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'timeTableManagementDataSet1.Student' table. You can move, or remove it, as needed.
+            this.studentTableAdapter1.Fill(this.timeTableManagementDataSet1.Student);
+            // TODO: This line of code loads data into the 'timeTableManagementDataSet.Student' table. You can move, or remove it, as needed.
+            this.studentTableAdapter.Fill(this.timeTableManagementDataSet.Student);
+
         }
     }
 }

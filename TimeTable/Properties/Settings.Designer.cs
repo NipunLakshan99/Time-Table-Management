@@ -32,5 +32,16 @@ namespace TimeTable.Properties {
                 return ((string)(this["TimatableConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\AnjiDB;Initial Catalog=TimeTableManagement;Integrated Secur" +
+            "ity=True")]
+        public string TimeTableManagementConnectionString {
+            get {
+                return ((string)(this["TimeTableManagementConnectionString"]));
+            }
+        }
     }
 }
