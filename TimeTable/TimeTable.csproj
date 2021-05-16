@@ -124,6 +124,16 @@
     <Compile Include="TagRepo.cs" />
     <Compile Include="Teacher.cs" />
     <Compile Include="TeachRepo.cs" />
+    <Compile Include="TimeDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeDataSet6.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Working.cs" />
     <Compile Include="WorkingRepo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -169,6 +179,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TimeDataSet14.xsc">
+      <DependentUpon>TimeDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="TimeDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeDataSet14.xss">
+      <DependentUpon>TimeDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="TimeDataSet6.xsc">
+      <DependentUpon>TimeDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="TimeDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeDataSet6.xss">
+      <DependentUpon>TimeDataSet6.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -155,5 +155,10 @@ namespace TimeTable
             txtMGI.Text = string.Empty;
             txtSGI.Text = string.Empty;
         }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

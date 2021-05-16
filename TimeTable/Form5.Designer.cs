@@ -29,6 +29,7 @@ namespace TimeTable
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label30 = new System.Windows.Forms.Label();
@@ -38,7 +39,6 @@ namespace TimeTable
             this.comboBox21 = new System.Windows.Forms.ComboBox();
             this.comboBox22 = new System.Windows.Forms.ComboBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.comboBox23 = new System.Windows.Forms.ComboBox();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -192,6 +192,13 @@ namespace TimeTable
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
+            this.comboBox26 = new System.Windows.Forms.ComboBox();
+            this.timeDataSet = new TimeTable.TimeDataSet();
+            this.teacherBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.teacherTableAdapter = new TimeTable.TimeDataSetTableAdapters.TeacherTableAdapter();
+            this.timeDataSet1 = new TimeTable.TimeDataSet1();
+            this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.studentTableAdapter = new TimeTable.TimeDataSet1TableAdapters.StudentTableAdapter();
             this.tabControl1.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -207,6 +214,10 @@ namespace TimeTable
             this.tabPage8.SuspendLayout();
             this.tabPage9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -227,6 +238,7 @@ namespace TimeTable
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.tabPage5.Controls.Add(this.comboBox26);
             this.tabPage5.Controls.Add(this.label30);
             this.tabPage5.Controls.Add(this.comboBox24);
             this.tabPage5.Controls.Add(this.comboBox19);
@@ -234,7 +246,6 @@ namespace TimeTable
             this.tabPage5.Controls.Add(this.comboBox21);
             this.tabPage5.Controls.Add(this.comboBox22);
             this.tabPage5.Controls.Add(this.label25);
-            this.tabPage5.Controls.Add(this.textBox3);
             this.tabPage5.Controls.Add(this.comboBox23);
             this.tabPage5.Controls.Add(this.button10);
             this.tabPage5.Controls.Add(this.button11);
@@ -296,11 +307,14 @@ namespace TimeTable
             // 
             // comboBox22
             // 
+            this.comboBox22.DataSource = this.studentBindingSource;
+            this.comboBox22.DisplayMember = "Sub_Group_ID";
             this.comboBox22.FormattingEnabled = true;
             this.comboBox22.Location = new System.Drawing.Point(208, 132);
             this.comboBox22.Name = "comboBox22";
             this.comboBox22.Size = new System.Drawing.Size(146, 21);
             this.comboBox22.TabIndex = 51;
+            this.comboBox22.ValueMember = "Group_ID";
             // 
             // label25
             // 
@@ -313,13 +327,6 @@ namespace TimeTable
             this.label25.TabIndex = 49;
             this.label25.Text = "No Of Students";
             this.label25.Click += new System.EventHandler(this.label25_Click);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(208, 72);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(146, 20);
-            this.textBox3.TabIndex = 48;
             // 
             // comboBox23
             // 
@@ -348,6 +355,7 @@ namespace TimeTable
             this.button11.TabIndex = 43;
             this.button11.Text = "SAVE";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // label22
             // 
@@ -1898,6 +1906,45 @@ namespace TimeTable
             this.label44.TabIndex = 75;
             this.label44.Text = "No Of Working Days";
             // 
+            // comboBox26
+            // 
+            this.comboBox26.DataSource = this.teacherBindingSource;
+            this.comboBox26.DisplayMember = "Lecturer_name";
+            this.comboBox26.FormattingEnabled = true;
+            this.comboBox26.Location = new System.Drawing.Point(208, 72);
+            this.comboBox26.Name = "comboBox26";
+            this.comboBox26.Size = new System.Drawing.Size(146, 21);
+            this.comboBox26.TabIndex = 57;
+            this.comboBox26.ValueMember = "Lecturer_name";
+            // 
+            // timeDataSet
+            // 
+            this.timeDataSet.DataSetName = "TimeDataSet";
+            this.timeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // teacherBindingSource
+            // 
+            this.teacherBindingSource.DataMember = "Teacher";
+            this.teacherBindingSource.DataSource = this.timeDataSet;
+            // 
+            // teacherTableAdapter
+            // 
+            this.teacherTableAdapter.ClearBeforeFill = true;
+            // 
+            // timeDataSet1
+            // 
+            this.timeDataSet1.DataSetName = "TimeDataSet1";
+            this.timeDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // studentBindingSource
+            // 
+            this.studentBindingSource.DataMember = "Student";
+            this.studentBindingSource.DataSource = this.timeDataSet1;
+            // 
+            // studentTableAdapter
+            // 
+            this.studentTableAdapter.ClearBeforeFill = true;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1929,6 +1976,10 @@ namespace TimeTable
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2023,7 +2074,6 @@ namespace TimeTable
         private System.Windows.Forms.ComboBox comboBox21;
         private System.Windows.Forms.ComboBox comboBox22;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.ComboBox comboBox23;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
@@ -2098,5 +2148,12 @@ namespace TimeTable
         private System.Windows.Forms.RadioButton radioWUweekday;
         private System.Windows.Forms.ComboBox txtDays;
         private System.Windows.Forms.ComboBox txtWUdays;
+        private System.Windows.Forms.ComboBox comboBox26;
+        private TimeDataSet timeDataSet;
+        private System.Windows.Forms.BindingSource teacherBindingSource;
+        private TimeDataSetTableAdapters.TeacherTableAdapter teacherTableAdapter;
+        private TimeDataSet1 timeDataSet1;
+        private System.Windows.Forms.BindingSource studentBindingSource;
+        private TimeDataSet1TableAdapters.StudentTableAdapter studentTableAdapter;
     }
 }

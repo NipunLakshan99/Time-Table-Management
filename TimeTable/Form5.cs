@@ -239,6 +239,10 @@ namespace TimeTable
 
         private void Form5_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'timeDataSet1.Student' table. You can move, or remove it, as needed.
+            this.studentTableAdapter.Fill(this.timeDataSet1.Student);
+            // TODO: This line of code loads data into the 'timeDataSet.Teacher' table. You can move, or remove it, as needed.
+            this.teacherTableAdapter.Fill(this.timeDataSet.Teacher);
             try
             {
                 con.Open();
@@ -259,6 +263,11 @@ namespace TimeTable
         }
 
         private void comboBox24_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button11_Click(object sender, EventArgs e)
         {
 
         }

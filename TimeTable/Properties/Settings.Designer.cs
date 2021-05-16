@@ -32,5 +32,15 @@ namespace TimeTable.Properties {
                 return ((string)(this["TimatableConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\NipunDB;Initial Catalog=Time;Integrated Security=True")]
+        public string TimeConnectionString {
+            get {
+                return ((string)(this["TimeConnectionString"]));
+            }
+        }
     }
 }
