@@ -31,18 +31,16 @@ namespace TimeTable
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.cmbLecturer2 = new System.Windows.Forms.ComboBox();
             this.label30 = new System.Windows.Forms.Label();
-            this.comboBox24 = new System.Windows.Forms.ComboBox();
-            this.comboBox19 = new System.Windows.Forms.ComboBox();
-            this.comboBox20 = new System.Windows.Forms.ComboBox();
-            this.comboBox21 = new System.Windows.Forms.ComboBox();
-            this.comboBox22 = new System.Windows.Forms.ComboBox();
+            this.cmbLecturer1 = new System.Windows.Forms.ComboBox();
+            this.cmbSubjectID = new System.Windows.Forms.ComboBox();
+            this.cmbSubject = new System.Windows.Forms.ComboBox();
+            this.cmbGroupID = new System.Windows.Forms.ComboBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox23 = new System.Windows.Forms.ComboBox();
+            this.cmbTag = new System.Windows.Forms.ComboBox();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -54,14 +52,6 @@ namespace TimeTable
             this.button14 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comboBox25 = new System.Windows.Forms.ComboBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -146,6 +136,7 @@ namespace TimeTable
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.txtDays = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.radioWdaysend = new System.Windows.Forms.RadioButton();
             this.radioWweekend = new System.Windows.Forms.RadioButton();
@@ -166,6 +157,7 @@ namespace TimeTable
             this.label28 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.txtWUdays = new System.Windows.Forms.ComboBox();
             this.label35 = new System.Windows.Forms.Label();
             this.radioWUAll = new System.Windows.Forms.RadioButton();
             this.radioWUweekend = new System.Windows.Forms.RadioButton();
@@ -190,8 +182,6 @@ namespace TimeTable
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.txtDays = new System.Windows.Forms.ComboBox();
-            this.txtWUdays = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -227,18 +217,16 @@ namespace TimeTable
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.tabPage5.Controls.Add(this.cmbLecturer2);
             this.tabPage5.Controls.Add(this.label30);
-            this.tabPage5.Controls.Add(this.comboBox24);
-            this.tabPage5.Controls.Add(this.comboBox19);
-            this.tabPage5.Controls.Add(this.comboBox20);
-            this.tabPage5.Controls.Add(this.comboBox21);
-            this.tabPage5.Controls.Add(this.comboBox22);
+            this.tabPage5.Controls.Add(this.cmbLecturer1);
+            this.tabPage5.Controls.Add(this.cmbSubjectID);
+            this.tabPage5.Controls.Add(this.cmbSubject);
+            this.tabPage5.Controls.Add(this.cmbGroupID);
             this.tabPage5.Controls.Add(this.label25);
-            this.tabPage5.Controls.Add(this.textBox3);
-            this.tabPage5.Controls.Add(this.comboBox23);
+            this.tabPage5.Controls.Add(this.cmbTag);
             this.tabPage5.Controls.Add(this.button10);
             this.tabPage5.Controls.Add(this.button11);
-            this.tabPage5.Controls.Add(this.label22);
             this.tabPage5.Controls.Add(this.label23);
             this.tabPage5.Controls.Add(this.label24);
             this.tabPage5.Controls.Add(this.label27);
@@ -249,6 +237,14 @@ namespace TimeTable
             this.tabPage5.Size = new System.Drawing.Size(849, 427);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "ADD SESSION";
+            // 
+            // cmbLecturer2
+            // 
+            this.cmbLecturer2.FormattingEnabled = true;
+            this.cmbLecturer2.Location = new System.Drawing.Point(208, 72);
+            this.cmbLecturer2.Name = "cmbLecturer2";
+            this.cmbLecturer2.Size = new System.Drawing.Size(146, 21);
+            this.cmbLecturer2.TabIndex = 57;
             // 
             // label30
             // 
@@ -261,45 +257,37 @@ namespace TimeTable
             this.label30.TabIndex = 56;
             this.label30.Text = "SELECT LECTURER\'S";
             // 
-            // comboBox24
+            // cmbLecturer1
             // 
-            this.comboBox24.FormattingEnabled = true;
-            this.comboBox24.Location = new System.Drawing.Point(208, 12);
-            this.comboBox24.Name = "comboBox24";
-            this.comboBox24.Size = new System.Drawing.Size(146, 21);
-            this.comboBox24.TabIndex = 55;
+            this.cmbLecturer1.FormattingEnabled = true;
+            this.cmbLecturer1.Location = new System.Drawing.Point(208, 12);
+            this.cmbLecturer1.Name = "cmbLecturer1";
+            this.cmbLecturer1.Size = new System.Drawing.Size(146, 21);
+            this.cmbLecturer1.TabIndex = 55;
             // 
-            // comboBox19
+            // cmbSubjectID
             // 
-            this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Location = new System.Drawing.Point(520, 132);
-            this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(193, 21);
-            this.comboBox19.TabIndex = 54;
+            this.cmbSubjectID.FormattingEnabled = true;
+            this.cmbSubjectID.Location = new System.Drawing.Point(520, 74);
+            this.cmbSubjectID.Name = "cmbSubjectID";
+            this.cmbSubjectID.Size = new System.Drawing.Size(193, 21);
+            this.cmbSubjectID.TabIndex = 53;
             // 
-            // comboBox20
+            // cmbSubject
             // 
-            this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Location = new System.Drawing.Point(520, 74);
-            this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(193, 21);
-            this.comboBox20.TabIndex = 53;
+            this.cmbSubject.FormattingEnabled = true;
+            this.cmbSubject.Location = new System.Drawing.Point(208, 194);
+            this.cmbSubject.Name = "cmbSubject";
+            this.cmbSubject.Size = new System.Drawing.Size(146, 21);
+            this.cmbSubject.TabIndex = 52;
             // 
-            // comboBox21
+            // cmbGroupID
             // 
-            this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Location = new System.Drawing.Point(208, 194);
-            this.comboBox21.Name = "comboBox21";
-            this.comboBox21.Size = new System.Drawing.Size(146, 21);
-            this.comboBox21.TabIndex = 52;
-            // 
-            // comboBox22
-            // 
-            this.comboBox22.FormattingEnabled = true;
-            this.comboBox22.Location = new System.Drawing.Point(208, 132);
-            this.comboBox22.Name = "comboBox22";
-            this.comboBox22.Size = new System.Drawing.Size(146, 21);
-            this.comboBox22.TabIndex = 51;
+            this.cmbGroupID.FormattingEnabled = true;
+            this.cmbGroupID.Location = new System.Drawing.Point(208, 132);
+            this.cmbGroupID.Name = "cmbGroupID";
+            this.cmbGroupID.Size = new System.Drawing.Size(146, 21);
+            this.cmbGroupID.TabIndex = 51;
             // 
             // label25
             // 
@@ -308,25 +296,18 @@ namespace TimeTable
             this.label25.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label25.Location = new System.Drawing.Point(384, 75);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(133, 20);
+            this.label25.Size = new System.Drawing.Size(144, 20);
             this.label25.TabIndex = 49;
-            this.label25.Text = "No Of Students";
+            this.label25.Text = "SUBJECT CODE";
             this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
-            // textBox3
+            // cmbTag
             // 
-            this.textBox3.Location = new System.Drawing.Point(208, 72);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(146, 20);
-            this.textBox3.TabIndex = 48;
-            // 
-            // comboBox23
-            // 
-            this.comboBox23.FormattingEnabled = true;
-            this.comboBox23.Location = new System.Drawing.Point(520, 11);
-            this.comboBox23.Name = "comboBox23";
-            this.comboBox23.Size = new System.Drawing.Size(193, 21);
-            this.comboBox23.TabIndex = 45;
+            this.cmbTag.FormattingEnabled = true;
+            this.cmbTag.Location = new System.Drawing.Point(520, 11);
+            this.cmbTag.Name = "cmbTag";
+            this.cmbTag.Size = new System.Drawing.Size(193, 21);
+            this.cmbTag.TabIndex = 45;
             // 
             // button10
             // 
@@ -347,17 +328,7 @@ namespace TimeTable
             this.button11.TabIndex = 43;
             this.button11.Text = "SAVE";
             this.button11.UseVisualStyleBackColor = false;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label22.Location = new System.Drawing.Point(384, 130);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(101, 20);
-            this.label22.TabIndex = 41;
-            this.label22.Text = "DURATION";
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // label23
             // 
@@ -420,6 +391,7 @@ namespace TimeTable
             this.tabPage6.Size = new System.Drawing.Size(849, 427);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "MANAGE SESSION";
+            this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
             // 
             // button15
             // 
@@ -476,59 +448,11 @@ namespace TimeTable
             // dataGridView4
             // 
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn15,
-            this.dataGridViewTextBoxColumn16,
-            this.dataGridViewTextBoxColumn17,
-            this.dataGridViewTextBoxColumn18,
-            this.dataGridViewTextBoxColumn19,
-            this.dataGridViewTextBoxColumn20,
-            this.dataGridViewTextBoxColumn21,
-            this.Column8});
             this.dataGridView4.Location = new System.Drawing.Point(12, 134);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.Size = new System.Drawing.Size(712, 211);
             this.dataGridView4.TabIndex = 82;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.HeaderText = "Lecturer 01";
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.HeaderText = "Lecturer 02";
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.HeaderText = "Select Group";
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.HeaderText = "Select Subject";
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            // 
-            // dataGridViewTextBoxColumn20
-            // 
-            this.dataGridViewTextBoxColumn20.HeaderText = "Select Tags";
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            // 
-            // dataGridViewTextBoxColumn21
-            // 
-            this.dataGridViewTextBoxColumn21.HeaderText = "No Of Students";
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Duration";
-            this.Column8.Name = "Column8";
+            this.dataGridView4.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellContentClick);
             // 
             // comboBox25
             // 
@@ -1335,6 +1259,18 @@ namespace TimeTable
             this.tabPage8.Text = "ADD WORKING DAYS";
             this.tabPage8.Click += new System.EventHandler(this.tabPage8_Click);
             // 
+            // txtDays
+            // 
+            this.txtDays.FormattingEnabled = true;
+            this.txtDays.Items.AddRange(new object[] {
+            "Mon,Tue,Wed,Thu,Fri",
+            "Sat,Sun",
+            "Mon,Tue,Wed,Thu,Fri,Sat,Sun"});
+            this.txtDays.Location = new System.Drawing.Point(313, 92);
+            this.txtDays.Name = "txtDays";
+            this.txtDays.Size = new System.Drawing.Size(121, 21);
+            this.txtDays.TabIndex = 89;
+            // 
             // label34
             // 
             this.label34.AutoSize = true;
@@ -1598,6 +1534,18 @@ namespace TimeTable
             this.tabPage9.TabIndex = 1;
             this.tabPage9.Text = "MANAGE WORKING DAYS & HOURS";
             this.tabPage9.Click += new System.EventHandler(this.tabPage9_Click);
+            // 
+            // txtWUdays
+            // 
+            this.txtWUdays.FormattingEnabled = true;
+            this.txtWUdays.Items.AddRange(new object[] {
+            "Mon,Tue,Wed,Thu,Fri",
+            "Sat,Sun",
+            "Mon,Tue,Wed,Thu,Fri,Sat,Sun"});
+            this.txtWUdays.Location = new System.Drawing.Point(503, 75);
+            this.txtWUdays.Name = "txtWUdays";
+            this.txtWUdays.Size = new System.Drawing.Size(121, 21);
+            this.txtWUdays.TabIndex = 124;
             // 
             // label35
             // 
@@ -1873,30 +1821,6 @@ namespace TimeTable
             this.label44.TabIndex = 75;
             this.label44.Text = "No Of Working Days";
             // 
-            // txtDays
-            // 
-            this.txtDays.FormattingEnabled = true;
-            this.txtDays.Items.AddRange(new object[] {
-            "Mon,Tue,Wed,Thu,Fri",
-            "Sat,Sun",
-            "Mon,Tue,Wed,Thu,Fri,Sat,Sun"});
-            this.txtDays.Location = new System.Drawing.Point(313, 92);
-            this.txtDays.Name = "txtDays";
-            this.txtDays.Size = new System.Drawing.Size(121, 21);
-            this.txtDays.TabIndex = 89;
-            // 
-            // txtWUdays
-            // 
-            this.txtWUdays.FormattingEnabled = true;
-            this.txtWUdays.Items.AddRange(new object[] {
-            "Mon,Tue,Wed,Thu,Fri",
-            "Sat,Sun",
-            "Mon,Tue,Wed,Thu,Fri,Sat,Sun"});
-            this.txtWUdays.Location = new System.Drawing.Point(503, 75);
-            this.txtWUdays.Name = "txtWUdays";
-            this.txtWUdays.Size = new System.Drawing.Size(121, 21);
-            this.txtWUdays.TabIndex = 124;
-            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2015,17 +1939,14 @@ namespace TimeTable
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.ComboBox comboBox24;
-        private System.Windows.Forms.ComboBox comboBox19;
-        private System.Windows.Forms.ComboBox comboBox20;
-        private System.Windows.Forms.ComboBox comboBox21;
-        private System.Windows.Forms.ComboBox comboBox22;
+        private System.Windows.Forms.ComboBox cmbLecturer1;
+        private System.Windows.Forms.ComboBox cmbSubjectID;
+        private System.Windows.Forms.ComboBox cmbSubject;
+        private System.Windows.Forms.ComboBox cmbGroupID;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox23;
+        private System.Windows.Forms.ComboBox cmbTag;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label27;
@@ -2033,14 +1954,6 @@ namespace TimeTable
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.ComboBox comboBox25;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button15;
@@ -2096,5 +2009,6 @@ namespace TimeTable
         private System.Windows.Forms.RadioButton radioWUweekday;
         private System.Windows.Forms.ComboBox txtDays;
         private System.Windows.Forms.ComboBox txtWUdays;
+        private System.Windows.Forms.ComboBox cmbLecturer2;
     }
 }

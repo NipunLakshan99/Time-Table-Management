@@ -14,6 +14,8 @@ namespace TimeTable
     {
         TeachRepo TeachRepo = new TeachRepo();
         SubjectRepo SubjectRepo = new SubjectRepo();
+        LocationLecturerRepo LocationLecturerRepo = new LocationLecturerRepo();
+        LocationModuleRepo LocationModuleRepo = new LocationModuleRepo();
         public Lecturer()
         {
             InitializeComponent();
@@ -292,6 +294,15 @@ namespace TimeTable
             dataGridView2.DataSource = SubjectRepo.GetAll();
         }
 
+        private void tabPage5_Click(object sender, EventArgs e)
+        {
+            dataGridView5.DataSource = LocationLecturerRepo.GetAll();
+        }
+
+        private void tabPage6_Click(object sender, EventArgs e)
+        {
+            dataGridView6.DataSource = LocationModuleRepo.GetAll();
+        }
         private void dataGridView3_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -400,6 +411,97 @@ namespace TimeTable
 
         private void button7_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void cmbLTag_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbLRoom_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        
+
+        private void btnLLSave_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(cmbLLName.Text) && !string.IsNullOrEmpty(cmbLLRoom.Text))
+            {
+                LocationLecturerRepo.Add(new LocationLecturer
+                {
+                    Lecture_Name = cmbLLName.Text,
+                    Room_Name = cmbLLRoom.Text
+                });
+                cmbLLName.Text = string.Empty;
+                cmbLLRoom.Text = string.Empty;
+                dataGridView5.DataSource = LocationLecturerRepo.GetAll();
+                
+            }
+        
+        }
+
+        private void dataGridView5_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            if (dataGridView5.SelectedRows.Count > 0)
+            {
+                var row = dataGridView5.SelectedRows[0];
+                var locationLecturer = (LocationLecturer)row.DataBoundItem;
+                cmbLLName.Text = locationLecturer.Lecture_Name;
+                cmbLLRoom.Text = locationLecturer.Room_Name;
+            }   
+            
+        }
+
+        private void label37_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnSL_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(cmbSubject.Text) && !string.IsNullOrEmpty(cmbSubName.Text) && !string.IsNullOrEmpty(cmbRoomName.Text))
+            {
+                LocationModuleRepo.Add(new LocationModule
+                {
+                    Module_ID = cmbSubject.Text,
+                    Module_Name = cmbSubName.Text,
+                    Room_Name = cmbRoomName.Text
+                });
+                cmbSubject.Text = string.Empty;
+                cmbSubName.Text = string.Empty;
+                cmbRoomName.Text = string.Empty;
+                dataGridView6.DataSource = LocationModuleRepo.GetAll();
+
+            }
+        }
+
+        private void dataGridView6_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void dataGridView6_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void btnLLClear_Click(object sender, EventArgs e)
+        {
+
+            cmbLLName.Text = string.Empty;
+            cmbLLRoom.Text = string.Empty;
+           
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            cmbSubject.Text = string.Empty;
+            cmbSubName.Text = string.Empty;
+            cmbRoomName.Text = string.Empty;
             
         }
     }

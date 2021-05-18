@@ -13,6 +13,7 @@ namespace TimeTable
     public partial class Form3 : Form
     {
         StudentRepo studentRepo = new StudentRepo();
+        LocationGroupRepo LocationGroupRepo = new LocationGroupRepo();
         public Form3()
         {
             InitializeComponent();
@@ -57,6 +58,11 @@ namespace TimeTable
         {
             /*dataGridView1_CellContentClick.DataSource = studentRepo.GetAll();*/
             dataGridView1.DataSource = studentRepo.GetAll();
+        }
+
+        private void tabPage3_Click (object sender, EventArgs e)
+        {
+            dataGridView2.DataSource = LocationGroupRepo.GetAll();
         }
     
         private void btnSave_Click(object sender, EventArgs e)
@@ -130,6 +136,48 @@ namespace TimeTable
                 dataGridView1.DataSource = studentRepo.GetAll();
             }
 
+        }
+
+        private void btnSaveG_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(cmbGroup.Text) || !string.IsNullOrEmpty(cmbSubGroup.Text) && !string.IsNullOrEmpty(cmbGRoom.Text))
+            {
+                LocationGroupRepo.Add(new LocationGroup
+                {
+                    Group_ID = cmbGroup.Text,
+                    Sub_Group_ID = cmbSubGroup.Text,
+                    Room_Name = cmbGRoom.Text,
+                    
+                });
+                cmbGroup.Text = string.Empty;
+                cmbSubGroup.Text = string.Empty;
+                cmbGRoom.Text = string.Empty;
+              
+                dataGridView2.DataSource = LocationGroupRepo.GetAll();
+            }
+        }
+
+        private void cmbGroup_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnClearG_Click(object sender, EventArgs e)
+        {
+            cmbGroup.Text = string.Empty;
+            cmbSubGroup.Text = string.Empty;
+            cmbGRoom.Text = string.Empty;
+            
         }
     }
 }

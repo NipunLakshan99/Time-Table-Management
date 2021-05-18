@@ -91,10 +91,22 @@
     <Compile Include="Location.Designer.cs">
       <DependentUpon>Location.cs</DependentUpon>
     </Compile>
+    <Compile Include="LocationGroup.cs" />
+    <Compile Include="LocationGroupRepo.cs" />
+    <Compile Include="LocationLecturer.cs" />
+    <Compile Include="LocationLecturerRepo.cs" />
+    <Compile Include="LocationModule.cs" />
+    <Compile Include="LocationModuleRepo.cs" />
+    <Compile Include="LocationSession.cs" />
+    <Compile Include="LocationSessionRepo.cs" />
+    <Compile Include="LocationTag.cs" />
+    <Compile Include="LocationTagRepo.cs" />
     <Compile Include="Place.cs" />
     <Compile Include="PlaceRepo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="SessionRepo.cs" />
     <Compile Include="Statistics.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,8 +117,25 @@
     <Compile Include="StudentRepo.cs" />
     <Compile Include="Subject.cs" />
     <Compile Include="SubjectRepo.cs" />
+    <Compile Include="SubjectTagLocation.cs" />
+    <Compile Include="SubjectTagLocationRepo.cs" />
     <Compile Include="Teacher.cs" />
     <Compile Include="TeachRepo.cs" />
+    <Compile Include="TimeTableDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeTableDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTableDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeTableDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTableDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeTableDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Working.cs" />
     <Compile Include="WorkingRepo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -152,6 +181,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TimeTableDataSet.xsc">
+      <DependentUpon>TimeTableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeTableDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeTableDataSet.xss">
+      <DependentUpon>TimeTableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableDataSet1.xsc">
+      <DependentUpon>TimeTableDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeTableDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeTableDataSet1.xss">
+      <DependentUpon>TimeTableDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableDataSet2.xsc">
+      <DependentUpon>TimeTableDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TimeTableDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TimeTableDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TimeTableDataSet2.xss">
+      <DependentUpon>TimeTableDataSet2.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

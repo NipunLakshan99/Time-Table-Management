@@ -114,6 +114,27 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label34 = new System.Windows.Forms.Label();
+            this.btnLLClear = new System.Windows.Forms.Button();
+            this.btnLLSave = new System.Windows.Forms.Button();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cmbLLRoom = new System.Windows.Forms.ComboBox();
+            this.cmbLLName = new System.Windows.Forms.ComboBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
+            this.BtnSL = new System.Windows.Forms.Button();
+            this.cmbRoomName = new System.Windows.Forms.ComboBox();
+            this.cmbSubName = new System.Windows.Forms.ComboBox();
+            this.cmbSubject = new System.Windows.Forms.ComboBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
@@ -123,6 +144,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -131,6 +156,8 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -1141,6 +1168,239 @@
             this.label32.TabIndex = 54;
             this.label32.Text = "OFFERED YEAR";
             // 
+            // tabPage5
+            // 
+            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.tabPage5.Controls.Add(this.label34);
+            this.tabPage5.Controls.Add(this.btnLLClear);
+            this.tabPage5.Controls.Add(this.btnLLSave);
+            this.tabPage5.Controls.Add(this.dataGridView5);
+            this.tabPage5.Controls.Add(this.label2);
+            this.tabPage5.Controls.Add(this.cmbLLRoom);
+            this.tabPage5.Controls.Add(this.cmbLLName);
+            this.tabPage5.Controls.Add(this.label35);
+            this.tabPage5.Controls.Add(this.label36);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(792, 424);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "ADD ROOM FOR LECTURER";
+            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.White;
+            this.label34.Location = new System.Drawing.Point(231, 28);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(293, 20);
+            this.label34.TabIndex = 99;
+            this.label34.Text = "Add Rooms According To Lecturers";
+            // 
+            // btnLLClear
+            // 
+            this.btnLLClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnLLClear.Location = new System.Drawing.Point(623, 282);
+            this.btnLLClear.Name = "btnLLClear";
+            this.btnLLClear.Size = new System.Drawing.Size(75, 34);
+            this.btnLLClear.TabIndex = 98;
+            this.btnLLClear.Text = "CLEAR";
+            this.btnLLClear.UseVisualStyleBackColor = false;
+            this.btnLLClear.Click += new System.EventHandler(this.btnLLClear_Click);
+            // 
+            // btnLLSave
+            // 
+            this.btnLLSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnLLSave.Location = new System.Drawing.Point(623, 205);
+            this.btnLLSave.Name = "btnLLSave";
+            this.btnLLSave.Size = new System.Drawing.Size(75, 36);
+            this.btnLLSave.TabIndex = 97;
+            this.btnLLSave.Text = "SAVE";
+            this.btnLLSave.UseVisualStyleBackColor = false;
+            this.btnLLSave.Click += new System.EventHandler(this.btnLLSave_Click);
+            // 
+            // dataGridView5
+            // 
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Location = new System.Drawing.Point(85, 193);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.Size = new System.Drawing.Size(460, 150);
+            this.dataGridView5.TabIndex = 96;
+            this.dataGridView5.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView5_CellContentClick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(64, 217);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.TabIndex = 95;
+            // 
+            // cmbLLRoom
+            // 
+            this.cmbLLRoom.FormattingEnabled = true;
+            this.cmbLLRoom.Location = new System.Drawing.Point(544, 92);
+            this.cmbLLRoom.Name = "cmbLLRoom";
+            this.cmbLLRoom.Size = new System.Drawing.Size(186, 21);
+            this.cmbLLRoom.TabIndex = 94;
+            this.cmbLLRoom.SelectedIndexChanged += new System.EventHandler(this.cmbLRoom_SelectedIndexChanged);
+            // 
+            // cmbLLName
+            // 
+            this.cmbLLName.FormattingEnabled = true;
+            this.cmbLLName.Location = new System.Drawing.Point(190, 92);
+            this.cmbLLName.Name = "cmbLLName";
+            this.cmbLLName.Size = new System.Drawing.Size(194, 21);
+            this.cmbLLName.TabIndex = 92;
+            this.cmbLLName.SelectedIndexChanged += new System.EventHandler(this.cmbLTag_SelectedIndexChanged);
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label35.Location = new System.Drawing.Point(412, 93);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(112, 20);
+            this.label35.TabIndex = 90;
+            this.label35.Text = "Room_Name";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label36.Location = new System.Drawing.Point(42, 93);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(127, 20);
+            this.label36.TabIndex = 89;
+            this.label36.Text = "Lecturer Name";
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.AutoScroll = true;
+            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.tabPage6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage6.Controls.Add(this.dataGridView6);
+            this.tabPage6.Controls.Add(this.button2);
+            this.tabPage6.Controls.Add(this.BtnSL);
+            this.tabPage6.Controls.Add(this.cmbRoomName);
+            this.tabPage6.Controls.Add(this.cmbSubName);
+            this.tabPage6.Controls.Add(this.cmbSubject);
+            this.tabPage6.Controls.Add(this.label40);
+            this.tabPage6.Controls.Add(this.label39);
+            this.tabPage6.Controls.Add(this.label38);
+            this.tabPage6.Controls.Add(this.label37);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(792, 424);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "ADD ROOM FOR SUBJECT";
+            this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
+            // 
+            // dataGridView6
+            // 
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Location = new System.Drawing.Point(144, 284);
+            this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.Size = new System.Drawing.Size(478, 108);
+            this.dataGridView6.TabIndex = 109;
+            this.dataGridView6.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView6_CellContentClick_1);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.button2.Location = new System.Drawing.Point(630, 164);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(80, 31);
+            this.button2.TabIndex = 108;
+            this.button2.Text = "CLEAR";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // BtnSL
+            // 
+            this.BtnSL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.BtnSL.Location = new System.Drawing.Point(630, 98);
+            this.BtnSL.Name = "BtnSL";
+            this.BtnSL.Size = new System.Drawing.Size(75, 33);
+            this.BtnSL.TabIndex = 107;
+            this.BtnSL.Text = "SAVE";
+            this.BtnSL.UseVisualStyleBackColor = false;
+            this.BtnSL.Click += new System.EventHandler(this.BtnSL_Click);
+            // 
+            // cmbRoomName
+            // 
+            this.cmbRoomName.FormattingEnabled = true;
+            this.cmbRoomName.Location = new System.Drawing.Point(271, 221);
+            this.cmbRoomName.Name = "cmbRoomName";
+            this.cmbRoomName.Size = new System.Drawing.Size(255, 21);
+            this.cmbRoomName.TabIndex = 106;
+            // 
+            // cmbSubName
+            // 
+            this.cmbSubName.FormattingEnabled = true;
+            this.cmbSubName.Location = new System.Drawing.Point(271, 146);
+            this.cmbSubName.Name = "cmbSubName";
+            this.cmbSubName.Size = new System.Drawing.Size(255, 21);
+            this.cmbSubName.TabIndex = 105;
+            // 
+            // cmbSubject
+            // 
+            this.cmbSubject.FormattingEnabled = true;
+            this.cmbSubject.Location = new System.Drawing.Point(271, 79);
+            this.cmbSubject.Name = "cmbSubject";
+            this.cmbSubject.Size = new System.Drawing.Size(255, 21);
+            this.cmbSubject.TabIndex = 104;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label40.Location = new System.Drawing.Point(127, 222);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(107, 20);
+            this.label40.TabIndex = 103;
+            this.label40.Text = "Room Name";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label39.Location = new System.Drawing.Point(127, 146);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(121, 20);
+            this.label39.TabIndex = 102;
+            this.label39.Text = "Subject Name";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label38.Location = new System.Drawing.Point(127, 80);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(117, 20);
+            this.label38.TabIndex = 101;
+            this.label38.Text = "Subject Code";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.White;
+            this.label37.Location = new System.Drawing.Point(248, 19);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(278, 20);
+            this.label37.TabIndex = 100;
+            this.label37.Text = "Add Rooms According To Subject";
+            this.label37.Click += new System.EventHandler(this.label37_Click);
+            // 
             // Lecturer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1162,6 +1422,12 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1254,5 +1520,26 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.Button btnLMupdate;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Button btnLLClear;
+        private System.Windows.Forms.Button btnLLSave;
+        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cmbLLRoom;
+        private System.Windows.Forms.ComboBox cmbLLName;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnSL;
+        private System.Windows.Forms.ComboBox cmbRoomName;
+        private System.Windows.Forms.ComboBox cmbSubName;
+        private System.Windows.Forms.ComboBox cmbSubject;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.DataGridView dataGridView6;
     }
 }

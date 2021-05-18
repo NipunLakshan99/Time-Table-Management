@@ -29,6 +29,7 @@ namespace TimeTable
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.txtLRoomname = new System.Windows.Forms.TextBox();
@@ -37,7 +38,7 @@ namespace TimeTable
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.Capacity = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnLClear = new System.Windows.Forms.Button();
             this.btnLocsave = new System.Windows.Forms.Button();
             this.radioLlab = new System.Windows.Forms.RadioButton();
             this.radioLlechall = new System.Windows.Forms.RadioButton();
@@ -60,39 +61,68 @@ namespace TimeTable
             this.txtLUbuildingname = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.txt7 = new System.Windows.Forms.TextBox();
+            this.txt2 = new System.Windows.Forms.TextBox();
+            this.txt3 = new System.Windows.Forms.TextBox();
+            this.txt4 = new System.Windows.Forms.TextBox();
+            this.txt5 = new System.Windows.Forms.TextBox();
+            this.txt6 = new System.Windows.Forms.TextBox();
+            this.txt1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.cmbFac = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.dataGridViewSession = new System.Windows.Forms.DataGridView();
+            this.btnSClear = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.cmbSRoom = new System.Windows.Forms.ComboBox();
+            this.locationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.timeTableDataSet1 = new TimeTable.TimeTableDataSet1();
+            this.cmbSession = new System.Windows.Forms.ComboBox();
+            this.sessionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.timeTableDataSet2 = new TimeTable.TimeTableDataSet2();
+            this.btnSAdd = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.btn1 = new System.Windows.Forms.Button();
+            this.btn2 = new System.Windows.Forms.Button();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.txtc7 = new System.Windows.Forms.TextBox();
+            this.txtc2 = new System.Windows.Forms.TextBox();
+            this.txtc3 = new System.Windows.Forms.TextBox();
+            this.txtc4 = new System.Windows.Forms.TextBox();
+            this.txtc5 = new System.Windows.Forms.TextBox();
+            this.txtc6 = new System.Windows.Forms.TextBox();
+            this.txtc1 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.Subject = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tag = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lecturer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Room1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Room2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Session = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ConsecutiveSession = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnCSClear = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.cmbRC = new System.Windows.Forms.ComboBox();
+            this.cmbSC = new System.Windows.Forms.ComboBox();
+            this.btnCSSave = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.sessionLocationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.timeTableDataSet = new TimeTable.TimeTableDataSet();
+            this.sessionLocationTableAdapter = new TimeTable.TimeTableDataSetTableAdapters.SessionLocationTableAdapter();
+            this.locationTableAdapter = new TimeTable.TimeTableDataSet1TableAdapters.LocationTableAdapter();
+            this.sessionTableAdapter = new TimeTable.TimeTableDataSet2TableAdapters.SessionTableAdapter();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSession)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeTableDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeTableDataSet2)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionLocationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeTableDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -100,6 +130,8 @@ namespace TimeTable
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -116,7 +148,7 @@ namespace TimeTable
             this.tabPage1.Controls.Add(this.dataGridView2);
             this.tabPage1.Controls.Add(this.Capacity);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.button3);
+            this.tabPage1.Controls.Add(this.btnLClear);
             this.tabPage1.Controls.Add(this.btnLocsave);
             this.tabPage1.Controls.Add(this.radioLlab);
             this.tabPage1.Controls.Add(this.radioLlechall);
@@ -159,6 +191,7 @@ namespace TimeTable
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(776, 213);
             this.dataGridView2.TabIndex = 28;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             this.dataGridView2.Click += new System.EventHandler(this.dataGridView2_Click);
             // 
             // Capacity
@@ -186,15 +219,16 @@ namespace TimeTable
             this.label1.Text = "Room Type";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
-            // button3
+            // btnLClear
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button3.Location = new System.Drawing.Point(368, 158);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 33);
-            this.button3.TabIndex = 25;
-            this.button3.Text = "CLEAR";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnLClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnLClear.Location = new System.Drawing.Point(368, 158);
+            this.btnLClear.Name = "btnLClear";
+            this.btnLClear.Size = new System.Drawing.Size(75, 33);
+            this.btnLClear.TabIndex = 25;
+            this.btnLClear.Text = "CLEAR";
+            this.btnLClear.UseVisualStyleBackColor = false;
+            this.btnLClear.Click += new System.EventHandler(this.button3_Click);
             // 
             // btnLocsave
             // 
@@ -467,99 +501,193 @@ namespace TimeTable
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.tabPage3.Controls.Add(this.dataGridView3);
-            this.tabPage3.Controls.Add(this.button2);
-            this.tabPage3.Controls.Add(this.label15);
-            this.tabPage3.Controls.Add(this.comboBox7);
-            this.tabPage3.Controls.Add(this.comboBox6);
-            this.tabPage3.Controls.Add(this.comboBox5);
-            this.tabPage3.Controls.Add(this.comboBox4);
-            this.tabPage3.Controls.Add(this.comboBox3);
-            this.tabPage3.Controls.Add(this.comboBox2);
-            this.tabPage3.Controls.Add(this.comboBox1);
-            this.tabPage3.Controls.Add(this.cmbFac);
-            this.tabPage3.Controls.Add(this.button1);
-            this.tabPage3.Controls.Add(this.label14);
-            this.tabPage3.Controls.Add(this.label13);
-            this.tabPage3.Controls.Add(this.label12);
-            this.tabPage3.Controls.Add(this.label11);
-            this.tabPage3.Controls.Add(this.label10);
+            this.tabPage3.Controls.Add(this.txt7);
+            this.tabPage3.Controls.Add(this.txt2);
+            this.tabPage3.Controls.Add(this.txt3);
+            this.tabPage3.Controls.Add(this.txt4);
+            this.tabPage3.Controls.Add(this.txt5);
+            this.tabPage3.Controls.Add(this.txt6);
+            this.tabPage3.Controls.Add(this.txt1);
             this.tabPage3.Controls.Add(this.label9);
+            this.tabPage3.Controls.Add(this.dataGridViewSession);
+            this.tabPage3.Controls.Add(this.btnSClear);
+            this.tabPage3.Controls.Add(this.label15);
+            this.tabPage3.Controls.Add(this.cmbSRoom);
+            this.tabPage3.Controls.Add(this.cmbSession);
+            this.tabPage3.Controls.Add(this.btnSAdd);
+            this.tabPage3.Controls.Add(this.label14);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(792, 424);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "MANAGE SESSION ROOMS";
+            this.tabPage3.Text = "ADD ROOMS FOR SESSION";
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
+            // txt7
+            // 
+            this.txt7.Location = new System.Drawing.Point(30, 321);
+            this.txt7.Name = "txt7";
+            this.txt7.Size = new System.Drawing.Size(91, 20);
+            this.txt7.TabIndex = 119;
+            this.txt7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt7.TextChanged += new System.EventHandler(this.txt7_TextChanged);
+            // 
+            // txt2
+            // 
+            this.txt2.Location = new System.Drawing.Point(241, 321);
+            this.txt2.Name = "txt2";
+            this.txt2.Size = new System.Drawing.Size(130, 20);
+            this.txt2.TabIndex = 118;
+            this.txt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt2.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            // 
+            // txt3
+            // 
+            this.txt3.Location = new System.Drawing.Point(369, 321);
+            this.txt3.Name = "txt3";
+            this.txt3.Size = new System.Drawing.Size(72, 20);
+            this.txt3.TabIndex = 117;
+            this.txt3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txt4
+            // 
+            this.txt4.Location = new System.Drawing.Point(440, 321);
+            this.txt4.Name = "txt4";
+            this.txt4.Size = new System.Drawing.Size(98, 20);
+            this.txt4.TabIndex = 116;
+            this.txt4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txt5
+            // 
+            this.txt5.Location = new System.Drawing.Point(537, 321);
+            this.txt5.Name = "txt5";
+            this.txt5.Size = new System.Drawing.Size(99, 20);
+            this.txt5.TabIndex = 115;
+            this.txt5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txt6
+            // 
+            this.txt6.Location = new System.Drawing.Point(633, 321);
+            this.txt6.Name = "txt6";
+            this.txt6.Size = new System.Drawing.Size(79, 20);
+            this.txt6.TabIndex = 114;
+            this.txt6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt6.TextChanged += new System.EventHandler(this.txt6_TextChanged);
+            // 
+            // txt1
+            // 
+            this.txt1.Location = new System.Drawing.Point(121, 321);
+            this.txt1.Name = "txt1";
+            this.txt1.Size = new System.Drawing.Size(121, 20);
+            this.txt1.TabIndex = 113;
+            this.txt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label9.Location = new System.Drawing.Point(36, 19);
+            this.label9.Location = new System.Drawing.Point(47, 285);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(70, 20);
-            this.label9.TabIndex = 79;
-            this.label9.Text = "Subject";
+            this.label9.Size = new System.Drawing.Size(149, 20);
+            this.label9.TabIndex = 112;
+            this.label9.Text = "Selected Session";
             // 
-            // label10
+            // dataGridViewSession
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label10.Location = new System.Drawing.Point(36, 68);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(39, 20);
-            this.label10.TabIndex = 80;
-            this.label10.Text = "Tag";
+            this.dataGridViewSession.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSession.Location = new System.Drawing.Point(30, 20);
+            this.dataGridViewSession.Name = "dataGridViewSession";
+            this.dataGridViewSession.Size = new System.Drawing.Size(738, 152);
+            this.dataGridViewSession.TabIndex = 101;
+            this.dataGridViewSession.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSession_CellClick_1);
+            this.dataGridViewSession.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSession_CellContentClick);
             // 
-            // label11
+            // btnSClear
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label11.Location = new System.Drawing.Point(36, 119);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(76, 20);
-            this.label11.TabIndex = 81;
-            this.label11.Text = "Lecturer";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+            this.btnSClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnSClear.Location = new System.Drawing.Point(445, 369);
+            this.btnSClear.Name = "btnSClear";
+            this.btnSClear.Size = new System.Drawing.Size(75, 33);
+            this.btnSClear.TabIndex = 96;
+            this.btnSClear.Text = "CLEAR";
+            this.btnSClear.UseVisualStyleBackColor = false;
+            this.btnSClear.Click += new System.EventHandler(this.btnSClear_Click);
             // 
-            // label12
+            // label15
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label12.Location = new System.Drawing.Point(413, 22);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(151, 20);
-            this.label12.TabIndex = 82;
-            this.label12.Text = "Group/Sub Group";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label15.Location = new System.Drawing.Point(453, 219);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(56, 20);
+            this.label15.TabIndex = 95;
+            this.label15.Text = "Room";
             // 
-            // label13
+            // cmbSRoom
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label13.Location = new System.Drawing.Point(413, 122);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(176, 20);
-            this.label13.TabIndex = 83;
-            this.label13.Text = "Consecutive Session";
+            this.cmbSRoom.DataSource = this.locationBindingSource;
+            this.cmbSRoom.DisplayMember = "Room_name";
+            this.cmbSRoom.FormattingEnabled = true;
+            this.cmbSRoom.Location = new System.Drawing.Point(525, 218);
+            this.cmbSRoom.Name = "cmbSRoom";
+            this.cmbSRoom.Size = new System.Drawing.Size(220, 21);
+            this.cmbSRoom.TabIndex = 93;
+            this.cmbSRoom.ValueMember = "Room_name";
+            // 
+            // locationBindingSource
+            // 
+            this.locationBindingSource.DataMember = "Location";
+            this.locationBindingSource.DataSource = this.timeTableDataSet1;
+            // 
+            // timeTableDataSet1
+            // 
+            this.timeTableDataSet1.DataSetName = "TimeTableDataSet1";
+            this.timeTableDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cmbSession
+            // 
+            this.cmbSession.DataSource = this.sessionBindingSource;
+            this.cmbSession.DisplayMember = "ID";
+            this.cmbSession.FormattingEnabled = true;
+            this.cmbSession.Location = new System.Drawing.Point(186, 218);
+            this.cmbSession.Name = "cmbSession";
+            this.cmbSession.Size = new System.Drawing.Size(222, 21);
+            this.cmbSession.TabIndex = 91;
+            this.cmbSession.ValueMember = "ID";
+            this.cmbSession.SelectedIndexChanged += new System.EventHandler(this.cmbSession_SelectedIndexChanged);
+            // 
+            // sessionBindingSource
+            // 
+            this.sessionBindingSource.DataMember = "Session";
+            this.sessionBindingSource.DataSource = this.timeTableDataSet2;
+            // 
+            // timeTableDataSet2
+            // 
+            this.timeTableDataSet2.DataSetName = "TimeTableDataSet2";
+            this.timeTableDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btnSAdd
+            // 
+            this.btnSAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnSAdd.Location = new System.Drawing.Point(220, 369);
+            this.btnSAdd.Name = "btnSAdd";
+            this.btnSAdd.Size = new System.Drawing.Size(75, 33);
+            this.btnSAdd.TabIndex = 85;
+            this.btnSAdd.Text = "ADD ROOM";
+            this.btnSAdd.UseVisualStyleBackColor = false;
+            this.btnSAdd.Click += new System.EventHandler(this.btnSSave_Click);
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label14.Location = new System.Drawing.Point(420, 71);
+            this.label14.Location = new System.Drawing.Point(57, 216);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(73, 20);
@@ -567,216 +695,258 @@ namespace TimeTable
             this.label14.Text = "Session";
             this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
-            // button1
+            // tabPage4
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button1.Location = new System.Drawing.Point(220, 212);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 33);
-            this.button1.TabIndex = 85;
-            this.button1.Text = "SAVE";
-            this.button1.UseVisualStyleBackColor = false;
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.tabPage4.Controls.Add(this.label10);
+            this.tabPage4.Controls.Add(this.dataGridView4);
+            this.tabPage4.Controls.Add(this.btn1);
+            this.tabPage4.Controls.Add(this.btn2);
+            this.tabPage4.ForeColor = System.Drawing.Color.Cornsilk;
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(792, 424);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "ADDEDE ROOMS FOR SESSION";
+            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
-            // cmbFac
+            // label10
             // 
-            this.cmbFac.FormattingEnabled = true;
-            this.cmbFac.Items.AddRange(new object[] {
-            "Computing",
-            "Engineering",
-            "Business",
-            "Humanity and science",
-            "",
-            ""});
-            this.cmbFac.Location = new System.Drawing.Point(152, 70);
-            this.cmbFac.Name = "cmbFac";
-            this.cmbFac.Size = new System.Drawing.Size(193, 21);
-            this.cmbFac.TabIndex = 87;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(253, 38);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(225, 20);
+            this.label10.TabIndex = 110;
+            this.label10.Text = "Sessions After Add Rooms";
             // 
-            // comboBox1
+            // dataGridView4
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Computing",
-            "Engineering",
-            "Business",
-            "Humanity and science",
-            "",
-            ""});
-            this.comboBox1.Location = new System.Drawing.Point(152, 21);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(193, 21);
-            this.comboBox1.TabIndex = 88;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(49, 98);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(681, 142);
+            this.dataGridView4.TabIndex = 109;
+            this.dataGridView4.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellContentClick);
             // 
-            // comboBox2
+            // btn1
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Computing",
-            "Engineering",
-            "Business",
-            "Humanity and science",
-            "",
-            ""});
-            this.comboBox2.Location = new System.Drawing.Point(152, 121);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(193, 21);
-            this.comboBox2.TabIndex = 89;
+            this.btn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btn1.ForeColor = System.Drawing.Color.Black;
+            this.btn1.Location = new System.Drawing.Point(449, 286);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(75, 33);
+            this.btn1.TabIndex = 107;
+            this.btn1.Text = "REFRESH";
+            this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
-            // comboBox3
+            // btn2
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Computing",
-            "Engineering",
-            "Business",
-            "Humanity and science",
-            "",
-            ""});
-            this.comboBox3.Location = new System.Drawing.Point(591, 118);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(193, 21);
-            this.comboBox3.TabIndex = 90;
+            this.btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btn2.ForeColor = System.Drawing.Color.Black;
+            this.btn2.Location = new System.Drawing.Point(235, 286);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(75, 33);
+            this.btn2.TabIndex = 103;
+            this.btn2.Text = "ADD ROOM";
+            this.btn2.UseVisualStyleBackColor = false;
             // 
-            // comboBox4
+            // tabPage5
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "Computing",
-            "Engineering",
-            "Business",
-            "Humanity and science",
-            "",
-            ""});
-            this.comboBox4.Location = new System.Drawing.Point(591, 70);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(193, 21);
-            this.comboBox4.TabIndex = 91;
+            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.tabPage5.Controls.Add(this.txtc7);
+            this.tabPage5.Controls.Add(this.txtc2);
+            this.tabPage5.Controls.Add(this.txtc3);
+            this.tabPage5.Controls.Add(this.txtc4);
+            this.tabPage5.Controls.Add(this.txtc5);
+            this.tabPage5.Controls.Add(this.txtc6);
+            this.tabPage5.Controls.Add(this.txtc1);
+            this.tabPage5.Controls.Add(this.label11);
+            this.tabPage5.Controls.Add(this.dataGridView3);
+            this.tabPage5.Controls.Add(this.btnCSClear);
+            this.tabPage5.Controls.Add(this.label12);
+            this.tabPage5.Controls.Add(this.cmbRC);
+            this.tabPage5.Controls.Add(this.cmbSC);
+            this.tabPage5.Controls.Add(this.btnCSSave);
+            this.tabPage5.Controls.Add(this.label13);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(792, 424);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "ADD ROOMS FOR CONSECUTIVE SESSIONS";
+            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
             // 
-            // comboBox5
+            // txtc7
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "Computing",
-            "Engineering",
-            "Business",
-            "Humanity and science",
-            "",
-            ""});
-            this.comboBox5.Location = new System.Drawing.Point(591, 22);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(193, 21);
-            this.comboBox5.TabIndex = 92;
+            this.txtc7.Location = new System.Drawing.Point(27, 322);
+            this.txtc7.Name = "txtc7";
+            this.txtc7.Size = new System.Drawing.Size(91, 20);
+            this.txtc7.TabIndex = 134;
+            this.txtc7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // comboBox6
+            // txtc2
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
-            "Computing",
-            "Engineering",
-            "Business",
-            "Humanity and science",
-            "",
-            ""});
-            this.comboBox6.Location = new System.Drawing.Point(152, 165);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(193, 21);
-            this.comboBox6.TabIndex = 93;
+            this.txtc2.Location = new System.Drawing.Point(238, 322);
+            this.txtc2.Name = "txtc2";
+            this.txtc2.Size = new System.Drawing.Size(130, 20);
+            this.txtc2.TabIndex = 133;
+            this.txtc2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // comboBox7
+            // txtc3
             // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
-            "Computing",
-            "Engineering",
-            "Business",
-            "Humanity and science",
-            "",
-            ""});
-            this.comboBox7.Location = new System.Drawing.Point(371, 166);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(193, 21);
-            this.comboBox7.TabIndex = 94;
-            this.comboBox7.SelectedIndexChanged += new System.EventHandler(this.comboBox7_SelectedIndexChanged);
+            this.txtc3.Location = new System.Drawing.Point(366, 322);
+            this.txtc3.Name = "txtc3";
+            this.txtc3.Size = new System.Drawing.Size(72, 20);
+            this.txtc3.TabIndex = 132;
+            this.txtc3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label15
+            // txtc4
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label15.Location = new System.Drawing.Point(36, 166);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(117, 20);
-            this.label15.TabIndex = 95;
-            this.label15.Text = "Room/Rooms";
+            this.txtc4.Location = new System.Drawing.Point(437, 322);
+            this.txtc4.Name = "txtc4";
+            this.txtc4.Size = new System.Drawing.Size(98, 20);
+            this.txtc4.TabIndex = 131;
+            this.txtc4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtc4.TextChanged += new System.EventHandler(this.textBox4_TextChanged_1);
             // 
-            // button2
+            // txtc5
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button2.Location = new System.Drawing.Point(371, 212);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 33);
-            this.button2.TabIndex = 96;
-            this.button2.Text = "CLEAR";
-            this.button2.UseVisualStyleBackColor = false;
+            this.txtc5.Location = new System.Drawing.Point(534, 322);
+            this.txtc5.Name = "txtc5";
+            this.txtc5.Size = new System.Drawing.Size(99, 20);
+            this.txtc5.TabIndex = 130;
+            this.txtc5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtc6
+            // 
+            this.txtc6.Location = new System.Drawing.Point(630, 322);
+            this.txtc6.Name = "txtc6";
+            this.txtc6.Size = new System.Drawing.Size(79, 20);
+            this.txtc6.TabIndex = 129;
+            this.txtc6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtc1
+            // 
+            this.txtc1.Location = new System.Drawing.Point(118, 322);
+            this.txtc1.Name = "txtc1";
+            this.txtc1.Size = new System.Drawing.Size(121, 20);
+            this.txtc1.TabIndex = 128;
+            this.txtc1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label11.Location = new System.Drawing.Point(44, 286);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(149, 20);
+            this.label11.TabIndex = 127;
+            this.label11.Text = "Selected Session";
             // 
             // dataGridView3
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Subject,
-            this.Tag,
-            this.Lecturer,
-            this.Room1,
-            this.Room2,
-            this.Column1,
-            this.Session,
-            this.ConsecutiveSession});
-            this.dataGridView3.Location = new System.Drawing.Point(8, 262);
+            this.dataGridView3.Location = new System.Drawing.Point(27, 21);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(776, 154);
-            this.dataGridView3.TabIndex = 97;
-            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
+            this.dataGridView3.Size = new System.Drawing.Size(738, 152);
+            this.dataGridView3.TabIndex = 126;
+            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick_3);
             // 
-            // Subject
+            // btnCSClear
             // 
-            this.Subject.HeaderText = "Subject";
-            this.Subject.Name = "Subject";
+            this.btnCSClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnCSClear.Location = new System.Drawing.Point(442, 370);
+            this.btnCSClear.Name = "btnCSClear";
+            this.btnCSClear.Size = new System.Drawing.Size(75, 33);
+            this.btnCSClear.TabIndex = 125;
+            this.btnCSClear.Text = "CLEAR";
+            this.btnCSClear.UseVisualStyleBackColor = false;
+            this.btnCSClear.Click += new System.EventHandler(this.btnCSClear_Click);
             // 
-            // Tag
+            // label12
             // 
-            this.Tag.HeaderText = "Tag";
-            this.Tag.Name = "Tag";
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label12.Location = new System.Drawing.Point(450, 220);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(56, 20);
+            this.label12.TabIndex = 124;
+            this.label12.Text = "Room";
             // 
-            // Lecturer
+            // cmbRC
             // 
-            this.Lecturer.HeaderText = "Lecturer";
-            this.Lecturer.Name = "Lecturer";
+            this.cmbRC.DataSource = this.locationBindingSource;
+            this.cmbRC.DisplayMember = "Room_name";
+            this.cmbRC.FormattingEnabled = true;
+            this.cmbRC.Location = new System.Drawing.Point(522, 219);
+            this.cmbRC.Name = "cmbRC";
+            this.cmbRC.Size = new System.Drawing.Size(220, 21);
+            this.cmbRC.TabIndex = 123;
+            this.cmbRC.ValueMember = "Room_name";
             // 
-            // Room1
+            // cmbSC
             // 
-            this.Room1.HeaderText = "Room1";
-            this.Room1.Name = "Room1";
+            this.cmbSC.DataSource = this.sessionBindingSource;
+            this.cmbSC.DisplayMember = "ID";
+            this.cmbSC.FormattingEnabled = true;
+            this.cmbSC.Location = new System.Drawing.Point(183, 219);
+            this.cmbSC.Name = "cmbSC";
+            this.cmbSC.Size = new System.Drawing.Size(222, 21);
+            this.cmbSC.TabIndex = 122;
+            this.cmbSC.ValueMember = "ID";
+            this.cmbSC.SelectedIndexChanged += new System.EventHandler(this.cmbSC_SelectedIndexChanged);
             // 
-            // Room2
+            // btnCSSave
             // 
-            this.Room2.HeaderText = "Room2";
-            this.Room2.Name = "Room2";
+            this.btnCSSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnCSSave.Location = new System.Drawing.Point(217, 370);
+            this.btnCSSave.Name = "btnCSSave";
+            this.btnCSSave.Size = new System.Drawing.Size(75, 33);
+            this.btnCSSave.TabIndex = 121;
+            this.btnCSSave.Text = "ADD ROOM";
+            this.btnCSSave.UseVisualStyleBackColor = false;
+            this.btnCSSave.Click += new System.EventHandler(this.btnCSSave_Click);
             // 
-            // Column1
+            // label13
             // 
-            this.Column1.HeaderText = "Group/Sub Group";
-            this.Column1.Name = "Column1";
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label13.Location = new System.Drawing.Point(54, 217);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(73, 20);
+            this.label13.TabIndex = 120;
+            this.label13.Text = "Session";
             // 
-            // Session
+            // sessionLocationBindingSource
             // 
-            this.Session.HeaderText = "Session";
-            this.Session.Name = "Session";
+            this.sessionLocationBindingSource.DataMember = "SessionLocation";
+            this.sessionLocationBindingSource.DataSource = this.timeTableDataSet;
             // 
-            // ConsecutiveSession
+            // timeTableDataSet
             // 
-            this.ConsecutiveSession.HeaderText = "ConsecutiveSession";
-            this.ConsecutiveSession.Name = "ConsecutiveSession";
+            this.timeTableDataSet.DataSetName = "TimeTableDataSet";
+            this.timeTableDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sessionLocationTableAdapter
+            // 
+            this.sessionLocationTableAdapter.ClearBeforeFill = true;
+            // 
+            // locationTableAdapter
+            // 
+            this.locationTableAdapter.ClearBeforeFill = true;
+            // 
+            // sessionTableAdapter
+            // 
+            this.sessionTableAdapter.ClearBeforeFill = true;
             // 
             // Location
             // 
@@ -796,7 +966,19 @@ namespace TimeTable
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSession)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeTableDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeTableDataSet2)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionLocationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeTableDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -811,7 +993,7 @@ namespace TimeTable
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnLClear;
         private System.Windows.Forms.Button btnLocsave;
         private System.Windows.Forms.Label Capacity;
         private System.Windows.Forms.Label label5;
@@ -835,30 +1017,49 @@ namespace TimeTable
         private System.Windows.Forms.TextBox txtlocID;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox cmbFac;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSAdd;
+        private System.Windows.Forms.ComboBox cmbSession;
+        private System.Windows.Forms.ComboBox cmbSRoom;
+        private System.Windows.Forms.Button btnSClear;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Subject;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tag;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lecturer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Room1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Room2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Session;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ConsecutiveSession;
+        private System.Windows.Forms.DataGridView dataGridViewSession;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Button btn2;
+        private System.Windows.Forms.Label label9;
+        private TimeTableDataSet timeTableDataSet;
+        private System.Windows.Forms.BindingSource sessionLocationBindingSource;
+        private TimeTableDataSetTableAdapters.SessionLocationTableAdapter sessionLocationTableAdapter;
+        private TimeTableDataSet1 timeTableDataSet1;
+        private System.Windows.Forms.BindingSource locationBindingSource;
+        private TimeTableDataSet1TableAdapters.LocationTableAdapter locationTableAdapter;
+        private System.Windows.Forms.TextBox txt2;
+        private System.Windows.Forms.TextBox txt3;
+        private System.Windows.Forms.TextBox txt4;
+        private System.Windows.Forms.TextBox txt5;
+        private System.Windows.Forms.TextBox txt6;
+        private System.Windows.Forms.TextBox txt1;
+        private System.Windows.Forms.TextBox txt7;
+        private TimeTableDataSet2 timeTableDataSet2;
+        private System.Windows.Forms.BindingSource sessionBindingSource;
+        private TimeTableDataSet2TableAdapters.SessionTableAdapter sessionTableAdapter;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TextBox txtc7;
+        private System.Windows.Forms.TextBox txtc2;
+        private System.Windows.Forms.TextBox txtc3;
+        private System.Windows.Forms.TextBox txtc4;
+        private System.Windows.Forms.TextBox txtc5;
+        private System.Windows.Forms.TextBox txtc6;
+        private System.Windows.Forms.TextBox txtc1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Button btnCSClear;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox cmbRC;
+        private System.Windows.Forms.ComboBox cmbSC;
+        private System.Windows.Forms.Button btnCSSave;
+        private System.Windows.Forms.Label label13;
     }
 }

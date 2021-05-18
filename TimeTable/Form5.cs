@@ -13,6 +13,7 @@ namespace TimeTable
     public partial class Form5 : Form
     {
         WorkingRepo WorkingRepo = new WorkingRepo();
+        SessionRepo SessionRepo = new SessionRepo();
         public Form5()
         {
             InitializeComponent();
@@ -232,6 +233,46 @@ namespace TimeTable
         private void radioWUAll_CheckedChanged(object sender, EventArgs e)
         {
             WUdays = "Weekday and WeekEnd";
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(cmbLecturer1.Text) && !string.IsNullOrEmpty(cmbLecturer2.Text) && !string.IsNullOrEmpty(cmbSubjectID.Text) && !string.IsNullOrEmpty(cmbSubject.Text) && !string.IsNullOrEmpty(cmbGroupID.Text) && !string.IsNullOrEmpty(cmbTag.Text)) 
+            {
+                SessionRepo.Add(new Session
+                {
+                    
+                });
+                cmbLecturer1.Text = string.Empty;
+                cmbLecturer2.Text = string.Empty;
+                cmbSubjectID.Text = string.Empty;
+                cmbSubject.Text = string.Empty;
+                cmbGroupID.Text = string.Empty;
+                cmbTag.Text = string.Empty;
+                
+                dataGridView4.DataSource = SessionRepo.GetAll();
+                
+            }
+        }
+
+        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var row = dataGridView5.SelectedRows[0];
+            var session = (Session)row.DataBoundItem;
+            //ID = session.ID.ToString();
+            cmbLecturer1.Text = session.Lecture_1;
+            cmbLecturer2.Text = session.Lecture_2;
+            cmbSubjectID.Text = session.Subject_Code;
+            cmbSubject.Text = session.Subject_Name;
+            cmbGroupID.Text = session.Group_ID;
+            cmbTag.Text = session.Tag;
+           
+            
+        }
+
+        private void tabPage6_Click(object sender, EventArgs e)
+        {
+            dataGridView4.DataSource = SessionRepo.GetAll();
         }
     }
 }
