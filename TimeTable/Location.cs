@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,8 @@ namespace TimeTable
     {
         PlaceRepo PlaceRepo = new PlaceRepo();
         LNotAvailableTimeRepo LNotAvailableTimeRepo = new LNotAvailableTimeRepo();
+        SessionRepo SessionRepo = new SessionRepo();
+        SessionDayTimeRepo SessionDayTimeRepo = new SessionDayTimeRepo();
         public Location()
         {
             InitializeComponent();
@@ -312,6 +315,163 @@ namespace TimeTable
 
         private void LNATDelete_Click(object sender, EventArgs e)
         {
+        }
+
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+            dataGridView4.DataSource = SessionDayTimeRepo.GetAll();
+        }
+
+        private void tabPage5_Click(object sender, EventArgs e)
+        {
+            dataGridView5.DataSource = SessionRepo.GetAll();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void STimeSave_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(SeLecturer1.Text) || !string.IsNullOrEmpty(SeLecturer2.Text) && !string.IsNullOrEmpty(SSubCode.Text) && !string.IsNullOrEmpty(SSubName.Text) && !string.IsNullOrEmpty(SGroupID.Text) && !string.IsNullOrEmpty(SeTag.Text) && !string.IsNullOrEmpty(SeRoom.Text) && !string.IsNullOrEmpty(SessionDay.Text) && !string.IsNullOrEmpty(SessionSTime.Text) && !string.IsNullOrEmpty(SessionETime.Text))
+            {
+                SessionDayTimeRepo.Add(new SessionDayTime
+                {
+                    Lecturer_1 = SeLecturer1.Text,
+                    Lecturer_2 = SeLecturer2.Text,
+                    Subject_Code = SSubCode.Text,
+                    Subject_Name = SSubName.Text,
+                    Group_ID = SGroupID.Text,
+                    Tag = SeTag.Text,
+                    Room = SeRoom.Text,
+                    Day = SessionDay.Text,
+                    Start_Time = SessionSTime.Text,
+                    End_Time = SessionETime.Text,
+                });
+
+                SeLecturer1.Text = string.Empty;
+                SeLecturer2.Text = string.Empty;
+                SSubCode.Text = string.Empty;
+                SSubName.Text = string.Empty;
+                SGroupID.Text = string.Empty;
+                SeTag.Text = string.Empty;
+                SeRoom.Text = string.Empty;
+                SessionDay.Text = string.Empty;
+                SessionSTime.Text = string.Empty;
+                SessionETime.Text = string.Empty;
+                dataGridView4.DataSource = SessionDayTimeRepo.GetAll();
+
+            }
+        }
+
+        private void SessionADD_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(SLecturer1.Text) && !string.IsNullOrEmpty(SLecturer2.Text) && !string.IsNullOrEmpty(SubCode.Text) && !string.IsNullOrEmpty(SubName.Text) && !string.IsNullOrEmpty(GroupID.Text) && !string.IsNullOrEmpty(STag.Text) && !string.IsNullOrEmpty(SRoom.Text))
+            {
+                SessionRepo.Add(new Session
+                {
+                    Lecturer_1 = SLecturer1.Text,
+                    Lecturer_2 = SLecturer2.Text,
+                    Subject_Code = SubCode.Text,
+                    Subject_Name = SubName.Text,
+                    Group_ID = GroupID.Text,
+                    Tag = STag.Text,
+                    Room = SRoom.Text,
+                });
+                SLecturer1.Text = string.Empty;
+                SLecturer2.Text = string.Empty;
+                SubCode.Text = string.Empty;
+                SubName.Text = string.Empty;
+                GroupID.Text = string.Empty;
+                STag.Text = string.Empty;
+                SRoom.Text = string.Empty;
+                dataGridView5.DataSource = SessionRepo.GetAll();
+
+            }
+        }
+
+        private void dataGridView5_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var row = dataGridView5.SelectedRows[0];
+            var session = (Session)row.DataBoundItem;
+            SLecturer1.Text = session.Lecturer_1;
+            SLecturer2.Text = session.Lecturer_2;
+            SubCode.Text = session.Subject_Code;
+            SubName.Text = session.Subject_Name;
+            GroupID.Text = session.Group_ID;
+            STag.Text = session.Tag;
+            SRoom.Text = session.Room;
+        }
+
+        private void SessionSTime_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SessionETime_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var row = dataGridView4.SelectedRows[0];
+            var sessionDayTime = (SessionDayTime)row.DataBoundItem;
+            //SessionID.Text = sessionDayTime.ID;
+            SeLecturer1.Text = sessionDayTime.Lecturer_1;
+            SeLecturer2.Text = sessionDayTime.Lecturer_2;
+            SSubCode.Text = sessionDayTime.Subject_Code;
+            SSubName.Text = sessionDayTime.Subject_Name;
+            SGroupID.Text = sessionDayTime.Group_ID;
+            SeTag.Text = sessionDayTime.Tag;
+            SeRoom.Text = sessionDayTime.Room;
+            SessionDay.Text = sessionDayTime.Day;
+            SessionSTime.Text = sessionDayTime.Start_Time;
+            SessionETime.Text = sessionDayTime.End_Time;
+        }
+
+        private void SessionID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string str = @"Data Source=(LocalDb)\AnudiDB;Initial Catalog=Timetable;Integrated Security=True";
+            SqlConnection con = new SqlConnection(str);
+
+            try
+            {
+                con.Open();
+
+                string query = "SELECT * FROM Sessions WHERE ID = '" + SessionID.Text + "'";
+                SqlCommand cmd;
+                cmd = new SqlCommand(query, con);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    //SessionID.Text = reader[ID].ToString();
+                    SeLecturer1.Text = reader["Lecturer_1"].ToString();
+                    SeLecturer2.Text = reader["Lecturer_2"].ToString();
+                    SSubCode.Text = reader["Subject_Code"].ToString();
+                    SSubName.Text = reader["Subject_Name"].ToString();
+                    SGroupID.Text = reader["Group_Id"].ToString();
+                    SeTag.Text = reader["Tag"].ToString();
+                    SeRoom.Text = reader["Room"].ToString();
+                }
+                con.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error " + ex);
+            }
+        }
+
+        private void Location_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'timeTableDataSet1.Sessions' table. You can move, or remove it, as needed.
+            this.sessionsTableAdapter.Fill(this.timeTableDataSet1.Sessions);
+
         }
     }
 }

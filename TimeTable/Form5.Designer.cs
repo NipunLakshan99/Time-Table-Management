@@ -143,6 +143,42 @@ namespace TimeTable
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.NATLecturerADD = new System.Windows.Forms.Button();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.NATLETime = new System.Windows.Forms.TextBox();
+            this.NATLSTime = new System.Windows.Forms.TextBox();
+            this.NATLDay = new System.Windows.Forms.ComboBox();
+            this.NATLecturerName = new System.Windows.Forms.ComboBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.NATSADD = new System.Windows.Forms.Button();
+            this.NATSessionETime = new System.Windows.Forms.TextBox();
+            this.NATSessionSTime = new System.Windows.Forms.TextBox();
+            this.NATSessionDay = new System.Windows.Forms.ComboBox();
+            this.NATSessionID = new System.Windows.Forms.ComboBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.NATGroupADD = new System.Windows.Forms.Button();
+            this.NASGroup = new System.Windows.Forms.ComboBox();
+            this.NAGroupDay = new System.Windows.Forms.ComboBox();
+            this.NAMGroup = new System.Windows.Forms.ComboBox();
+            this.NAGroupETime = new System.Windows.Forms.TextBox();
+            this.NAGroupSTime = new System.Windows.Forms.TextBox();
+            this.dataGridView8 = new System.Windows.Forms.DataGridView();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
@@ -192,20 +228,6 @@ namespace TimeTable
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.comboBox26 = new System.Windows.Forms.ComboBox();
-            this.comboBox27 = new System.Windows.Forms.ComboBox();
-            this.comboBox28 = new System.Windows.Forms.ComboBox();
-            this.comboBox29 = new System.Windows.Forms.ComboBox();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -217,6 +239,13 @@ namespace TimeTable
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tabPage4.SuspendLayout();
+            this.tabControl3.SuspendLayout();
+            this.tabPage10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            this.tabPage11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+            this.tabPage12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             this.tabPage7.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage8.SuspendLayout();
@@ -1437,26 +1466,426 @@ namespace TimeTable
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.tabPage4.Controls.Add(this.button18);
-            this.tabPage4.Controls.Add(this.button17);
-            this.tabPage4.Controls.Add(this.textBox7);
-            this.tabPage4.Controls.Add(this.label50);
-            this.tabPage4.Controls.Add(this.label49);
-            this.tabPage4.Controls.Add(this.comboBox29);
-            this.tabPage4.Controls.Add(this.comboBox28);
-            this.tabPage4.Controls.Add(this.comboBox27);
-            this.tabPage4.Controls.Add(this.comboBox26);
-            this.tabPage4.Controls.Add(this.label48);
-            this.tabPage4.Controls.Add(this.label47);
-            this.tabPage4.Controls.Add(this.label45);
-            this.tabPage4.Controls.Add(this.label39);
-            this.tabPage4.Controls.Add(this.textBox5);
+            this.tabPage4.Controls.Add(this.tabControl3);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(1135, 529);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "NOT AVAILABLE TIMES";
+            // 
+            // tabControl3
+            // 
+            this.tabControl3.Controls.Add(this.tabPage10);
+            this.tabControl3.Controls.Add(this.tabPage11);
+            this.tabControl3.Controls.Add(this.tabPage12);
+            this.tabControl3.Location = new System.Drawing.Point(-1, 0);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(1081, 532);
+            this.tabControl3.TabIndex = 0;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.tabPage10.Controls.Add(this.NATLecturerADD);
+            this.tabPage10.Controls.Add(this.dataGridView6);
+            this.tabPage10.Controls.Add(this.NATLETime);
+            this.tabPage10.Controls.Add(this.NATLSTime);
+            this.tabPage10.Controls.Add(this.NATLDay);
+            this.tabPage10.Controls.Add(this.NATLecturerName);
+            this.tabPage10.Controls.Add(this.label48);
+            this.tabPage10.Controls.Add(this.label47);
+            this.tabPage10.Controls.Add(this.label45);
+            this.tabPage10.Controls.Add(this.label39);
+            this.tabPage10.Location = new System.Drawing.Point(4, 25);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage10.Size = new System.Drawing.Size(1073, 503);
+            this.tabPage10.TabIndex = 0;
+            this.tabPage10.Text = "LECTURER";
+            this.tabPage10.Click += new System.EventHandler(this.tabPage10_Click);
+            // 
+            // NATLecturerADD
+            // 
+            this.NATLecturerADD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.NATLecturerADD.Location = new System.Drawing.Point(491, 189);
+            this.NATLecturerADD.Name = "NATLecturerADD";
+            this.NATLecturerADD.Size = new System.Drawing.Size(116, 37);
+            this.NATLecturerADD.TabIndex = 70;
+            this.NATLecturerADD.Text = "Add";
+            this.NATLecturerADD.UseVisualStyleBackColor = false;
+            this.NATLecturerADD.Click += new System.EventHandler(this.NATLecturerADD_Click);
+            // 
+            // dataGridView6
+            // 
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Location = new System.Drawing.Point(298, 267);
+            this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.RowHeadersWidth = 51;
+            this.dataGridView6.RowTemplate.Height = 24;
+            this.dataGridView6.Size = new System.Drawing.Size(574, 189);
+            this.dataGridView6.TabIndex = 69;
+            this.dataGridView6.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView6_CellContentClick);
+            // 
+            // NATLETime
+            // 
+            this.NATLETime.Location = new System.Drawing.Point(734, 104);
+            this.NATLETime.Multiline = true;
+            this.NATLETime.Name = "NATLETime";
+            this.NATLETime.Size = new System.Drawing.Size(198, 31);
+            this.NATLETime.TabIndex = 68;
+            // 
+            // NATLSTime
+            // 
+            this.NATLSTime.Location = new System.Drawing.Point(284, 113);
+            this.NATLSTime.Multiline = true;
+            this.NATLSTime.Name = "NATLSTime";
+            this.NATLSTime.Size = new System.Drawing.Size(212, 31);
+            this.NATLSTime.TabIndex = 67;
+            // 
+            // NATLDay
+            // 
+            this.NATLDay.FormattingEnabled = true;
+            this.NATLDay.Items.AddRange(new object[] {
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"});
+            this.NATLDay.Location = new System.Drawing.Point(734, 27);
+            this.NATLDay.Name = "NATLDay";
+            this.NATLDay.Size = new System.Drawing.Size(198, 24);
+            this.NATLDay.TabIndex = 66;
+            // 
+            // NATLecturerName
+            // 
+            this.NATLecturerName.FormattingEnabled = true;
+            this.NATLecturerName.Location = new System.Drawing.Point(284, 27);
+            this.NATLecturerName.Name = "NATLecturerName";
+            this.NATLecturerName.Size = new System.Drawing.Size(212, 24);
+            this.NATLecturerName.TabIndex = 65;
+            this.NATLecturerName.SelectedIndexChanged += new System.EventHandler(this.comboBox26_SelectedIndexChanged);
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label48.Location = new System.Drawing.Point(597, 113);
+            this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(97, 20);
+            this.label48.TabIndex = 64;
+            this.label48.Text = "END TIME";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label47.Location = new System.Drawing.Point(63, 113);
+            this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(117, 20);
+            this.label47.TabIndex = 63;
+            this.label47.Text = "START TIME";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label45.Location = new System.Drawing.Point(597, 31);
+            this.label45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(46, 20);
+            this.label45.TabIndex = 62;
+            this.label45.Text = "DAY";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label39.Location = new System.Drawing.Point(63, 31);
+            this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(165, 20);
+            this.label39.TabIndex = 61;
+            this.label39.Text = "LECTURER NAME";
+            // 
+            // tabPage11
+            // 
+            this.tabPage11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.tabPage11.Controls.Add(this.dataGridView7);
+            this.tabPage11.Controls.Add(this.NATSADD);
+            this.tabPage11.Controls.Add(this.NATSessionETime);
+            this.tabPage11.Controls.Add(this.NATSessionSTime);
+            this.tabPage11.Controls.Add(this.NATSessionDay);
+            this.tabPage11.Controls.Add(this.NATSessionID);
+            this.tabPage11.Controls.Add(this.label50);
+            this.tabPage11.Controls.Add(this.label51);
+            this.tabPage11.Controls.Add(this.label52);
+            this.tabPage11.Controls.Add(this.label49);
+            this.tabPage11.Location = new System.Drawing.Point(4, 25);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage11.Size = new System.Drawing.Size(1073, 503);
+            this.tabPage11.TabIndex = 1;
+            this.tabPage11.Text = "SESSION";
+            this.tabPage11.Click += new System.EventHandler(this.tabPage11_Click);
+            // 
+            // dataGridView7
+            // 
+            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView7.Location = new System.Drawing.Point(234, 276);
+            this.dataGridView7.Name = "dataGridView7";
+            this.dataGridView7.RowHeadersWidth = 51;
+            this.dataGridView7.RowTemplate.Height = 24;
+            this.dataGridView7.Size = new System.Drawing.Size(640, 192);
+            this.dataGridView7.TabIndex = 73;
+            this.dataGridView7.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView7_CellContentClick);
+            // 
+            // NATSADD
+            // 
+            this.NATSADD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.NATSADD.Location = new System.Drawing.Point(460, 190);
+            this.NATSADD.Name = "NATSADD";
+            this.NATSADD.Size = new System.Drawing.Size(116, 37);
+            this.NATSADD.TabIndex = 72;
+            this.NATSADD.Text = "ADD";
+            this.NATSADD.UseVisualStyleBackColor = false;
+            this.NATSADD.Click += new System.EventHandler(this.NATSADD_Click);
+            // 
+            // NATSessionETime
+            // 
+            this.NATSessionETime.Location = new System.Drawing.Point(756, 109);
+            this.NATSessionETime.Multiline = true;
+            this.NATSessionETime.Name = "NATSessionETime";
+            this.NATSessionETime.Size = new System.Drawing.Size(172, 32);
+            this.NATSessionETime.TabIndex = 71;
+            // 
+            // NATSessionSTime
+            // 
+            this.NATSessionSTime.Location = new System.Drawing.Point(246, 109);
+            this.NATSessionSTime.Multiline = true;
+            this.NATSessionSTime.Name = "NATSessionSTime";
+            this.NATSessionSTime.Size = new System.Drawing.Size(151, 29);
+            this.NATSessionSTime.TabIndex = 70;
+            // 
+            // NATSessionDay
+            // 
+            this.NATSessionDay.FormattingEnabled = true;
+            this.NATSessionDay.Location = new System.Drawing.Point(756, 34);
+            this.NATSessionDay.Name = "NATSessionDay";
+            this.NATSessionDay.Size = new System.Drawing.Size(172, 24);
+            this.NATSessionDay.TabIndex = 69;
+            // 
+            // NATSessionID
+            // 
+            this.NATSessionID.FormattingEnabled = true;
+            this.NATSessionID.Location = new System.Drawing.Point(246, 31);
+            this.NATSessionID.Name = "NATSessionID";
+            this.NATSessionID.Size = new System.Drawing.Size(179, 24);
+            this.NATSessionID.TabIndex = 68;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label50.Location = new System.Drawing.Point(583, 118);
+            this.label50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(97, 20);
+            this.label50.TabIndex = 67;
+            this.label50.Text = "END TIME";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label51.Location = new System.Drawing.Point(67, 118);
+            this.label51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(117, 20);
+            this.label51.TabIndex = 66;
+            this.label51.Text = "START TIME";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label52.Location = new System.Drawing.Point(603, 35);
+            this.label52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(46, 20);
+            this.label52.TabIndex = 65;
+            this.label52.Text = "DAY";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label49.Location = new System.Drawing.Point(64, 35);
+            this.label49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(114, 20);
+            this.label49.TabIndex = 62;
+            this.label49.Text = "SESSION ID";
+            // 
+            // tabPage12
+            // 
+            this.tabPage12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.tabPage12.Controls.Add(this.NATGroupADD);
+            this.tabPage12.Controls.Add(this.NASGroup);
+            this.tabPage12.Controls.Add(this.NAGroupDay);
+            this.tabPage12.Controls.Add(this.NAMGroup);
+            this.tabPage12.Controls.Add(this.NAGroupETime);
+            this.tabPage12.Controls.Add(this.NAGroupSTime);
+            this.tabPage12.Controls.Add(this.dataGridView8);
+            this.tabPage12.Controls.Add(this.label57);
+            this.tabPage12.Controls.Add(this.label53);
+            this.tabPage12.Controls.Add(this.label54);
+            this.tabPage12.Controls.Add(this.label55);
+            this.tabPage12.Controls.Add(this.label56);
+            this.tabPage12.Location = new System.Drawing.Point(4, 25);
+            this.tabPage12.Name = "tabPage12";
+            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage12.Size = new System.Drawing.Size(1073, 503);
+            this.tabPage12.TabIndex = 2;
+            this.tabPage12.Text = "GROUP & SUB GROUP";
+            this.tabPage12.Click += new System.EventHandler(this.tabPage12_Click);
+            // 
+            // NATGroupADD
+            // 
+            this.NATGroupADD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.NATGroupADD.Location = new System.Drawing.Point(474, 203);
+            this.NATGroupADD.Name = "NATGroupADD";
+            this.NATGroupADD.Size = new System.Drawing.Size(116, 37);
+            this.NATGroupADD.TabIndex = 79;
+            this.NATGroupADD.Text = "ADD";
+            this.NATGroupADD.UseVisualStyleBackColor = false;
+            this.NATGroupADD.Click += new System.EventHandler(this.NATGroupADD_Click);
+            // 
+            // NASGroup
+            // 
+            this.NASGroup.FormattingEnabled = true;
+            this.NASGroup.Location = new System.Drawing.Point(702, 33);
+            this.NASGroup.Name = "NASGroup";
+            this.NASGroup.Size = new System.Drawing.Size(165, 24);
+            this.NASGroup.TabIndex = 78;
+            // 
+            // NAGroupDay
+            // 
+            this.NAGroupDay.FormattingEnabled = true;
+            this.NAGroupDay.Location = new System.Drawing.Point(160, 105);
+            this.NAGroupDay.Name = "NAGroupDay";
+            this.NAGroupDay.Size = new System.Drawing.Size(162, 24);
+            this.NAGroupDay.TabIndex = 77;
+            // 
+            // NAMGroup
+            // 
+            this.NAMGroup.FormattingEnabled = true;
+            this.NAMGroup.Location = new System.Drawing.Point(235, 33);
+            this.NAMGroup.Name = "NAMGroup";
+            this.NAMGroup.Size = new System.Drawing.Size(168, 24);
+            this.NAMGroup.TabIndex = 76;
+            // 
+            // NAGroupETime
+            // 
+            this.NAGroupETime.Location = new System.Drawing.Point(889, 98);
+            this.NAGroupETime.Multiline = true;
+            this.NAGroupETime.Name = "NAGroupETime";
+            this.NAGroupETime.Size = new System.Drawing.Size(130, 31);
+            this.NAGroupETime.TabIndex = 75;
+            this.NAGroupETime.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            // 
+            // NAGroupSTime
+            // 
+            this.NAGroupSTime.Location = new System.Drawing.Point(544, 98);
+            this.NAGroupSTime.Multiline = true;
+            this.NAGroupSTime.Name = "NAGroupSTime";
+            this.NAGroupSTime.Size = new System.Drawing.Size(130, 31);
+            this.NAGroupSTime.TabIndex = 74;
+            // 
+            // dataGridView8
+            // 
+            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView8.Location = new System.Drawing.Point(263, 302);
+            this.dataGridView8.Name = "dataGridView8";
+            this.dataGridView8.RowHeadersWidth = 51;
+            this.dataGridView8.RowTemplate.Height = 24;
+            this.dataGridView8.Size = new System.Drawing.Size(615, 150);
+            this.dataGridView8.TabIndex = 73;
+            this.dataGridView8.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView8_CellContentClick);
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label57.Location = new System.Drawing.Point(503, 37);
+            this.label57.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(125, 20);
+            this.label57.TabIndex = 72;
+            this.label57.Text = "SUB GROUP ";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label53.Location = new System.Drawing.Point(733, 109);
+            this.label53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(97, 20);
+            this.label53.TabIndex = 71;
+            this.label53.Text = "END TIME";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label54.Location = new System.Drawing.Point(384, 109);
+            this.label54.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(117, 20);
+            this.label54.TabIndex = 70;
+            this.label54.Text = "START TIME";
+            this.label54.Click += new System.EventHandler(this.label54_Click);
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label55.Location = new System.Drawing.Point(44, 109);
+            this.label55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(46, 20);
+            this.label55.TabIndex = 69;
+            this.label55.Text = "DAY";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label56.Location = new System.Drawing.Point(44, 37);
+            this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(132, 20);
+            this.label56.TabIndex = 68;
+            this.label56.Text = "MAIN GROUP ";
             // 
             // tabPage7
             // 
@@ -2126,143 +2555,6 @@ namespace TimeTable
             this.label44.TabIndex = 75;
             this.label44.Text = "No Of Working Days";
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(711, 181);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(127, 29);
-            this.textBox5.TabIndex = 0;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label39.Location = new System.Drawing.Point(57, 45);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(158, 25);
-            this.label39.TabIndex = 18;
-            this.label39.Text = "Select Lecturer";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label45.Location = new System.Drawing.Point(545, 117);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(184, 25);
-            this.label45.TabIndex = 19;
-            this.label45.Text = "Select Session ID";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label47.Location = new System.Drawing.Point(57, 117);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(138, 25);
-            this.label47.TabIndex = 20;
-            this.label47.Text = "Select Group";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label48.Location = new System.Drawing.Point(545, 45);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(183, 25);
-            this.label48.TabIndex = 21;
-            this.label48.Text = "Select Sub Group";
-            // 
-            // comboBox26
-            // 
-            this.comboBox26.FormattingEnabled = true;
-            this.comboBox26.Location = new System.Drawing.Point(260, 46);
-            this.comboBox26.Name = "comboBox26";
-            this.comboBox26.Size = new System.Drawing.Size(221, 24);
-            this.comboBox26.TabIndex = 22;
-            // 
-            // comboBox27
-            // 
-            this.comboBox27.FormattingEnabled = true;
-            this.comboBox27.Location = new System.Drawing.Point(260, 117);
-            this.comboBox27.Name = "comboBox27";
-            this.comboBox27.Size = new System.Drawing.Size(221, 24);
-            this.comboBox27.TabIndex = 23;
-            // 
-            // comboBox28
-            // 
-            this.comboBox28.FormattingEnabled = true;
-            this.comboBox28.Location = new System.Drawing.Point(792, 45);
-            this.comboBox28.Name = "comboBox28";
-            this.comboBox28.Size = new System.Drawing.Size(173, 24);
-            this.comboBox28.TabIndex = 24;
-            // 
-            // comboBox29
-            // 
-            this.comboBox29.FormattingEnabled = true;
-            this.comboBox29.Location = new System.Drawing.Point(792, 118);
-            this.comboBox29.Name = "comboBox29";
-            this.comboBox29.Size = new System.Drawing.Size(173, 24);
-            this.comboBox29.TabIndex = 25;
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label49.Location = new System.Drawing.Point(57, 185);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(112, 25);
-            this.label49.TabIndex = 26;
-            this.label49.Text = "Start Time";
-            this.label49.Click += new System.EventHandler(this.label49_Click);
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label50.Location = new System.Drawing.Point(519, 185);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(104, 25);
-            this.label50.TabIndex = 27;
-            this.label50.Text = "End Time";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(260, 181);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(127, 29);
-            this.textBox7.TabIndex = 28;
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button17.Location = new System.Drawing.Point(429, 296);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(116, 37);
-            this.button17.TabIndex = 29;
-            this.button17.Text = "Submit";
-            this.button17.UseVisualStyleBackColor = false;
-            // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button18.Location = new System.Drawing.Point(613, 296);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(116, 37);
-            this.button18.TabIndex = 30;
-            this.button18.Text = "Clear";
-            this.button18.UseVisualStyleBackColor = false;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
-            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2288,7 +2580,16 @@ namespace TimeTable
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
+            this.tabControl3.ResumeLayout(false);
+            this.tabPage10.ResumeLayout(false);
+            this.tabPage10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            this.tabPage11.ResumeLayout(false);
+            this.tabPage11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+            this.tabPage12.ResumeLayout(false);
+            this.tabPage12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage8.ResumeLayout(false);
@@ -2465,19 +2766,41 @@ namespace TimeTable
         private System.Windows.Forms.RadioButton radioWUweekday;
         private System.Windows.Forms.ComboBox txtDays;
         private System.Windows.Forms.ComboBox txtWUdays;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.ComboBox comboBox29;
-        private System.Windows.Forms.ComboBox comboBox28;
-        private System.Windows.Forms.ComboBox comboBox27;
-        private System.Windows.Forms.ComboBox comboBox26;
+        private System.Windows.Forms.TabControl tabControl3;
+        private System.Windows.Forms.TabPage tabPage10;
+        private System.Windows.Forms.TabPage tabPage11;
+        private System.Windows.Forms.TabPage tabPage12;
+        private System.Windows.Forms.ComboBox NATLecturerName;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.TextBox NATLETime;
+        private System.Windows.Forms.TextBox NATLSTime;
+        private System.Windows.Forms.ComboBox NATLDay;
+        private System.Windows.Forms.Button NATLecturerADD;
+        private System.Windows.Forms.DataGridView dataGridView7;
+        private System.Windows.Forms.Button NATSADD;
+        private System.Windows.Forms.TextBox NATSessionETime;
+        private System.Windows.Forms.TextBox NATSessionSTime;
+        private System.Windows.Forms.ComboBox NATSessionDay;
+        private System.Windows.Forms.ComboBox NATSessionID;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.ComboBox NASGroup;
+        private System.Windows.Forms.ComboBox NAGroupDay;
+        private System.Windows.Forms.ComboBox NAMGroup;
+        private System.Windows.Forms.TextBox NAGroupETime;
+        private System.Windows.Forms.TextBox NAGroupSTime;
+        private System.Windows.Forms.DataGridView dataGridView8;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Button NATGroupADD;
     }
 }

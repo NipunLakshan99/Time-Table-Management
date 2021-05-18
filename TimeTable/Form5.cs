@@ -13,6 +13,10 @@ namespace TimeTable
     public partial class Form5 : Form
     {
         WorkingRepo WorkingRepo = new WorkingRepo();
+        NotAvailableLecturerRepo NotAvailableLecturerRepo = new NotAvailableLecturerRepo();
+        NotAvailableSessionRepo NotAvailableSessionRepo = new NotAvailableSessionRepo();
+        NotAvailableGroupRepo NotAvailableGroupRepo = new NotAvailableGroupRepo();
+
         public Form5()
         {
             InitializeComponent();
@@ -262,6 +266,130 @@ namespace TimeTable
         private void button18_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBox26_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NATSADD_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(NATSessionID.Text) && !string.IsNullOrEmpty(NATSessionDay.Text) && !string.IsNullOrEmpty(NATSessionSTime.Text) && !string.IsNullOrEmpty(NATSessionETime.Text))
+            {
+                NotAvailableSessionRepo.Add(new NotAvailableSession
+                {
+                    Session_ID = NATSessionID.Text,
+                    Day = NATSessionDay.Text,
+                    Start_Time = NATSessionSTime.Text,
+                    End_Time = NATSessionETime.Text,
+                });
+                NATSessionID.Text = string.Empty;
+                NATSessionDay.Text = string.Empty;
+                NATSessionSTime.Text = string.Empty;
+                NATSessionETime.Text = string.Empty;
+                dataGridView7.DataSource = NotAvailableSessionRepo.GetAll();
+                
+            }
+        }
+
+        private void dataGridView7_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var row = dataGridView7.SelectedRows[0];
+            var NASession = (NotAvailableSession)row.DataBoundItem;
+            NATSessionID.Text = NASession.Session_ID;
+            NATSessionDay.Text = NASession.Day;
+            NATSessionSTime.Text = NASession.Start_Time;
+            NATSessionETime.Text = NASession.End_Time;
+        }
+
+        private void label54_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NATLecturerADD_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(NATLecturerName.Text) && !string.IsNullOrEmpty(NATLDay.Text) && !string.IsNullOrEmpty(NATLSTime.Text) && !string.IsNullOrEmpty(NATLETime.Text))
+            {
+                NotAvailableLecturerRepo.Add(new NotAvailableLecturer
+                {
+                    Lecturer_Name = NATLecturerName.Text,
+                    Day = NATLDay.Text,
+                    Start_Time = NATLSTime.Text,
+                    End_Time = NATLETime.Text,
+                });
+                NATLecturerName.Text = string.Empty;
+                NATLDay.Text = string.Empty;
+                NATLSTime.Text = string.Empty;
+                NATLETime.Text = string.Empty;
+                dataGridView6.DataSource = NotAvailableLecturerRepo.GetAll();
+
+            }
+        }
+
+        private void tabPage10_Click(object sender, EventArgs e)
+        {
+            dataGridView6.DataSource = NotAvailableLecturerRepo.GetAll();
+        }
+
+        private void dataGridView6_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var row = dataGridView6.SelectedRows[0];
+            var NALecturer = (NotAvailableLecturer)row.DataBoundItem;
+            NATLecturerName.Text = NALecturer.Lecturer_Name;
+            NATLDay.Text = NALecturer.Day;
+            NATLSTime.Text = NALecturer.Start_Time;
+            NATLETime.Text = NALecturer.End_Time;
+        }
+
+        private void tabPage11_Click(object sender, EventArgs e)
+        {
+            dataGridView7.DataSource = NotAvailableSessionRepo.GetAll();
+        }
+
+        private void NATGroupADD_Click(object sender, EventArgs e)
+        {
+
+            if (!string.IsNullOrEmpty(NAMGroup.Text) || !string.IsNullOrEmpty(NASGroup.Text) && !string.IsNullOrEmpty(NAGroupDay.Text) && !string.IsNullOrEmpty(NAGroupSTime.Text) && !string.IsNullOrEmpty(NAGroupETime.Text))
+            {
+                NotAvailableGroupRepo.Add(new NotAvailableGroup
+                {
+                    Main_Group = NAMGroup.Text,
+                    Sub_Group = NASGroup.Text,
+                    Day = NAGroupDay.Text,
+                    Start_Time = NAGroupSTime.Text,
+                    End_Time = NAGroupETime.Text,
+                });
+                NAMGroup.Text = string.Empty;
+                NASGroup.Text = string.Empty;
+                NAGroupDay.Text = string.Empty;
+                NAGroupSTime.Text = string.Empty;
+                NAGroupETime.Text = string.Empty;
+                dataGridView8.DataSource = NotAvailableGroupRepo.GetAll();
+
+            }
+        }
+
+        private void dataGridView8_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var row = dataGridView8.SelectedRows[0];
+            var NAGroup = (NotAvailableGroup)row.DataBoundItem;
+            NAMGroup.Text = NAGroup.Main_Group;
+            NASGroup.Text = NAGroup.Sub_Group;
+            NAGroupDay.Text = NAGroup.Day;
+            NAGroupSTime.Text = NAGroup.Start_Time;
+            NAGroupETime.Text = NAGroup.End_Time;
+        }
+
+        private void tabPage12_Click(object sender, EventArgs e)
+        {
+            dataGridView8.DataSource = NotAvailableGroupRepo.GetAll();
         }
     }
 }
