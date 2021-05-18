@@ -11,6 +11,7 @@ using System.Data.SqlClient;
 using System.Configuration;
 
 
+
 namespace TimeTable
 {
     public partial class Form5 : Form
@@ -123,6 +124,7 @@ namespace TimeTable
 
         private void tabPage2_Click(object sender, EventArgs e)
         {
+            
             SqlConnection sc = new SqlConnection("Data Source=(localdb)\\AnjiDB;Initial Catalog=TimeTableManagement;Integrated Security=True");
             sc.Open();
             SqlDataAdapter sd = new SqlDataAdapter("select * from Session", sc);
@@ -143,6 +145,8 @@ namespace TimeTable
             dataGridView1.DataSource = ds.Tables[0];
 
             sc.Close();
+            
+
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -180,10 +184,11 @@ namespace TimeTable
                     sqlcomm.ExecuteNonQuery();
                     sqlconn.Close();
                 }
-                label1.Text = "Selected Records Inserted Successfully !!!";
-
+                
+   
             }
-        }
+            MessageBox.Show("Selected Records Inserted Successfully !!!");
+        } 
 
         private void parallelbtnSave_Click(object sender, EventArgs e)
         {
@@ -207,10 +212,11 @@ namespace TimeTable
                     sqlconn.Open();
                     sqlcomm.ExecuteNonQuery();
                     sqlconn.Close();
+                    
                 }
-                label2.Text = "Selected Records Inserted Successfully !!!";
-
+                
             }
+            MessageBox.Show("Selected Records Inserted Successfully !!!");
         }
 
         private void parallelbtnView_Click(object sender, EventArgs e)
@@ -248,9 +254,9 @@ namespace TimeTable
                     sqlcomm.ExecuteNonQuery();
                     sqlconn.Close();
                 }
-                label3.Text = "Selected Records Inserted Successfully !!!";
-
+                   
             }
+            MessageBox.Show("Selected Records Inserted Successfully !!!");
         }
 
         private void nonoverlappingbtnView_Click(object sender, EventArgs e)
