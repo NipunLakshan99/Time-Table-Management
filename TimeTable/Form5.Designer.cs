@@ -66,45 +66,18 @@ namespace TimeTable
             this.comboBox25 = new System.Windows.Forms.ComboBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.sessionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lecturerName1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lecturerName2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subjectCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subjectNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tagDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sessionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.timeTableManagementDataSet3 = new TimeTable.TimeTableManagementDataSet3();
             this.consecutivebtnSave = new System.Windows.Forms.Button();
             this.consecutivebtnView = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sessionBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.timeTableManagementDataSet4 = new TimeTable.TimeTableManagementDataSet4();
             this.parallelbtnSave = new System.Windows.Forms.Button();
             this.parallelbtnView = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sessionBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.timeTableManagementDataSet5 = new TimeTable.TimeTableManagementDataSet5();
             this.nonoverlappingbtnAdd = new System.Windows.Forms.Button();
             this.nonoverlappingbtnView = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -174,31 +147,58 @@ namespace TimeTable
             this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.timeTableManagementDataSet2 = new TimeTable.TimeTableManagementDataSet2();
-            this.sessionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sessionTableAdapter = new TimeTable.TimeTableManagementDataSet2TableAdapters.SessionTableAdapter();
-            this.sessionTableAdapter1 = new TimeTable.TimeTableManagementDataSet3TableAdapters.SessionTableAdapter();
-            this.sessionTableAdapter2 = new TimeTable.TimeTableManagementDataSet4TableAdapters.SessionTableAdapter();
-            this.sessionTableAdapter3 = new TimeTable.TimeTableManagementDataSet5TableAdapters.SessionTableAdapter();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this._time_table_managementDataSet = new TimeTable._time_table_managementDataSet();
+            this.sessionTimeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.session_TimeTableAdapter = new TimeTable._time_table_managementDataSetTableAdapters.Session_TimeTableAdapter();
+            this.sessiontimeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecturerName1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecturerName2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tagDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.endTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._time_table_managementDataSet1 = new TimeTable._time_table_managementDataSet1();
+            this.sessionTimeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.session_TimeTableAdapter1 = new TimeTable._time_table_managementDataSet1TableAdapters.Session_TimeTableAdapter();
+            this.sessiontimeIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecturerName1DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecturerName2DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectCodeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tagDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dayDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startTimeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.endTimeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._time_table_managementDataSet2 = new TimeTable._time_table_managementDataSet2();
+            this.sessionTimeBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.session_TimeTableAdapter2 = new TimeTable._time_table_managementDataSet2TableAdapters.Session_TimeTableAdapter();
+            this.sessiontimeIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecturerName1DataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecturerName2DataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectCodeDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectNameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tagDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dayDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startTimeDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.endTimeDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeTableManagementDataSet3)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeTableManagementDataSet4)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeTableManagementDataSet5)).BeginInit();
             this.tabPage7.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage8.SuspendLayout();
@@ -214,8 +214,12 @@ namespace TimeTable
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeTableManagementDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionTimeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionTimeBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionTimeBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -569,89 +573,37 @@ namespace TimeTable
             this.tabPage1.Text = "CONSECUTIVE";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(202, 315);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 16);
+            this.label1.TabIndex = 49;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.sessionIDDataGridViewTextBoxColumn,
+            this.sessiontimeIDDataGridViewTextBoxColumn,
             this.lecturerName1DataGridViewTextBoxColumn,
             this.lecturerName2DataGridViewTextBoxColumn,
             this.subjectCodeDataGridViewTextBoxColumn,
             this.subjectNameDataGridViewTextBoxColumn,
             this.groupIDDataGridViewTextBoxColumn,
             this.tagDataGridViewTextBoxColumn,
-            this.roomDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.sessionBindingSource1;
+            this.roomDataGridViewTextBoxColumn,
+            this.dayDataGridViewTextBoxColumn,
+            this.startTimeDataGridViewTextBoxColumn,
+            this.endTimeDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.sessionTimeBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(38, 20);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(687, 276);
             this.dataGridView1.TabIndex = 48;
-            // 
-            // sessionIDDataGridViewTextBoxColumn
-            // 
-            this.sessionIDDataGridViewTextBoxColumn.DataPropertyName = "Session_ID";
-            this.sessionIDDataGridViewTextBoxColumn.HeaderText = "Session_ID";
-            this.sessionIDDataGridViewTextBoxColumn.Name = "sessionIDDataGridViewTextBoxColumn";
-            this.sessionIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.sessionIDDataGridViewTextBoxColumn.Width = 65;
-            // 
-            // lecturerName1DataGridViewTextBoxColumn
-            // 
-            this.lecturerName1DataGridViewTextBoxColumn.DataPropertyName = "Lecturer_Name_1";
-            this.lecturerName1DataGridViewTextBoxColumn.HeaderText = "Lecturer_Name_1";
-            this.lecturerName1DataGridViewTextBoxColumn.Name = "lecturerName1DataGridViewTextBoxColumn";
-            // 
-            // lecturerName2DataGridViewTextBoxColumn
-            // 
-            this.lecturerName2DataGridViewTextBoxColumn.DataPropertyName = "Lecturer_Name_2";
-            this.lecturerName2DataGridViewTextBoxColumn.HeaderText = "Lecturer_Name_2";
-            this.lecturerName2DataGridViewTextBoxColumn.Name = "lecturerName2DataGridViewTextBoxColumn";
-            // 
-            // subjectCodeDataGridViewTextBoxColumn
-            // 
-            this.subjectCodeDataGridViewTextBoxColumn.DataPropertyName = "Subject_Code";
-            this.subjectCodeDataGridViewTextBoxColumn.HeaderText = "Subject_Code";
-            this.subjectCodeDataGridViewTextBoxColumn.Name = "subjectCodeDataGridViewTextBoxColumn";
-            this.subjectCodeDataGridViewTextBoxColumn.Width = 90;
-            // 
-            // subjectNameDataGridViewTextBoxColumn
-            // 
-            this.subjectNameDataGridViewTextBoxColumn.DataPropertyName = "Subject_Name";
-            this.subjectNameDataGridViewTextBoxColumn.HeaderText = "Subject_Name";
-            this.subjectNameDataGridViewTextBoxColumn.Name = "subjectNameDataGridViewTextBoxColumn";
-            this.subjectNameDataGridViewTextBoxColumn.Width = 90;
-            // 
-            // groupIDDataGridViewTextBoxColumn
-            // 
-            this.groupIDDataGridViewTextBoxColumn.DataPropertyName = "Group_ID";
-            this.groupIDDataGridViewTextBoxColumn.HeaderText = "Group_ID";
-            this.groupIDDataGridViewTextBoxColumn.Name = "groupIDDataGridViewTextBoxColumn";
-            this.groupIDDataGridViewTextBoxColumn.Width = 75;
-            // 
-            // tagDataGridViewTextBoxColumn
-            // 
-            this.tagDataGridViewTextBoxColumn.DataPropertyName = "Tag";
-            this.tagDataGridViewTextBoxColumn.HeaderText = "Tag";
-            this.tagDataGridViewTextBoxColumn.Name = "tagDataGridViewTextBoxColumn";
-            this.tagDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // roomDataGridViewTextBoxColumn
-            // 
-            this.roomDataGridViewTextBoxColumn.DataPropertyName = "Room";
-            this.roomDataGridViewTextBoxColumn.HeaderText = "Room";
-            this.roomDataGridViewTextBoxColumn.Name = "roomDataGridViewTextBoxColumn";
-            this.roomDataGridViewTextBoxColumn.Width = 75;
-            // 
-            // sessionBindingSource1
-            // 
-            this.sessionBindingSource1.DataMember = "Session";
-            this.sessionBindingSource1.DataSource = this.timeTableManagementDataSet3;
-            // 
-            // timeTableManagementDataSet3
-            // 
-            this.timeTableManagementDataSet3.DataSetName = "TimeTableManagementDataSet3";
-            this.timeTableManagementDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // consecutivebtnSave
             // 
@@ -690,89 +642,37 @@ namespace TimeTable
             this.tabPage2.Text = "PARALLEL";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(193, 323);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 16);
+            this.label2.TabIndex = 85;
+            // 
             // dataGridView2
             // 
             this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewTextBoxColumn28,
-            this.dataGridViewTextBoxColumn29});
-            this.dataGridView2.DataSource = this.sessionBindingSource2;
+            this.sessiontimeIDDataGridViewTextBoxColumn1,
+            this.lecturerName1DataGridViewTextBoxColumn1,
+            this.lecturerName2DataGridViewTextBoxColumn1,
+            this.subjectCodeDataGridViewTextBoxColumn1,
+            this.subjectNameDataGridViewTextBoxColumn1,
+            this.groupIDDataGridViewTextBoxColumn1,
+            this.tagDataGridViewTextBoxColumn1,
+            this.roomDataGridViewTextBoxColumn1,
+            this.dayDataGridViewTextBoxColumn1,
+            this.startTimeDataGridViewTextBoxColumn1,
+            this.endTimeDataGridViewTextBoxColumn1});
+            this.dataGridView2.DataSource = this.sessionTimeBindingSource1;
             this.dataGridView2.Location = new System.Drawing.Point(48, 20);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(687, 282);
             this.dataGridView2.TabIndex = 84;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Session_ID";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Session_ID";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            this.dataGridViewTextBoxColumn9.Width = 65;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Lecturer_Name_1";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Lecturer_Name_1";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Lecturer_Name_2";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Lecturer_Name_2";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "Subject_Code";
-            this.dataGridViewTextBoxColumn12.HeaderText = "Subject_Code";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.Width = 90;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "Subject_Name";
-            this.dataGridViewTextBoxColumn13.HeaderText = "Subject_Name";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.Width = 90;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "Group_ID";
-            this.dataGridViewTextBoxColumn14.HeaderText = "Group_ID";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.Width = 75;
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn28.HeaderText = "Tag";
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn29
-            // 
-            this.dataGridViewTextBoxColumn29.DataPropertyName = "Room";
-            this.dataGridViewTextBoxColumn29.HeaderText = "Room";
-            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            this.dataGridViewTextBoxColumn29.Width = 75;
-            // 
-            // sessionBindingSource2
-            // 
-            this.sessionBindingSource2.DataMember = "Session";
-            this.sessionBindingSource2.DataSource = this.timeTableManagementDataSet4;
-            // 
-            // timeTableManagementDataSet4
-            // 
-            this.timeTableManagementDataSet4.DataSetName = "TimeTableManagementDataSet4";
-            this.timeTableManagementDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // parallelbtnSave
             // 
@@ -810,89 +710,37 @@ namespace TimeTable
             this.tabPage3.Text = "NON-OVERLAPPING";
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(127, 336);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 16);
+            this.label3.TabIndex = 67;
+            // 
             // dataGridView3
             // 
             this.dataGridView3.AutoGenerateColumns = false;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8});
-            this.dataGridView3.DataSource = this.sessionBindingSource3;
+            this.sessiontimeIDDataGridViewTextBoxColumn2,
+            this.lecturerName1DataGridViewTextBoxColumn2,
+            this.lecturerName2DataGridViewTextBoxColumn2,
+            this.subjectCodeDataGridViewTextBoxColumn2,
+            this.subjectNameDataGridViewTextBoxColumn2,
+            this.groupIDDataGridViewTextBoxColumn2,
+            this.tagDataGridViewTextBoxColumn2,
+            this.roomDataGridViewTextBoxColumn2,
+            this.dayDataGridViewTextBoxColumn2,
+            this.startTimeDataGridViewTextBoxColumn2,
+            this.endTimeDataGridViewTextBoxColumn2});
+            this.dataGridView3.DataSource = this.sessionTimeBindingSource2;
             this.dataGridView3.Location = new System.Drawing.Point(32, 16);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(689, 307);
             this.dataGridView3.TabIndex = 66;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Session_ID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Session_ID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 65;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Lecturer_Name_1";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Lecturer_Name_1";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Lecturer_Name_2";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Lecturer_Name_2";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Subject_Code";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Subject_Code";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 90;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Subject_Name";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Subject_Name";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 90;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Group_ID";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Group_ID";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 75;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Tag";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Tag";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Room";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Room";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 75;
-            // 
-            // sessionBindingSource3
-            // 
-            this.sessionBindingSource3.DataMember = "Session";
-            this.sessionBindingSource3.DataSource = this.timeTableManagementDataSet5;
-            // 
-            // timeTableManagementDataSet5
-            // 
-            this.timeTableManagementDataSet5.DataSetName = "TimeTableManagementDataSet5";
-            this.timeTableManagementDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // nonoverlappingbtnAdd
             // 
@@ -1695,61 +1543,248 @@ namespace TimeTable
             this.label44.TabIndex = 75;
             this.label44.Text = "No Of Working Days";
             // 
-            // timeTableManagementDataSet2
+            // _time_table_managementDataSet
             // 
-            this.timeTableManagementDataSet2.DataSetName = "TimeTableManagementDataSet2";
-            this.timeTableManagementDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this._time_table_managementDataSet.DataSetName = "_time_table_managementDataSet";
+            this._time_table_managementDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // sessionBindingSource
+            // sessionTimeBindingSource
             // 
-            this.sessionBindingSource.DataMember = "Session";
-            this.sessionBindingSource.DataSource = this.timeTableManagementDataSet2;
+            this.sessionTimeBindingSource.DataMember = "Session_Time";
+            this.sessionTimeBindingSource.DataSource = this._time_table_managementDataSet;
             // 
-            // sessionTableAdapter
+            // session_TimeTableAdapter
             // 
-            this.sessionTableAdapter.ClearBeforeFill = true;
+            this.session_TimeTableAdapter.ClearBeforeFill = true;
             // 
-            // sessionTableAdapter1
+            // sessiontimeIDDataGridViewTextBoxColumn
             // 
-            this.sessionTableAdapter1.ClearBeforeFill = true;
+            this.sessiontimeIDDataGridViewTextBoxColumn.DataPropertyName = "Sessiontime_ID";
+            this.sessiontimeIDDataGridViewTextBoxColumn.HeaderText = "Sessiontime_ID";
+            this.sessiontimeIDDataGridViewTextBoxColumn.Name = "sessiontimeIDDataGridViewTextBoxColumn";
+            this.sessiontimeIDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // sessionTableAdapter2
+            // lecturerName1DataGridViewTextBoxColumn
             // 
-            this.sessionTableAdapter2.ClearBeforeFill = true;
+            this.lecturerName1DataGridViewTextBoxColumn.DataPropertyName = "Lecturer_Name_1";
+            this.lecturerName1DataGridViewTextBoxColumn.HeaderText = "Lecturer_Name_1";
+            this.lecturerName1DataGridViewTextBoxColumn.Name = "lecturerName1DataGridViewTextBoxColumn";
             // 
-            // sessionTableAdapter3
+            // lecturerName2DataGridViewTextBoxColumn
             // 
-            this.sessionTableAdapter3.ClearBeforeFill = true;
+            this.lecturerName2DataGridViewTextBoxColumn.DataPropertyName = "Lecturer_Name_2";
+            this.lecturerName2DataGridViewTextBoxColumn.HeaderText = "Lecturer_Name_2";
+            this.lecturerName2DataGridViewTextBoxColumn.Name = "lecturerName2DataGridViewTextBoxColumn";
             // 
-            // label1
+            // subjectCodeDataGridViewTextBoxColumn
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(202, 315);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 16);
-            this.label1.TabIndex = 49;
+            this.subjectCodeDataGridViewTextBoxColumn.DataPropertyName = "Subject_Code";
+            this.subjectCodeDataGridViewTextBoxColumn.HeaderText = "Subject_Code";
+            this.subjectCodeDataGridViewTextBoxColumn.Name = "subjectCodeDataGridViewTextBoxColumn";
             // 
-            // label2
+            // subjectNameDataGridViewTextBoxColumn
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(193, 323);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 16);
-            this.label2.TabIndex = 85;
+            this.subjectNameDataGridViewTextBoxColumn.DataPropertyName = "Subject_Name";
+            this.subjectNameDataGridViewTextBoxColumn.HeaderText = "Subject_Name";
+            this.subjectNameDataGridViewTextBoxColumn.Name = "subjectNameDataGridViewTextBoxColumn";
             // 
-            // label3
+            // groupIDDataGridViewTextBoxColumn
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(127, 336);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 16);
-            this.label3.TabIndex = 67;
+            this.groupIDDataGridViewTextBoxColumn.DataPropertyName = "Group_ID";
+            this.groupIDDataGridViewTextBoxColumn.HeaderText = "Group_ID";
+            this.groupIDDataGridViewTextBoxColumn.Name = "groupIDDataGridViewTextBoxColumn";
+            // 
+            // tagDataGridViewTextBoxColumn
+            // 
+            this.tagDataGridViewTextBoxColumn.DataPropertyName = "Tag";
+            this.tagDataGridViewTextBoxColumn.HeaderText = "Tag";
+            this.tagDataGridViewTextBoxColumn.Name = "tagDataGridViewTextBoxColumn";
+            // 
+            // roomDataGridViewTextBoxColumn
+            // 
+            this.roomDataGridViewTextBoxColumn.DataPropertyName = "Room";
+            this.roomDataGridViewTextBoxColumn.HeaderText = "Room";
+            this.roomDataGridViewTextBoxColumn.Name = "roomDataGridViewTextBoxColumn";
+            // 
+            // dayDataGridViewTextBoxColumn
+            // 
+            this.dayDataGridViewTextBoxColumn.DataPropertyName = "Day";
+            this.dayDataGridViewTextBoxColumn.HeaderText = "Day";
+            this.dayDataGridViewTextBoxColumn.Name = "dayDataGridViewTextBoxColumn";
+            // 
+            // startTimeDataGridViewTextBoxColumn
+            // 
+            this.startTimeDataGridViewTextBoxColumn.DataPropertyName = "Start_Time";
+            this.startTimeDataGridViewTextBoxColumn.HeaderText = "Start_Time";
+            this.startTimeDataGridViewTextBoxColumn.Name = "startTimeDataGridViewTextBoxColumn";
+            // 
+            // endTimeDataGridViewTextBoxColumn
+            // 
+            this.endTimeDataGridViewTextBoxColumn.DataPropertyName = "End_Time";
+            this.endTimeDataGridViewTextBoxColumn.HeaderText = "End_Time";
+            this.endTimeDataGridViewTextBoxColumn.Name = "endTimeDataGridViewTextBoxColumn";
+            // 
+            // _time_table_managementDataSet1
+            // 
+            this._time_table_managementDataSet1.DataSetName = "_time_table_managementDataSet1";
+            this._time_table_managementDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sessionTimeBindingSource1
+            // 
+            this.sessionTimeBindingSource1.DataMember = "Session_Time";
+            this.sessionTimeBindingSource1.DataSource = this._time_table_managementDataSet1;
+            // 
+            // session_TimeTableAdapter1
+            // 
+            this.session_TimeTableAdapter1.ClearBeforeFill = true;
+            // 
+            // sessiontimeIDDataGridViewTextBoxColumn1
+            // 
+            this.sessiontimeIDDataGridViewTextBoxColumn1.DataPropertyName = "Sessiontime_ID";
+            this.sessiontimeIDDataGridViewTextBoxColumn1.HeaderText = "Sessiontime_ID";
+            this.sessiontimeIDDataGridViewTextBoxColumn1.Name = "sessiontimeIDDataGridViewTextBoxColumn1";
+            this.sessiontimeIDDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // lecturerName1DataGridViewTextBoxColumn1
+            // 
+            this.lecturerName1DataGridViewTextBoxColumn1.DataPropertyName = "Lecturer_Name_1";
+            this.lecturerName1DataGridViewTextBoxColumn1.HeaderText = "Lecturer_Name_1";
+            this.lecturerName1DataGridViewTextBoxColumn1.Name = "lecturerName1DataGridViewTextBoxColumn1";
+            // 
+            // lecturerName2DataGridViewTextBoxColumn1
+            // 
+            this.lecturerName2DataGridViewTextBoxColumn1.DataPropertyName = "Lecturer_Name_2";
+            this.lecturerName2DataGridViewTextBoxColumn1.HeaderText = "Lecturer_Name_2";
+            this.lecturerName2DataGridViewTextBoxColumn1.Name = "lecturerName2DataGridViewTextBoxColumn1";
+            // 
+            // subjectCodeDataGridViewTextBoxColumn1
+            // 
+            this.subjectCodeDataGridViewTextBoxColumn1.DataPropertyName = "Subject_Code";
+            this.subjectCodeDataGridViewTextBoxColumn1.HeaderText = "Subject_Code";
+            this.subjectCodeDataGridViewTextBoxColumn1.Name = "subjectCodeDataGridViewTextBoxColumn1";
+            // 
+            // subjectNameDataGridViewTextBoxColumn1
+            // 
+            this.subjectNameDataGridViewTextBoxColumn1.DataPropertyName = "Subject_Name";
+            this.subjectNameDataGridViewTextBoxColumn1.HeaderText = "Subject_Name";
+            this.subjectNameDataGridViewTextBoxColumn1.Name = "subjectNameDataGridViewTextBoxColumn1";
+            // 
+            // groupIDDataGridViewTextBoxColumn1
+            // 
+            this.groupIDDataGridViewTextBoxColumn1.DataPropertyName = "Group_ID";
+            this.groupIDDataGridViewTextBoxColumn1.HeaderText = "Group_ID";
+            this.groupIDDataGridViewTextBoxColumn1.Name = "groupIDDataGridViewTextBoxColumn1";
+            // 
+            // tagDataGridViewTextBoxColumn1
+            // 
+            this.tagDataGridViewTextBoxColumn1.DataPropertyName = "Tag";
+            this.tagDataGridViewTextBoxColumn1.HeaderText = "Tag";
+            this.tagDataGridViewTextBoxColumn1.Name = "tagDataGridViewTextBoxColumn1";
+            // 
+            // roomDataGridViewTextBoxColumn1
+            // 
+            this.roomDataGridViewTextBoxColumn1.DataPropertyName = "Room";
+            this.roomDataGridViewTextBoxColumn1.HeaderText = "Room";
+            this.roomDataGridViewTextBoxColumn1.Name = "roomDataGridViewTextBoxColumn1";
+            // 
+            // dayDataGridViewTextBoxColumn1
+            // 
+            this.dayDataGridViewTextBoxColumn1.DataPropertyName = "Day";
+            this.dayDataGridViewTextBoxColumn1.HeaderText = "Day";
+            this.dayDataGridViewTextBoxColumn1.Name = "dayDataGridViewTextBoxColumn1";
+            // 
+            // startTimeDataGridViewTextBoxColumn1
+            // 
+            this.startTimeDataGridViewTextBoxColumn1.DataPropertyName = "Start_Time";
+            this.startTimeDataGridViewTextBoxColumn1.HeaderText = "Start_Time";
+            this.startTimeDataGridViewTextBoxColumn1.Name = "startTimeDataGridViewTextBoxColumn1";
+            // 
+            // endTimeDataGridViewTextBoxColumn1
+            // 
+            this.endTimeDataGridViewTextBoxColumn1.DataPropertyName = "End_Time";
+            this.endTimeDataGridViewTextBoxColumn1.HeaderText = "End_Time";
+            this.endTimeDataGridViewTextBoxColumn1.Name = "endTimeDataGridViewTextBoxColumn1";
+            // 
+            // _time_table_managementDataSet2
+            // 
+            this._time_table_managementDataSet2.DataSetName = "_time_table_managementDataSet2";
+            this._time_table_managementDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sessionTimeBindingSource2
+            // 
+            this.sessionTimeBindingSource2.DataMember = "Session_Time";
+            this.sessionTimeBindingSource2.DataSource = this._time_table_managementDataSet2;
+            // 
+            // session_TimeTableAdapter2
+            // 
+            this.session_TimeTableAdapter2.ClearBeforeFill = true;
+            // 
+            // sessiontimeIDDataGridViewTextBoxColumn2
+            // 
+            this.sessiontimeIDDataGridViewTextBoxColumn2.DataPropertyName = "Sessiontime_ID";
+            this.sessiontimeIDDataGridViewTextBoxColumn2.HeaderText = "Sessiontime_ID";
+            this.sessiontimeIDDataGridViewTextBoxColumn2.Name = "sessiontimeIDDataGridViewTextBoxColumn2";
+            this.sessiontimeIDDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // lecturerName1DataGridViewTextBoxColumn2
+            // 
+            this.lecturerName1DataGridViewTextBoxColumn2.DataPropertyName = "Lecturer_Name_1";
+            this.lecturerName1DataGridViewTextBoxColumn2.HeaderText = "Lecturer_Name_1";
+            this.lecturerName1DataGridViewTextBoxColumn2.Name = "lecturerName1DataGridViewTextBoxColumn2";
+            // 
+            // lecturerName2DataGridViewTextBoxColumn2
+            // 
+            this.lecturerName2DataGridViewTextBoxColumn2.DataPropertyName = "Lecturer_Name_2";
+            this.lecturerName2DataGridViewTextBoxColumn2.HeaderText = "Lecturer_Name_2";
+            this.lecturerName2DataGridViewTextBoxColumn2.Name = "lecturerName2DataGridViewTextBoxColumn2";
+            // 
+            // subjectCodeDataGridViewTextBoxColumn2
+            // 
+            this.subjectCodeDataGridViewTextBoxColumn2.DataPropertyName = "Subject_Code";
+            this.subjectCodeDataGridViewTextBoxColumn2.HeaderText = "Subject_Code";
+            this.subjectCodeDataGridViewTextBoxColumn2.Name = "subjectCodeDataGridViewTextBoxColumn2";
+            // 
+            // subjectNameDataGridViewTextBoxColumn2
+            // 
+            this.subjectNameDataGridViewTextBoxColumn2.DataPropertyName = "Subject_Name";
+            this.subjectNameDataGridViewTextBoxColumn2.HeaderText = "Subject_Name";
+            this.subjectNameDataGridViewTextBoxColumn2.Name = "subjectNameDataGridViewTextBoxColumn2";
+            // 
+            // groupIDDataGridViewTextBoxColumn2
+            // 
+            this.groupIDDataGridViewTextBoxColumn2.DataPropertyName = "Group_ID";
+            this.groupIDDataGridViewTextBoxColumn2.HeaderText = "Group_ID";
+            this.groupIDDataGridViewTextBoxColumn2.Name = "groupIDDataGridViewTextBoxColumn2";
+            // 
+            // tagDataGridViewTextBoxColumn2
+            // 
+            this.tagDataGridViewTextBoxColumn2.DataPropertyName = "Tag";
+            this.tagDataGridViewTextBoxColumn2.HeaderText = "Tag";
+            this.tagDataGridViewTextBoxColumn2.Name = "tagDataGridViewTextBoxColumn2";
+            // 
+            // roomDataGridViewTextBoxColumn2
+            // 
+            this.roomDataGridViewTextBoxColumn2.DataPropertyName = "Room";
+            this.roomDataGridViewTextBoxColumn2.HeaderText = "Room";
+            this.roomDataGridViewTextBoxColumn2.Name = "roomDataGridViewTextBoxColumn2";
+            // 
+            // dayDataGridViewTextBoxColumn2
+            // 
+            this.dayDataGridViewTextBoxColumn2.DataPropertyName = "Day";
+            this.dayDataGridViewTextBoxColumn2.HeaderText = "Day";
+            this.dayDataGridViewTextBoxColumn2.Name = "dayDataGridViewTextBoxColumn2";
+            // 
+            // startTimeDataGridViewTextBoxColumn2
+            // 
+            this.startTimeDataGridViewTextBoxColumn2.DataPropertyName = "Start_Time";
+            this.startTimeDataGridViewTextBoxColumn2.HeaderText = "Start_Time";
+            this.startTimeDataGridViewTextBoxColumn2.Name = "startTimeDataGridViewTextBoxColumn2";
+            // 
+            // endTimeDataGridViewTextBoxColumn2
+            // 
+            this.endTimeDataGridViewTextBoxColumn2.DataPropertyName = "End_Time";
+            this.endTimeDataGridViewTextBoxColumn2.HeaderText = "End_Time";
+            this.endTimeDataGridViewTextBoxColumn2.Name = "endTimeDataGridViewTextBoxColumn2";
             // 
             // Form5
             // 
@@ -1769,18 +1804,12 @@ namespace TimeTable
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeTableManagementDataSet3)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeTableManagementDataSet4)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeTableManagementDataSet5)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage8.ResumeLayout(false);
@@ -1798,8 +1827,12 @@ namespace TimeTable
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeTableManagementDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionTimeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionTimeBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionTimeBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1917,14 +1950,16 @@ namespace TimeTable
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button21;
-        private TimeTableManagementDataSet2 timeTableManagementDataSet2;
-        private System.Windows.Forms.BindingSource sessionBindingSource;
-        private TimeTableManagementDataSet2TableAdapters.SessionTableAdapter sessionTableAdapter;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private TimeTableManagementDataSet3 timeTableManagementDataSet3;
-        private System.Windows.Forms.BindingSource sessionBindingSource1;
-        private TimeTableManagementDataSet3TableAdapters.SessionTableAdapter sessionTableAdapter1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sessionIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private _time_table_managementDataSet _time_table_managementDataSet;
+        private System.Windows.Forms.BindingSource sessionTimeBindingSource;
+        private _time_table_managementDataSetTableAdapters.Session_TimeTableAdapter session_TimeTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sessiontimeIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lecturerName1DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lecturerName2DataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn subjectCodeDataGridViewTextBoxColumn;
@@ -1932,32 +1967,36 @@ namespace TimeTable
         private System.Windows.Forms.DataGridViewTextBoxColumn groupIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn roomDataGridViewTextBoxColumn;
-        private TimeTableManagementDataSet4 timeTableManagementDataSet4;
-        private System.Windows.Forms.BindingSource sessionBindingSource2;
-        private TimeTableManagementDataSet4TableAdapters.SessionTableAdapter sessionTableAdapter2;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private TimeTableManagementDataSet5 timeTableManagementDataSet5;
-        private System.Windows.Forms.BindingSource sessionBindingSource3;
-        private TimeTableManagementDataSet5TableAdapters.SessionTableAdapter sessionTableAdapter3;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn29;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dayDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn startTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn endTimeDataGridViewTextBoxColumn;
+        private _time_table_managementDataSet1 _time_table_managementDataSet1;
+        private System.Windows.Forms.BindingSource sessionTimeBindingSource1;
+        private _time_table_managementDataSet1TableAdapters.Session_TimeTableAdapter session_TimeTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sessiontimeIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lecturerName1DataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lecturerName2DataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subjectCodeDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subjectNameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn groupIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn roomDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dayDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn startTimeDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn endTimeDataGridViewTextBoxColumn1;
+        private _time_table_managementDataSet2 _time_table_managementDataSet2;
+        private System.Windows.Forms.BindingSource sessionTimeBindingSource2;
+        private _time_table_managementDataSet2TableAdapters.Session_TimeTableAdapter session_TimeTableAdapter2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sessiontimeIDDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lecturerName1DataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lecturerName2DataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subjectCodeDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subjectNameDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn groupIDDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn roomDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dayDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn startTimeDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn endTimeDataGridViewTextBoxColumn2;
     }
 }
