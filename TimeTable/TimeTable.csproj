@@ -110,6 +110,8 @@
     <Compile Include="PlaceRepo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="SessionRepo.cs" />
     <Compile Include="Statistics.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +138,51 @@
     </Compile>
     <Compile Include="Working.cs" />
     <Compile Include="WorkingRepo.cs" />
+    <Compile Include="_time_table_managementDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_time_table_managementDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_time_table_managementDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_time_table_managementDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_time_table_managementDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_time_table_managementDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_time_table_managementDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_time_table_managementDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_time_table_managementDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_time_table_managementDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_time_table_managementDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_time_table_managementDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_time_table_managementDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_time_table_managementDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_time_table_managementDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_time_table_managementDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_time_table_managementDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_time_table_managementDataSet8.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,6 +247,105 @@
     </None>
     <None Include="TimeDataSet6.xss">
       <DependentUpon>TimeDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet.xsc">
+      <DependentUpon>_time_table_managementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_time_table_managementDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_time_table_managementDataSet.xss">
+      <DependentUpon>_time_table_managementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet1.xsc">
+      <DependentUpon>_time_table_managementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_time_table_managementDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_time_table_managementDataSet1.xss">
+      <DependentUpon>_time_table_managementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet2.xsc">
+      <DependentUpon>_time_table_managementDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_time_table_managementDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_time_table_managementDataSet2.xss">
+      <DependentUpon>_time_table_managementDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet3.xsc">
+      <DependentUpon>_time_table_managementDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_time_table_managementDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_time_table_managementDataSet3.xss">
+      <DependentUpon>_time_table_managementDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet4.xsc">
+      <DependentUpon>_time_table_managementDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_time_table_managementDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_time_table_managementDataSet4.xss">
+      <DependentUpon>_time_table_managementDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet5.xsc">
+      <DependentUpon>_time_table_managementDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_time_table_managementDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_time_table_managementDataSet5.xss">
+      <DependentUpon>_time_table_managementDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet6.xsc">
+      <DependentUpon>_time_table_managementDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_time_table_managementDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_time_table_managementDataSet6.xss">
+      <DependentUpon>_time_table_managementDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet7.xsc">
+      <DependentUpon>_time_table_managementDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_time_table_managementDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_time_table_managementDataSet7.xss">
+      <DependentUpon>_time_table_managementDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet8.xsc">
+      <DependentUpon>_time_table_managementDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_time_table_managementDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_time_table_managementDataSet8.xss">
+      <DependentUpon>_time_table_managementDataSet8.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

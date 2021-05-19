@@ -13,8 +13,10 @@ namespace TimeTable
 {
     public partial class Form5 : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=(localdb)\\NipunDB;Initial Catalog=Time;Integrated Security=True");
         WorkingRepo WorkingRepo = new WorkingRepo();
+        SessionRepo SessionRepo = new SessionRepo();
+        SqlConnection con = new SqlConnection("Server=tcp:time-table.database.windows.net,1433;Initial Catalog=time-table-management;Persist Security Info=False;User ID=nipun;Password=lakshan123@;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+       
         public Form5()
         {
             InitializeComponent();
@@ -239,14 +241,32 @@ namespace TimeTable
 
         private void Form5_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the '_time_table_managementDataSet8.Tag' table. You can move, or remove it, as needed.
+            //this.tagTableAdapter1.Fill(this._time_table_managementDataSet8.Tag);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet7.Subject' table. You can move, or remove it, as needed.
+            //this.subjectTableAdapter1.Fill(this._time_table_managementDataSet7.Subject);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet6.Student' table. You can move, or remove it, as needed.
+            //this.studentTableAdapter1.Fill(this._time_table_managementDataSet6.Student);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet5.Teacher' table. You can move, or remove it, as needed.
+            //this.teacherTableAdapter2.Fill(this._time_table_managementDataSet5.Teacher);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet4.Teacher' table. You can move, or remove it, as needed.
+            //this.teacherTableAdapter1.Fill(this._time_table_managementDataSet4.Teacher);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet3.Session' table. You can move, or remove it, as needed.
+            //this.sessionTableAdapter.Fill(this._time_table_managementDataSet3.Session);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet2.Session' table. You can move, or remove it, as needed.
+            //this.sessionTableAdapter.Fill(this._time_table_managementDataSet2.Session);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet1.Tag' table. You can move, or remove it, as needed.
+            //this.tagTableAdapter.Fill(this._time_table_managementDataSet1.Tag);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet.Subject' table. You can move, or remove it, as needed.
+            //this.subjectTableAdapter.Fill(this._time_table_managementDataSet.Subject);
             // TODO: This line of code loads data into the 'timeDataSet1.Student' table. You can move, or remove it, as needed.
-            this.studentTableAdapter.Fill(this.timeDataSet1.Student);
+            //this.studentTableAdapter.Fill(this.timeDataSet1.Student);
             // TODO: This line of code loads data into the 'timeDataSet.Teacher' table. You can move, or remove it, as needed.
-            this.teacherTableAdapter.Fill(this.timeDataSet.Teacher);
+            //this.teacherTableAdapter.Fill(this.timeDataSet.Teacher);
             try
             {
                 con.Open();
-                SqlCommand sc = new SqlCommand("select(Lecturer_name) from Teacher",con);
+                SqlCommand sc = new SqlCommand("select (Lecturer_name) from Teacher", con);
                 SqlDataReader reader;
                 reader = sc.ExecuteReader();
                 DataTable dt = new DataTable();
@@ -254,6 +274,14 @@ namespace TimeTable
                 dt.Load(reader);
                 comboBox24.ValueMember = "Lecturer_name";
                 comboBox24.DataSource = dt;
+
+                reader = sc.ExecuteReader();
+                DataTable ct = new DataTable();
+                ct.Columns.Add("Lecturer_name", typeof(string));
+                ct.Load(reader);
+                upcomboBox28.ValueMember = "Lecturer_name";
+                upcomboBox28.DataSource = ct;
+
                 con.Close();
             }
             catch (Exception)
@@ -269,7 +297,59 @@ namespace TimeTable
 
         private void button11_Click(object sender, EventArgs e)
         {
+            if (!string.IsNullOrEmpty(comboBox24.Text) && !string.IsNullOrEmpty(comboBox26.Text) && !string.IsNullOrEmpty(comboBox22.Text) && !string.IsNullOrEmpty(comboBox21.Text) && !string.IsNullOrEmpty(comboBox23.Text) && !string.IsNullOrEmpty(comboBox20.Text) && !string.IsNullOrEmpty(comboBox19.Text))
+            {
+                SessionRepo.Add(new Session
+                {
+                    Lecture1 = comboBox24.Text,
+                    Lecture2 = comboBox26.Text,
+                    Group_ID = comboBox22.Text,
+                    Subject = comboBox21.Text,
+                    Tag = comboBox23.Text,
+                    Noofstudent = comboBox20.Text,
+                    Duration = comboBox19.Text
+
+                });
+                comboBox24.Text = string.Empty;
+                comboBox26.Text = string.Empty;
+                comboBox22.Text = string.Empty;
+                comboBox21.Text = string.Empty;
+                comboBox23.Text = string.Empty;
+                comboBox20.Text = string.Empty;
+                comboBox19.Text = string.Empty;
+                dataGridView6.DataSource = SessionRepo.GetAll();
+            }
+        }
+
+        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tabPage6_Click(object sender, EventArgs e)
+        {
+            dataGridView4.DataSource = SessionRepo.GetAll();
+        }
+
+        private void dataGridView4_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView4.SelectedRows.Count > 0)
+            {
+                var row = dataGridView4.SelectedRows[0];
+                var session = (Session)row.DataBoundItem;
+
+            }
+        }
+
+        private void label50_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label52_Click(object sender, EventArgs e)
+        {
 
         }
     }
 }
+
