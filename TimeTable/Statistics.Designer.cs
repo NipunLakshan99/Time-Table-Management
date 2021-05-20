@@ -29,23 +29,21 @@ namespace TimeTable
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnLoard = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label43 = new System.Windows.Forms.Label();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.label43 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -54,11 +52,9 @@ namespace TimeTable
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.label6);
+            this.tabPage2.Controls.Add(this.btnClear);
             this.tabPage2.Controls.Add(this.label5);
+            this.tabPage2.Controls.Add(this.btnLoard);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.label2);
@@ -73,18 +69,88 @@ namespace TimeTable
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "ROOM , LECTUER & MODULE RELATED";
             // 
+            // btnLoard
+            // 
+            this.btnLoard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnLoard.Location = new System.Drawing.Point(625, 95);
+            this.btnLoard.Name = "btnLoard";
+            this.btnLoard.Size = new System.Drawing.Size(75, 23);
+            this.btnLoard.TabIndex = 87;
+            this.btnLoard.Text = "Loard Data";
+            this.btnLoard.UseVisualStyleBackColor = false;
+            this.btnLoard.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(68, 296);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 24);
+            this.label4.TabIndex = 82;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Location = new System.Drawing.Point(68, 125);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 24);
+            this.label3.TabIndex = 81;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(68, 181);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 24);
+            this.label2.TabIndex = 80;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(68, 241);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 24);
+            this.label1.TabIndex = 79;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(55, 95);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(274, 251);
+            this.listBox1.TabIndex = 78;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label43.Location = new System.Drawing.Point(22, 19);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(111, 24);
+            this.label43.TabIndex = 77;
+            this.label43.Text = "Dashboard";
+            // 
             // chart2
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart2.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(351, 60);
             this.chart2.Name = "chart2";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Total";
-            this.chart2.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Total";
+            this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(349, 300);
             this.chart2.TabIndex = 1;
             this.chart2.Text = "chart2";
@@ -99,124 +165,24 @@ namespace TimeTable
             this.tabControl1.Size = new System.Drawing.Size(800, 450);
             this.tabControl1.TabIndex = 0;
             // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label43.Location = new System.Drawing.Point(22, 19);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(111, 24);
-            this.label43.TabIndex = 77;
-            this.label43.Text = "Dashboard";
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(55, 95);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(274, 251);
-            this.listBox1.TabIndex = 78;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(68, 241);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 24);
-            this.label1.TabIndex = 79;
-            this.label1.Text = "No of Laboratories";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(68, 181);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 24);
-            this.label2.TabIndex = 80;
-            this.label2.Text = "No of modules";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(68, 125);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 24);
-            this.label3.TabIndex = 81;
-            this.label3.Text = "No of lectures";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(68, 296);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(165, 24);
-            this.label4.TabIndex = 82;
-            this.label4.Text = "No Lecture Halls";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(271, 296);
+            this.label5.Location = new System.Drawing.Point(206, 383);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(21, 24);
-            this.label5.TabIndex = 83;
-            this.label5.Text = "2";
+            this.label5.Size = new System.Drawing.Size(0, 13);
+            this.label5.TabIndex = 89;
             // 
-            // label6
+            // btnClear
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(271, 241);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(21, 24);
-            this.label6.TabIndex = 84;
-            this.label6.Text = "3";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label7.Location = new System.Drawing.Point(271, 181);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(21, 24);
-            this.label7.TabIndex = 85;
-            this.label7.Text = "7";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label8.Location = new System.Drawing.Point(271, 125);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(21, 24);
-            this.label8.TabIndex = 86;
-            this.label8.Text = "9";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button1.Location = new System.Drawing.Point(625, 95);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 87;
-            this.button1.Text = "Loard Data";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnClear.Location = new System.Drawing.Point(55, 373);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(116, 33);
+            this.btnClear.TabIndex = 90;
+            this.btnClear.Text = "LOARD";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // Statistics
             // 
@@ -239,16 +205,14 @@ namespace TimeTable
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLoard;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnClear;
     }
 }
