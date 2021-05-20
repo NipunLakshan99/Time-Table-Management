@@ -129,6 +129,13 @@ namespace TimeTable
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.LECTURER = new System.Windows.Forms.TabPage();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecturerNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dayDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startTimeDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.endTimeDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.notAvailabaleLecturerBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this._time_table_managementDataSet22 = new TimeTable._time_table_managementDataSet22();
             this.NATLecturerADD = new System.Windows.Forms.Button();
             this.NATLSTime = new System.Windows.Forms.TextBox();
             this.NATLETime = new System.Windows.Forms.TextBox();
@@ -142,6 +149,13 @@ namespace TimeTable
             this.label1 = new System.Windows.Forms.Label();
             this.SESSION = new System.Windows.Forms.TabPage();
             this.dataGridView8 = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sessionIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dayDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startTimeDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.endTimeDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.notAvailableSessionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this._time_table_managementDataSet23 = new TimeTable._time_table_managementDataSet23();
             this.NATSADD = new System.Windows.Forms.Button();
             this.NATSessionSTime = new System.Windows.Forms.TextBox();
             this.NATSessionETime = new System.Windows.Forms.TextBox();
@@ -155,6 +169,14 @@ namespace TimeTable
             this.NASGroup = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.dataGridView9 = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mainGroupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subGroupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dayDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startTimeDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.endTimeDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.notAvailableGroupBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this._time_table_managementDataSet24 = new TimeTable._time_table_managementDataSet24();
             this.NATGroupADD = new System.Windows.Forms.Button();
             this.NAGroupSTime = new System.Windows.Forms.TextBox();
             this.NAGroupETime = new System.Windows.Forms.TextBox();
@@ -232,14 +254,6 @@ namespace TimeTable
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.sessionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lecture1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lecture2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subjectDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tagDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.noofstudentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.durationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comboBox26 = new System.Windows.Forms.ComboBox();
             this.label30 = new System.Windows.Forms.Label();
             this.comboBox24 = new System.Windows.Forms.ComboBox();
@@ -259,62 +273,6 @@ namespace TimeTable
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.dataGridView10 = new System.Windows.Forms.DataGridView();
-            this.SessionTClear = new System.Windows.Forms.Button();
-            this.SessionID = new System.Windows.Forms.ComboBox();
-            this.sessionBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this._time_table_managementDataSet19 = new TimeTable._time_table_managementDataSet19();
-            this.SessionSTime = new System.Windows.Forms.TextBox();
-            this.SessionETime = new System.Windows.Forms.TextBox();
-            this.SessionDay = new System.Windows.Forms.ComboBox();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.SeLecturer2 = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.SeLecturer1 = new System.Windows.Forms.ComboBox();
-            this.SeTag = new System.Windows.Forms.ComboBox();
-            this.SeRoom = new System.Windows.Forms.ComboBox();
-            this.SSubName = new System.Windows.Forms.ComboBox();
-            this.SGroupID = new System.Windows.Forms.ComboBox();
-            this.SSubCode = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.STimeSave = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.sessionTableAdapter2 = new TimeTable._time_table_managementDataSet19TableAdapters.SessionTableAdapter();
-            this.teacherTableAdapter2 = new TimeTable._time_table_managementDataSet20TableAdapters.TeacherTableAdapter();
-            this._time_table_managementDataSet22 = new TimeTable._time_table_managementDataSet22();
-            this.notAvailabaleLecturerBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.not_Availabale_LecturerTableAdapter1 = new TimeTable._time_table_managementDataSet22TableAdapters.Not_Availabale_LecturerTableAdapter();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lecturerNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dayDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.startTimeDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.endTimeDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._time_table_managementDataSet23 = new TimeTable._time_table_managementDataSet23();
-            this.notAvailableSessionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.not_Available_SessionTableAdapter1 = new TimeTable._time_table_managementDataSet23TableAdapters.Not_Available_SessionTableAdapter();
-            this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sessionIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dayDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.startTimeDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.endTimeDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._time_table_managementDataSet24 = new TimeTable._time_table_managementDataSet24();
-            this.notAvailableGroupBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.not_Available_GroupTableAdapter1 = new TimeTable._time_table_managementDataSet24TableAdapters.Not_Available_GroupTableAdapter();
-            this.iDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mainGroupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subGroupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dayDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.startTimeDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.endTimeDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._time_table_managementDataSet25 = new TimeTable._time_table_managementDataSet25();
-            this.sessionTimeBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.session_TimeTableAdapter3 = new TimeTable._time_table_managementDataSet25TableAdapters.Session_TimeTableAdapter();
             this.sessiontimeIDDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lecturerName1DataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lecturerName2DataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -326,27 +284,110 @@ namespace TimeTable
             this.dayDataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.startTimeDataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.endTimeDataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._time_table_managementDataSet26 = new TimeTable._time_table_managementDataSet26();
-            this.sessionLocationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sessionLocationsTableAdapter = new TimeTable._time_table_managementDataSet26TableAdapters.SessionLocationsTableAdapter();
-            this._time_table_managementDataSet27 = new TimeTable._time_table_managementDataSet27();
+            this.sessionTimeBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this._time_table_managementDataSet25 = new TimeTable._time_table_managementDataSet25();
+            this.SessionTClear = new System.Windows.Forms.Button();
+            this.SessionID = new System.Windows.Forms.ComboBox();
+            this.sessionBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this._time_table_managementDataSet19 = new TimeTable._time_table_managementDataSet19();
+            this.SessionSTime = new System.Windows.Forms.TextBox();
+            this.SessionETime = new System.Windows.Forms.TextBox();
+            this.SessionDay = new System.Windows.Forms.ComboBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.SeLecturer2 = new System.Windows.Forms.ComboBox();
             this.sessionLocationsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.sessionLocationsTableAdapter1 = new TimeTable._time_table_managementDataSet27TableAdapters.SessionLocationsTableAdapter();
-            this._time_table_managementDataSet28 = new TimeTable._time_table_managementDataSet28();
-            this.sessionLocationsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.sessionLocationsTableAdapter2 = new TimeTable._time_table_managementDataSet28TableAdapters.SessionLocationsTableAdapter();
-            this._time_table_managementDataSet29 = new TimeTable._time_table_managementDataSet29();
-            this.sessionLocationsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.sessionLocationsTableAdapter3 = new TimeTable._time_table_managementDataSet29TableAdapters.SessionLocationsTableAdapter();
-            this._time_table_managementDataSet30 = new TimeTable._time_table_managementDataSet30();
+            this._time_table_managementDataSet27 = new TimeTable._time_table_managementDataSet27();
+            this.label15 = new System.Windows.Forms.Label();
+            this.SeLecturer1 = new System.Windows.Forms.ComboBox();
+            this.sessionLocationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._time_table_managementDataSet26 = new TimeTable._time_table_managementDataSet26();
+            this.SeTag = new System.Windows.Forms.ComboBox();
             this.sessionLocationsBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.sessionLocationsTableAdapter4 = new TimeTable._time_table_managementDataSet30TableAdapters.SessionLocationsTableAdapter();
-            this._time_table_managementDataSet31 = new TimeTable._time_table_managementDataSet31();
+            this._time_table_managementDataSet30 = new TimeTable._time_table_managementDataSet30();
+            this.SeRoom = new System.Windows.Forms.ComboBox();
+            this.sessionLocationsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this._time_table_managementDataSet29 = new TimeTable._time_table_managementDataSet29();
+            this.SSubName = new System.Windows.Forms.ComboBox();
             this.sessionLocationsBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
-            this.sessionLocationsTableAdapter5 = new TimeTable._time_table_managementDataSet31TableAdapters.SessionLocationsTableAdapter();
-            this._time_table_managementDataSet32 = new TimeTable._time_table_managementDataSet32();
+            this._time_table_managementDataSet31 = new TimeTable._time_table_managementDataSet31();
+            this.SGroupID = new System.Windows.Forms.ComboBox();
+            this.sessionLocationsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this._time_table_managementDataSet28 = new TimeTable._time_table_managementDataSet28();
+            this.SSubCode = new System.Windows.Forms.ComboBox();
             this.sessionLocationsBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this._time_table_managementDataSet32 = new TimeTable._time_table_managementDataSet32();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.STimeSave = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.sessionTableAdapter2 = new TimeTable._time_table_managementDataSet19TableAdapters.SessionTableAdapter();
+            this.teacherTableAdapter2 = new TimeTable._time_table_managementDataSet20TableAdapters.TeacherTableAdapter();
+            this.not_Availabale_LecturerTableAdapter1 = new TimeTable._time_table_managementDataSet22TableAdapters.Not_Availabale_LecturerTableAdapter();
+            this.not_Available_SessionTableAdapter1 = new TimeTable._time_table_managementDataSet23TableAdapters.Not_Available_SessionTableAdapter();
+            this.not_Available_GroupTableAdapter1 = new TimeTable._time_table_managementDataSet24TableAdapters.Not_Available_GroupTableAdapter();
+            this.session_TimeTableAdapter3 = new TimeTable._time_table_managementDataSet25TableAdapters.Session_TimeTableAdapter();
+            this.sessionLocationsTableAdapter = new TimeTable._time_table_managementDataSet26TableAdapters.SessionLocationsTableAdapter();
+            this.sessionLocationsTableAdapter1 = new TimeTable._time_table_managementDataSet27TableAdapters.SessionLocationsTableAdapter();
+            this.sessionLocationsTableAdapter2 = new TimeTable._time_table_managementDataSet28TableAdapters.SessionLocationsTableAdapter();
+            this.sessionLocationsTableAdapter3 = new TimeTable._time_table_managementDataSet29TableAdapters.SessionLocationsTableAdapter();
+            this.sessionLocationsTableAdapter4 = new TimeTable._time_table_managementDataSet30TableAdapters.SessionLocationsTableAdapter();
+            this.sessionLocationsTableAdapter5 = new TimeTable._time_table_managementDataSet31TableAdapters.SessionLocationsTableAdapter();
             this.sessionLocationsTableAdapter6 = new TimeTable._time_table_managementDataSet32TableAdapters.SessionLocationsTableAdapter();
+            this.label56 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this._time_table_managementDataSet40 = new TimeTable._time_table_managementDataSet40();
+            this.subjectBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.subjectTableAdapter1 = new TimeTable._time_table_managementDataSet40TableAdapters.SubjectTableAdapter();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label57 = new System.Windows.Forms.Label();
+            this._time_table_managementDataSet41 = new TimeTable._time_table_managementDataSet41();
+            this.sessionBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.sessionTableAdapter3 = new TimeTable._time_table_managementDataSet41TableAdapters.SessionTableAdapter();
+            this._time_table_managementDataSet42 = new TimeTable._time_table_managementDataSet42();
+            this.sessionBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.sessionTableAdapter4 = new TimeTable._time_table_managementDataSet42TableAdapters.SessionTableAdapter();
+            this._time_table_managementDataSet43 = new TimeTable._time_table_managementDataSet43();
+            this.teacherBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.teacherTableAdapter3 = new TimeTable._time_table_managementDataSet43TableAdapters.TeacherTableAdapter();
+            this._time_table_managementDataSet44 = new TimeTable._time_table_managementDataSet44();
+            this.studentBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.studentTableAdapter3 = new TimeTable._time_table_managementDataSet44TableAdapters.StudentTableAdapter();
+            this._time_table_managementDataSet45 = new TimeTable._time_table_managementDataSet45();
+            this.subjectBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.subjectTableAdapter2 = new TimeTable._time_table_managementDataSet45TableAdapters.SubjectTableAdapter();
+            this._time_table_managementDataSet46 = new TimeTable._time_table_managementDataSet46();
+            this.tagBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tagTableAdapter1 = new TimeTable._time_table_managementDataSet46TableAdapters.TagTableAdapter();
+            this._time_table_managementDataSet47 = new TimeTable._time_table_managementDataSet47();
+            this.sessionBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.sessionTableAdapter5 = new TimeTable._time_table_managementDataSet47TableAdapters.SessionTableAdapter();
+            this.sessionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecture1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecture2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectNameDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tagDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noofstudentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.durationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._time_table_managementDataSet48 = new TimeTable._time_table_managementDataSet48();
+            this.sessionBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this.sessionTableAdapter6 = new TimeTable._time_table_managementDataSet48TableAdapters.SessionTableAdapter();
+            this.sessionIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecture1DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecture2DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupIDDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectNameDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tagDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noofstudentDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.durationDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.notAvailableGroupBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource2)).BeginInit();
@@ -387,12 +428,18 @@ namespace TimeTable
             this.tabControl3.SuspendLayout();
             this.LECTURER.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.notAvailabaleLecturerBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet20)).BeginInit();
             this.SESSION.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.notAvailableSessionBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet23)).BeginInit();
             this.tabPage10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.notAvailableGroupBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet24)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tabPage2.SuspendLayout();
@@ -406,30 +453,42 @@ namespace TimeTable
             this.tabControl1.SuspendLayout();
             this.tabPage11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionTimeBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.notAvailabaleLecturerBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.notAvailableSessionBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.notAvailableGroupBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sessionTimeBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subjectBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet45)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subjectBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet46)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tagBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet47)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet48)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource6)).BeginInit();
             this.SuspendLayout();
             // 
             // not_Available_GroupTableAdapter
@@ -647,7 +706,7 @@ namespace TimeTable
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(935, 525);
+            this.tabPage7.Size = new System.Drawing.Size(952, 525);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "WORKING DAYS & HOURS";
             // 
@@ -659,7 +718,7 @@ namespace TimeTable
             this.tabControl2.Location = new System.Drawing.Point(3, 3);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(929, 519);
+            this.tabControl2.Size = new System.Drawing.Size(946, 519);
             this.tabControl2.TabIndex = 0;
             // 
             // tabPage8
@@ -688,7 +747,7 @@ namespace TimeTable
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(921, 493);
+            this.tabPage8.Size = new System.Drawing.Size(938, 493);
             this.tabPage8.TabIndex = 0;
             this.tabPage8.Text = "ADD WORKING DAYS";
             this.tabPage8.Click += new System.EventHandler(this.tabPage8_Click);
@@ -1260,7 +1319,7 @@ namespace TimeTable
             this.tabPage4.Controls.Add(this.tabControl3);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(935, 525);
+            this.tabPage4.Size = new System.Drawing.Size(952, 525);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "NOT AVAILABLE TIMES";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -1274,7 +1333,7 @@ namespace TimeTable
             this.tabControl3.Location = new System.Drawing.Point(0, 0);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(935, 525);
+            this.tabControl3.Size = new System.Drawing.Size(952, 525);
             this.tabControl3.TabIndex = 0;
             // 
             // LECTURER
@@ -1293,7 +1352,7 @@ namespace TimeTable
             this.LECTURER.Location = new System.Drawing.Point(4, 22);
             this.LECTURER.Name = "LECTURER";
             this.LECTURER.Padding = new System.Windows.Forms.Padding(3);
-            this.LECTURER.Size = new System.Drawing.Size(927, 499);
+            this.LECTURER.Size = new System.Drawing.Size(944, 499);
             this.LECTURER.TabIndex = 0;
             this.LECTURER.Text = "LECTURER";
             this.LECTURER.Click += new System.EventHandler(this.LECTURER_Click);
@@ -1313,6 +1372,47 @@ namespace TimeTable
             this.dataGridView7.Name = "dataGridView7";
             this.dataGridView7.Size = new System.Drawing.Size(543, 150);
             this.dataGridView7.TabIndex = 107;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // lecturerNameDataGridViewTextBoxColumn
+            // 
+            this.lecturerNameDataGridViewTextBoxColumn.DataPropertyName = "Lecturer_Name";
+            this.lecturerNameDataGridViewTextBoxColumn.HeaderText = "Lecturer_Name";
+            this.lecturerNameDataGridViewTextBoxColumn.Name = "lecturerNameDataGridViewTextBoxColumn";
+            // 
+            // dayDataGridViewTextBoxColumn3
+            // 
+            this.dayDataGridViewTextBoxColumn3.DataPropertyName = "Day";
+            this.dayDataGridViewTextBoxColumn3.HeaderText = "Day";
+            this.dayDataGridViewTextBoxColumn3.Name = "dayDataGridViewTextBoxColumn3";
+            // 
+            // startTimeDataGridViewTextBoxColumn3
+            // 
+            this.startTimeDataGridViewTextBoxColumn3.DataPropertyName = "Start_Time";
+            this.startTimeDataGridViewTextBoxColumn3.HeaderText = "Start_Time";
+            this.startTimeDataGridViewTextBoxColumn3.Name = "startTimeDataGridViewTextBoxColumn3";
+            // 
+            // endTimeDataGridViewTextBoxColumn3
+            // 
+            this.endTimeDataGridViewTextBoxColumn3.DataPropertyName = "End_Time";
+            this.endTimeDataGridViewTextBoxColumn3.HeaderText = "End_Time";
+            this.endTimeDataGridViewTextBoxColumn3.Name = "endTimeDataGridViewTextBoxColumn3";
+            // 
+            // notAvailabaleLecturerBindingSource1
+            // 
+            this.notAvailabaleLecturerBindingSource1.DataMember = "Not_Availabale_Lecturer";
+            this.notAvailabaleLecturerBindingSource1.DataSource = this._time_table_managementDataSet22;
+            // 
+            // _time_table_managementDataSet22
+            // 
+            this._time_table_managementDataSet22.DataSetName = "_time_table_managementDataSet22";
+            this._time_table_managementDataSet22.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // NATLecturerADD
             // 
@@ -1456,6 +1556,47 @@ namespace TimeTable
             this.dataGridView8.Name = "dataGridView8";
             this.dataGridView8.Size = new System.Drawing.Size(541, 150);
             this.dataGridView8.TabIndex = 117;
+            // 
+            // iDDataGridViewTextBoxColumn1
+            // 
+            this.iDDataGridViewTextBoxColumn1.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn1.Name = "iDDataGridViewTextBoxColumn1";
+            this.iDDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // sessionIDDataGridViewTextBoxColumn1
+            // 
+            this.sessionIDDataGridViewTextBoxColumn1.DataPropertyName = "Session_ID";
+            this.sessionIDDataGridViewTextBoxColumn1.HeaderText = "Session_ID";
+            this.sessionIDDataGridViewTextBoxColumn1.Name = "sessionIDDataGridViewTextBoxColumn1";
+            // 
+            // dayDataGridViewTextBoxColumn4
+            // 
+            this.dayDataGridViewTextBoxColumn4.DataPropertyName = "Day";
+            this.dayDataGridViewTextBoxColumn4.HeaderText = "Day";
+            this.dayDataGridViewTextBoxColumn4.Name = "dayDataGridViewTextBoxColumn4";
+            // 
+            // startTimeDataGridViewTextBoxColumn4
+            // 
+            this.startTimeDataGridViewTextBoxColumn4.DataPropertyName = "Start_Time";
+            this.startTimeDataGridViewTextBoxColumn4.HeaderText = "Start_Time";
+            this.startTimeDataGridViewTextBoxColumn4.Name = "startTimeDataGridViewTextBoxColumn4";
+            // 
+            // endTimeDataGridViewTextBoxColumn4
+            // 
+            this.endTimeDataGridViewTextBoxColumn4.DataPropertyName = "End_Time";
+            this.endTimeDataGridViewTextBoxColumn4.HeaderText = "End_Time";
+            this.endTimeDataGridViewTextBoxColumn4.Name = "endTimeDataGridViewTextBoxColumn4";
+            // 
+            // notAvailableSessionBindingSource1
+            // 
+            this.notAvailableSessionBindingSource1.DataMember = "Not_Available_Session";
+            this.notAvailableSessionBindingSource1.DataSource = this._time_table_managementDataSet23;
+            // 
+            // _time_table_managementDataSet23
+            // 
+            this._time_table_managementDataSet23.DataSetName = "_time_table_managementDataSet23";
+            this._time_table_managementDataSet23.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // NATSADD
             // 
@@ -1614,6 +1755,53 @@ namespace TimeTable
             this.dataGridView9.Size = new System.Drawing.Size(644, 150);
             this.dataGridView9.TabIndex = 117;
             // 
+            // iDDataGridViewTextBoxColumn2
+            // 
+            this.iDDataGridViewTextBoxColumn2.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn2.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn2.Name = "iDDataGridViewTextBoxColumn2";
+            this.iDDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // mainGroupDataGridViewTextBoxColumn
+            // 
+            this.mainGroupDataGridViewTextBoxColumn.DataPropertyName = "Main_Group";
+            this.mainGroupDataGridViewTextBoxColumn.HeaderText = "Main_Group";
+            this.mainGroupDataGridViewTextBoxColumn.Name = "mainGroupDataGridViewTextBoxColumn";
+            // 
+            // subGroupDataGridViewTextBoxColumn
+            // 
+            this.subGroupDataGridViewTextBoxColumn.DataPropertyName = "Sub_Group";
+            this.subGroupDataGridViewTextBoxColumn.HeaderText = "Sub_Group";
+            this.subGroupDataGridViewTextBoxColumn.Name = "subGroupDataGridViewTextBoxColumn";
+            // 
+            // dayDataGridViewTextBoxColumn5
+            // 
+            this.dayDataGridViewTextBoxColumn5.DataPropertyName = "Day";
+            this.dayDataGridViewTextBoxColumn5.HeaderText = "Day";
+            this.dayDataGridViewTextBoxColumn5.Name = "dayDataGridViewTextBoxColumn5";
+            // 
+            // startTimeDataGridViewTextBoxColumn5
+            // 
+            this.startTimeDataGridViewTextBoxColumn5.DataPropertyName = "Start_Time";
+            this.startTimeDataGridViewTextBoxColumn5.HeaderText = "Start_Time";
+            this.startTimeDataGridViewTextBoxColumn5.Name = "startTimeDataGridViewTextBoxColumn5";
+            // 
+            // endTimeDataGridViewTextBoxColumn5
+            // 
+            this.endTimeDataGridViewTextBoxColumn5.DataPropertyName = "End_Time";
+            this.endTimeDataGridViewTextBoxColumn5.HeaderText = "End_Time";
+            this.endTimeDataGridViewTextBoxColumn5.Name = "endTimeDataGridViewTextBoxColumn5";
+            // 
+            // notAvailableGroupBindingSource1
+            // 
+            this.notAvailableGroupBindingSource1.DataMember = "Not_Available_Group";
+            this.notAvailableGroupBindingSource1.DataSource = this._time_table_managementDataSet24;
+            // 
+            // _time_table_managementDataSet24
+            // 
+            this._time_table_managementDataSet24.DataSetName = "_time_table_managementDataSet24";
+            this._time_table_managementDataSet24.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // NATGroupADD
             // 
             this.NATGroupADD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
@@ -1718,7 +1906,7 @@ namespace TimeTable
             this.tabPage3.Controls.Add(this.nonoverlappingbtnAdd);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(935, 525);
+            this.tabPage3.Size = new System.Drawing.Size(952, 525);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "NON-OVERLAPPING";
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
@@ -1843,7 +2031,7 @@ namespace TimeTable
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(935, 525);
+            this.tabPage2.Size = new System.Drawing.Size(952, 525);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "PARALLEL";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
@@ -1968,7 +2156,7 @@ namespace TimeTable
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(935, 525);
+            this.tabPage1.Size = new System.Drawing.Size(952, 525);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "CONSECUTIVE";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
@@ -2087,6 +2275,8 @@ namespace TimeTable
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.tabPage6.Controls.Add(this.comboBox2);
+            this.tabPage6.Controls.Add(this.label57);
             this.tabPage6.Controls.Add(this.txtSessionid);
             this.tabPage6.Controls.Add(this.label52);
             this.tabPage6.Controls.Add(this.upcomboBox27);
@@ -2110,7 +2300,7 @@ namespace TimeTable
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(935, 525);
+            this.tabPage6.Size = new System.Drawing.Size(952, 525);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "MANAGE SESSION";
             this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
@@ -2174,7 +2364,7 @@ namespace TimeTable
             "3hr",
             "4hr",
             ""});
-            this.upcomboBox29.Location = new System.Drawing.Point(520, 191);
+            this.upcomboBox29.Location = new System.Drawing.Point(550, 209);
             this.upcomboBox29.Name = "upcomboBox29";
             this.upcomboBox29.Size = new System.Drawing.Size(193, 21);
             this.upcomboBox29.TabIndex = 98;
@@ -2190,7 +2380,7 @@ namespace TimeTable
             "200",
             "500",
             "1000"});
-            this.upcomboBox30.Location = new System.Drawing.Point(520, 135);
+            this.upcomboBox30.Location = new System.Drawing.Point(550, 157);
             this.upcomboBox30.Name = "upcomboBox30";
             this.upcomboBox30.Size = new System.Drawing.Size(193, 21);
             this.upcomboBox30.TabIndex = 97;
@@ -2200,9 +2390,9 @@ namespace TimeTable
             this.upcomboBox31.DataSource = this.subjectBindingSource;
             this.upcomboBox31.DisplayMember = "Subject_Code";
             this.upcomboBox31.FormattingEnabled = true;
-            this.upcomboBox31.Location = new System.Drawing.Point(550, 15);
+            this.upcomboBox31.Location = new System.Drawing.Point(550, 21);
             this.upcomboBox31.Name = "upcomboBox31";
-            this.upcomboBox31.Size = new System.Drawing.Size(163, 21);
+            this.upcomboBox31.Size = new System.Drawing.Size(193, 21);
             this.upcomboBox31.TabIndex = 96;
             this.upcomboBox31.ValueMember = "Subject_Code";
             // 
@@ -2222,7 +2412,7 @@ namespace TimeTable
             this.label45.AutoSize = true;
             this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label45.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label45.Location = new System.Drawing.Point(381, 135);
+            this.label45.Location = new System.Drawing.Point(401, 158);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(133, 20);
             this.label45.TabIndex = 94;
@@ -2233,7 +2423,7 @@ namespace TimeTable
             this.upcomboBox33.DataSource = this.tagBindingSource;
             this.upcomboBox33.DisplayMember = "Related_Tag";
             this.upcomboBox33.FormattingEnabled = true;
-            this.upcomboBox33.Location = new System.Drawing.Point(520, 77);
+            this.upcomboBox33.Location = new System.Drawing.Point(550, 103);
             this.upcomboBox33.Name = "upcomboBox33";
             this.upcomboBox33.Size = new System.Drawing.Size(193, 21);
             this.upcomboBox33.TabIndex = 93;
@@ -2244,7 +2434,7 @@ namespace TimeTable
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label47.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label47.Location = new System.Drawing.Point(384, 189);
+            this.label47.Location = new System.Drawing.Point(421, 207);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(101, 20);
             this.label47.TabIndex = 92;
@@ -2255,7 +2445,7 @@ namespace TimeTable
             this.label48.AutoSize = true;
             this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label48.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label48.Location = new System.Drawing.Point(381, 78);
+            this.label48.Location = new System.Drawing.Point(392, 104);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(130, 20);
             this.label48.TabIndex = 91;
@@ -2266,11 +2456,11 @@ namespace TimeTable
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label49.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label49.Location = new System.Drawing.Point(360, 15);
+            this.label49.Location = new System.Drawing.Point(372, 58);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(162, 20);
+            this.label49.Size = new System.Drawing.Size(217, 20);
             this.label49.TabIndex = 90;
-            this.label49.Text = "SELECT SUBJECT";
+            this.label49.Text = "SELECT SUBJECT NAME";
             // 
             // label50
             // 
@@ -2298,7 +2488,7 @@ namespace TimeTable
             // btnrefresh
             // 
             this.btnrefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnrefresh.Location = new System.Drawing.Point(719, 126);
+            this.btnrefresh.Location = new System.Drawing.Point(535, 258);
             this.btnrefresh.Name = "btnrefresh";
             this.btnrefresh.Size = new System.Drawing.Size(82, 30);
             this.btnrefresh.TabIndex = 86;
@@ -2309,7 +2499,7 @@ namespace TimeTable
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnUpdate.Location = new System.Drawing.Point(722, 13);
+            this.btnUpdate.Location = new System.Drawing.Point(208, 258);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(79, 30);
             this.btnUpdate.TabIndex = 85;
@@ -2319,7 +2509,7 @@ namespace TimeTable
             // btnDel
             // 
             this.btnDel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnDel.Location = new System.Drawing.Point(722, 68);
+            this.btnDel.Location = new System.Drawing.Point(385, 258);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(79, 30);
             this.btnDel.TabIndex = 84;
@@ -2328,10 +2518,22 @@ namespace TimeTable
             // 
             // dataGridView4
             // 
+            this.dataGridView4.AutoGenerateColumns = false;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(12, 251);
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.sessionIDDataGridViewTextBoxColumn2,
+            this.lecture1DataGridViewTextBoxColumn1,
+            this.lecture2DataGridViewTextBoxColumn1,
+            this.groupIDDataGridViewTextBoxColumn5,
+            this.subjectIDDataGridViewTextBoxColumn1,
+            this.subjectNameDataGridViewTextBoxColumn5,
+            this.tagDataGridViewTextBoxColumn5,
+            this.noofstudentDataGridViewTextBoxColumn1,
+            this.durationDataGridViewTextBoxColumn1});
+            this.dataGridView4.DataSource = this.sessionBindingSource6;
+            this.dataGridView4.Location = new System.Drawing.Point(16, 304);
             this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(783, 162);
+            this.dataGridView4.Size = new System.Drawing.Size(727, 162);
             this.dataGridView4.TabIndex = 82;
             this.dataGridView4.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellClick);
             this.dataGridView4.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellContentClick);
@@ -2339,6 +2541,8 @@ namespace TimeTable
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.tabPage5.Controls.Add(this.comboBox1);
+            this.tabPage5.Controls.Add(this.label56);
             this.tabPage5.Controls.Add(this.dataGridView6);
             this.tabPage5.Controls.Add(this.comboBox26);
             this.tabPage5.Controls.Add(this.label30);
@@ -2359,7 +2563,7 @@ namespace TimeTable
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(935, 525);
+            this.tabPage5.Size = new System.Drawing.Size(952, 525);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "ADD SESSION";
             // 
@@ -2372,68 +2576,20 @@ namespace TimeTable
             this.lecture1DataGridViewTextBoxColumn,
             this.lecture2DataGridViewTextBoxColumn,
             this.groupIDDataGridViewTextBoxColumn,
-            this.subjectDataGridViewTextBoxColumn,
+            this.subjectIDDataGridViewTextBoxColumn,
+            this.subjectNameDataGridViewTextBoxColumn4,
             this.tagDataGridViewTextBoxColumn,
             this.noofstudentDataGridViewTextBoxColumn,
             this.durationDataGridViewTextBoxColumn});
-            this.dataGridView6.DataSource = this.sessionBindingSource;
-            this.dataGridView6.Location = new System.Drawing.Point(27, 238);
+            this.dataGridView6.DataSource = this.sessionBindingSource5;
+            this.dataGridView6.Location = new System.Drawing.Point(44, 310);
             this.dataGridView6.Name = "dataGridView6";
             this.dataGridView6.Size = new System.Drawing.Size(708, 150);
             this.dataGridView6.TabIndex = 58;
             // 
-            // sessionIDDataGridViewTextBoxColumn
-            // 
-            this.sessionIDDataGridViewTextBoxColumn.DataPropertyName = "Session_ID";
-            this.sessionIDDataGridViewTextBoxColumn.HeaderText = "Session_ID";
-            this.sessionIDDataGridViewTextBoxColumn.Name = "sessionIDDataGridViewTextBoxColumn";
-            this.sessionIDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // lecture1DataGridViewTextBoxColumn
-            // 
-            this.lecture1DataGridViewTextBoxColumn.DataPropertyName = "Lecture1";
-            this.lecture1DataGridViewTextBoxColumn.HeaderText = "Lecture1";
-            this.lecture1DataGridViewTextBoxColumn.Name = "lecture1DataGridViewTextBoxColumn";
-            // 
-            // lecture2DataGridViewTextBoxColumn
-            // 
-            this.lecture2DataGridViewTextBoxColumn.DataPropertyName = "Lecture2";
-            this.lecture2DataGridViewTextBoxColumn.HeaderText = "Lecture2";
-            this.lecture2DataGridViewTextBoxColumn.Name = "lecture2DataGridViewTextBoxColumn";
-            // 
-            // groupIDDataGridViewTextBoxColumn
-            // 
-            this.groupIDDataGridViewTextBoxColumn.DataPropertyName = "Group_ID";
-            this.groupIDDataGridViewTextBoxColumn.HeaderText = "Group_ID";
-            this.groupIDDataGridViewTextBoxColumn.Name = "groupIDDataGridViewTextBoxColumn";
-            // 
-            // subjectDataGridViewTextBoxColumn
-            // 
-            this.subjectDataGridViewTextBoxColumn.DataPropertyName = "Subject";
-            this.subjectDataGridViewTextBoxColumn.HeaderText = "Subject";
-            this.subjectDataGridViewTextBoxColumn.Name = "subjectDataGridViewTextBoxColumn";
-            // 
-            // tagDataGridViewTextBoxColumn
-            // 
-            this.tagDataGridViewTextBoxColumn.DataPropertyName = "Tag";
-            this.tagDataGridViewTextBoxColumn.HeaderText = "Tag";
-            this.tagDataGridViewTextBoxColumn.Name = "tagDataGridViewTextBoxColumn";
-            // 
-            // noofstudentDataGridViewTextBoxColumn
-            // 
-            this.noofstudentDataGridViewTextBoxColumn.DataPropertyName = "Noofstudent";
-            this.noofstudentDataGridViewTextBoxColumn.HeaderText = "Noofstudent";
-            this.noofstudentDataGridViewTextBoxColumn.Name = "noofstudentDataGridViewTextBoxColumn";
-            // 
-            // durationDataGridViewTextBoxColumn
-            // 
-            this.durationDataGridViewTextBoxColumn.DataPropertyName = "Duration";
-            this.durationDataGridViewTextBoxColumn.HeaderText = "Duration";
-            this.durationDataGridViewTextBoxColumn.Name = "durationDataGridViewTextBoxColumn";
-            // 
             // comboBox26
             // 
-            this.comboBox26.DataSource = this.teacherBindingSource;
+            this.comboBox26.DataSource = this.teacherBindingSource3;
             this.comboBox26.DisplayMember = "Lecturer_name";
             this.comboBox26.FormattingEnabled = true;
             this.comboBox26.Location = new System.Drawing.Point(208, 72);
@@ -2472,7 +2628,7 @@ namespace TimeTable
             "3hr",
             "4hr",
             ""});
-            this.comboBox19.Location = new System.Drawing.Point(520, 132);
+            this.comboBox19.Location = new System.Drawing.Point(520, 191);
             this.comboBox19.Name = "comboBox19";
             this.comboBox19.Size = new System.Drawing.Size(193, 21);
             this.comboBox19.TabIndex = 54;
@@ -2488,39 +2644,39 @@ namespace TimeTable
             "200",
             "500",
             "1000"});
-            this.comboBox20.Location = new System.Drawing.Point(520, 74);
+            this.comboBox20.Location = new System.Drawing.Point(520, 132);
             this.comboBox20.Name = "comboBox20";
             this.comboBox20.Size = new System.Drawing.Size(193, 21);
             this.comboBox20.TabIndex = 53;
             // 
             // comboBox21
             // 
-            this.comboBox21.DataSource = this.subjectBindingSource;
+            this.comboBox21.DataSource = this.subjectBindingSource2;
             this.comboBox21.DisplayMember = "Subject_Code";
             this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Location = new System.Drawing.Point(208, 194);
+            this.comboBox21.Location = new System.Drawing.Point(238, 194);
             this.comboBox21.Name = "comboBox21";
-            this.comboBox21.Size = new System.Drawing.Size(146, 21);
+            this.comboBox21.Size = new System.Drawing.Size(116, 21);
             this.comboBox21.TabIndex = 52;
             this.comboBox21.ValueMember = "Subject_Code";
             // 
             // comboBox22
             // 
-            this.comboBox22.DataSource = this.studentBindingSource;
-            this.comboBox22.DisplayMember = "Sub_Group_ID";
+            this.comboBox22.DataSource = this.studentBindingSource3;
+            this.comboBox22.DisplayMember = "Group_ID";
             this.comboBox22.FormattingEnabled = true;
             this.comboBox22.Location = new System.Drawing.Point(208, 135);
             this.comboBox22.Name = "comboBox22";
             this.comboBox22.Size = new System.Drawing.Size(146, 21);
             this.comboBox22.TabIndex = 51;
-            this.comboBox22.ValueMember = "Sub_Group_ID";
+            this.comboBox22.ValueMember = "Group_ID";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label25.Location = new System.Drawing.Point(384, 75);
+            this.label25.Location = new System.Drawing.Point(381, 133);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(133, 20);
             this.label25.TabIndex = 49;
@@ -2529,10 +2685,10 @@ namespace TimeTable
             // 
             // comboBox23
             // 
-            this.comboBox23.DataSource = this.tagBindingSource;
+            this.comboBox23.DataSource = this.tagBindingSource1;
             this.comboBox23.DisplayMember = "Related_Tag";
             this.comboBox23.FormattingEnabled = true;
-            this.comboBox23.Location = new System.Drawing.Point(520, 11);
+            this.comboBox23.Location = new System.Drawing.Point(517, 69);
             this.comboBox23.Name = "comboBox23";
             this.comboBox23.Size = new System.Drawing.Size(193, 21);
             this.comboBox23.TabIndex = 45;
@@ -2541,7 +2697,7 @@ namespace TimeTable
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnClear.Location = new System.Drawing.Point(619, 182);
+            this.btnClear.Location = new System.Drawing.Point(439, 249);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(116, 33);
             this.btnClear.TabIndex = 44;
@@ -2551,7 +2707,7 @@ namespace TimeTable
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnSave.Location = new System.Drawing.Point(460, 182);
+            this.btnSave.Location = new System.Drawing.Point(238, 249);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(116, 33);
             this.btnSave.TabIndex = 43;
@@ -2564,7 +2720,7 @@ namespace TimeTable
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label22.Location = new System.Drawing.Point(384, 130);
+            this.label22.Location = new System.Drawing.Point(384, 192);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(101, 20);
             this.label22.TabIndex = 41;
@@ -2575,7 +2731,7 @@ namespace TimeTable
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label23.Location = new System.Drawing.Point(384, 13);
+            this.label23.Location = new System.Drawing.Point(381, 73);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(130, 20);
             this.label23.TabIndex = 40;
@@ -2588,9 +2744,9 @@ namespace TimeTable
             this.label24.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label24.Location = new System.Drawing.Point(12, 192);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(162, 20);
+            this.label24.Size = new System.Drawing.Size(217, 20);
             this.label24.TabIndex = 39;
-            this.label24.Text = "SELECT SUBJECT";
+            this.label24.Text = "SELECT SUBJECT CODE";
             // 
             // label27
             // 
@@ -2624,10 +2780,10 @@ namespace TimeTable
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage11);
-            this.tabControl1.Location = new System.Drawing.Point(-4, 1);
+            this.tabControl1.Location = new System.Drawing.Point(-2, -1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(943, 551);
+            this.tabControl1.Size = new System.Drawing.Size(960, 551);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage11
@@ -2661,7 +2817,7 @@ namespace TimeTable
             this.tabPage11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage11.Location = new System.Drawing.Point(4, 22);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(935, 525);
+            this.tabPage11.Size = new System.Drawing.Size(952, 525);
             this.tabPage11.TabIndex = 7;
             this.tabPage11.Text = "ADD SESSION TIME & DAY";
             this.tabPage11.Click += new System.EventHandler(this.tabPage11_Click);
@@ -2685,8 +2841,85 @@ namespace TimeTable
             this.dataGridView10.DataSource = this.sessionTimeBindingSource3;
             this.dataGridView10.Location = new System.Drawing.Point(20, 269);
             this.dataGridView10.Name = "dataGridView10";
-            this.dataGridView10.Size = new System.Drawing.Size(903, 219);
+            this.dataGridView10.Size = new System.Drawing.Size(717, 219);
             this.dataGridView10.TabIndex = 129;
+            // 
+            // sessiontimeIDDataGridViewTextBoxColumn3
+            // 
+            this.sessiontimeIDDataGridViewTextBoxColumn3.DataPropertyName = "Sessiontime_ID";
+            this.sessiontimeIDDataGridViewTextBoxColumn3.HeaderText = "Sessiontime_ID";
+            this.sessiontimeIDDataGridViewTextBoxColumn3.Name = "sessiontimeIDDataGridViewTextBoxColumn3";
+            this.sessiontimeIDDataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // lecturerName1DataGridViewTextBoxColumn3
+            // 
+            this.lecturerName1DataGridViewTextBoxColumn3.DataPropertyName = "Lecturer_Name_1";
+            this.lecturerName1DataGridViewTextBoxColumn3.HeaderText = "Lecturer_Name_1";
+            this.lecturerName1DataGridViewTextBoxColumn3.Name = "lecturerName1DataGridViewTextBoxColumn3";
+            // 
+            // lecturerName2DataGridViewTextBoxColumn3
+            // 
+            this.lecturerName2DataGridViewTextBoxColumn3.DataPropertyName = "Lecturer_Name_2";
+            this.lecturerName2DataGridViewTextBoxColumn3.HeaderText = "Lecturer_Name_2";
+            this.lecturerName2DataGridViewTextBoxColumn3.Name = "lecturerName2DataGridViewTextBoxColumn3";
+            // 
+            // subjectCodeDataGridViewTextBoxColumn3
+            // 
+            this.subjectCodeDataGridViewTextBoxColumn3.DataPropertyName = "Subject_Code";
+            this.subjectCodeDataGridViewTextBoxColumn3.HeaderText = "Subject_Code";
+            this.subjectCodeDataGridViewTextBoxColumn3.Name = "subjectCodeDataGridViewTextBoxColumn3";
+            // 
+            // subjectNameDataGridViewTextBoxColumn3
+            // 
+            this.subjectNameDataGridViewTextBoxColumn3.DataPropertyName = "Subject_Name";
+            this.subjectNameDataGridViewTextBoxColumn3.HeaderText = "Subject_Name";
+            this.subjectNameDataGridViewTextBoxColumn3.Name = "subjectNameDataGridViewTextBoxColumn3";
+            // 
+            // groupIDDataGridViewTextBoxColumn4
+            // 
+            this.groupIDDataGridViewTextBoxColumn4.DataPropertyName = "Group_ID";
+            this.groupIDDataGridViewTextBoxColumn4.HeaderText = "Group_ID";
+            this.groupIDDataGridViewTextBoxColumn4.Name = "groupIDDataGridViewTextBoxColumn4";
+            // 
+            // tagDataGridViewTextBoxColumn4
+            // 
+            this.tagDataGridViewTextBoxColumn4.DataPropertyName = "Tag";
+            this.tagDataGridViewTextBoxColumn4.HeaderText = "Tag";
+            this.tagDataGridViewTextBoxColumn4.Name = "tagDataGridViewTextBoxColumn4";
+            // 
+            // roomDataGridViewTextBoxColumn3
+            // 
+            this.roomDataGridViewTextBoxColumn3.DataPropertyName = "Room";
+            this.roomDataGridViewTextBoxColumn3.HeaderText = "Room";
+            this.roomDataGridViewTextBoxColumn3.Name = "roomDataGridViewTextBoxColumn3";
+            // 
+            // dayDataGridViewTextBoxColumn6
+            // 
+            this.dayDataGridViewTextBoxColumn6.DataPropertyName = "Day";
+            this.dayDataGridViewTextBoxColumn6.HeaderText = "Day";
+            this.dayDataGridViewTextBoxColumn6.Name = "dayDataGridViewTextBoxColumn6";
+            // 
+            // startTimeDataGridViewTextBoxColumn6
+            // 
+            this.startTimeDataGridViewTextBoxColumn6.DataPropertyName = "Start_Time";
+            this.startTimeDataGridViewTextBoxColumn6.HeaderText = "Start_Time";
+            this.startTimeDataGridViewTextBoxColumn6.Name = "startTimeDataGridViewTextBoxColumn6";
+            // 
+            // endTimeDataGridViewTextBoxColumn6
+            // 
+            this.endTimeDataGridViewTextBoxColumn6.DataPropertyName = "End_Time";
+            this.endTimeDataGridViewTextBoxColumn6.HeaderText = "End_Time";
+            this.endTimeDataGridViewTextBoxColumn6.Name = "endTimeDataGridViewTextBoxColumn6";
+            // 
+            // sessionTimeBindingSource3
+            // 
+            this.sessionTimeBindingSource3.DataMember = "Session_Time";
+            this.sessionTimeBindingSource3.DataSource = this._time_table_managementDataSet25;
+            // 
+            // _time_table_managementDataSet25
+            // 
+            this._time_table_managementDataSet25.DataSetName = "_time_table_managementDataSet25";
+            this._time_table_managementDataSet25.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // SessionTClear
             // 
@@ -2797,6 +3030,16 @@ namespace TimeTable
             this.SeLecturer2.TabIndex = 118;
             this.SeLecturer2.ValueMember = "Lecturer_2";
             // 
+            // sessionLocationsBindingSource1
+            // 
+            this.sessionLocationsBindingSource1.DataMember = "SessionLocations";
+            this.sessionLocationsBindingSource1.DataSource = this._time_table_managementDataSet27;
+            // 
+            // _time_table_managementDataSet27
+            // 
+            this._time_table_managementDataSet27.DataSetName = "_time_table_managementDataSet27";
+            this._time_table_managementDataSet27.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -2820,6 +3063,16 @@ namespace TimeTable
             this.SeLecturer1.TabIndex = 116;
             this.SeLecturer1.ValueMember = "Lecturer_1";
             // 
+            // sessionLocationsBindingSource
+            // 
+            this.sessionLocationsBindingSource.DataMember = "SessionLocations";
+            this.sessionLocationsBindingSource.DataSource = this._time_table_managementDataSet26;
+            // 
+            // _time_table_managementDataSet26
+            // 
+            this._time_table_managementDataSet26.DataSetName = "_time_table_managementDataSet26";
+            this._time_table_managementDataSet26.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // SeTag
             // 
             this.SeTag.DataSource = this.sessionLocationsBindingSource4;
@@ -2830,6 +3083,16 @@ namespace TimeTable
             this.SeTag.Size = new System.Drawing.Size(130, 24);
             this.SeTag.TabIndex = 115;
             this.SeTag.ValueMember = "Tag";
+            // 
+            // sessionLocationsBindingSource4
+            // 
+            this.sessionLocationsBindingSource4.DataMember = "SessionLocations";
+            this.sessionLocationsBindingSource4.DataSource = this._time_table_managementDataSet30;
+            // 
+            // _time_table_managementDataSet30
+            // 
+            this._time_table_managementDataSet30.DataSetName = "_time_table_managementDataSet30";
+            this._time_table_managementDataSet30.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // SeRoom
             // 
@@ -2842,6 +3105,16 @@ namespace TimeTable
             this.SeRoom.TabIndex = 114;
             this.SeRoom.ValueMember = "Room";
             // 
+            // sessionLocationsBindingSource3
+            // 
+            this.sessionLocationsBindingSource3.DataMember = "SessionLocations";
+            this.sessionLocationsBindingSource3.DataSource = this._time_table_managementDataSet29;
+            // 
+            // _time_table_managementDataSet29
+            // 
+            this._time_table_managementDataSet29.DataSetName = "_time_table_managementDataSet29";
+            this._time_table_managementDataSet29.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // SSubName
             // 
             this.SSubName.DataSource = this.sessionLocationsBindingSource5;
@@ -2852,6 +3125,16 @@ namespace TimeTable
             this.SSubName.Size = new System.Drawing.Size(131, 24);
             this.SSubName.TabIndex = 113;
             this.SSubName.ValueMember = "Subject_Name";
+            // 
+            // sessionLocationsBindingSource5
+            // 
+            this.sessionLocationsBindingSource5.DataMember = "SessionLocations";
+            this.sessionLocationsBindingSource5.DataSource = this._time_table_managementDataSet31;
+            // 
+            // _time_table_managementDataSet31
+            // 
+            this._time_table_managementDataSet31.DataSetName = "_time_table_managementDataSet31";
+            this._time_table_managementDataSet31.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // SGroupID
             // 
@@ -2864,6 +3147,16 @@ namespace TimeTable
             this.SGroupID.TabIndex = 112;
             this.SGroupID.ValueMember = "Group_ID";
             // 
+            // sessionLocationsBindingSource2
+            // 
+            this.sessionLocationsBindingSource2.DataMember = "SessionLocations";
+            this.sessionLocationsBindingSource2.DataSource = this._time_table_managementDataSet28;
+            // 
+            // _time_table_managementDataSet28
+            // 
+            this._time_table_managementDataSet28.DataSetName = "_time_table_managementDataSet28";
+            this._time_table_managementDataSet28.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // SSubCode
             // 
             this.SSubCode.DataSource = this.sessionLocationsBindingSource6;
@@ -2874,6 +3167,16 @@ namespace TimeTable
             this.SSubCode.Size = new System.Drawing.Size(130, 24);
             this.SSubCode.TabIndex = 110;
             this.SSubCode.ValueMember = "Subject_Code";
+            // 
+            // sessionLocationsBindingSource6
+            // 
+            this.sessionLocationsBindingSource6.DataMember = "SessionLocations";
+            this.sessionLocationsBindingSource6.DataSource = this._time_table_managementDataSet32;
+            // 
+            // _time_table_managementDataSet32
+            // 
+            this._time_table_managementDataSet32.DataSetName = "_time_table_managementDataSet32";
+            this._time_table_managementDataSet32.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label17
             // 
@@ -2978,331 +3281,336 @@ namespace TimeTable
             // 
             this.teacherTableAdapter2.ClearBeforeFill = true;
             // 
-            // _time_table_managementDataSet22
-            // 
-            this._time_table_managementDataSet22.DataSetName = "_time_table_managementDataSet22";
-            this._time_table_managementDataSet22.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // notAvailabaleLecturerBindingSource1
-            // 
-            this.notAvailabaleLecturerBindingSource1.DataMember = "Not_Availabale_Lecturer";
-            this.notAvailabaleLecturerBindingSource1.DataSource = this._time_table_managementDataSet22;
-            // 
             // not_Availabale_LecturerTableAdapter1
             // 
             this.not_Availabale_LecturerTableAdapter1.ClearBeforeFill = true;
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // lecturerNameDataGridViewTextBoxColumn
-            // 
-            this.lecturerNameDataGridViewTextBoxColumn.DataPropertyName = "Lecturer_Name";
-            this.lecturerNameDataGridViewTextBoxColumn.HeaderText = "Lecturer_Name";
-            this.lecturerNameDataGridViewTextBoxColumn.Name = "lecturerNameDataGridViewTextBoxColumn";
-            // 
-            // dayDataGridViewTextBoxColumn3
-            // 
-            this.dayDataGridViewTextBoxColumn3.DataPropertyName = "Day";
-            this.dayDataGridViewTextBoxColumn3.HeaderText = "Day";
-            this.dayDataGridViewTextBoxColumn3.Name = "dayDataGridViewTextBoxColumn3";
-            // 
-            // startTimeDataGridViewTextBoxColumn3
-            // 
-            this.startTimeDataGridViewTextBoxColumn3.DataPropertyName = "Start_Time";
-            this.startTimeDataGridViewTextBoxColumn3.HeaderText = "Start_Time";
-            this.startTimeDataGridViewTextBoxColumn3.Name = "startTimeDataGridViewTextBoxColumn3";
-            // 
-            // endTimeDataGridViewTextBoxColumn3
-            // 
-            this.endTimeDataGridViewTextBoxColumn3.DataPropertyName = "End_Time";
-            this.endTimeDataGridViewTextBoxColumn3.HeaderText = "End_Time";
-            this.endTimeDataGridViewTextBoxColumn3.Name = "endTimeDataGridViewTextBoxColumn3";
-            // 
-            // _time_table_managementDataSet23
-            // 
-            this._time_table_managementDataSet23.DataSetName = "_time_table_managementDataSet23";
-            this._time_table_managementDataSet23.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // notAvailableSessionBindingSource1
-            // 
-            this.notAvailableSessionBindingSource1.DataMember = "Not_Available_Session";
-            this.notAvailableSessionBindingSource1.DataSource = this._time_table_managementDataSet23;
             // 
             // not_Available_SessionTableAdapter1
             // 
             this.not_Available_SessionTableAdapter1.ClearBeforeFill = true;
             // 
-            // iDDataGridViewTextBoxColumn1
-            // 
-            this.iDDataGridViewTextBoxColumn1.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn1.Name = "iDDataGridViewTextBoxColumn1";
-            this.iDDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // sessionIDDataGridViewTextBoxColumn1
-            // 
-            this.sessionIDDataGridViewTextBoxColumn1.DataPropertyName = "Session_ID";
-            this.sessionIDDataGridViewTextBoxColumn1.HeaderText = "Session_ID";
-            this.sessionIDDataGridViewTextBoxColumn1.Name = "sessionIDDataGridViewTextBoxColumn1";
-            // 
-            // dayDataGridViewTextBoxColumn4
-            // 
-            this.dayDataGridViewTextBoxColumn4.DataPropertyName = "Day";
-            this.dayDataGridViewTextBoxColumn4.HeaderText = "Day";
-            this.dayDataGridViewTextBoxColumn4.Name = "dayDataGridViewTextBoxColumn4";
-            // 
-            // startTimeDataGridViewTextBoxColumn4
-            // 
-            this.startTimeDataGridViewTextBoxColumn4.DataPropertyName = "Start_Time";
-            this.startTimeDataGridViewTextBoxColumn4.HeaderText = "Start_Time";
-            this.startTimeDataGridViewTextBoxColumn4.Name = "startTimeDataGridViewTextBoxColumn4";
-            // 
-            // endTimeDataGridViewTextBoxColumn4
-            // 
-            this.endTimeDataGridViewTextBoxColumn4.DataPropertyName = "End_Time";
-            this.endTimeDataGridViewTextBoxColumn4.HeaderText = "End_Time";
-            this.endTimeDataGridViewTextBoxColumn4.Name = "endTimeDataGridViewTextBoxColumn4";
-            // 
-            // _time_table_managementDataSet24
-            // 
-            this._time_table_managementDataSet24.DataSetName = "_time_table_managementDataSet24";
-            this._time_table_managementDataSet24.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // notAvailableGroupBindingSource1
-            // 
-            this.notAvailableGroupBindingSource1.DataMember = "Not_Available_Group";
-            this.notAvailableGroupBindingSource1.DataSource = this._time_table_managementDataSet24;
-            // 
             // not_Available_GroupTableAdapter1
             // 
             this.not_Available_GroupTableAdapter1.ClearBeforeFill = true;
-            // 
-            // iDDataGridViewTextBoxColumn2
-            // 
-            this.iDDataGridViewTextBoxColumn2.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn2.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn2.Name = "iDDataGridViewTextBoxColumn2";
-            this.iDDataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // mainGroupDataGridViewTextBoxColumn
-            // 
-            this.mainGroupDataGridViewTextBoxColumn.DataPropertyName = "Main_Group";
-            this.mainGroupDataGridViewTextBoxColumn.HeaderText = "Main_Group";
-            this.mainGroupDataGridViewTextBoxColumn.Name = "mainGroupDataGridViewTextBoxColumn";
-            // 
-            // subGroupDataGridViewTextBoxColumn
-            // 
-            this.subGroupDataGridViewTextBoxColumn.DataPropertyName = "Sub_Group";
-            this.subGroupDataGridViewTextBoxColumn.HeaderText = "Sub_Group";
-            this.subGroupDataGridViewTextBoxColumn.Name = "subGroupDataGridViewTextBoxColumn";
-            // 
-            // dayDataGridViewTextBoxColumn5
-            // 
-            this.dayDataGridViewTextBoxColumn5.DataPropertyName = "Day";
-            this.dayDataGridViewTextBoxColumn5.HeaderText = "Day";
-            this.dayDataGridViewTextBoxColumn5.Name = "dayDataGridViewTextBoxColumn5";
-            // 
-            // startTimeDataGridViewTextBoxColumn5
-            // 
-            this.startTimeDataGridViewTextBoxColumn5.DataPropertyName = "Start_Time";
-            this.startTimeDataGridViewTextBoxColumn5.HeaderText = "Start_Time";
-            this.startTimeDataGridViewTextBoxColumn5.Name = "startTimeDataGridViewTextBoxColumn5";
-            // 
-            // endTimeDataGridViewTextBoxColumn5
-            // 
-            this.endTimeDataGridViewTextBoxColumn5.DataPropertyName = "End_Time";
-            this.endTimeDataGridViewTextBoxColumn5.HeaderText = "End_Time";
-            this.endTimeDataGridViewTextBoxColumn5.Name = "endTimeDataGridViewTextBoxColumn5";
-            // 
-            // _time_table_managementDataSet25
-            // 
-            this._time_table_managementDataSet25.DataSetName = "_time_table_managementDataSet25";
-            this._time_table_managementDataSet25.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sessionTimeBindingSource3
-            // 
-            this.sessionTimeBindingSource3.DataMember = "Session_Time";
-            this.sessionTimeBindingSource3.DataSource = this._time_table_managementDataSet25;
             // 
             // session_TimeTableAdapter3
             // 
             this.session_TimeTableAdapter3.ClearBeforeFill = true;
             // 
-            // sessiontimeIDDataGridViewTextBoxColumn3
-            // 
-            this.sessiontimeIDDataGridViewTextBoxColumn3.DataPropertyName = "Sessiontime_ID";
-            this.sessiontimeIDDataGridViewTextBoxColumn3.HeaderText = "Sessiontime_ID";
-            this.sessiontimeIDDataGridViewTextBoxColumn3.Name = "sessiontimeIDDataGridViewTextBoxColumn3";
-            this.sessiontimeIDDataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // lecturerName1DataGridViewTextBoxColumn3
-            // 
-            this.lecturerName1DataGridViewTextBoxColumn3.DataPropertyName = "Lecturer_Name_1";
-            this.lecturerName1DataGridViewTextBoxColumn3.HeaderText = "Lecturer_Name_1";
-            this.lecturerName1DataGridViewTextBoxColumn3.Name = "lecturerName1DataGridViewTextBoxColumn3";
-            // 
-            // lecturerName2DataGridViewTextBoxColumn3
-            // 
-            this.lecturerName2DataGridViewTextBoxColumn3.DataPropertyName = "Lecturer_Name_2";
-            this.lecturerName2DataGridViewTextBoxColumn3.HeaderText = "Lecturer_Name_2";
-            this.lecturerName2DataGridViewTextBoxColumn3.Name = "lecturerName2DataGridViewTextBoxColumn3";
-            // 
-            // subjectCodeDataGridViewTextBoxColumn3
-            // 
-            this.subjectCodeDataGridViewTextBoxColumn3.DataPropertyName = "Subject_Code";
-            this.subjectCodeDataGridViewTextBoxColumn3.HeaderText = "Subject_Code";
-            this.subjectCodeDataGridViewTextBoxColumn3.Name = "subjectCodeDataGridViewTextBoxColumn3";
-            // 
-            // subjectNameDataGridViewTextBoxColumn3
-            // 
-            this.subjectNameDataGridViewTextBoxColumn3.DataPropertyName = "Subject_Name";
-            this.subjectNameDataGridViewTextBoxColumn3.HeaderText = "Subject_Name";
-            this.subjectNameDataGridViewTextBoxColumn3.Name = "subjectNameDataGridViewTextBoxColumn3";
-            // 
-            // groupIDDataGridViewTextBoxColumn4
-            // 
-            this.groupIDDataGridViewTextBoxColumn4.DataPropertyName = "Group_ID";
-            this.groupIDDataGridViewTextBoxColumn4.HeaderText = "Group_ID";
-            this.groupIDDataGridViewTextBoxColumn4.Name = "groupIDDataGridViewTextBoxColumn4";
-            // 
-            // tagDataGridViewTextBoxColumn4
-            // 
-            this.tagDataGridViewTextBoxColumn4.DataPropertyName = "Tag";
-            this.tagDataGridViewTextBoxColumn4.HeaderText = "Tag";
-            this.tagDataGridViewTextBoxColumn4.Name = "tagDataGridViewTextBoxColumn4";
-            // 
-            // roomDataGridViewTextBoxColumn3
-            // 
-            this.roomDataGridViewTextBoxColumn3.DataPropertyName = "Room";
-            this.roomDataGridViewTextBoxColumn3.HeaderText = "Room";
-            this.roomDataGridViewTextBoxColumn3.Name = "roomDataGridViewTextBoxColumn3";
-            // 
-            // dayDataGridViewTextBoxColumn6
-            // 
-            this.dayDataGridViewTextBoxColumn6.DataPropertyName = "Day";
-            this.dayDataGridViewTextBoxColumn6.HeaderText = "Day";
-            this.dayDataGridViewTextBoxColumn6.Name = "dayDataGridViewTextBoxColumn6";
-            // 
-            // startTimeDataGridViewTextBoxColumn6
-            // 
-            this.startTimeDataGridViewTextBoxColumn6.DataPropertyName = "Start_Time";
-            this.startTimeDataGridViewTextBoxColumn6.HeaderText = "Start_Time";
-            this.startTimeDataGridViewTextBoxColumn6.Name = "startTimeDataGridViewTextBoxColumn6";
-            // 
-            // endTimeDataGridViewTextBoxColumn6
-            // 
-            this.endTimeDataGridViewTextBoxColumn6.DataPropertyName = "End_Time";
-            this.endTimeDataGridViewTextBoxColumn6.HeaderText = "End_Time";
-            this.endTimeDataGridViewTextBoxColumn6.Name = "endTimeDataGridViewTextBoxColumn6";
-            // 
-            // _time_table_managementDataSet26
-            // 
-            this._time_table_managementDataSet26.DataSetName = "_time_table_managementDataSet26";
-            this._time_table_managementDataSet26.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sessionLocationsBindingSource
-            // 
-            this.sessionLocationsBindingSource.DataMember = "SessionLocations";
-            this.sessionLocationsBindingSource.DataSource = this._time_table_managementDataSet26;
-            // 
             // sessionLocationsTableAdapter
             // 
             this.sessionLocationsTableAdapter.ClearBeforeFill = true;
-            // 
-            // _time_table_managementDataSet27
-            // 
-            this._time_table_managementDataSet27.DataSetName = "_time_table_managementDataSet27";
-            this._time_table_managementDataSet27.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sessionLocationsBindingSource1
-            // 
-            this.sessionLocationsBindingSource1.DataMember = "SessionLocations";
-            this.sessionLocationsBindingSource1.DataSource = this._time_table_managementDataSet27;
             // 
             // sessionLocationsTableAdapter1
             // 
             this.sessionLocationsTableAdapter1.ClearBeforeFill = true;
             // 
-            // _time_table_managementDataSet28
-            // 
-            this._time_table_managementDataSet28.DataSetName = "_time_table_managementDataSet28";
-            this._time_table_managementDataSet28.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sessionLocationsBindingSource2
-            // 
-            this.sessionLocationsBindingSource2.DataMember = "SessionLocations";
-            this.sessionLocationsBindingSource2.DataSource = this._time_table_managementDataSet28;
-            // 
             // sessionLocationsTableAdapter2
             // 
             this.sessionLocationsTableAdapter2.ClearBeforeFill = true;
-            // 
-            // _time_table_managementDataSet29
-            // 
-            this._time_table_managementDataSet29.DataSetName = "_time_table_managementDataSet29";
-            this._time_table_managementDataSet29.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sessionLocationsBindingSource3
-            // 
-            this.sessionLocationsBindingSource3.DataMember = "SessionLocations";
-            this.sessionLocationsBindingSource3.DataSource = this._time_table_managementDataSet29;
             // 
             // sessionLocationsTableAdapter3
             // 
             this.sessionLocationsTableAdapter3.ClearBeforeFill = true;
             // 
-            // _time_table_managementDataSet30
-            // 
-            this._time_table_managementDataSet30.DataSetName = "_time_table_managementDataSet30";
-            this._time_table_managementDataSet30.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sessionLocationsBindingSource4
-            // 
-            this.sessionLocationsBindingSource4.DataMember = "SessionLocations";
-            this.sessionLocationsBindingSource4.DataSource = this._time_table_managementDataSet30;
-            // 
             // sessionLocationsTableAdapter4
             // 
             this.sessionLocationsTableAdapter4.ClearBeforeFill = true;
-            // 
-            // _time_table_managementDataSet31
-            // 
-            this._time_table_managementDataSet31.DataSetName = "_time_table_managementDataSet31";
-            this._time_table_managementDataSet31.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sessionLocationsBindingSource5
-            // 
-            this.sessionLocationsBindingSource5.DataMember = "SessionLocations";
-            this.sessionLocationsBindingSource5.DataSource = this._time_table_managementDataSet31;
             // 
             // sessionLocationsTableAdapter5
             // 
             this.sessionLocationsTableAdapter5.ClearBeforeFill = true;
             // 
-            // _time_table_managementDataSet32
-            // 
-            this._time_table_managementDataSet32.DataSetName = "_time_table_managementDataSet32";
-            this._time_table_managementDataSet32.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sessionLocationsBindingSource6
-            // 
-            this.sessionLocationsBindingSource6.DataMember = "SessionLocations";
-            this.sessionLocationsBindingSource6.DataSource = this._time_table_managementDataSet32;
-            // 
             // sessionLocationsTableAdapter6
             // 
             this.sessionLocationsTableAdapter6.ClearBeforeFill = true;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label56.Location = new System.Drawing.Point(381, 13);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(217, 20);
+            this.label56.TabIndex = 59;
+            this.label56.Text = "SELECT SUBJECT NAME";
+            this.label56.Click += new System.EventHandler(this.label56_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataSource = this.subjectBindingSource1;
+            this.comboBox1.DisplayMember = "Subject_name";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(605, 13);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(105, 21);
+            this.comboBox1.TabIndex = 60;
+            this.comboBox1.ValueMember = "Subject_name";
+            // 
+            // _time_table_managementDataSet40
+            // 
+            this._time_table_managementDataSet40.DataSetName = "_time_table_managementDataSet40";
+            this._time_table_managementDataSet40.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // subjectBindingSource1
+            // 
+            this.subjectBindingSource1.DataMember = "Subject";
+            this.subjectBindingSource1.DataSource = this._time_table_managementDataSet40;
+            // 
+            // subjectTableAdapter1
+            // 
+            this.subjectTableAdapter1.ClearBeforeFill = true;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DataSource = this.subjectBindingSource1;
+            this.comboBox2.DisplayMember = "Subject_name";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(596, 57);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(147, 21);
+            this.comboBox2.TabIndex = 105;
+            this.comboBox2.ValueMember = "Subject_name";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label57.Location = new System.Drawing.Point(372, 21);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(217, 20);
+            this.label57.TabIndex = 104;
+            this.label57.Text = "SELECT SUBJECT CODE\r\n";
+            // 
+            // _time_table_managementDataSet41
+            // 
+            this._time_table_managementDataSet41.DataSetName = "_time_table_managementDataSet41";
+            this._time_table_managementDataSet41.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sessionBindingSource3
+            // 
+            this.sessionBindingSource3.DataMember = "Session";
+            this.sessionBindingSource3.DataSource = this._time_table_managementDataSet41;
+            // 
+            // sessionTableAdapter3
+            // 
+            this.sessionTableAdapter3.ClearBeforeFill = true;
+            // 
+            // _time_table_managementDataSet42
+            // 
+            this._time_table_managementDataSet42.DataSetName = "_time_table_managementDataSet42";
+            this._time_table_managementDataSet42.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sessionBindingSource4
+            // 
+            this.sessionBindingSource4.DataMember = "Session";
+            this.sessionBindingSource4.DataSource = this._time_table_managementDataSet42;
+            // 
+            // sessionTableAdapter4
+            // 
+            this.sessionTableAdapter4.ClearBeforeFill = true;
+            // 
+            // _time_table_managementDataSet43
+            // 
+            this._time_table_managementDataSet43.DataSetName = "_time_table_managementDataSet43";
+            this._time_table_managementDataSet43.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // teacherBindingSource3
+            // 
+            this.teacherBindingSource3.DataMember = "Teacher";
+            this.teacherBindingSource3.DataSource = this._time_table_managementDataSet43;
+            // 
+            // teacherTableAdapter3
+            // 
+            this.teacherTableAdapter3.ClearBeforeFill = true;
+            // 
+            // _time_table_managementDataSet44
+            // 
+            this._time_table_managementDataSet44.DataSetName = "_time_table_managementDataSet44";
+            this._time_table_managementDataSet44.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // studentBindingSource3
+            // 
+            this.studentBindingSource3.DataMember = "Student";
+            this.studentBindingSource3.DataSource = this._time_table_managementDataSet44;
+            // 
+            // studentTableAdapter3
+            // 
+            this.studentTableAdapter3.ClearBeforeFill = true;
+            // 
+            // _time_table_managementDataSet45
+            // 
+            this._time_table_managementDataSet45.DataSetName = "_time_table_managementDataSet45";
+            this._time_table_managementDataSet45.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // subjectBindingSource2
+            // 
+            this.subjectBindingSource2.DataMember = "Subject";
+            this.subjectBindingSource2.DataSource = this._time_table_managementDataSet45;
+            // 
+            // subjectTableAdapter2
+            // 
+            this.subjectTableAdapter2.ClearBeforeFill = true;
+            // 
+            // _time_table_managementDataSet46
+            // 
+            this._time_table_managementDataSet46.DataSetName = "_time_table_managementDataSet46";
+            this._time_table_managementDataSet46.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tagBindingSource1
+            // 
+            this.tagBindingSource1.DataMember = "Tag";
+            this.tagBindingSource1.DataSource = this._time_table_managementDataSet46;
+            // 
+            // tagTableAdapter1
+            // 
+            this.tagTableAdapter1.ClearBeforeFill = true;
+            // 
+            // _time_table_managementDataSet47
+            // 
+            this._time_table_managementDataSet47.DataSetName = "_time_table_managementDataSet47";
+            this._time_table_managementDataSet47.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sessionBindingSource5
+            // 
+            this.sessionBindingSource5.DataMember = "Session";
+            this.sessionBindingSource5.DataSource = this._time_table_managementDataSet47;
+            // 
+            // sessionTableAdapter5
+            // 
+            this.sessionTableAdapter5.ClearBeforeFill = true;
+            // 
+            // sessionIDDataGridViewTextBoxColumn
+            // 
+            this.sessionIDDataGridViewTextBoxColumn.DataPropertyName = "Session_ID";
+            this.sessionIDDataGridViewTextBoxColumn.HeaderText = "Session_ID";
+            this.sessionIDDataGridViewTextBoxColumn.Name = "sessionIDDataGridViewTextBoxColumn";
+            this.sessionIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // lecture1DataGridViewTextBoxColumn
+            // 
+            this.lecture1DataGridViewTextBoxColumn.DataPropertyName = "Lecture1";
+            this.lecture1DataGridViewTextBoxColumn.HeaderText = "Lecture1";
+            this.lecture1DataGridViewTextBoxColumn.Name = "lecture1DataGridViewTextBoxColumn";
+            // 
+            // lecture2DataGridViewTextBoxColumn
+            // 
+            this.lecture2DataGridViewTextBoxColumn.DataPropertyName = "Lecture2";
+            this.lecture2DataGridViewTextBoxColumn.HeaderText = "Lecture2";
+            this.lecture2DataGridViewTextBoxColumn.Name = "lecture2DataGridViewTextBoxColumn";
+            // 
+            // groupIDDataGridViewTextBoxColumn
+            // 
+            this.groupIDDataGridViewTextBoxColumn.DataPropertyName = "Group_ID";
+            this.groupIDDataGridViewTextBoxColumn.HeaderText = "Group_ID";
+            this.groupIDDataGridViewTextBoxColumn.Name = "groupIDDataGridViewTextBoxColumn";
+            // 
+            // subjectIDDataGridViewTextBoxColumn
+            // 
+            this.subjectIDDataGridViewTextBoxColumn.DataPropertyName = "Subject_ID";
+            this.subjectIDDataGridViewTextBoxColumn.HeaderText = "Subject_ID";
+            this.subjectIDDataGridViewTextBoxColumn.Name = "subjectIDDataGridViewTextBoxColumn";
+            // 
+            // subjectNameDataGridViewTextBoxColumn4
+            // 
+            this.subjectNameDataGridViewTextBoxColumn4.DataPropertyName = "Subject_Name";
+            this.subjectNameDataGridViewTextBoxColumn4.HeaderText = "Subject_Name";
+            this.subjectNameDataGridViewTextBoxColumn4.Name = "subjectNameDataGridViewTextBoxColumn4";
+            // 
+            // tagDataGridViewTextBoxColumn
+            // 
+            this.tagDataGridViewTextBoxColumn.DataPropertyName = "Tag";
+            this.tagDataGridViewTextBoxColumn.HeaderText = "Tag";
+            this.tagDataGridViewTextBoxColumn.Name = "tagDataGridViewTextBoxColumn";
+            // 
+            // noofstudentDataGridViewTextBoxColumn
+            // 
+            this.noofstudentDataGridViewTextBoxColumn.DataPropertyName = "Noofstudent";
+            this.noofstudentDataGridViewTextBoxColumn.HeaderText = "Noofstudent";
+            this.noofstudentDataGridViewTextBoxColumn.Name = "noofstudentDataGridViewTextBoxColumn";
+            // 
+            // durationDataGridViewTextBoxColumn
+            // 
+            this.durationDataGridViewTextBoxColumn.DataPropertyName = "Duration";
+            this.durationDataGridViewTextBoxColumn.HeaderText = "Duration";
+            this.durationDataGridViewTextBoxColumn.Name = "durationDataGridViewTextBoxColumn";
+            // 
+            // _time_table_managementDataSet48
+            // 
+            this._time_table_managementDataSet48.DataSetName = "_time_table_managementDataSet48";
+            this._time_table_managementDataSet48.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sessionBindingSource6
+            // 
+            this.sessionBindingSource6.DataMember = "Session";
+            this.sessionBindingSource6.DataSource = this._time_table_managementDataSet48;
+            // 
+            // sessionTableAdapter6
+            // 
+            this.sessionTableAdapter6.ClearBeforeFill = true;
+            // 
+            // sessionIDDataGridViewTextBoxColumn2
+            // 
+            this.sessionIDDataGridViewTextBoxColumn2.DataPropertyName = "Session_ID";
+            this.sessionIDDataGridViewTextBoxColumn2.HeaderText = "Session_ID";
+            this.sessionIDDataGridViewTextBoxColumn2.Name = "sessionIDDataGridViewTextBoxColumn2";
+            this.sessionIDDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // lecture1DataGridViewTextBoxColumn1
+            // 
+            this.lecture1DataGridViewTextBoxColumn1.DataPropertyName = "Lecture1";
+            this.lecture1DataGridViewTextBoxColumn1.HeaderText = "Lecture1";
+            this.lecture1DataGridViewTextBoxColumn1.Name = "lecture1DataGridViewTextBoxColumn1";
+            // 
+            // lecture2DataGridViewTextBoxColumn1
+            // 
+            this.lecture2DataGridViewTextBoxColumn1.DataPropertyName = "Lecture2";
+            this.lecture2DataGridViewTextBoxColumn1.HeaderText = "Lecture2";
+            this.lecture2DataGridViewTextBoxColumn1.Name = "lecture2DataGridViewTextBoxColumn1";
+            // 
+            // groupIDDataGridViewTextBoxColumn5
+            // 
+            this.groupIDDataGridViewTextBoxColumn5.DataPropertyName = "Group_ID";
+            this.groupIDDataGridViewTextBoxColumn5.HeaderText = "Group_ID";
+            this.groupIDDataGridViewTextBoxColumn5.Name = "groupIDDataGridViewTextBoxColumn5";
+            // 
+            // subjectIDDataGridViewTextBoxColumn1
+            // 
+            this.subjectIDDataGridViewTextBoxColumn1.DataPropertyName = "Subject_ID";
+            this.subjectIDDataGridViewTextBoxColumn1.HeaderText = "Subject_ID";
+            this.subjectIDDataGridViewTextBoxColumn1.Name = "subjectIDDataGridViewTextBoxColumn1";
+            // 
+            // subjectNameDataGridViewTextBoxColumn5
+            // 
+            this.subjectNameDataGridViewTextBoxColumn5.DataPropertyName = "Subject_Name";
+            this.subjectNameDataGridViewTextBoxColumn5.HeaderText = "Subject_Name";
+            this.subjectNameDataGridViewTextBoxColumn5.Name = "subjectNameDataGridViewTextBoxColumn5";
+            // 
+            // tagDataGridViewTextBoxColumn5
+            // 
+            this.tagDataGridViewTextBoxColumn5.DataPropertyName = "Tag";
+            this.tagDataGridViewTextBoxColumn5.HeaderText = "Tag";
+            this.tagDataGridViewTextBoxColumn5.Name = "tagDataGridViewTextBoxColumn5";
+            // 
+            // noofstudentDataGridViewTextBoxColumn1
+            // 
+            this.noofstudentDataGridViewTextBoxColumn1.DataPropertyName = "Noofstudent";
+            this.noofstudentDataGridViewTextBoxColumn1.HeaderText = "Noofstudent";
+            this.noofstudentDataGridViewTextBoxColumn1.Name = "noofstudentDataGridViewTextBoxColumn1";
+            // 
+            // durationDataGridViewTextBoxColumn1
+            // 
+            this.durationDataGridViewTextBoxColumn1.DataPropertyName = "Duration";
+            this.durationDataGridViewTextBoxColumn1.HeaderText = "Duration";
+            this.durationDataGridViewTextBoxColumn1.Name = "durationDataGridViewTextBoxColumn1";
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 538);
+            this.ClientSize = new System.Drawing.Size(809, 538);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form5";
             this.Text = "Form5";
@@ -3350,14 +3658,20 @@ namespace TimeTable
             this.LECTURER.ResumeLayout(false);
             this.LECTURER.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.notAvailabaleLecturerBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet20)).EndInit();
             this.SESSION.ResumeLayout(false);
             this.SESSION.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.notAvailableSessionBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet23)).EndInit();
             this.tabPage10.ResumeLayout(false);
             this.tabPage10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.notAvailableGroupBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet24)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.tabPage2.ResumeLayout(false);
@@ -3374,30 +3688,42 @@ namespace TimeTable
             this.tabPage11.ResumeLayout(false);
             this.tabPage11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionTimeBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.notAvailabaleLecturerBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.notAvailableSessionBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.notAvailableGroupBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sessionTimeBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sessionLocationsBindingSource6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subjectBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teacherBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet45)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subjectBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet46)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tagBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet47)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet48)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3604,14 +3930,6 @@ namespace TimeTable
         private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.DataGridView dataGridView6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sessionIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lecture1DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lecture2DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn groupIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn subjectDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn noofstudentDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn durationDataGridViewTextBoxColumn;
         private System.Windows.Forms.ComboBox comboBox26;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.ComboBox comboBox24;
@@ -3721,5 +4039,54 @@ namespace TimeTable
         private _time_table_managementDataSet32 _time_table_managementDataSet32;
         private System.Windows.Forms.BindingSource sessionLocationsBindingSource6;
         private _time_table_managementDataSet32TableAdapters.SessionLocationsTableAdapter sessionLocationsTableAdapter6;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private _time_table_managementDataSet40 _time_table_managementDataSet40;
+        private System.Windows.Forms.BindingSource subjectBindingSource1;
+        private _time_table_managementDataSet40TableAdapters.SubjectTableAdapter subjectTableAdapter1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label57;
+        private _time_table_managementDataSet41 _time_table_managementDataSet41;
+        private System.Windows.Forms.BindingSource sessionBindingSource3;
+        private _time_table_managementDataSet41TableAdapters.SessionTableAdapter sessionTableAdapter3;
+        private _time_table_managementDataSet42 _time_table_managementDataSet42;
+        private System.Windows.Forms.BindingSource sessionBindingSource4;
+        private _time_table_managementDataSet42TableAdapters.SessionTableAdapter sessionTableAdapter4;
+        private _time_table_managementDataSet43 _time_table_managementDataSet43;
+        private System.Windows.Forms.BindingSource teacherBindingSource3;
+        private _time_table_managementDataSet43TableAdapters.TeacherTableAdapter teacherTableAdapter3;
+        private _time_table_managementDataSet44 _time_table_managementDataSet44;
+        private System.Windows.Forms.BindingSource studentBindingSource3;
+        private _time_table_managementDataSet44TableAdapters.StudentTableAdapter studentTableAdapter3;
+        private _time_table_managementDataSet45 _time_table_managementDataSet45;
+        private System.Windows.Forms.BindingSource subjectBindingSource2;
+        private _time_table_managementDataSet45TableAdapters.SubjectTableAdapter subjectTableAdapter2;
+        private _time_table_managementDataSet46 _time_table_managementDataSet46;
+        private System.Windows.Forms.BindingSource tagBindingSource1;
+        private _time_table_managementDataSet46TableAdapters.TagTableAdapter tagTableAdapter1;
+        private _time_table_managementDataSet47 _time_table_managementDataSet47;
+        private System.Windows.Forms.BindingSource sessionBindingSource5;
+        private _time_table_managementDataSet47TableAdapters.SessionTableAdapter sessionTableAdapter5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sessionIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lecture1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lecture2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn groupIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subjectIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subjectNameDataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn noofstudentDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn durationDataGridViewTextBoxColumn;
+        private _time_table_managementDataSet48 _time_table_managementDataSet48;
+        private System.Windows.Forms.BindingSource sessionBindingSource6;
+        private _time_table_managementDataSet48TableAdapters.SessionTableAdapter sessionTableAdapter6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sessionIDDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lecture1DataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lecture2DataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn groupIDDataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subjectIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subjectNameDataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn noofstudentDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn durationDataGridViewTextBoxColumn1;
     }
 }

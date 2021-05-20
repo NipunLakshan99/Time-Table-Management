@@ -13,6 +13,7 @@ namespace TimeTable
     public partial class Form3 : Form
     {
         StudentRepo studentRepo = new StudentRepo();
+        LocationGroupRepo LocationGroupRepo = new LocationGroupRepo();
         public Form3()
         {
             InitializeComponent();
@@ -159,6 +160,50 @@ namespace TimeTable
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the '_time_table_managementDataSet63.LocationGroup' table. You can move, or remove it, as needed.
+            this.locationGroupTableAdapter.Fill(this._time_table_managementDataSet63.LocationGroup);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet62.Location' table. You can move, or remove it, as needed.
+            this.locationTableAdapter.Fill(this._time_table_managementDataSet62.Location);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet61.Student' table. You can move, or remove it, as needed.
+            this.studentTableAdapter1.Fill(this._time_table_managementDataSet61.Student);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet60.Student' table. You can move, or remove it, as needed.
+            this.studentTableAdapter.Fill(this._time_table_managementDataSet60.Student);
+
+        }
+
+        private void btnSaveG_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(cmbGroup.Text) || !string.IsNullOrEmpty(cmbSubGroup.Text) && !string.IsNullOrEmpty(cmbGRoom.Text))
+            {
+                LocationGroupRepo.Add(new LocationGroup
+                {
+                    Group_ID = cmbGroup.Text,
+                    Sub_Group_ID = cmbSubGroup.Text,
+                    Room_Name = cmbGRoom.Text,
+
+                });
+                cmbGroup.Text = string.Empty;
+                cmbSubGroup.Text = string.Empty;
+                cmbGRoom.Text = string.Empty;
+
+                dataGridView6.DataSource = LocationGroupRepo.GetAll();
+            }
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+            dataGridView6.DataSource = LocationGroupRepo.GetAll();
+        }
+
+        private void btnClearG_Click(object sender, EventArgs e)
+        {
+            cmbGroup.Text = string.Empty;
+            cmbSubGroup.Text = string.Empty;
+            cmbGRoom.Text = string.Empty;
         }
     }
 }

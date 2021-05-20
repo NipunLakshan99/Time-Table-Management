@@ -66,48 +66,92 @@ namespace TimeTable
             this.LNATStart_Time = new System.Windows.Forms.TextBox();
             this.LNATEnd_Time = new System.Windows.Forms.TextBox();
             this.LNATRoom = new System.Windows.Forms.ComboBox();
+            this.locationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._time_table_managementDataSet21 = new TimeTable._time_table_managementDataSet21();
             this.LNATDay = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.btnSClear = new System.Windows.Forms.Button();
+            this.btnSAdd = new System.Windows.Forms.Button();
+            this.txt2 = new System.Windows.Forms.TextBox();
+            this.txt7 = new System.Windows.Forms.TextBox();
+            this.txt3 = new System.Windows.Forms.TextBox();
+            this.txt4 = new System.Windows.Forms.TextBox();
+            this.txt5 = new System.Windows.Forms.TextBox();
+            this.txt6 = new System.Windows.Forms.TextBox();
+            this.txt1 = new System.Windows.Forms.TextBox();
+            this.cmbSession = new System.Windows.Forms.ComboBox();
+            this.sessionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._time_table_managementDataSet33 = new TimeTable._time_table_managementDataSet33();
+            this.cmbSRoom = new System.Windows.Forms.ComboBox();
+            this.locationBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this._time_table_managementDataSet39 = new TimeTable._time_table_managementDataSet39();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.sessionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this._time_table_managementDataSet35 = new TimeTable._time_table_managementDataSet35();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.btnCSClear = new System.Windows.Forms.Button();
+            this.btnCSSave = new System.Windows.Forms.Button();
+            this.txtc2 = new System.Windows.Forms.TextBox();
+            this.txtc1 = new System.Windows.Forms.TextBox();
+            this.txtc3 = new System.Windows.Forms.TextBox();
+            this.txtc4 = new System.Windows.Forms.TextBox();
+            this.txtc5 = new System.Windows.Forms.TextBox();
+            this.txtc6 = new System.Windows.Forms.TextBox();
+            this.txtc7 = new System.Windows.Forms.TextBox();
+            this.cmbSC = new System.Windows.Forms.ComboBox();
+            this.sessionBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this._time_table_managementDataSet36 = new TimeTable._time_table_managementDataSet36();
+            this.cmbRC = new System.Windows.Forms.ComboBox();
+            this.locationBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this._time_table_managementDataSet37 = new TimeTable._time_table_managementDataSet37();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.sessionBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this._time_table_managementDataSet38 = new TimeTable._time_table_managementDataSet38();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btn1 = new System.Windows.Forms.Button();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this._time_table_managementDataSet21 = new TimeTable._time_table_managementDataSet21();
-            this.locationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.locationBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this._time_table_managementDataSet34 = new TimeTable._time_table_managementDataSet34();
             this.locationTableAdapter = new TimeTable._time_table_managementDataSet21TableAdapters.LocationTableAdapter();
+            this.sessionTableAdapter = new TimeTable._time_table_managementDataSet33TableAdapters.SessionTableAdapter();
+            this.locationTableAdapter1 = new TimeTable._time_table_managementDataSet34TableAdapters.LocationTableAdapter();
+            this.sessionTableAdapter1 = new TimeTable._time_table_managementDataSet35TableAdapters.SessionTableAdapter();
+            this.sessionTableAdapter2 = new TimeTable._time_table_managementDataSet36TableAdapters.SessionTableAdapter();
+            this.locationTableAdapter2 = new TimeTable._time_table_managementDataSet37TableAdapters.LocationTableAdapter();
+            this.sessionTableAdapter3 = new TimeTable._time_table_managementDataSet38TableAdapters.SessionTableAdapter();
+            this.locationTableAdapter3 = new TimeTable._time_table_managementDataSet39TableAdapters.LocationTableAdapter();
+            this._time_table_managementDataSet49 = new TimeTable._time_table_managementDataSet49();
+            this.sessionBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.sessionTableAdapter4 = new TimeTable._time_table_managementDataSet49TableAdapters.SessionTableAdapter();
+            this.sessionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecture1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecture2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tagDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noofstudentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.durationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._time_table_managementDataSet50 = new TimeTable._time_table_managementDataSet50();
+            this.sessionBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.sessionTableAdapter5 = new TimeTable._time_table_managementDataSet50TableAdapters.SessionTableAdapter();
+            this.sessionIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecture1DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecture2DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tagDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noofstudentDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.durationDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -115,14 +159,32 @@ namespace TimeTable
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet21)).BeginInit();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet39)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet35)).BeginInit();
             this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet36)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet37)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet38)).BeginInit();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet49)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet50)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource5)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -561,6 +623,16 @@ namespace TimeTable
             this.LNATRoom.TabIndex = 113;
             this.LNATRoom.ValueMember = "Room_name";
             // 
+            // locationBindingSource
+            // 
+            this.locationBindingSource.DataMember = "Location";
+            this.locationBindingSource.DataSource = this._time_table_managementDataSet21;
+            // 
+            // _time_table_managementDataSet21
+            // 
+            this._time_table_managementDataSet21.DataSetName = "_time_table_managementDataSet21";
+            this._time_table_managementDataSet21.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // LNATDay
             // 
             this.LNATDay.FormattingEnabled = true;
@@ -624,17 +696,17 @@ namespace TimeTable
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.tabPage4.Controls.Add(this.button2);
-            this.tabPage4.Controls.Add(this.button5);
-            this.tabPage4.Controls.Add(this.textBox8);
-            this.tabPage4.Controls.Add(this.textBox7);
-            this.tabPage4.Controls.Add(this.textBox5);
-            this.tabPage4.Controls.Add(this.textBox4);
-            this.tabPage4.Controls.Add(this.textBox3);
-            this.tabPage4.Controls.Add(this.textBox2);
-            this.tabPage4.Controls.Add(this.textBox1);
-            this.tabPage4.Controls.Add(this.comboBox1);
-            this.tabPage4.Controls.Add(this.comboBox2);
+            this.tabPage4.Controls.Add(this.btnSClear);
+            this.tabPage4.Controls.Add(this.btnSAdd);
+            this.tabPage4.Controls.Add(this.txt2);
+            this.tabPage4.Controls.Add(this.txt7);
+            this.tabPage4.Controls.Add(this.txt3);
+            this.tabPage4.Controls.Add(this.txt4);
+            this.tabPage4.Controls.Add(this.txt5);
+            this.tabPage4.Controls.Add(this.txt6);
+            this.tabPage4.Controls.Add(this.txt1);
+            this.tabPage4.Controls.Add(this.cmbSession);
+            this.tabPage4.Controls.Add(this.cmbSRoom);
             this.tabPage4.Controls.Add(this.label13);
             this.tabPage4.Controls.Add(this.label14);
             this.tabPage4.Controls.Add(this.dataGridView3);
@@ -643,101 +715,121 @@ namespace TimeTable
             this.tabPage4.Size = new System.Drawing.Size(792, 424);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "ADD ROOMS FOR SESSION";
+            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
-            // button2
+            // btnSClear
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button2.Location = new System.Drawing.Point(418, 350);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 33);
-            this.button2.TabIndex = 132;
-            this.button2.Text = "CLEAR";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnSClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnSClear.Location = new System.Drawing.Point(418, 350);
+            this.btnSClear.Name = "btnSClear";
+            this.btnSClear.Size = new System.Drawing.Size(116, 33);
+            this.btnSClear.TabIndex = 132;
+            this.btnSClear.Text = "CLEAR";
+            this.btnSClear.UseVisualStyleBackColor = false;
+            this.btnSClear.Click += new System.EventHandler(this.btnSClear_Click);
             // 
-            // button5
+            // btnSAdd
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button5.Location = new System.Drawing.Point(225, 350);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(116, 33);
-            this.button5.TabIndex = 131;
-            this.button5.Text = "ADD SESSION";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnSAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnSAdd.Location = new System.Drawing.Point(225, 350);
+            this.btnSAdd.Name = "btnSAdd";
+            this.btnSAdd.Size = new System.Drawing.Size(116, 33);
+            this.btnSAdd.TabIndex = 131;
+            this.btnSAdd.Text = "ADD ROOM";
+            this.btnSAdd.UseVisualStyleBackColor = false;
+            this.btnSAdd.Click += new System.EventHandler(this.btnSAdd_Click);
             // 
-            // textBox8
+            // txt2
             // 
-            this.textBox8.Location = new System.Drawing.Point(225, 294);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(122, 20);
-            this.textBox8.TabIndex = 130;
+            this.txt2.Location = new System.Drawing.Point(242, 294);
+            this.txt2.Name = "txt2";
+            this.txt2.Size = new System.Drawing.Size(105, 20);
+            this.txt2.TabIndex = 130;
             // 
-            // textBox7
+            // txt7
             // 
-            this.textBox7.Location = new System.Drawing.Point(97, 294);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(122, 20);
-            this.textBox7.TabIndex = 129;
+            this.txt7.Location = new System.Drawing.Point(55, 294);
+            this.txt7.Name = "txt7";
+            this.txt7.Size = new System.Drawing.Size(87, 20);
+            this.txt7.TabIndex = 129;
             // 
-            // textBox5
+            // txt3
             // 
-            this.textBox5.Location = new System.Drawing.Point(353, 294);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 127;
+            this.txt3.Location = new System.Drawing.Point(353, 294);
+            this.txt3.Name = "txt3";
+            this.txt3.Size = new System.Drawing.Size(100, 20);
+            this.txt3.TabIndex = 127;
             // 
-            // textBox4
+            // txt4
             // 
-            this.textBox4.Location = new System.Drawing.Point(459, 294);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 126;
+            this.txt4.Location = new System.Drawing.Point(459, 294);
+            this.txt4.Name = "txt4";
+            this.txt4.Size = new System.Drawing.Size(100, 20);
+            this.txt4.TabIndex = 126;
             // 
-            // textBox3
+            // txt5
             // 
-            this.textBox3.Location = new System.Drawing.Point(565, 294);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(79, 20);
-            this.textBox3.TabIndex = 125;
+            this.txt5.Location = new System.Drawing.Point(565, 294);
+            this.txt5.Name = "txt5";
+            this.txt5.Size = new System.Drawing.Size(79, 20);
+            this.txt5.TabIndex = 125;
             // 
-            // textBox2
+            // txt6
             // 
-            this.textBox2.Location = new System.Drawing.Point(650, 294);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(79, 20);
-            this.textBox2.TabIndex = 124;
+            this.txt6.Location = new System.Drawing.Point(650, 294);
+            this.txt6.Name = "txt6";
+            this.txt6.Size = new System.Drawing.Size(79, 20);
+            this.txt6.TabIndex = 124;
             // 
-            // textBox1
+            // txt1
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 294);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(61, 20);
-            this.textBox1.TabIndex = 123;
+            this.txt1.Location = new System.Drawing.Point(148, 294);
+            this.txt1.Name = "txt1";
+            this.txt1.Size = new System.Drawing.Size(88, 20);
+            this.txt1.TabIndex = 123;
             // 
-            // comboBox1
+            // cmbSession
             // 
-            this.comboBox1.DisplayMember = "Lecturer_name";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(183, 225);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(146, 21);
-            this.comboBox1.TabIndex = 122;
-            this.comboBox1.ValueMember = "Lecturer_name";
+            this.cmbSession.DataSource = this.sessionBindingSource;
+            this.cmbSession.DisplayMember = "Session_ID";
+            this.cmbSession.FormattingEnabled = true;
+            this.cmbSession.Location = new System.Drawing.Point(183, 225);
+            this.cmbSession.Name = "cmbSession";
+            this.cmbSession.Size = new System.Drawing.Size(146, 21);
+            this.cmbSession.TabIndex = 122;
+            this.cmbSession.ValueMember = "Session_ID";
+            this.cmbSession.SelectedIndexChanged += new System.EventHandler(this.cmbSession_SelectedIndexChanged);
             // 
-            // comboBox2
+            // sessionBindingSource
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"});
-            this.comboBox2.Location = new System.Drawing.Point(583, 226);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(146, 21);
-            this.comboBox2.TabIndex = 121;
+            this.sessionBindingSource.DataMember = "Session";
+            this.sessionBindingSource.DataSource = this._time_table_managementDataSet33;
+            // 
+            // _time_table_managementDataSet33
+            // 
+            this._time_table_managementDataSet33.DataSetName = "_time_table_managementDataSet33";
+            this._time_table_managementDataSet33.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cmbSRoom
+            // 
+            this.cmbSRoom.DataSource = this.locationBindingSource3;
+            this.cmbSRoom.DisplayMember = "Room_name";
+            this.cmbSRoom.FormattingEnabled = true;
+            this.cmbSRoom.Location = new System.Drawing.Point(583, 226);
+            this.cmbSRoom.Name = "cmbSRoom";
+            this.cmbSRoom.Size = new System.Drawing.Size(146, 21);
+            this.cmbSRoom.TabIndex = 121;
+            this.cmbSRoom.ValueMember = "Room_name";
+            // 
+            // locationBindingSource3
+            // 
+            this.locationBindingSource3.DataMember = "Location";
+            this.locationBindingSource3.DataSource = this._time_table_managementDataSet39;
+            // 
+            // _time_table_managementDataSet39
+            // 
+            this._time_table_managementDataSet39.DataSetName = "_time_table_managementDataSet39";
+            this._time_table_managementDataSet39.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label13
             // 
@@ -763,26 +855,48 @@ namespace TimeTable
             // 
             // dataGridView3
             // 
+            this.dataGridView3.AutoGenerateColumns = false;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.sessionIDDataGridViewTextBoxColumn,
+            this.lecture1DataGridViewTextBoxColumn,
+            this.lecture2DataGridViewTextBoxColumn,
+            this.groupIDDataGridViewTextBoxColumn,
+            this.subjectIDDataGridViewTextBoxColumn,
+            this.subjectNameDataGridViewTextBoxColumn,
+            this.tagDataGridViewTextBoxColumn,
+            this.noofstudentDataGridViewTextBoxColumn,
+            this.durationDataGridViewTextBoxColumn});
+            this.dataGridView3.DataSource = this.sessionBindingSource4;
             this.dataGridView3.Location = new System.Drawing.Point(23, 17);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(706, 185);
+            this.dataGridView3.Size = new System.Drawing.Size(749, 185);
             this.dataGridView3.TabIndex = 118;
+            // 
+            // sessionBindingSource1
+            // 
+            this.sessionBindingSource1.DataMember = "Session";
+            this.sessionBindingSource1.DataSource = this._time_table_managementDataSet35;
+            // 
+            // _time_table_managementDataSet35
+            // 
+            this._time_table_managementDataSet35.DataSetName = "_time_table_managementDataSet35";
+            this._time_table_managementDataSet35.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.tabPage5.Controls.Add(this.button6);
-            this.tabPage5.Controls.Add(this.button7);
-            this.tabPage5.Controls.Add(this.textBox6);
-            this.tabPage5.Controls.Add(this.textBox9);
-            this.tabPage5.Controls.Add(this.textBox10);
-            this.tabPage5.Controls.Add(this.textBox11);
-            this.tabPage5.Controls.Add(this.textBox12);
-            this.tabPage5.Controls.Add(this.textBox13);
-            this.tabPage5.Controls.Add(this.textBox14);
-            this.tabPage5.Controls.Add(this.comboBox3);
-            this.tabPage5.Controls.Add(this.comboBox4);
+            this.tabPage5.Controls.Add(this.btnCSClear);
+            this.tabPage5.Controls.Add(this.btnCSSave);
+            this.tabPage5.Controls.Add(this.txtc2);
+            this.tabPage5.Controls.Add(this.txtc1);
+            this.tabPage5.Controls.Add(this.txtc3);
+            this.tabPage5.Controls.Add(this.txtc4);
+            this.tabPage5.Controls.Add(this.txtc5);
+            this.tabPage5.Controls.Add(this.txtc6);
+            this.tabPage5.Controls.Add(this.txtc7);
+            this.tabPage5.Controls.Add(this.cmbSC);
+            this.tabPage5.Controls.Add(this.cmbRC);
             this.tabPage5.Controls.Add(this.label15);
             this.tabPage5.Controls.Add(this.label16);
             this.tabPage5.Controls.Add(this.dataGridView4);
@@ -791,101 +905,121 @@ namespace TimeTable
             this.tabPage5.Size = new System.Drawing.Size(792, 424);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "ADD ROOMS FOR CONSECUTIVE SESSIONS";
+            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
             // 
-            // button6
+            // btnCSClear
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button6.Location = new System.Drawing.Point(413, 346);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(116, 33);
-            this.button6.TabIndex = 146;
-            this.button6.Text = "CLEAR";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnCSClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnCSClear.Location = new System.Drawing.Point(413, 346);
+            this.btnCSClear.Name = "btnCSClear";
+            this.btnCSClear.Size = new System.Drawing.Size(116, 33);
+            this.btnCSClear.TabIndex = 146;
+            this.btnCSClear.Text = "CLEAR";
+            this.btnCSClear.UseVisualStyleBackColor = false;
+            this.btnCSClear.Click += new System.EventHandler(this.btnCSClear_Click);
             // 
-            // button7
+            // btnCSSave
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button7.Location = new System.Drawing.Point(220, 346);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(116, 33);
-            this.button7.TabIndex = 145;
-            this.button7.Text = "ADD SESSION";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnCSSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnCSSave.Location = new System.Drawing.Point(220, 346);
+            this.btnCSSave.Name = "btnCSSave";
+            this.btnCSSave.Size = new System.Drawing.Size(116, 33);
+            this.btnCSSave.TabIndex = 145;
+            this.btnCSSave.Text = "ADD ROOM";
+            this.btnCSSave.UseVisualStyleBackColor = false;
+            this.btnCSSave.Click += new System.EventHandler(this.btnCSSave_Click);
             // 
-            // textBox6
+            // txtc2
             // 
-            this.textBox6.Location = new System.Drawing.Point(220, 290);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(122, 20);
-            this.textBox6.TabIndex = 144;
+            this.txtc2.Location = new System.Drawing.Point(220, 290);
+            this.txtc2.Name = "txtc2";
+            this.txtc2.Size = new System.Drawing.Size(122, 20);
+            this.txtc2.TabIndex = 144;
             // 
-            // textBox9
+            // txtc1
             // 
-            this.textBox9.Location = new System.Drawing.Point(92, 290);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(122, 20);
-            this.textBox9.TabIndex = 143;
+            this.txtc1.Location = new System.Drawing.Point(92, 290);
+            this.txtc1.Name = "txtc1";
+            this.txtc1.Size = new System.Drawing.Size(122, 20);
+            this.txtc1.TabIndex = 143;
             // 
-            // textBox10
+            // txtc3
             // 
-            this.textBox10.Location = new System.Drawing.Point(348, 290);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 142;
+            this.txtc3.Location = new System.Drawing.Point(348, 290);
+            this.txtc3.Name = "txtc3";
+            this.txtc3.Size = new System.Drawing.Size(100, 20);
+            this.txtc3.TabIndex = 142;
             // 
-            // textBox11
+            // txtc4
             // 
-            this.textBox11.Location = new System.Drawing.Point(454, 290);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 141;
+            this.txtc4.Location = new System.Drawing.Point(454, 290);
+            this.txtc4.Name = "txtc4";
+            this.txtc4.Size = new System.Drawing.Size(100, 20);
+            this.txtc4.TabIndex = 141;
             // 
-            // textBox12
+            // txtc5
             // 
-            this.textBox12.Location = new System.Drawing.Point(560, 290);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(79, 20);
-            this.textBox12.TabIndex = 140;
+            this.txtc5.Location = new System.Drawing.Point(560, 290);
+            this.txtc5.Name = "txtc5";
+            this.txtc5.Size = new System.Drawing.Size(79, 20);
+            this.txtc5.TabIndex = 140;
             // 
-            // textBox13
+            // txtc6
             // 
-            this.textBox13.Location = new System.Drawing.Point(645, 290);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(79, 20);
-            this.textBox13.TabIndex = 139;
+            this.txtc6.Location = new System.Drawing.Point(645, 290);
+            this.txtc6.Name = "txtc6";
+            this.txtc6.Size = new System.Drawing.Size(79, 20);
+            this.txtc6.TabIndex = 139;
             // 
-            // textBox14
+            // txtc7
             // 
-            this.textBox14.Location = new System.Drawing.Point(30, 290);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(61, 20);
-            this.textBox14.TabIndex = 138;
+            this.txtc7.Location = new System.Drawing.Point(30, 290);
+            this.txtc7.Name = "txtc7";
+            this.txtc7.Size = new System.Drawing.Size(61, 20);
+            this.txtc7.TabIndex = 138;
             // 
-            // comboBox3
+            // cmbSC
             // 
-            this.comboBox3.DisplayMember = "Lecturer_name";
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(178, 221);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(146, 21);
-            this.comboBox3.TabIndex = 137;
-            this.comboBox3.ValueMember = "Lecturer_name";
+            this.cmbSC.DataSource = this.sessionBindingSource2;
+            this.cmbSC.DisplayMember = "Session_ID";
+            this.cmbSC.FormattingEnabled = true;
+            this.cmbSC.Location = new System.Drawing.Point(178, 221);
+            this.cmbSC.Name = "cmbSC";
+            this.cmbSC.Size = new System.Drawing.Size(146, 21);
+            this.cmbSC.TabIndex = 137;
+            this.cmbSC.ValueMember = "Session_ID";
+            this.cmbSC.SelectedIndexChanged += new System.EventHandler(this.cmbSC_SelectedIndexChanged);
             // 
-            // comboBox4
+            // sessionBindingSource2
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"});
-            this.comboBox4.Location = new System.Drawing.Point(578, 222);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(146, 21);
-            this.comboBox4.TabIndex = 136;
+            this.sessionBindingSource2.DataMember = "Session";
+            this.sessionBindingSource2.DataSource = this._time_table_managementDataSet36;
+            // 
+            // _time_table_managementDataSet36
+            // 
+            this._time_table_managementDataSet36.DataSetName = "_time_table_managementDataSet36";
+            this._time_table_managementDataSet36.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cmbRC
+            // 
+            this.cmbRC.DataSource = this.locationBindingSource2;
+            this.cmbRC.DisplayMember = "Room_name";
+            this.cmbRC.FormattingEnabled = true;
+            this.cmbRC.Location = new System.Drawing.Point(578, 222);
+            this.cmbRC.Name = "cmbRC";
+            this.cmbRC.Size = new System.Drawing.Size(146, 21);
+            this.cmbRC.TabIndex = 136;
+            this.cmbRC.ValueMember = "Room_name";
+            // 
+            // locationBindingSource2
+            // 
+            this.locationBindingSource2.DataMember = "Location";
+            this.locationBindingSource2.DataSource = this._time_table_managementDataSet37;
+            // 
+            // _time_table_managementDataSet37
+            // 
+            this._time_table_managementDataSet37.DataSetName = "_time_table_managementDataSet37";
+            this._time_table_managementDataSet37.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label15
             // 
@@ -911,43 +1045,56 @@ namespace TimeTable
             // 
             // dataGridView4
             // 
+            this.dataGridView4.AutoGenerateColumns = false;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.sessionIDDataGridViewTextBoxColumn1,
+            this.lecture1DataGridViewTextBoxColumn1,
+            this.lecture2DataGridViewTextBoxColumn1,
+            this.groupIDDataGridViewTextBoxColumn1,
+            this.subjectIDDataGridViewTextBoxColumn1,
+            this.subjectNameDataGridViewTextBoxColumn1,
+            this.tagDataGridViewTextBoxColumn1,
+            this.noofstudentDataGridViewTextBoxColumn1,
+            this.durationDataGridViewTextBoxColumn1});
+            this.dataGridView4.DataSource = this.sessionBindingSource5;
             this.dataGridView4.Location = new System.Drawing.Point(18, 13);
             this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(706, 185);
+            this.dataGridView4.Size = new System.Drawing.Size(754, 185);
             this.dataGridView4.TabIndex = 133;
+            // 
+            // sessionBindingSource3
+            // 
+            this.sessionBindingSource3.DataMember = "Session";
+            this.sessionBindingSource3.DataSource = this._time_table_managementDataSet38;
+            // 
+            // _time_table_managementDataSet38
+            // 
+            this._time_table_managementDataSet38.DataSetName = "_time_table_managementDataSet38";
+            this._time_table_managementDataSet38.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.tabPage6.Controls.Add(this.button8);
-            this.tabPage6.Controls.Add(this.button9);
+            this.tabPage6.Controls.Add(this.btn1);
             this.tabPage6.Controls.Add(this.dataGridView5);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Size = new System.Drawing.Size(792, 424);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "ADDED ROOMS FOR SESSION";
+            this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
             // 
-            // button8
+            // btn1
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button8.Location = new System.Drawing.Point(467, 263);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(116, 33);
-            this.button8.TabIndex = 146;
-            this.button8.Text = "CLEAR";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button9.Location = new System.Drawing.Point(197, 263);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(116, 33);
-            this.button9.TabIndex = 145;
-            this.button9.Text = "ADD SESSION";
-            this.button9.UseVisualStyleBackColor = false;
+            this.btn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btn1.Location = new System.Drawing.Point(333, 259);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(116, 33);
+            this.btn1.TabIndex = 146;
+            this.btn1.Text = "REFRESH";
+            this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // dataGridView5
             // 
@@ -957,19 +1104,185 @@ namespace TimeTable
             this.dataGridView5.Size = new System.Drawing.Size(706, 185);
             this.dataGridView5.TabIndex = 133;
             // 
-            // _time_table_managementDataSet21
+            // locationBindingSource1
             // 
-            this._time_table_managementDataSet21.DataSetName = "_time_table_managementDataSet21";
-            this._time_table_managementDataSet21.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.locationBindingSource1.DataMember = "Location";
+            this.locationBindingSource1.DataSource = this._time_table_managementDataSet34;
             // 
-            // locationBindingSource
+            // _time_table_managementDataSet34
             // 
-            this.locationBindingSource.DataMember = "Location";
-            this.locationBindingSource.DataSource = this._time_table_managementDataSet21;
+            this._time_table_managementDataSet34.DataSetName = "_time_table_managementDataSet34";
+            this._time_table_managementDataSet34.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // locationTableAdapter
             // 
             this.locationTableAdapter.ClearBeforeFill = true;
+            // 
+            // sessionTableAdapter
+            // 
+            this.sessionTableAdapter.ClearBeforeFill = true;
+            // 
+            // locationTableAdapter1
+            // 
+            this.locationTableAdapter1.ClearBeforeFill = true;
+            // 
+            // sessionTableAdapter1
+            // 
+            this.sessionTableAdapter1.ClearBeforeFill = true;
+            // 
+            // sessionTableAdapter2
+            // 
+            this.sessionTableAdapter2.ClearBeforeFill = true;
+            // 
+            // locationTableAdapter2
+            // 
+            this.locationTableAdapter2.ClearBeforeFill = true;
+            // 
+            // sessionTableAdapter3
+            // 
+            this.sessionTableAdapter3.ClearBeforeFill = true;
+            // 
+            // locationTableAdapter3
+            // 
+            this.locationTableAdapter3.ClearBeforeFill = true;
+            // 
+            // _time_table_managementDataSet49
+            // 
+            this._time_table_managementDataSet49.DataSetName = "_time_table_managementDataSet49";
+            this._time_table_managementDataSet49.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sessionBindingSource4
+            // 
+            this.sessionBindingSource4.DataMember = "Session";
+            this.sessionBindingSource4.DataSource = this._time_table_managementDataSet49;
+            // 
+            // sessionTableAdapter4
+            // 
+            this.sessionTableAdapter4.ClearBeforeFill = true;
+            // 
+            // sessionIDDataGridViewTextBoxColumn
+            // 
+            this.sessionIDDataGridViewTextBoxColumn.DataPropertyName = "Session_ID";
+            this.sessionIDDataGridViewTextBoxColumn.HeaderText = "Session_ID";
+            this.sessionIDDataGridViewTextBoxColumn.Name = "sessionIDDataGridViewTextBoxColumn";
+            this.sessionIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // lecture1DataGridViewTextBoxColumn
+            // 
+            this.lecture1DataGridViewTextBoxColumn.DataPropertyName = "Lecture1";
+            this.lecture1DataGridViewTextBoxColumn.HeaderText = "Lecture1";
+            this.lecture1DataGridViewTextBoxColumn.Name = "lecture1DataGridViewTextBoxColumn";
+            // 
+            // lecture2DataGridViewTextBoxColumn
+            // 
+            this.lecture2DataGridViewTextBoxColumn.DataPropertyName = "Lecture2";
+            this.lecture2DataGridViewTextBoxColumn.HeaderText = "Lecture2";
+            this.lecture2DataGridViewTextBoxColumn.Name = "lecture2DataGridViewTextBoxColumn";
+            // 
+            // groupIDDataGridViewTextBoxColumn
+            // 
+            this.groupIDDataGridViewTextBoxColumn.DataPropertyName = "Group_ID";
+            this.groupIDDataGridViewTextBoxColumn.HeaderText = "Group_ID";
+            this.groupIDDataGridViewTextBoxColumn.Name = "groupIDDataGridViewTextBoxColumn";
+            // 
+            // subjectIDDataGridViewTextBoxColumn
+            // 
+            this.subjectIDDataGridViewTextBoxColumn.DataPropertyName = "Subject_ID";
+            this.subjectIDDataGridViewTextBoxColumn.HeaderText = "Subject_ID";
+            this.subjectIDDataGridViewTextBoxColumn.Name = "subjectIDDataGridViewTextBoxColumn";
+            // 
+            // subjectNameDataGridViewTextBoxColumn
+            // 
+            this.subjectNameDataGridViewTextBoxColumn.DataPropertyName = "Subject_Name";
+            this.subjectNameDataGridViewTextBoxColumn.HeaderText = "Subject_Name";
+            this.subjectNameDataGridViewTextBoxColumn.Name = "subjectNameDataGridViewTextBoxColumn";
+            // 
+            // tagDataGridViewTextBoxColumn
+            // 
+            this.tagDataGridViewTextBoxColumn.DataPropertyName = "Tag";
+            this.tagDataGridViewTextBoxColumn.HeaderText = "Tag";
+            this.tagDataGridViewTextBoxColumn.Name = "tagDataGridViewTextBoxColumn";
+            // 
+            // noofstudentDataGridViewTextBoxColumn
+            // 
+            this.noofstudentDataGridViewTextBoxColumn.DataPropertyName = "Noofstudent";
+            this.noofstudentDataGridViewTextBoxColumn.HeaderText = "Noofstudent";
+            this.noofstudentDataGridViewTextBoxColumn.Name = "noofstudentDataGridViewTextBoxColumn";
+            // 
+            // durationDataGridViewTextBoxColumn
+            // 
+            this.durationDataGridViewTextBoxColumn.DataPropertyName = "Duration";
+            this.durationDataGridViewTextBoxColumn.HeaderText = "Duration";
+            this.durationDataGridViewTextBoxColumn.Name = "durationDataGridViewTextBoxColumn";
+            // 
+            // _time_table_managementDataSet50
+            // 
+            this._time_table_managementDataSet50.DataSetName = "_time_table_managementDataSet50";
+            this._time_table_managementDataSet50.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sessionBindingSource5
+            // 
+            this.sessionBindingSource5.DataMember = "Session";
+            this.sessionBindingSource5.DataSource = this._time_table_managementDataSet50;
+            // 
+            // sessionTableAdapter5
+            // 
+            this.sessionTableAdapter5.ClearBeforeFill = true;
+            // 
+            // sessionIDDataGridViewTextBoxColumn1
+            // 
+            this.sessionIDDataGridViewTextBoxColumn1.DataPropertyName = "Session_ID";
+            this.sessionIDDataGridViewTextBoxColumn1.HeaderText = "Session_ID";
+            this.sessionIDDataGridViewTextBoxColumn1.Name = "sessionIDDataGridViewTextBoxColumn1";
+            this.sessionIDDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // lecture1DataGridViewTextBoxColumn1
+            // 
+            this.lecture1DataGridViewTextBoxColumn1.DataPropertyName = "Lecture1";
+            this.lecture1DataGridViewTextBoxColumn1.HeaderText = "Lecture1";
+            this.lecture1DataGridViewTextBoxColumn1.Name = "lecture1DataGridViewTextBoxColumn1";
+            // 
+            // lecture2DataGridViewTextBoxColumn1
+            // 
+            this.lecture2DataGridViewTextBoxColumn1.DataPropertyName = "Lecture2";
+            this.lecture2DataGridViewTextBoxColumn1.HeaderText = "Lecture2";
+            this.lecture2DataGridViewTextBoxColumn1.Name = "lecture2DataGridViewTextBoxColumn1";
+            // 
+            // groupIDDataGridViewTextBoxColumn1
+            // 
+            this.groupIDDataGridViewTextBoxColumn1.DataPropertyName = "Group_ID";
+            this.groupIDDataGridViewTextBoxColumn1.HeaderText = "Group_ID";
+            this.groupIDDataGridViewTextBoxColumn1.Name = "groupIDDataGridViewTextBoxColumn1";
+            // 
+            // subjectIDDataGridViewTextBoxColumn1
+            // 
+            this.subjectIDDataGridViewTextBoxColumn1.DataPropertyName = "Subject_ID";
+            this.subjectIDDataGridViewTextBoxColumn1.HeaderText = "Subject_ID";
+            this.subjectIDDataGridViewTextBoxColumn1.Name = "subjectIDDataGridViewTextBoxColumn1";
+            // 
+            // subjectNameDataGridViewTextBoxColumn1
+            // 
+            this.subjectNameDataGridViewTextBoxColumn1.DataPropertyName = "Subject_Name";
+            this.subjectNameDataGridViewTextBoxColumn1.HeaderText = "Subject_Name";
+            this.subjectNameDataGridViewTextBoxColumn1.Name = "subjectNameDataGridViewTextBoxColumn1";
+            // 
+            // tagDataGridViewTextBoxColumn1
+            // 
+            this.tagDataGridViewTextBoxColumn1.DataPropertyName = "Tag";
+            this.tagDataGridViewTextBoxColumn1.HeaderText = "Tag";
+            this.tagDataGridViewTextBoxColumn1.Name = "tagDataGridViewTextBoxColumn1";
+            // 
+            // noofstudentDataGridViewTextBoxColumn1
+            // 
+            this.noofstudentDataGridViewTextBoxColumn1.DataPropertyName = "Noofstudent";
+            this.noofstudentDataGridViewTextBoxColumn1.HeaderText = "Noofstudent";
+            this.noofstudentDataGridViewTextBoxColumn1.Name = "noofstudentDataGridViewTextBoxColumn1";
+            // 
+            // durationDataGridViewTextBoxColumn1
+            // 
+            this.durationDataGridViewTextBoxColumn1.DataPropertyName = "Duration";
+            this.durationDataGridViewTextBoxColumn1.HeaderText = "Duration";
+            this.durationDataGridViewTextBoxColumn1.Name = "durationDataGridViewTextBoxColumn1";
             // 
             // Location
             // 
@@ -990,16 +1303,34 @@ namespace TimeTable
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet21)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet39)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet35)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet36)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet37)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet38)).EndInit();
             this.tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet49)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet50)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sessionBindingSource5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1048,41 +1379,85 @@ namespace TimeTable
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button btnSClear;
+        private System.Windows.Forms.Button btnSAdd;
+        private System.Windows.Forms.TextBox txt2;
+        private System.Windows.Forms.TextBox txt7;
+        private System.Windows.Forms.TextBox txt3;
+        private System.Windows.Forms.TextBox txt4;
+        private System.Windows.Forms.TextBox txt5;
+        private System.Windows.Forms.TextBox txt6;
+        private System.Windows.Forms.TextBox txt1;
+        private System.Windows.Forms.ComboBox cmbSession;
+        private System.Windows.Forms.ComboBox cmbSRoom;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Button btnCSClear;
+        private System.Windows.Forms.Button btnCSSave;
+        private System.Windows.Forms.TextBox txtc2;
+        private System.Windows.Forms.TextBox txtc1;
+        private System.Windows.Forms.TextBox txtc3;
+        private System.Windows.Forms.TextBox txtc4;
+        private System.Windows.Forms.TextBox txtc5;
+        private System.Windows.Forms.TextBox txtc6;
+        private System.Windows.Forms.TextBox txtc7;
+        private System.Windows.Forms.ComboBox cmbSC;
+        private System.Windows.Forms.ComboBox cmbRC;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.DataGridView dataGridView5;
         private _time_table_managementDataSet21 _time_table_managementDataSet21;
         private System.Windows.Forms.BindingSource locationBindingSource;
         private _time_table_managementDataSet21TableAdapters.LocationTableAdapter locationTableAdapter;
+        private _time_table_managementDataSet33 _time_table_managementDataSet33;
+        private System.Windows.Forms.BindingSource sessionBindingSource;
+        private _time_table_managementDataSet33TableAdapters.SessionTableAdapter sessionTableAdapter;
+        private _time_table_managementDataSet34 _time_table_managementDataSet34;
+        private System.Windows.Forms.BindingSource locationBindingSource1;
+        private _time_table_managementDataSet34TableAdapters.LocationTableAdapter locationTableAdapter1;
+        private _time_table_managementDataSet35 _time_table_managementDataSet35;
+        private System.Windows.Forms.BindingSource sessionBindingSource1;
+        private _time_table_managementDataSet35TableAdapters.SessionTableAdapter sessionTableAdapter1;
+        private _time_table_managementDataSet36 _time_table_managementDataSet36;
+        private System.Windows.Forms.BindingSource sessionBindingSource2;
+        private _time_table_managementDataSet36TableAdapters.SessionTableAdapter sessionTableAdapter2;
+        private _time_table_managementDataSet37 _time_table_managementDataSet37;
+        private System.Windows.Forms.BindingSource locationBindingSource2;
+        private _time_table_managementDataSet37TableAdapters.LocationTableAdapter locationTableAdapter2;
+        private _time_table_managementDataSet38 _time_table_managementDataSet38;
+        private System.Windows.Forms.BindingSource sessionBindingSource3;
+        private _time_table_managementDataSet38TableAdapters.SessionTableAdapter sessionTableAdapter3;
+        private _time_table_managementDataSet39 _time_table_managementDataSet39;
+        private System.Windows.Forms.BindingSource locationBindingSource3;
+        private _time_table_managementDataSet39TableAdapters.LocationTableAdapter locationTableAdapter3;
+        private _time_table_managementDataSet49 _time_table_managementDataSet49;
+        private System.Windows.Forms.BindingSource sessionBindingSource4;
+        private _time_table_managementDataSet49TableAdapters.SessionTableAdapter sessionTableAdapter4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sessionIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lecture1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lecture2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn groupIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subjectIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subjectNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn noofstudentDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn durationDataGridViewTextBoxColumn;
+        private _time_table_managementDataSet50 _time_table_managementDataSet50;
+        private System.Windows.Forms.BindingSource sessionBindingSource5;
+        private _time_table_managementDataSet50TableAdapters.SessionTableAdapter sessionTableAdapter5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sessionIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lecture1DataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lecture2DataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn groupIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subjectIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subjectNameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn noofstudentDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn durationDataGridViewTextBoxColumn1;
     }
 }

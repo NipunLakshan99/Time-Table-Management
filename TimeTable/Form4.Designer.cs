@@ -29,6 +29,7 @@ namespace TimeTable
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -54,17 +55,37 @@ namespace TimeTable
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cmb4 = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cmb3 = new System.Windows.Forms.ComboBox();
             this.label37 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cmb1 = new System.Windows.Forms.ComboBox();
+            this.cmb2 = new System.Windows.Forms.ComboBox();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this._time_table_managementDataSet64 = new TimeTable._time_table_managementDataSet64();
+            this.tagBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tagTableAdapter = new TimeTable._time_table_managementDataSet64TableAdapters.TagTableAdapter();
+            this._time_table_managementDataSet65 = new TimeTable._time_table_managementDataSet65();
+            this.subjectBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.subjectTableAdapter = new TimeTable._time_table_managementDataSet65TableAdapters.SubjectTableAdapter();
+            this._time_table_managementDataSet66 = new TimeTable._time_table_managementDataSet66();
+            this.subjectBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.subjectTableAdapter1 = new TimeTable._time_table_managementDataSet66TableAdapters.SubjectTableAdapter();
+            this._time_table_managementDataSet67 = new TimeTable._time_table_managementDataSet67();
+            this.locationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.locationTableAdapter = new TimeTable._time_table_managementDataSet67TableAdapters.LocationTableAdapter();
+            this._time_table_managementDataSet68 = new TimeTable._time_table_managementDataSet68();
+            this.subjectTagBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.subjectTagTableAdapter = new TimeTable._time_table_managementDataSet68TableAdapters.SubjectTagTableAdapter();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tagDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subjectNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -72,6 +93,16 @@ namespace TimeTable
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet64)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tagBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet65)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subjectBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet66)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subjectBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet67)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet68)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subjectTagBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -449,14 +480,14 @@ namespace TimeTable
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.tabPage3.Controls.Add(this.comboBox1);
+            this.tabPage3.Controls.Add(this.cmb4);
             this.tabPage3.Controls.Add(this.label8);
-            this.tabPage3.Controls.Add(this.comboBox5);
+            this.tabPage3.Controls.Add(this.cmb3);
             this.tabPage3.Controls.Add(this.label37);
             this.tabPage3.Controls.Add(this.button3);
             this.tabPage3.Controls.Add(this.button4);
-            this.tabPage3.Controls.Add(this.comboBox3);
-            this.tabPage3.Controls.Add(this.comboBox4);
+            this.tabPage3.Controls.Add(this.cmb1);
+            this.tabPage3.Controls.Add(this.cmb2);
             this.tabPage3.Controls.Add(this.label35);
             this.tabPage3.Controls.Add(this.label36);
             this.tabPage3.Controls.Add(this.dataGridView6);
@@ -465,22 +496,40 @@ namespace TimeTable
             this.tabPage3.Size = new System.Drawing.Size(792, 424);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "ADD LOCATION FOR TAGS";
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
-            // comboBox5
+            // cmb4
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"});
-            this.comboBox5.Location = new System.Drawing.Point(338, 130);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(256, 21);
-            this.comboBox5.TabIndex = 147;
+            this.cmb4.DataSource = this.locationBindingSource;
+            this.cmb4.DisplayMember = "Room_name";
+            this.cmb4.FormattingEnabled = true;
+            this.cmb4.Location = new System.Drawing.Point(338, 173);
+            this.cmb4.Name = "cmb4";
+            this.cmb4.Size = new System.Drawing.Size(256, 21);
+            this.cmb4.TabIndex = 149;
+            this.cmb4.ValueMember = "Room_name";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label8.Location = new System.Drawing.Point(133, 171);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(117, 20);
+            this.label8.TabIndex = 148;
+            this.label8.Text = "ROOM NAME";
+            // 
+            // cmb3
+            // 
+            this.cmb3.DataSource = this.subjectBindingSource1;
+            this.cmb3.DisplayMember = "Subject_Code";
+            this.cmb3.FormattingEnabled = true;
+            this.cmb3.Location = new System.Drawing.Point(338, 130);
+            this.cmb3.Name = "cmb3";
+            this.cmb3.Size = new System.Drawing.Size(256, 21);
+            this.cmb3.TabIndex = 147;
+            this.cmb3.ValueMember = "Subject_Code";
             // 
             // label37
             // 
@@ -502,6 +551,7 @@ namespace TimeTable
             this.button3.TabIndex = 145;
             this.button3.Text = "SAVE";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -512,32 +562,29 @@ namespace TimeTable
             this.button4.TabIndex = 144;
             this.button4.Text = "CLEAR";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // comboBox3
+            // cmb1
             // 
-            this.comboBox3.DisplayMember = "Lecturer_name";
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(338, 42);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(256, 21);
-            this.comboBox3.TabIndex = 143;
-            this.comboBox3.ValueMember = "Lecturer_name";
+            this.cmb1.DataSource = this.tagBindingSource;
+            this.cmb1.DisplayMember = "Related_Tag";
+            this.cmb1.FormattingEnabled = true;
+            this.cmb1.Location = new System.Drawing.Point(338, 42);
+            this.cmb1.Name = "cmb1";
+            this.cmb1.Size = new System.Drawing.Size(256, 21);
+            this.cmb1.TabIndex = 143;
+            this.cmb1.ValueMember = "Related_Tag";
             // 
-            // comboBox4
+            // cmb2
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"});
-            this.comboBox4.Location = new System.Drawing.Point(338, 84);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(256, 21);
-            this.comboBox4.TabIndex = 142;
+            this.cmb2.DataSource = this.subjectBindingSource;
+            this.cmb2.DisplayMember = "Subject_name";
+            this.cmb2.FormattingEnabled = true;
+            this.cmb2.Location = new System.Drawing.Point(338, 84);
+            this.cmb2.Name = "cmb2";
+            this.cmb2.Size = new System.Drawing.Size(256, 21);
+            this.cmb2.TabIndex = 142;
+            this.cmb2.ValueMember = "Subject_name";
             // 
             // label35
             // 
@@ -563,38 +610,120 @@ namespace TimeTable
             // 
             // dataGridView6
             // 
+            this.dataGridView6.AutoGenerateColumns = false;
             this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(43, 231);
+            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.tagDataGridViewTextBoxColumn,
+            this.subjectCodeDataGridViewTextBoxColumn,
+            this.subjectNameDataGridViewTextBoxColumn,
+            this.roomNameDataGridViewTextBoxColumn});
+            this.dataGridView6.DataSource = this.subjectTagBindingSource;
+            this.dataGridView6.Location = new System.Drawing.Point(159, 226);
             this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(706, 154);
+            this.dataGridView6.Size = new System.Drawing.Size(543, 154);
             this.dataGridView6.TabIndex = 139;
             // 
-            // comboBox1
+            // _time_table_managementDataSet64
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"});
-            this.comboBox1.Location = new System.Drawing.Point(338, 173);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(256, 21);
-            this.comboBox1.TabIndex = 149;
+            this._time_table_managementDataSet64.DataSetName = "_time_table_managementDataSet64";
+            this._time_table_managementDataSet64.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // label8
+            // tagBindingSource
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label8.Location = new System.Drawing.Point(133, 171);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(117, 20);
-            this.label8.TabIndex = 148;
-            this.label8.Text = "ROOM NAME";
+            this.tagBindingSource.DataMember = "Tag";
+            this.tagBindingSource.DataSource = this._time_table_managementDataSet64;
+            // 
+            // tagTableAdapter
+            // 
+            this.tagTableAdapter.ClearBeforeFill = true;
+            // 
+            // _time_table_managementDataSet65
+            // 
+            this._time_table_managementDataSet65.DataSetName = "_time_table_managementDataSet65";
+            this._time_table_managementDataSet65.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // subjectBindingSource
+            // 
+            this.subjectBindingSource.DataMember = "Subject";
+            this.subjectBindingSource.DataSource = this._time_table_managementDataSet65;
+            // 
+            // subjectTableAdapter
+            // 
+            this.subjectTableAdapter.ClearBeforeFill = true;
+            // 
+            // _time_table_managementDataSet66
+            // 
+            this._time_table_managementDataSet66.DataSetName = "_time_table_managementDataSet66";
+            this._time_table_managementDataSet66.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // subjectBindingSource1
+            // 
+            this.subjectBindingSource1.DataMember = "Subject";
+            this.subjectBindingSource1.DataSource = this._time_table_managementDataSet66;
+            // 
+            // subjectTableAdapter1
+            // 
+            this.subjectTableAdapter1.ClearBeforeFill = true;
+            // 
+            // _time_table_managementDataSet67
+            // 
+            this._time_table_managementDataSet67.DataSetName = "_time_table_managementDataSet67";
+            this._time_table_managementDataSet67.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // locationBindingSource
+            // 
+            this.locationBindingSource.DataMember = "Location";
+            this.locationBindingSource.DataSource = this._time_table_managementDataSet67;
+            // 
+            // locationTableAdapter
+            // 
+            this.locationTableAdapter.ClearBeforeFill = true;
+            // 
+            // _time_table_managementDataSet68
+            // 
+            this._time_table_managementDataSet68.DataSetName = "_time_table_managementDataSet68";
+            this._time_table_managementDataSet68.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // subjectTagBindingSource
+            // 
+            this.subjectTagBindingSource.DataMember = "SubjectTag";
+            this.subjectTagBindingSource.DataSource = this._time_table_managementDataSet68;
+            // 
+            // subjectTagTableAdapter
+            // 
+            this.subjectTagTableAdapter.ClearBeforeFill = true;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tagDataGridViewTextBoxColumn
+            // 
+            this.tagDataGridViewTextBoxColumn.DataPropertyName = "Tag";
+            this.tagDataGridViewTextBoxColumn.HeaderText = "Tag";
+            this.tagDataGridViewTextBoxColumn.Name = "tagDataGridViewTextBoxColumn";
+            // 
+            // subjectCodeDataGridViewTextBoxColumn
+            // 
+            this.subjectCodeDataGridViewTextBoxColumn.DataPropertyName = "Subject_Code";
+            this.subjectCodeDataGridViewTextBoxColumn.HeaderText = "Subject_Code";
+            this.subjectCodeDataGridViewTextBoxColumn.Name = "subjectCodeDataGridViewTextBoxColumn";
+            // 
+            // subjectNameDataGridViewTextBoxColumn
+            // 
+            this.subjectNameDataGridViewTextBoxColumn.DataPropertyName = "Subject_Name";
+            this.subjectNameDataGridViewTextBoxColumn.HeaderText = "Subject_Name";
+            this.subjectNameDataGridViewTextBoxColumn.Name = "subjectNameDataGridViewTextBoxColumn";
+            // 
+            // roomNameDataGridViewTextBoxColumn
+            // 
+            this.roomNameDataGridViewTextBoxColumn.DataPropertyName = "Room_Name";
+            this.roomNameDataGridViewTextBoxColumn.HeaderText = "Room_Name";
+            this.roomNameDataGridViewTextBoxColumn.Name = "roomNameDataGridViewTextBoxColumn";
             // 
             // Form4
             // 
@@ -604,6 +733,7 @@ namespace TimeTable
             this.Controls.Add(this.tabControl1);
             this.Name = "Form4";
             this.Text = "Form4";
+            this.Load += new System.EventHandler(this.Form4_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -614,6 +744,16 @@ namespace TimeTable
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet64)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tagBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet65)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subjectBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet66)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subjectBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet67)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._time_table_managementDataSet68)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subjectTagBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -645,16 +785,36 @@ namespace TimeTable
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtMTagID;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmb4;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox cmb3;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cmb1;
+        private System.Windows.Forms.ComboBox cmb2;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.DataGridView dataGridView6;
+        private _time_table_managementDataSet64 _time_table_managementDataSet64;
+        private System.Windows.Forms.BindingSource tagBindingSource;
+        private _time_table_managementDataSet64TableAdapters.TagTableAdapter tagTableAdapter;
+        private _time_table_managementDataSet65 _time_table_managementDataSet65;
+        private System.Windows.Forms.BindingSource subjectBindingSource;
+        private _time_table_managementDataSet65TableAdapters.SubjectTableAdapter subjectTableAdapter;
+        private _time_table_managementDataSet66 _time_table_managementDataSet66;
+        private System.Windows.Forms.BindingSource subjectBindingSource1;
+        private _time_table_managementDataSet66TableAdapters.SubjectTableAdapter subjectTableAdapter1;
+        private _time_table_managementDataSet67 _time_table_managementDataSet67;
+        private System.Windows.Forms.BindingSource locationBindingSource;
+        private _time_table_managementDataSet67TableAdapters.LocationTableAdapter locationTableAdapter;
+        private _time_table_managementDataSet68 _time_table_managementDataSet68;
+        private System.Windows.Forms.BindingSource subjectTagBindingSource;
+        private _time_table_managementDataSet68TableAdapters.SubjectTagTableAdapter subjectTagTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subjectCodeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subjectNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn roomNameDataGridViewTextBoxColumn;
     }
 }

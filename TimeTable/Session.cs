@@ -13,6 +13,7 @@ namespace TimeTable
         public string Lecture2 { get; set; }
         public string Group_ID{ get; set; }
         public string Subject { get; set; }
+        public string Subject_Name { get; set; }
         public string Tag { get; set; }
         public string Noofstudent { get; set; }
         public string Duration { get; set; }

@@ -246,6 +246,24 @@ namespace TimeTable
 
         private void Form5_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the '_time_table_managementDataSet48.Session' table. You can move, or remove it, as needed.
+            this.sessionTableAdapter6.Fill(this._time_table_managementDataSet48.Session);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet47.Session' table. You can move, or remove it, as needed.
+            this.sessionTableAdapter5.Fill(this._time_table_managementDataSet47.Session);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet46.Tag' table. You can move, or remove it, as needed.
+            this.tagTableAdapter1.Fill(this._time_table_managementDataSet46.Tag);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet45.Subject' table. You can move, or remove it, as needed.
+            this.subjectTableAdapter2.Fill(this._time_table_managementDataSet45.Subject);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet44.Student' table. You can move, or remove it, as needed.
+            this.studentTableAdapter3.Fill(this._time_table_managementDataSet44.Student);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet43.Teacher' table. You can move, or remove it, as needed.
+            this.teacherTableAdapter3.Fill(this._time_table_managementDataSet43.Teacher);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet42.Session' table. You can move, or remove it, as needed.
+            this.sessionTableAdapter4.Fill(this._time_table_managementDataSet42.Session);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet41.Session' table. You can move, or remove it, as needed.
+            this.sessionTableAdapter3.Fill(this._time_table_managementDataSet41.Session);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet40.Subject' table. You can move, or remove it, as needed.
+            this.subjectTableAdapter1.Fill(this._time_table_managementDataSet40.Subject);
             // TODO: This line of code loads data into the '_time_table_managementDataSet32.SessionLocations' table. You can move, or remove it, as needed.
             this.sessionLocationsTableAdapter6.Fill(this._time_table_managementDataSet32.SessionLocations);
             // TODO: This line of code loads data into the '_time_table_managementDataSet31.SessionLocations' table. You can move, or remove it, as needed.
@@ -363,7 +381,7 @@ namespace TimeTable
 
         private void button11_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(comboBox24.Text) && !string.IsNullOrEmpty(comboBox26.Text) && !string.IsNullOrEmpty(comboBox22.Text) && !string.IsNullOrEmpty(comboBox21.Text) && !string.IsNullOrEmpty(comboBox23.Text) && !string.IsNullOrEmpty(comboBox20.Text) && !string.IsNullOrEmpty(comboBox19.Text))
+            if (!string.IsNullOrEmpty(comboBox24.Text) && !string.IsNullOrEmpty(comboBox26.Text) && !string.IsNullOrEmpty(comboBox22.Text) && !string.IsNullOrEmpty(comboBox21.Text) && !string.IsNullOrEmpty(comboBox1.Text) && !string.IsNullOrEmpty(comboBox23.Text) && !string.IsNullOrEmpty(comboBox20.Text) && !string.IsNullOrEmpty(comboBox19.Text))
             {
                 SessionRepo.Add(new Session
                 {
@@ -371,6 +389,7 @@ namespace TimeTable
                     Lecture2 = comboBox26.Text,
                     Group_ID = comboBox22.Text,
                     Subject = comboBox21.Text,
+                    Subject_Name = comboBox1.Text,
                     Tag = comboBox23.Text,
                     Noofstudent = comboBox20.Text,
                     Duration = comboBox19.Text
@@ -380,6 +399,7 @@ namespace TimeTable
                 comboBox26.Text = string.Empty;
                 comboBox22.Text = string.Empty;
                 comboBox21.Text = string.Empty;
+                comboBox1.Text = string.Empty;
                 comboBox23.Text = string.Empty;
                 comboBox20.Text = string.Empty;
                 comboBox19.Text = string.Empty;
@@ -790,6 +810,11 @@ namespace TimeTable
             {
                 MessageBox.Show("Error " + ex);
             }
+        }
+
+        private void label56_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

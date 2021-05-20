@@ -13,6 +13,7 @@ namespace TimeTable
     public partial class Form4 : Form
     {
         TagRepo tagRepo = new TagRepo();
+        SubjectTagLocationRepo SubjectTagLocationRepo = new SubjectTagLocationRepo();
         public Form4()
         {
             InitializeComponent();
@@ -125,6 +126,56 @@ namespace TimeTable
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            if (!string.IsNullOrEmpty(cmb1.Text) && !string.IsNullOrEmpty(cmb2.Text) && !string.IsNullOrEmpty(cmb3.Text) && !string.IsNullOrEmpty(cmb4.Text))
+            {
+                SubjectTagLocationRepo.Add(new SubjectTagLocation
+                {
+                    Tag = cmb1.Text,
+                    Subject_Code = cmb2.Text,
+                    Subject_Name = cmb3.Text,
+                    Room_Name = cmb4.Text
+
+                });
+
+                cmb1.Text = string.Empty;
+                cmb2.Text = string.Empty;
+                cmb3.Text = string.Empty;
+                cmb4.Text = string.Empty;
+                dataGridView6.DataSource = SubjectTagLocationRepo.GetAll();
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            cmb1.Text = string.Empty;
+            cmb2.Text = string.Empty;
+            cmb3.Text = string.Empty;
+            cmb4.Text = string.Empty;
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+            dataGridView6.DataSource = SubjectTagLocationRepo.GetAll();
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the '_time_table_managementDataSet68.SubjectTag' table. You can move, or remove it, as needed.
+            this.subjectTagTableAdapter.Fill(this._time_table_managementDataSet68.SubjectTag);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet67.Location' table. You can move, or remove it, as needed.
+            this.locationTableAdapter.Fill(this._time_table_managementDataSet67.Location);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet66.Subject' table. You can move, or remove it, as needed.
+            this.subjectTableAdapter1.Fill(this._time_table_managementDataSet66.Subject);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet65.Subject' table. You can move, or remove it, as needed.
+            this.subjectTableAdapter.Fill(this._time_table_managementDataSet65.Subject);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet64.Tag' table. You can move, or remove it, as needed.
+            this.tagTableAdapter.Fill(this._time_table_managementDataSet64.Tag);
+
+        }
     }
+ }
     
-}

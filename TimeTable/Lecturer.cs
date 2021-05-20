@@ -14,6 +14,8 @@ namespace TimeTable
     {
         TeachRepo TeachRepo = new TeachRepo();
         SubjectRepo SubjectRepo = new SubjectRepo();
+        LocationModuleRepo LocationModuleRepo = new LocationModuleRepo();
+        LocationLecturerRepo LocationLecturerRepo = new LocationLecturerRepo();
         public Lecturer()
         {
             InitializeComponent();
@@ -401,6 +403,86 @@ namespace TimeTable
         private void button7_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void Lecturer_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the '_time_table_managementDataSet59.LocationModule' table. You can move, or remove it, as needed.
+            this.locationModuleTableAdapter2.Fill(this._time_table_managementDataSet59.LocationModule);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet58.LocationModule' table. You can move, or remove it, as needed.
+            //this.locationModuleTableAdapter1.Fill(this._time_table_managementDataSet58.LocationModule);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet57.LocationModule' table. You can move, or remove it, as needed.
+            //this.locationModuleTableAdapter.Fill(this._time_table_managementDataSet57.LocationModule);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet56.Location' table. You can move, or remove it, as needed.
+            this.locationTableAdapter1.Fill(this._time_table_managementDataSet56.Location);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet55.Subject' table. You can move, or remove it, as needed.
+            this.subjectTableAdapter1.Fill(this._time_table_managementDataSet55.Subject);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet54.Subject' table. You can move, or remove it, as needed.
+            this.subjectTableAdapter.Fill(this._time_table_managementDataSet54.Subject);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet53.LectureSession' table. You can move, or remove it, as needed.
+            this.lectureSessionTableAdapter.Fill(this._time_table_managementDataSet53.LectureSession);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet52.Location' table. You can move, or remove it, as needed.
+            this.locationTableAdapter.Fill(this._time_table_managementDataSet52.Location);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet51.Teacher' table. You can move, or remove it, as needed.
+            this.teacherTableAdapter.Fill(this._time_table_managementDataSet51.Teacher);
+
+        }
+
+        private void btnLLSave_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(cmbLLName.Text) && !string.IsNullOrEmpty(cmbLLRoom.Text))
+            {
+                LocationLecturerRepo.Add(new LocationLecturer
+                {
+                    Lecture_Name = cmbLLName.Text,
+                    Room_Name = cmbLLRoom.Text
+                });
+                cmbLLName.Text = string.Empty;
+                cmbLLRoom.Text = string.Empty;
+                dataGridView5.DataSource = LocationLecturerRepo.GetAll();
+
+            }
+        }
+
+        private void btnLLClear_Click(object sender, EventArgs e)
+        {
+            cmbLLName.Text = string.Empty;
+            cmbLLRoom.Text = string.Empty;
+        }
+
+        private void tabPage5_Click(object sender, EventArgs e)
+        {
+            dataGridView5.DataSource = LocationLecturerRepo.GetAll();
+        }
+
+        private void BtnSL_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(cmbSubject.Text) && !string.IsNullOrEmpty(cmbSubName.Text) && !string.IsNullOrEmpty(cmbRoomName.Text))
+            {
+                LocationModuleRepo.Add(new LocationModule
+                {
+                    Module_ID = cmbSubject.Text,
+                    Module_Name = cmbSubName.Text,
+                    Room_Name = cmbRoomName.Text
+                });
+                cmbSubject.Text = string.Empty;
+                cmbSubName.Text = string.Empty;
+                cmbRoomName.Text = string.Empty;
+                dataGridView6.DataSource = LocationModuleRepo.GetAll();
+
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            cmbSubject.Text = string.Empty;
+            cmbSubName.Text = string.Empty;
+            cmbRoomName.Text = string.Empty;
+        }
+
+        private void tabPage6_Click(object sender, EventArgs e)
+        {
+            dataGridView6.DataSource = LocationModuleRepo.GetAll();
         }
     }
 }
