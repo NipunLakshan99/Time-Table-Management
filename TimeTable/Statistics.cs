@@ -119,10 +119,10 @@ namespace TimeTable
             }
 
 
-            this.chart2.Series["Total"].Points.AddXY("Laboratories", 15);
-            this.chart2.Series["Total"].Points.AddXY("Lecture Halls", 20);
-            this.chart2.Series["Total"].Points.AddXY("Lecturers", 15);
-            this.chart2.Series["Total"].Points.AddXY("Modules", 40);
+            this.chart2.Series["Total"].Points.AddXY("Laboratories", 30);
+            this.chart2.Series["Total"].Points.AddXY("Lecture Halls", 15);
+            this.chart2.Series["Total"].Points.AddXY("Lecturers", 59);
+            this.chart2.Series["Total"].Points.AddXY("Modules", 31);
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -172,7 +172,7 @@ namespace TimeTable
 
             //No of Laborataries
             //create a command
-            string query1 = "SELECT COUNT(Location_ID) FROM Location WHERE Room_type = 'Lab' GROUP BY Room_type";
+            string query1 = "SELECT COUNT(Location_ID) FROM Location WHERE Room_type = 'Laboratory' GROUP BY Room_type";
 
 
             try

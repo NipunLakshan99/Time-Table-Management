@@ -164,6 +164,10 @@ namespace TimeTable
 
         private void Form4_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the '_time_table_managementDataSet85.Subject' table. You can move, or remove it, as needed.
+            this.subjectTableAdapter3.Fill(this._time_table_managementDataSet85.Subject);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet84.Subject' table. You can move, or remove it, as needed.
+            this.subjectTableAdapter2.Fill(this._time_table_managementDataSet84.Subject);
             // TODO: This line of code loads data into the '_time_table_managementDataSet68.SubjectTag' table. You can move, or remove it, as needed.
             this.subjectTagTableAdapter.Fill(this._time_table_managementDataSet68.SubjectTag);
             // TODO: This line of code loads data into the '_time_table_managementDataSet67.Location' table. You can move, or remove it, as needed.

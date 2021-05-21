@@ -246,6 +246,14 @@ namespace TimeTable
 
         private void Form5_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the '_time_table_managementDataSet95.SessionLocations' table. You can move, or remove it, as needed.
+            this.sessionLocationsTableAdapter7.Fill(this._time_table_managementDataSet95.SessionLocations);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet94.Session' table. You can move, or remove it, as needed.
+            this.sessionTableAdapter12.Fill(this._time_table_managementDataSet94.Session);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet93.Session' table. You can move, or remove it, as needed.
+            this.sessionTableAdapter11.Fill(this._time_table_managementDataSet93.Session);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet89.Session' table. You can move, or remove it, as needed.
+            this.sessionTableAdapter10.Fill(this._time_table_managementDataSet89.Session);
             // TODO: This line of code loads data into the '_time_table_managementDataSet79.Session' table. You can move, or remove it, as needed.
             //this.sessionTableAdapter9.Fill(this._time_table_managementDataSet79.Session);
             // TODO: This line of code loads data into the '_time_table_managementDataSet78.Working' table. You can move, or remove it, as needed.

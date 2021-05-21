@@ -121,12 +121,7 @@ namespace TimeTable
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show(null, "Do You Want to Exit", "Select", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
+            
         }
 
         private void btnStatistic_Click_1(object sender, EventArgs e)
@@ -171,6 +166,26 @@ namespace TimeTable
             form5.FormBorderStyle = FormBorderStyle.None;
             this.pnlFormLoader.Controls.Add(form5);
             form5.Show();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            lblStudent.Text = "GENERATE TIMETABLE";
+            this.pnlFormLoader.Controls.Clear();
+            FrmTimetable frmTimetable = new FrmTimetable() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmTimetable.FormBorderStyle = FormBorderStyle.None;
+            this.pnlFormLoader.Controls.Add(frmTimetable);
+            frmTimetable.Show();
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(null, "Do You Want to Exit", "Select", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

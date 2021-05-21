@@ -164,6 +164,10 @@ namespace TimeTable
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the '_time_table_managementDataSet83.Session' table. You can move, or remove it, as needed.
+            //this.sessionTableAdapter.Fill(this._time_table_managementDataSet83.Session);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet82.Teacher' table. You can move, or remove it, as needed.
+            //this.teacherTableAdapter.Fill(this._time_table_managementDataSet82.Teacher);
             // TODO: This line of code loads data into the '_time_table_managementDataSet81.Student' table. You can move, or remove it, as needed.
             this.studentTableAdapter3.Fill(this._time_table_managementDataSet81.Student);
             // TODO: This line of code loads data into the '_time_table_managementDataSet80.Student' table. You can move, or remove it, as needed.

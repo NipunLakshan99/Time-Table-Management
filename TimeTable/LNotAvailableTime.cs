@@ -14,8 +14,8 @@ namespace TimeTable
 
         public string Day { get; set; }
 
-        public string Start_Time { get; set; }
+        public string STime { get; set; }
 
-        public string End_Time { get; set; }
+        public string ETime { get; set; }
     }
 }

@@ -180,8 +180,11 @@ namespace TimeTable
                 txtLURoomname.Text = string.Empty;
                 RUtype = string.Empty;
                 txtLUCapacity.Text = string.Empty;
+                
 
             }
+            
+         
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -197,19 +200,27 @@ namespace TimeTable
                 {
                     Room = LNATRoom.Text,
                     Day = LNATDay.Text,
-                    Start_Time = LNATStart_Time.Text,
-                    End_Time = LNATEnd_Time.Text,
+                    STime = LNATStart_Time.Text,
+                    ETime = LNATEnd_Time.Text,
 
                 });
                 LNATRoom.Text = string.Empty;
                 LNATDay.Text = string.Empty;
                 LNATStart_Time.Text = string.Empty;
                 LNATEnd_Time.Text = string.Empty;
+                dataGridView7.DataSource = LNotAvailableTimeRepo.GetAll();
+
             }
         }
 
         private void Location_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the '_time_table_managementDataSet92.Location_Not_Available_Time' table. You can move, or remove it, as needed.
+            this.location_Not_Available_TimeTableAdapter2.Fill(this._time_table_managementDataSet92.Location_Not_Available_Time);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet91.Location_Not_Available_Time' table. You can move, or remove it, as needed.
+            //this.location_Not_Available_TimeTableAdapter1.Fill(this._time_table_managementDataSet91.Location_Not_Available_Time);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet90.Location_Not_Available_Time' table. You can move, or remove it, as needed.
+            this.location_Not_Available_TimeTableAdapter.Fill(this._time_table_managementDataSet90.Location_Not_Available_Time);
             // TODO: This line of code loads data into the '_time_table_managementDataSet50.Session' table. You can move, or remove it, as needed.
             this.sessionTableAdapter5.Fill(this._time_table_managementDataSet50.Session);
             // TODO: This line of code loads data into the '_time_table_managementDataSet49.Session' table. You can move, or remove it, as needed.

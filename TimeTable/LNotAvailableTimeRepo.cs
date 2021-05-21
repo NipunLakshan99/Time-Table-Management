@@ -40,8 +40,8 @@ namespace TimeTable
                             LNot_Available_Time_ID = (int)reader["LNot_Available_Time_ID"],
                             Room = (string)reader["Room"],
                             Day = (string)reader["Day"],
-                            Start_Time = (string)reader["STime"],
-                            End_Time = (string)reader["ETime"]
+                            STime = (string)reader["STime"],
+                            ETime = (string)reader["ETime"]
                         });
                     }
                 }
@@ -57,7 +57,7 @@ namespace TimeTable
                 connection.Open();
                 var command = factory.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = $"Insert into Location_Not_Available_Time(Room,Day,STime,ETime) Values('{lNotAvailable.Room}','{lNotAvailable.Day}','{lNotAvailable.Start_Time}','{lNotAvailable.End_Time}');";
+                command.CommandText = $"Insert into Location_Not_Available_Time(Room,Day,STime,ETime) Values('{lNotAvailable.Room}','{lNotAvailable.Day}','{lNotAvailable.STime}','{lNotAvailable.ETime}');";
                 command.ExecuteNonQuery();
             }
         }
@@ -70,7 +70,7 @@ namespace TimeTable
                 connection.Open();
                 var command = factory.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = $"Update Location_Not_Available_Time set Room ='{lNotAvailable.Room}',Day='{lNotAvailable.Day}',STime='{lNotAvailable.Start_Time}',ETime='{lNotAvailable.End_Time}';";
+                command.CommandText = $"Update Location_Not_Available_Time set Room ='{lNotAvailable.Room}',Day='{lNotAvailable.Day}',STime='{lNotAvailable.STime}',ETime='{lNotAvailable.ETime}';";
                 command.ExecuteNonQuery();
             }
         }
