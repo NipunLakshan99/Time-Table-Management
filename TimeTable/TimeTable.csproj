@@ -553,6 +553,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_time_table_managementDataSet8.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_time_table_managementDataSet80.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_time_table_managementDataSet80.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_time_table_managementDataSet81.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_time_table_managementDataSet81.xsd</DependentUpon>
+    </Compile>
     <Compile Include="_time_table_managementDataSet9.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1491,6 +1501,28 @@
     </None>
     <None Include="_time_table_managementDataSet8.xss">
       <DependentUpon>_time_table_managementDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet80.xsc">
+      <DependentUpon>_time_table_managementDataSet80.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet80.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_time_table_managementDataSet80.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_time_table_managementDataSet80.xss">
+      <DependentUpon>_time_table_managementDataSet80.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet81.xsc">
+      <DependentUpon>_time_table_managementDataSet81.xsd</DependentUpon>
+    </None>
+    <None Include="_time_table_managementDataSet81.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_time_table_managementDataSet81.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_time_table_managementDataSet81.xss">
+      <DependentUpon>_time_table_managementDataSet81.xsd</DependentUpon>
     </None>
     <None Include="_time_table_managementDataSet9.xsc">
       <DependentUpon>_time_table_managementDataSet9.xsd</DependentUpon>
