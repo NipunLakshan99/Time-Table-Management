@@ -21,13 +21,13 @@ namespace TimeTable
         NotAvailableGroupRepo NotAvailableGroupRepo = new NotAvailableGroupRepo();
         SessionDayTimeRepo SessionDayTimeRepo = new SessionDayTimeRepo();
         SqlConnection con = new SqlConnection("Server=tcp:time-table.database.windows.net,1433;Initial Catalog=time-table-management;Persist Security Info=False;User ID=nipun;Password=lakshan123@;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
-       
+
         public Form5()
         {
             InitializeComponent();
         }
 
-        
+
         private void label9_Click(object sender, EventArgs e)
         {
 
@@ -65,7 +65,7 @@ namespace TimeTable
 
         private void button16_Click(object sender, EventArgs e)
         {
-
+            this.Update();
         }
 
         private void tabPage8_Click(object sender, EventArgs e)
@@ -87,7 +87,7 @@ namespace TimeTable
         string Tslot;
         private void BtnWSave_Click(object sender, EventArgs e)
         {
-            if(!string.IsNullOrEmpty(txtAddNWD.Text) && !string.IsNullOrEmpty(Wdays) && !string.IsNullOrEmpty(txtDays.Text) && !string.IsNullOrEmpty(txtAddWTD.Text) && !string.IsNullOrEmpty(txtAddSTH.Text) && !string.IsNullOrEmpty(txtAddETH.Text) && !string.IsNullOrEmpty(Tslot))
+            if (!string.IsNullOrEmpty(txtAddNWD.Text) && !string.IsNullOrEmpty(Wdays) && !string.IsNullOrEmpty(txtDays.Text) && !string.IsNullOrEmpty(txtAddWTD.Text) && !string.IsNullOrEmpty(txtAddSTH.Text) && !string.IsNullOrEmpty(txtAddETH.Text) && !string.IsNullOrEmpty(Tslot))
             {
                 WorkingRepo.Add(new Working
                 {
@@ -108,7 +108,7 @@ namespace TimeTable
                 txtAddETH.Text = string.Empty;
                 Tslot = string.Empty;
             }
-            
+
         }
 
         private void RadioBThirtyM_CheckedChanged(object sender, EventArgs e)
@@ -206,12 +206,12 @@ namespace TimeTable
 
         private void BtnWURefresh_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void dataGridView5_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
 
         private void radioWweekday_CheckedChanged(object sender, EventArgs e)
@@ -246,6 +246,28 @@ namespace TimeTable
 
         private void Form5_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the '_time_table_managementDataSet79.Session' table. You can move, or remove it, as needed.
+            //this.sessionTableAdapter9.Fill(this._time_table_managementDataSet79.Session);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet78.Working' table. You can move, or remove it, as needed.
+            this.workingTableAdapter.Fill(this._time_table_managementDataSet78.Working);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet77.Session' table. You can move, or remove it, as needed.
+            this.sessionTableAdapter8.Fill(this._time_table_managementDataSet77.Session);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet76.Student' table. You can move, or remove it, as needed.
+            this.studentTableAdapter6.Fill(this._time_table_managementDataSet76.Student);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet75.Student' table. You can move, or remove it, as needed.
+            this.studentTableAdapter5.Fill(this._time_table_managementDataSet75.Student);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet74.Session' table. You can move, or remove it, as needed.
+            this.sessionTableAdapter7.Fill(this._time_table_managementDataSet74.Session);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet73.Tag' table. You can move, or remove it, as needed.
+            this.tagTableAdapter2.Fill(this._time_table_managementDataSet73.Tag);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet72.Subject' table. You can move, or remove it, as needed.
+            this.subjectTableAdapter4.Fill(this._time_table_managementDataSet72.Subject);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet71.Subject' table. You can move, or remove it, as needed.
+            this.subjectTableAdapter3.Fill(this._time_table_managementDataSet71.Subject);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet70.Student' table. You can move, or remove it, as needed.
+            this.studentTableAdapter4.Fill(this._time_table_managementDataSet70.Student);
+            // TODO: This line of code loads data into the '_time_table_managementDataSet69.Teacher' table. You can move, or remove it, as needed.
+            this.teacherTableAdapter4.Fill(this._time_table_managementDataSet69.Teacher);
             // TODO: This line of code loads data into the '_time_table_managementDataSet48.Session' table. You can move, or remove it, as needed.
             this.sessionTableAdapter6.Fill(this._time_table_managementDataSet48.Session);
             // TODO: This line of code loads data into the '_time_table_managementDataSet47.Session' table. You can move, or remove it, as needed.
@@ -388,7 +410,7 @@ namespace TimeTable
                     Lecture1 = comboBox24.Text,
                     Lecture2 = comboBox26.Text,
                     Group_ID = comboBox22.Text,
-                    Subject = comboBox21.Text,
+                    Subject_ID = comboBox21.Text,
                     Subject_Name = comboBox1.Text,
                     Tag = comboBox23.Text,
                     Noofstudent = comboBox20.Text,
@@ -422,7 +444,16 @@ namespace TimeTable
             if (dataGridView4.SelectedRows.Count > 0)
             {
                 var row = dataGridView4.SelectedRows[0];
-                var session = (Session)row.DataBoundItem;
+                var Session = (Session)row.DataBoundItem;
+                txtSessionid.Text = Session.Session_ID.ToString();
+                upcomboBox28.Text = Session.Lecture1;
+                upcomboBox27.Text = Session.Lecture2;
+                upcomboBox32.Text = Session.Group_ID;
+                upcomboBox31.Text = Session.Subject_ID;
+                comboBox2.Text = Session.Subject_Name;
+                upcomboBox33.Text = Session.Tag;
+                upcomboBox30.Text = Session.Noofstudent;
+                upcomboBox29.Text = Session.Duration;
 
             }
         }
@@ -684,7 +715,7 @@ namespace TimeTable
         private void tabPage10_Click(object sender, EventArgs e)
         {
             dataGridView9.DataSource = NotAvailableGroupRepo.GetAll();
-            
+
         }
 
         private void tabPage11_Click(object sender, EventArgs e)
@@ -694,7 +725,7 @@ namespace TimeTable
 
         private void label21_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label14_Click(object sender, EventArgs e)
@@ -815,6 +846,46 @@ namespace TimeTable
         private void label56_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtSessionid.Text) && !string.IsNullOrEmpty(upcomboBox28.Text) && !string.IsNullOrEmpty(upcomboBox27.Text) && !string.IsNullOrEmpty(upcomboBox32.Text) && !string.IsNullOrEmpty(upcomboBox31.Text) && !string.IsNullOrEmpty(upcomboBox33.Text) && !string.IsNullOrEmpty(upcomboBox30.Text) && !string.IsNullOrEmpty(upcomboBox29.Text))
+            {
+                SessionRepo.Update(new Session
+                {
+                    Session_ID = int.Parse(txtSessionid.Text),
+                    Lecture1 = upcomboBox28.Text,
+                    Lecture2 = upcomboBox27.Text,
+                    Group_ID = upcomboBox32.Text,
+                    Subject_ID = upcomboBox31.Text,
+                    Subject_Name = comboBox2.Text,
+                    Tag = upcomboBox33.Text,
+                    Noofstudent = upcomboBox30.Text,
+                    Duration = upcomboBox29.Text,
+
+                });
+                dataGridView4.DataSource = SessionRepo.GetAll();
+            }
+        }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtSessionid.Text) && !string.IsNullOrEmpty(upcomboBox28.Text) && !string.IsNullOrEmpty(upcomboBox27.Text) && !string.IsNullOrEmpty(upcomboBox32.Text) && !string.IsNullOrEmpty(upcomboBox31.Text) && !string.IsNullOrEmpty(upcomboBox33.Text) && !string.IsNullOrEmpty(upcomboBox30.Text) && !string.IsNullOrEmpty(upcomboBox29.Text))
+            {
+                SessionRepo.Delete(int.Parse(txtSessionid.Text));
+                upcomboBox28.Text = string.Empty;
+                upcomboBox27.Text = string.Empty;
+                upcomboBox32.Text = string.Empty;
+                upcomboBox31.Text = string.Empty;
+                comboBox2.Text = string.Empty;
+                upcomboBox33.Text = string.Empty;
+                upcomboBox30.Text = string.Empty;
+                upcomboBox29.Text = string.Empty;
+
+                dataGridView4.DataSource = SessionRepo.GetAll();
+
+            }
         }
     }
 }

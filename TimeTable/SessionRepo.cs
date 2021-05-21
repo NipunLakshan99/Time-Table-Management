@@ -41,7 +41,7 @@ namespace TimeTable
                             Lecture1 = (string)reader["Lecture1"],
                             Lecture2 = (string)reader["Lecture2"],
                             Group_ID = (string)reader["Group_ID"],
-                            Subject = (string)reader["Subject_ID"],
+                            Subject_ID = (string)reader["Subject_ID"],
                             Subject_Name = (string)reader["Subject_Name"],
                             Tag = (string)reader["Tag"],
                             Noofstudent = (string)reader["Noofstudent"],
@@ -61,7 +61,7 @@ namespace TimeTable
                 connection.Open();
                 var command = factory.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = $"Insert into Session(Lecture1,Lecture2,Group_ID,Subject_ID,Subject_Name,Tag,Noofstudent,Duration) Values('{Session.Lecture1}','{Session.Lecture2}','{Session.Group_ID}','{Session.Subject}','{Session.Subject_Name}','{Session.Tag}','{Session.Noofstudent}','{Session.Duration}');";
+                command.CommandText = $"Insert into Session(Lecture1,Lecture2,Group_ID,Subject_ID,Subject_Name,Tag,Noofstudent,Duration) Values('{Session.Lecture1}','{Session.Lecture2}','{Session.Group_ID}','{Session.Subject_ID}','{Session.Subject_Name}','{Session.Tag}','{Session.Noofstudent}','{Session.Duration}');";
                 command.ExecuteNonQuery();
             }
         }
@@ -74,7 +74,7 @@ namespace TimeTable
                 connection.Open();
                 var command = factory.CreateCommand();
                 command.Connection = connection;
-                command.CommandText = $"Update Session set Lecture1 ='{Session.Lecture1}',Lecture2 ='{Session.Lecture2}',Group_ID ='{Session.Group_ID}',Subject ='{Session.Subject}',Subject_Name='{Session.Subject_Name}',Tag ='{Session.Tag}',Noofstudent ='{Session.Noofstudent}',Duration ='{Session.Duration}',where Session_ID = {Session.Session_ID};";
+                command.CommandText = $"Update Session set Lecture1 ='{Session.Lecture1}',Lecture2 ='{Session.Lecture2}',Group_ID ='{Session.Group_ID}',Subject_ID ='{Session.Subject_ID}',Subject_Name='{Session.Subject_Name}',Tag ='{Session.Tag}',Noofstudent ='{Session.Noofstudent}',Duration ='{Session.Duration}'where Session_ID = {Session.Session_ID};";
                 command.ExecuteNonQuery();
 
             }
